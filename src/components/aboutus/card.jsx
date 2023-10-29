@@ -1,0 +1,58 @@
+import React from "react";
+import Heading from "./Heading";
+import { RiInstagramFill } from 'react-icons/ri';
+
+const EmpCard = ({ currEle }) => {
+  return (
+    <div
+      className="card-emp"
+      style={{
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        height: "23rem",
+        width: "17rem",
+        borderRadius: "0.75rem",
+        border: "1px solid #B86CD2",
+        backgroundImage: `url(${currEle.imageUrl})`,
+      }}
+    >
+      <div
+        className="text"
+        style={{
+          position: "absolute",
+          bottom: "6px",
+          right: "10%",
+        }}
+      >
+        <div className="card-emp-content">
+          <h4>{currEle.empName}</h4>
+        </div>
+        <div className="card-emp-content">
+          <p>{currEle.position}</p>
+        </div>
+      </div>
+      <div className="hidden-content">
+        <div class="hidden-content">
+          <h3>{currEle.empName}</h3>
+          <p>{currEle.position} at XYZ</p>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            debitis natus nam iure, fuga qui assumenda mollitia beatae a
+            consequuntur?
+          </p>
+          <hr/>
+          <div className="icon-container">
+            <RiInstagramFill />
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+          </div>
+          {/* <p>Phone: (123) 456-7890</p> */}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default EmpCard;
