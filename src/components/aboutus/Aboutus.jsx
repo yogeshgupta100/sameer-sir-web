@@ -7,6 +7,7 @@ import Empcard from './card'
 import Subscribe from './Subscribe'
 import Aboutfooter from './Aboutfooter'
 import Teammates from './Teammates'
+import { Button } from 'bootstrap'
 
 const Aboutus = () => {
   const [empData , setEmpData] = useState(Card);
@@ -23,8 +24,23 @@ const Aboutus = () => {
         <Teammates empData={empData}/>
         <Brands color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="white"/>
         <Section1 text={"Our Commitment"}/>
+        <div style={{
+          width:"100vw",
+          display:"flex",
+          justifyContent:"center",
+          marginTop:"3rem"
+        }}>
+        <button className='purple-btn' style={{
+        textDecoration:"none",
+        border:"none",
+        width:"10rem",
+        fontWeight:"500",
+        padding:"1.1rem",
+        marginTop:"1.8rem",
+      }}>Explore Courses</button>
+        </div>
         <Subscribe/>
-        <Aboutfooter/>
+        {/* <Aboutfooter/> */}
     </>
   )
 }

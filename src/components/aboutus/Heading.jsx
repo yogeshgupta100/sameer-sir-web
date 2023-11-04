@@ -10,7 +10,7 @@ const Heading = ({ content , left}) => {
         position: "relative",
         display: "flex",
         justifyContent: "start",
-        flexShrink:"0"
+        flexShrink:"0",
       }}
     >
       <div

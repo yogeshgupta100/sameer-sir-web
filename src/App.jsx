@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Navigate , Route, Routes } from 'react-router-
 import Contact from './components/Contact'
 import Home from './components/home/Home';
 import Aboutus from './components/aboutus/Aboutus';
+import Graphic from './components/courses/Graphic Design/MainGraphic';
+import DownloadSyllabus from './components/forms/DownloadSyllabus';
+import Articlemain from './components/article/Articlemain';
+import Resource from './components/Resource';
 
 function App() {
   return (
@@ -14,6 +18,10 @@ function App() {
         <Route exact path="/contact" element={<Contact/>} />
         {/* <Route  path="/" element={<Navigate to="/Home" />} /> */}
         <Route  path="/aboutus" element={<Aboutus />} />
+        <Route path='/courses/graphic' element={<Graphic/>}/>
+        <Route path='/forms/downloadSyllabus' element={<DownloadSyllabus/>}/>
+        <Route path='/article' element={<Articlemain/>}/>
+        <Route path='/resource' element={<Resource/>}/>
       </Routes>
       </Router>
     </>

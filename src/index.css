@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700');
+@import "/node_modules/@fontsource/raleway/300.css";
+@import "/node_modules/@fontsource/open-sans/300.css";
+@import "/node_modules/@fontsource/inter/600.css";
 
 body {
   margin: 0;
@@ -66,8 +67,8 @@ code {
   cursor: pointer;
 }
 
-.about-first{
-  background: url("/public/assets/about_hero_bg.jpg"), lightgray 50% / cover no-repeat;
+/* .about-first{
+  background: url("/assets/about_hero_bg.jpg"), lightgray 50% / cover no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0;
@@ -77,7 +78,7 @@ code {
   position: relative;
   display: flex;
   justify-content: center;
-}
+} */
 
 .about-first h3{
   width: 70%;
@@ -90,12 +91,13 @@ code {
 }
 
 .about-first2{
-  position: absolute; 
-  bottom: -20rem; 
+  position: absolute;
+  bottom: 1rem;
+  left: 5rem;
   background: #FFF;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.15);
   display: flex;
-  width: 1760px;
+  width: 90%;
   justify-content: center;
   align-items: center;
 }
@@ -176,7 +178,7 @@ letter-spacing: -0.72px;
   background: #B570CD;
 }
 .dot{
-  background-image: url("/public/assets/dot.png");
+  background-image: url("/assets/dot.png");
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
@@ -213,7 +215,7 @@ letter-spacing: -0.72px;
   text-align: center;
   font-size: 1rem;
   color: #fff;
-  background: url("/public/assets/counter-img.jpg");
+  background: url("/assets/counter-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -229,16 +231,16 @@ letter-spacing: -0.72px;
   height: 88vh;
   margin: 6rem 0 0 0;
   display: flex;
-  justify-content:  x-end;
+  justify-content:flex-end;
 }
 
 .section1-main2 .first{
-  width: 30%;
+  width: 42%;
   height: 100%;
 }
 
 .section1-main2 .second{
-  width: 60%;
+  width: 58%;
   height: 92%;
   background-image: linear-gradient(to bottom right , rgb(40, 11, 50),rgb(161, 81, 187));
   border-radius:8px 0px 0px 0px;
@@ -279,7 +281,7 @@ letter-spacing: -0.72px;
   width: 15.4rem;
   height: 60%;
   border-radius: 4px;
-  background: url("/public/assets/man1.jpg") , lightgray 50% / cover no-repeat;
+  background: url("/assets/man1.jpg") , lightgray 50% / cover no-repeat;
   position: absolute;
   top: 2.5rem;
   flex-shrink: 0;
@@ -291,9 +293,9 @@ letter-spacing: -0.72px;
 .first-img2{
   width: 15.4rem;
   height: 60%;
-  background: url("/public/assets/women1.jpg") , lightgray 50% / cover no-repeat;
+  background: url("/assets/women1.jpg") , lightgray 50% / cover no-repeat;
   position: absolute;
-  right: -4rem;
+  right: -4.2rem;
   bottom: 0;
   border-radius: 4px;
   background-position: center;
@@ -353,7 +355,7 @@ letter-spacing: -0.72px;
   margin:8.56rem 0 0 0;
   height: 47vh;
   flex-shrink: 0;
-  background: url("/public/assets/subscribe-bg.jpg"), lightgray 50% / cover no-repeat;
+  background: url("/assets/subscribe-bg.jpg"), lightgray 50% / cover no-repeat;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -465,7 +467,7 @@ letter-spacing: -0.72px;
   align-items: center;
   flex-shrink: 0;
   border-radius: 0.5rem;
-  background: url("/public/assets/vid1.jpg"), 50% / cover no-repeat, #623434;
+  background: url("/assets/vid1.jpg"), 50% / cover no-repeat, #623434;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -482,7 +484,7 @@ letter-spacing: -0.72px;
   align-items: center;
   flex-shrink: 0;
   border-radius: 0.5rem;
-  background: url("/public/assets/vid2.jpg"), 50% / cover no-repeat, #623434;
+  background: url("/assets/vid2.jpg"), 50% / cover no-repeat, #623434;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -557,7 +559,7 @@ letter-spacing: -0.72px;
   color: #fff;
   align-items: center;
   gap: 1rem;
-  background: url("/public/assets/faq-bg.jpg"), lightgray 50% / cover no-repeat;
+  background: url("/assets/faq-bg.jpg"), lightgray 50% / cover no-repeat;
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.20);
   background-position: center;
   background-repeat: no-repeat;
@@ -631,4 +633,282 @@ letter-spacing: -0.72px;
   color: #ffffff;
   background-color: #fff;
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+/* courses */
+.why-this-main{
+  width: 100vw;
+  height: 46rem;
+  background: url("https://s3-alpha-sig.figma.com/img/2d90/e3b5/291f19051b6c4bdd64c845e2e9bf06e3?Expires=1699833600&Signature=RP3UgOZnrboJUbXr5Tmvi66ETcB15GmQfwZdaayR8D~ZsjL-NRkAG6wbubznm~x-iJC1gARWt7hccqBIXaYW~x55nBnBX3-Igy0kDJ2uMot4Nl~dLPm5WqHGbaWaGoCcdjYA6O5xy~Gsln7HrqxI3xO1DJ6ZpYtRUciLhIq3bxTqeneiXwfksJe~OwQh~ZqCH-mamSdL~lpQY9cYUBQR9LOKn3zRl6NFw8CUTDivF3-XWflFI9M0ac1Ad1YAPXY1UidtLEqIo6KcOevhZ5xz5PctRvvljlUgot-iu4r5NgyI7pVHHCcpAmb5kdfPm~fXD3noq4c5KlyLMAYND09i7A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), lightgray -136.636px -799.975px / 151.674% 232.87% no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.why-text{
+  margin-left: 1.4rem;
+  color: #FAEDFF;
+  font-family: Open Sans;
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 124%;
+}
+
+.why-cards{
+  position: relative;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: repeat(3,27%);
+  justify-content: center;
+  margin: 8rem 8rem;
+}
+.why-image{
+  background: url("https://s3-alpha-sig.figma.com/img/752c/7bb5/d97954c848db9e7bfbd9072d4e059c2a?Expires=1699833600&Signature=MLkKGKkXu2utR3gHqsE~mhGvmPTxE9Jlxjlfr-ImMTtH~2zsbnfGZW3GN-56s0ENNZIGOYaG-u04~c3ciWkuwVKnRxcd2kNU4ruZlkngi1N0zGXUtsN9xTNv~jfjZM8RaXeOUdL3n5ahZe2O1RpTprq6qryJjBHzMoAlEgePm4XkqbUxW6~nX4K8oVhWEUkG~rRE~fCJGqes8D0YjLf6Wn5fTK7jRhLqxwIp~SDaifR4RGHP4tPEjctCV1XkkoOIEFUqyJ1i2LMkdKiBHOuDUtssIR4rvHiEYYFRWjiJbnDnf5ZfT4Fj0ZfrrWK8yruqDf6NPzGbJ~zLrqr1HHBeYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), transparent -122.16px -54.899px / 176.214% 139.167% no-repeat;
+  position: absolute;
+  width: 22.4375rem;
+  height: 28.4375rem;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  bottom: -6.5rem;
+  right: -4rem;
+}
+.card-heading{
+  color: #8833B6;
+  font-family: Open Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136%; /* 1.7rem */
+  letter-spacing: -0.025rem;
+  opacity: 0.8;
+}
+.card-para{
+  color: rgba(40, 0, 52, 0.75);
+  font-family: Open Sans;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.75rem */
+  letter-spacing: -0.03rem;
+}
+
+/* Pricing */
+.price-content{
+  background: url("https://s3-alpha-sig.figma.com/img/8f55/e9ad/4117eff5e62b83d37a7a9028ebafd3f5?Expires=1699833600&Signature=nNG51Lfd1FGtGT9uiHPJjlvPkbwyHHu-gpLGsB2VjD~xSMrkusNprlPMl5hIxZ-L9D8kY3AfdTZ4Kgzy56fA71273xEKI2K0oQyY1cZFRi3Ju2u-M0sZqdlJ08mxpQGc3II6kuWDYZuivm-dgbMgNavP0m5EnNjyflIjMqnCfEDyeIqlfaTTFKXEbEzCgBZUv58WCR0aJEQgSBmjH8Pi9iZ44~1LEMNLvJXsOSR5LzjWjUJ~ViC4e4njvDrV46sFKiffBicyxGGJbQpFJPODNNMeSOuM~C85bivCdrqYrxHGQhjHYAtUAs7F4yWKeuQN4cqAahM3J2ChWp-Mjcw~og__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35%;
+  height: 100%;
+  color: #fff;
+  padding: 2rem;
+}
+.price-image{
+  width: 60%;
+  height: 100%;
+  background: url("https://s3-alpha-sig.figma.com/img/3709/06d2/cc63ed449fd467d52712bb8f3f8eddc8?Expires=1699833600&Signature=blLnZ2NJk8Os1f9YHKlf91q8LHtA8uq1JdM24HYiyWmjx5o7VZAzgxq8abM13J6kakUBiZkKRkiw8YQp5w486MQ4NEN3zORm2qMoCH0Eq8VaNmae2kFKhzLgiQbbsTlkxVze2vHZXWMFjmAn34HUJnT7n14Cy-hTZXxpdBhw45DkwTMcVbcxeGVymCTphMuHG266TYg6tfmLQjimjyMm97~q2JVlzaECYe09DwvEkbaXuEmTqICgFi~JkKfKgOx5o21ZkKPmyf9fwWJ~MP0RpT4WeYZmwiSUBUF~fADkj6i5eazqXrHE1H3tgI8PzOU0tgOdMVxPUiUNUnTaAO457A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Curriculum */
+.curr-bg{
+  position: relative;
+  margin: 4rem 0;
+  padding:5rem 6rem ;
+  width: 121.875rem;
+  height: 41rem;
+  flex-shrink: 0;
+  background: linear-gradient(254deg, #6C0082 0.31%, #44006F 46.97%, #7A0089 114.38%);
+}
+.curr-image{
+  background: url("https://s3-alpha-sig.figma.com/img/f3fa/957b/9a25d6d47345f5aef415b4d1bd915d09?Expires=1699833600&Signature=k-AJ7ufR1uTQWTgzwNMcG8V92q1sBc1kDh~PwTEZXbOqKydGsjYJf7K0cw9rmwWQeqDWC2KtPQLtKVFc5xzZBNwBoTR4modwLI3Y0rshn5B3ilyU12kNHZKYumOwFE4bskPgq9R7wio7Mi19loy~FnIybuP0t0At9PgBbHz06nuxfpVBD6WKRx~xvZ3RVtdPVmcFJ7yEexHkIM2LKLC5U9nXYiZQiMOj6rstGYDVdK190GMUQLPTksy8n5Hr0JPaZhmuhDm83FvUWNU3ow7GP5N7da6JGXoSuuVPEbr6lcnVUfzpJxy-~yrv9ntJmZLjUN~Qh0lWi7UQnCRj1LnCUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), transparent -122.16px -54.899px / 176.214% 139.167% no-repeat;
+  position: absolute;
+  width: 37rem;
+  height: 80%;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  right: 15.4%;
+}
+.text-grid{
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  width: 60%;
+  gap: 3rem;
+}
+.text-content{
+  color: rgba(255, 255, 255, 0.80);
+  font-family: Open Sans;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5rem; /* 166.667% */
+}
+.text-content h5{
+  color: rgba(255, 255, 255, 0.85);
+  font-family: Open Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem; /* 227.273% */
+}
+.howtolearn-id{
+  color: rgba(180, 107, 209, 0.50);
+  font-family: Open Sans;
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 3.75rem;
+  font-style: normal;
+}
+.howtolearn-content h6{
+  color: #B46BD1;
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  /* line-height: 3.75rem; */
+}
+
+.howtolearn-content p{
+  color: #B46BD1;
+  font-family: Open Sans;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 3.75rem;  */
+}
+
+/* download syllabus form  */
+.download-syll{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.logo-section{
+  width: 30%;
+  height: 100%;
+  background: url("https://s3-alpha-sig.figma.com/img/8f55/e9ad/4117eff5e62b83d37a7a9028ebafd3f5?Expires=1699833600&Signature=nNG51Lfd1FGtGT9uiHPJjlvPkbwyHHu-gpLGsB2VjD~xSMrkusNprlPMl5hIxZ-L9D8kY3AfdTZ4Kgzy56fA71273xEKI2K0oQyY1cZFRi3Ju2u-M0sZqdlJ08mxpQGc3II6kuWDYZuivm-dgbMgNavP0m5EnNjyflIjMqnCfEDyeIqlfaTTFKXEbEzCgBZUv58WCR0aJEQgSBmjH8Pi9iZ44~1LEMNLvJXsOSR5LzjWjUJ~ViC4e4njvDrV46sFKiffBicyxGGJbQpFJPODNNMeSOuM~C85bivCdrqYrxHGQhjHYAtUAs7F4yWKeuQN4cqAahM3J2ChWp-Mjcw~og__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-section{
+  width: 70%;
+  height: 100%;
+  background: #F8E8FF;
+  box-shadow: 4px 4px 40px 10px rgba(0, 0, 0, 0.20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-section p{
+  color: #FFF;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 3rem;
+}
+.form-section .form-text{
+  width: 100%;
+  font-family: Open Sans;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.49513rem;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #AD60C8;
+}
+::placeholder{
+  color:#B86CD2;
+  font-family: Open Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.49513rem; /* 150% */
+}
+
+/* article */
+.small-nav{
+  width: 100%;
+  display: flex;
+  padding-top: 1rem;
+  /* padding: 1.5625rem 5.8125rem; */
+  justify-content: center;
+  align-items: center;
+  /* gap: 6.875rem; */
+  background: url("https://s3-alpha-sig.figma.com/img/954b/f585/bbb62c4bf11b391b5a590a5c7f62e819?Expires=1699833600&Signature=dN-zOccOlLGm7wipVXI6fHT2X5g-cM1Wv1MacMCswK0sa2NLDy8te2Gkl69RQa-sco2Xurb8XzQZ0bgNr0GCBHH2IzzH8Fzk0wHs-NJx6ALz2rh0VEM2aW59XvNbro4QVcwk3OsI34ZJFOuqysObrbM1pLuFL0EZ7Y-qXuu9q4FzgncUUevy8DWSruabwCjlCnMDoufzwwr9cSM9dtxNTGIsTnWabT8Fo6Yw~s3ad~FTdFNNmzaaawUnnX0xyoNhzrnpnM9t1e9D60M5PSknRnZ7cGrGMkyl1MCTOoQeNZC4puGByQ9~ElwC7jeQgYrG4lxD4wPnO5aIYjhX~VNEcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), lightgray 50% / cover no-repeat;
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.20);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+}
+.article-image{
+  background: url("/assets/article-img.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40rem;
+  flex-shrink: 0;
+}
+.avatar{
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background: url("https://s3-alpha-sig.figma.com/img/2327/78cf/fe933eacc50f758052621a0d808187c6?Expires=1699833600&Signature=Kyx~SP1qo-URdKtf0yOBbWst9Euhf2bk0vX6nPjiYhLXeNDg9bl2iHPFW7fOrw9RusmHnnb9oP0S5XsAPPKZcd0rIXM24mdKcX6O593O3KRdS39s0nPS7HmbUbCH~k7Sj7f1dYcsiDDck2SMPtA6nsU5lyE2pUigoxjx9fJ01ny-TQ6ElL0ruc7cP4OAONxNiYXauLupF~2t7~fXRWXehifxruzU0F7Nbq1jnwlwBti-58N54PAOSRZsBN7BOV27EOgkWqNiNinZ3Hf7b8GvRC2dUuYBI6Onj5WyM69AXfY5N1mMEwJRJrZDS7UkMI3cnLN9xIdWFn5InAqCu6-48w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.article h5{
+  color: #686868;
+  font-family: Raleway;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+}
+.article p{
+  color: #666;
+  text-align: justify;
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7rem; /* 150% */
+  letter-spacing: -0.02rem;
+}
+.phone .form-control{
+  background-color: transparent !important;
+  border: none !important;
+  color: #B86CD2 !important;
+  font-family: Open Sans !important;
+  font-size: 1.2rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 1.49513rem !important; 
+}
+.phone .flag-dropdown{
+  background-color: transparent !important;
+  border: none !important;
+}
+.phone .flag-dropdown:hover{
+  background-color: transparent !important;
+}
+.form-text option{
+  color:#B86CD2;
+  font-family: Open Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.49513rem; /* 150% */
 }

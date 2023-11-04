@@ -13,7 +13,7 @@ const Section1 = ({text}) => {
               </div>
               <div className="first-para" style={{
                 top:"6rem",
-                right:"13%"
+                right:"5%"
               }}>
               <h4>
                 Jason James
@@ -24,7 +24,7 @@ const Section1 = ({text}) => {
             </div>
             <div className="first-para" style={{
               bottom:"2rem",
-              left:"30%",
+              left:"45%",
             }}>
               <h4>
                 Ammy Jay

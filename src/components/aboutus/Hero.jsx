@@ -1,31 +1,21 @@
 import React from "react";
 import Header from "../Header";
+import LandingPage from '../home/LandingPage'
 
 const Hero = () => {
   return (
     <>
-      <div
+       <div
         className="full"
         style={{
           background: "transparent",
-          marginBottom:"28rem"
+          marginBottom:"2rem",
+          height:"150vh",
+          position:"relative",
         }}
       >
-        <Header />
-        <div className="about-first">
-          <div className="img-content" style={{
-            display:"block",
-            position:"absolute",
-            top: "18%",
-            left:"10%",
-            lineHeight:"8rem"
-          }}>
-            <h3>Our Story: Crafting a Visionary Design Education</h3>
-            <button type="button" className="btn">
-              Explore now
-            </button>
-          </div>
-          <div className="container about-first2">
+            <LandingPage/>
+          <div className=" about-first2">
             <div className="container about-content">
               <div className="part1">
                 <h3>About us.</h3>
@@ -63,7 +53,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+        {/* </div>  */}
     </>
   );
 };
