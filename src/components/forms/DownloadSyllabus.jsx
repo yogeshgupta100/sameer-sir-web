@@ -2,11 +2,17 @@ import { useState, useEffect } from 'react'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 
-
-
 export default function DownloadSyllabus() {
     const [phone, setPhone] = useState(null);
     const [courses, setCourses] = useState([]);
+
+    useEffect(() => {
+        (async () => {
+            const res = await fetch('http://localhost:1337/api/courses');
+            const data = await res.json();
+            setCourses(data.data);
+        })();
+    }, [])
         
     return (
         <>
@@ -52,9 +58,10 @@ export default function DownloadSyllabus() {
                         />
                         </div>
                         <select className="form-text" style={{color:"#B86CD2" , fontFamily:"Open Sans" , fontSize:"1.2rem"}}>
+                            <option value={null}>Select Courses</option>
                             {
                                 courses.map(course => (
-                                    <option value={course}>{course}</option>
+                                    <option key={course.id} value={course.id}>{course.attributes.name}</option>
                                 ))
                             }
                         </select>
