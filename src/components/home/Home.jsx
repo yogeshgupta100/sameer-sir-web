@@ -13,6 +13,7 @@ import Testimonies from './Testimonies'
 import Subscribe from '../aboutus/Subscribe'
 import First from './First'
 import AccordionApi from './AccordionApi';
+import Header from '../Header'
 
 const Home = () => {
   const [cardData , setCardData] = useState(CourseData);
@@ -34,6 +35,7 @@ const Home = () => {
 };
   return (
     <div>
+      <Header />
       <LandingPage/>
       <Section1/>
       <Courses cardData={cardData}/>

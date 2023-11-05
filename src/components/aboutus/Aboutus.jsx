@@ -8,6 +8,7 @@ import Subscribe from './Subscribe'
 import Aboutfooter from './Aboutfooter'
 import Teammates from './Teammates'
 import { Button } from 'bootstrap'
+import Header from '../Header'
 
 const Aboutus = () => {
   const [empData , setEmpData] = useState(Card);
@@ -19,6 +20,7 @@ const Aboutus = () => {
     };
   return (
     <>
+        <Header/>
         <Hero/>
         <Section1 text={"What Sets Us Apart"}/>
         <Teammates empData={empData}/>

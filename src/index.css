@@ -809,9 +809,9 @@ letter-spacing: -0.72px;
 .logo-section p{
   color: #FFF;
   font-family: Inter;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   margin: 3rem;
 }
@@ -911,4 +911,15 @@ letter-spacing: -0.72px;
   font-style: normal;
   font-weight: 600;
   line-height: 1.49513rem; /* 150% */
+}
+.banner-section{
+  background: url("https://s3-alpha-sig.figma.com/img/b929/3968/7cefd5a262dcf5d741a8274656a611d2?Expires=1699833600&Signature=GenprUj0c7s0AoBqlUFsL0AGFYMnjy0BXpgs4RH~f0AebicjjvBk5Q5JiARt-uaRnrLc~yD2jx78O-jp9ToMaRbNhtR3uTM2PfdO7y3tJIqN9EBDTjT5xHcbpoUTbHh3V4hE3X04tnaD5VRKOajxIq~SOze4qwuOlOXKNbU3fHTMSH6X9MAky~8vVNSMQimqMItCqkiYY6OxALB8np6usTdX-qlc60UVbb2jp4zMMTED1k2JpyOWb1C4oyxRiDPLxRvcmwTvcWDs6o5KxuZHYnqtefYRNJ8pP7b7d-H3x2-O-VboAOd2LmxrCeI4hUv34de-c077xRswa9kclsJeSQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  width: 100%;
+  height: 30rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

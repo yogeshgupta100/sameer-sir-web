@@ -7,7 +7,7 @@ import Aboutus from './components/aboutus/Aboutus';
 import Graphic from './components/courses/Graphic Design/MainGraphic';
 import DownloadSyllabus from './components/forms/DownloadSyllabus';
 import Articlemain from './components/article/Articlemain';
-import Resource from './components/Resource';
+import Mainresource from './components/resources/Mainresource';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Route path='/courses/graphic' element={<Graphic/>}/>
         <Route path='/forms/downloadSyllabus' element={<DownloadSyllabus/>}/>
         <Route path='/article' element={<Articlemain/>}/>
-        <Route path='/resource' element={<Resource/>}/>
+        <Route path='/resource' element={<Mainresource/>}/>
       </Routes>
       </Router>
     </>

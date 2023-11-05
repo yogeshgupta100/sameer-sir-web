@@ -4,7 +4,6 @@ import Header from '../Header';
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <Header />
       <div className="landing-img">
       </div>
       <div className="centered-text">

@@ -15,7 +15,7 @@ const Hero = () => {
         }}
       >
             <LandingPage/>
-          <div className=" about-first2">
+            <div className=" about-first2">
             <div className="container about-content">
               <div className="part1">
                 <h3>About us.</h3>
