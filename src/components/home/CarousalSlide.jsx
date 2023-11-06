@@ -1,6 +1,6 @@
 import { BsPlay } from "react-icons/bs";
 
-export default function CarousalSlide({ image, content, author, role }) {
+export default function CarousalSlide({ authorImage, testimony, author, authorRole }) {
 	return (
 		<div
 			style={{
@@ -18,7 +18,7 @@ export default function CarousalSlide({ image, content, author, role }) {
 					alignItems: "flex-end",
 					padding: "1.5rem 1rem",
 					aspectRatio: "4/3",
-					backgroundImage: `url("${image}")`,
+					backgroundImage: `url(${import.meta.env.VITE_STRAPI_SERVER_URL}${authorImage.data.attributes.url})`,
 					backgroundSize: "cover",
 					backgroundPosition: "center",
 					backgroundRepeat: "no-repeat",
@@ -68,7 +68,7 @@ export default function CarousalSlide({ image, content, author, role }) {
 							fontFamily:"Open Sans"
 						}}
 					>
-						{content} &nbsp;
+						{testimony} &nbsp;
 					</span>
 					<span
 						style={{
@@ -100,7 +100,7 @@ export default function CarousalSlide({ image, content, author, role }) {
 							fontWeight: "300",
 						}}
 					>
-						{role}
+						{authorRole}
 					</div>
 				</div>
 			</div>

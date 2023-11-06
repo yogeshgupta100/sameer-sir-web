@@ -1,6 +1,20 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 
 const Brands = ({color , textCol}) => {
+    const [brands, setBrands] = useState([]);
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/partners?populate=*`);
+                const data = await res.json();
+                setBrands(data.data);
+            } catch (err) {
+                console.log(err);
+            }
+        })();
+    }, [])
+
   return (
     <div className="row" style={{
         background: color,
@@ -39,6 +53,7 @@ const Brands = ({color , textCol}) => {
         </div>
         <div className="container2" style={{
             display:"flex",
+            flexWrap:"wrap",
             flexDirection:"row",
             justifyContent:"space-evenly",
             textAlign:"center",
@@ -46,34 +61,16 @@ const Brands = ({color , textCol}) => {
             fontWeight:"800",
             fontSize:"1.5rem"
         }}>
-            <p style={{
-                fontFamily:"bebasneue",
-                fontStyle:"normal"
-            }}>NETFLIX</p>
-            <p style={{
-                fontFamily:"bebasneue",
-                fontStyle:"convace"
-            }}>SAMSUNG</p>
-            <p style={{
-                fontFamily:"bebasneue",
-                fontStyle:"convace"
-            }}>SIEMENS</p>
-            <p style={{
-                fontFamily:"bebasneue",
-                fontStyle:"convace"
-            }}>ORACLE</p>
-            <p style={{
-                fontFamily:"bebasneue",
-                fontStyle:"convace"
-            }}>ZOOM</p>
-            <p style={{
-                fontFamily:"bebasneue",
-                fontStyle:"convace"
-            }}>TENCENT</p>
-            <p style={{
-                fontFamily:"bebasneue",
-                fontStyle:"convace"
-            }}>SONY</p>
+            {
+                brands.map((brand) => (
+                    <p style={{
+                        fontFamily:"bebasneue",
+                        fontStyle:"normal"
+                    }}>
+                        <img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${brand?.attributes?.logo?.data?.attributes?.url}`} alt="" />
+                    </p>
+                ))
+            }
         </div>
     </div>
   )

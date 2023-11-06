@@ -1,5 +1,5 @@
 import CarousalSlide from "./CarousalSlide";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 
@@ -24,6 +24,16 @@ export default function Carousal() {
 	const sliderRef = useRef(null);
 	const [currentSlide, setCurrentSlide] = useState(0);
 
+	const [testimonies, setTestimonies] = useState([]);
+
+	useEffect(() => {
+		(async () => {
+			const res = await fetch("http://localhost:1337/api/testimonies?populate=*");
+			const data = await res.json();
+			setTestimonies(data.data);
+		})();
+	}, []);
+
 	return (
 		<div
 			style={{
@@ -40,9 +50,11 @@ export default function Carousal() {
 					transition: "all 0.5s ease-in-out",
 				}}
 			>
-				{data.map((item, index) => (
-					<CarousalSlide key={index} {...item} />
-				))}
+				{testimonies.map((testimony, index) => {
+					return (
+						<CarousalSlide key={index} {...testimony.attributes} />
+					)
+				})}
 			</div>
 
 			<div
