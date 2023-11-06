@@ -1,8 +1,11 @@
 import React from "react";
 import Header from "../../Header";
 import { NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Graphic = ({ data }) => {
+  const { courseId } = useParams();
+
   const applyNow = () => {
     fetch(`${import.meta.env.VITE_EXPRESS_SERVER_URL}/create-checkout-session`, {
       method: "POST",
@@ -11,7 +14,7 @@ const Graphic = ({ data }) => {
       },
       body: JSON.stringify({
         items: [
-          { id: {}, quantity: 1 }
+          { id: parseInt(courseId), quantity: 1 }
         ],
       }),
     })

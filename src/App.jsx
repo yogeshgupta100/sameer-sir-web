@@ -22,6 +22,8 @@ function App() {
         <Route path='/article' element={<Articlemain/>}/>
         <Route path='/resource' element={<Mainresource/>}/>
         <Route path='/courses/:courseId' element={<Course/>}/>
+        {/* <Route path='/success' element={<Articlemain/>}/>
+        <Route path='/cancel' element={<Mainresource/>}/> */}
       </Routes>
       </Router>
     </>
