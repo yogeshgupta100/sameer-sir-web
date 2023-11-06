@@ -83,10 +83,10 @@ export default function DownloadSyllabus() {
                             onChange={phone => setPhone(phone)}
                         />
                         </div>
-                        <select className="form-text" style={{color:"#B86CD2" , fontFamily:"Open Sans" , fontSize:"1.2rem"}}>
-                            <option value={null}>Select Courses</option>
+                        <select className="form-text" style={{color:"#B86CD2" , fontFamily:"Open Sans" , fontSize:"1.2rem" }}>
+                            <option value={null} style={{lineHeight: "1.49513rem"}}>Select Courses</option>
                             {
-                                courses.map(course => (
+                                courses && courses.map(course => (
                                     <option key={course.id} value={course.id}>{course.attributes.name}</option>
                                 ))
                             }

@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import { useEffect, useState } from 'react'
 import Graphic from './Graphic'
 import Subscribe from '../../aboutus/Subscribe'
 import Testimonies from '../../home/Testimonies'
@@ -9,34 +9,52 @@ import Whycourse from './Whycourse'
 import Pricing from './Pricing'
 import Curriculum from './Curriculum'
 import Howyoulearn from './Howyoulearn'
-import CoursespageApi from '../CoursespageApi'
+import { useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
-const MainGraphic = () => {
+const Course = () => {
+    const { courseId } = useParams();
+    const navigate = useNavigate();
+
+    const [courseData , setCourseData] = useState(null);
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/courses/${courseId}?populate=*`)
+                const data = await res.json();
+
+                if (data.data === null) {
+                    navigate("/");
+                } else {
+                    setCourseData(data.data);
+                }
+            } catch (err) {
+                navigate("/");
+            }
+        })();
+    }, [])
+
     const [menuData , setMenuData] = useState(AccordionApi);
-    const [courseData , setCourseData] = useState(CoursespageApi);
     const filterItem = (category) =>{
         const updatedList = AccordionApi.filter((currEle) => {
             return currEle.category === category;
         });
         setMenuData(updatedList);
-        const updatedList1 = CoursespageApi.filter((currEle)=>{
-            return currEle.category === category;
-        });
-        setCourseData(updatedList1);
     }
   return (
     <>
-        <Graphic currEle={courseData}/>
-        <Whycourse/>
-        <Howyoulearn/>
-        <Curriculum/>
-        <Teachers/>
-        <Pricing/>
-        <Testimonies/>
-        <AllCollapseExample menuData={menuData}/>
-        <Subscribe/>
+        <Graphic data={courseData} />
+        <Whycourse data={courseData} />
+        <Howyoulearn data={courseData} />
+        <Curriculum data={courseData} />
+        <Teachers data={courseData} />
+        <Pricing data={courseData} />
+        <Testimonies data={courseData} />
+        <AllCollapseExample menuData={menuData} data={courseData} />
+        <Subscribe data={courseData} />
     </>
   )
 }
 
-export default MainGraphic
+export default Course

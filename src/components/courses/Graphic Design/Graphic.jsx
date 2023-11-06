@@ -2,7 +2,30 @@ import React from "react";
 import Header from "../../Header";
 import { NavLink } from "react-router-dom";
 
-const Graphic = () => {
+const Graphic = ({ data }) => {
+  const applyNow = () => {
+    fetch(`${import.meta.env.VITE_EXPRESS_SERVER_URL}/create-checkout-session`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        items: [
+          { id: {}, quantity: 1 }
+        ],
+      }),
+    })
+      .then(res => {
+        if (res.ok) return res.json()
+        return res.json().then(json => Promise.reject(json))
+      })
+      .then(({ url }) => {
+        window.location = url
+      })
+      .catch(e => {
+        console.error(e.error)
+      })
+  }
   return (
     <>
       <div
@@ -24,17 +47,17 @@ const Graphic = () => {
               letterSpacing: "0.1rem",
             }}
           >
-            Graphic Design Alchemy: Transforming Ideas into Art
+            {data ? data.attributes.name : "loading..."}
           </h2>
           <p style={{ lineHeight: "1.875rem" }}>
-            Immerse Yourself in an Unforgettable Design Experience &Unlock the
-            Secrets of Graphic Design Mastery
+           {data ? data.attributes.description : "loading..."}
           </p>
           <div className="buttons" style={{ display: "flex" }}>
             <button
               type="button"
               className="button"
               id="button"
+              onClick={applyNow}
               style={{
                 borderRadius: "0.6rem",
                 border: "1.1px solid #B86CD2",
