@@ -14,7 +14,7 @@ const Graphic = ({ data }) => {
       },
       body: JSON.stringify({
         items: [
-          { id: parseInt(courseId), quantity: 1 }
+          { id: courseId, quantity: 1 }
         ],
       }),
     })
