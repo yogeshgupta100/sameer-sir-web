@@ -94,9 +94,9 @@ const First = () => {
           </div>
         </div>
         </div>
-        <div className="images" style={{display:"flex" , position:"relative" , alignItems:"end" }}>
-          <div className="man" style={{
-            backgroundImage:`url(${"/assets/man2.png"})`,
+        {/* <div className="images" style={{display:"flex" , position:"relative" , alignItems:"end" }}> */}
+          {/* <div className="man" style={{
+            backgroundImage:`url(${"/assets/home-banner.png"})`,
             backgroundPosition:"center",
             backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
@@ -106,21 +106,21 @@ const First = () => {
             position:"absolute",
             left:"7rem",
             bottom:"-1.5rem"
-          }}></div>
+          }}></div> */}
           <div className="women" style={{
-            backgroundImage:`url(${"/assets/women2.png"})`,
+            backgroundImage:`url(${"/assets/home-banner.png"})`,
             backgroundPosition:"center",
             backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
-            width: "20rem",
-            height: "32rem",
+            width: "50%",
+            height: "30%",
             position:"absolute",
-            bottom:"-5rem",
-            left:"-4.5rem"
+            bottom:"-4rem",
+            right:"0"
         }}></div>
         </div>
       </div>
-    </div>
+    {/* </div> */}
     </>
   )
 }

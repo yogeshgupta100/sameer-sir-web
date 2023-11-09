@@ -12,7 +12,7 @@ const Signup = () => {
   };
 
   return (
-    <div>
+    <>
       {/* <!-- Button trigger modal --> */}
       <button
         type="button"
@@ -113,7 +113,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
