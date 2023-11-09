@@ -14,7 +14,7 @@ const Hero = () => {
           position:"relative",
         }}
       >
-            <LandingPage/>
+            <LandingPage imageurl={""} />
             <div className=" about-first2">
             <div className="container about-content">
               <div className="part1">

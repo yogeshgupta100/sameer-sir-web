@@ -35,7 +35,7 @@ const EmpCard = ({ currEle }) => {
 				</div>
 			</div>
 			<div className="hidden-content">
-				<div class="hidden-content">
+				<div className="hidden-content">
 					<h3>{currEle.attributes.name}</h3>
 					<p>
 						{currEle.attributes.role} at {currEle.attributes.company}

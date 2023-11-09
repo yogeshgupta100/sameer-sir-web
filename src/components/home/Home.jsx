@@ -14,6 +14,7 @@ import Subscribe from '../aboutus/Subscribe'
 import First from './First'
 import AccordionApi from './AccordionApi';
 import Header from '../Header'
+import University from './University'
 
 const Home = () => {
   const [cardData , setCardData] = useState(CourseData);
@@ -34,14 +35,14 @@ const Home = () => {
     setCardData(updatedList);
 };
   return (
-    <div>
+    <div id='home'>
       <Header />
-      <LandingPage/>
+      <LandingPage imageurl={"/assets/home-landing-img.png"}/>
       <Section1/>
       <Courses cardData={cardData}/>
         <Brands color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="#fff"/>
         <Teachers/>
-        <Brands color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="#fff"/>
+        <University color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="#fff"/>
         <Resource/>
         <First/>
         <Testimonies/>

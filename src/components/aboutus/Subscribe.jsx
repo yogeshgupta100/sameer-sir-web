@@ -1,4 +1,7 @@
 import { useRef } from "react";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Subscribe = () => {
 	const inputRef = useRef(null);
@@ -50,7 +53,9 @@ const Subscribe = () => {
 							borderRadius: "0 10px 10px 0",
 						}}
 					>
-						Submit
+						<Popup trigger={<button> Submit</button>} position="bottom right">
+							<div>Thank you for subscribing.</div>
+						</Popup>
 					</button>
 				</div>
 			</div>
@@ -200,10 +205,10 @@ const Subscribe = () => {
 					>
 						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Company</h5>
 						<div className="links" style={{ lineHeight: "0.9rem" }}>
-							<p>About us</p>
-							<p>Home</p>
-							<p>Blogs</p>
-							<p>Feedback</p>
+							<AnchorLink href={"#about"} style={{textDecoration:"none" , color:"#000"}}><p>About us</p></AnchorLink>
+							<AnchorLink href={"#home"} style={{textDecoration:"none" , color:"#000"}}><p>Home</p></AnchorLink>
+							<AnchorLink href={"#blogs"} style={{textDecoration:"none" , color:"#000"}}><p>Blogs</p></AnchorLink>
+							<AnchorLink href={"#"} style={{textDecoration:"none" , color:"#000"}}><p>Feedback</p></AnchorLink>
 						</div>
 					</div>
 					<div
@@ -215,9 +220,9 @@ const Subscribe = () => {
 					>
 						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Courses</h5>
 						<div className="links" style={{ lineHeight: "0.9rem" }}>
-							<p>UX Design</p>
-							<p>GR. Design</p>
-							<p>XR Design</p>
+							<AnchorLink href="#Graphic Design" style={{textDecoration:"none" , color:"#000"}}><p>UX Design</p></AnchorLink>
+							<AnchorLink href="#UI/UX Design" style={{textDecoration:"none" , color:"#000"}}><p>GR. Design</p></AnchorLink>
+							<AnchorLink href="#VR and AR" style={{textDecoration:"none" , color:"#000"}}><p>XR Design</p></AnchorLink>
 						</div>
 					</div>
 					<div
@@ -229,7 +234,7 @@ const Subscribe = () => {
 					>
 						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Resources</h5>
 						<div className="links" style={{ lineHeight: "0.9rem" }}>
-							<p>FAQ's</p>
+						<AnchorLink href="#faq" style={{textDecoration:"none" , color:"#000"}}><p>FAQ's</p></AnchorLink>
 							<p>Study material</p>
 							<p>Policy</p>
 							<p>Privacy</p>

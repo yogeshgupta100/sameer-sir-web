@@ -9,17 +9,17 @@
     overflow:hidden;
   }
   .landing-img{
-    width: 50%;
-    height: 80%;
+    width: 40%;
+    height: 70%;
     flex-shrink: 0;
-    background: url("/assets/home-landing.png"), lightgray 50% / cover no-repeat;
+    /* background: url("/assets/home-landing-img.png"), lightgray 50% / cover no-repeat; */
     background-position: center;
     background-color: transparent;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: -2rem;
-    right: -2rem;
+    right: 2rem;
+    bottom: 5rem;
   }
   
   .navbar {
@@ -28,7 +28,7 @@
   
   .centered-text {
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 39%;
     transform: translate(-50%, -50%);
     text-align: start;

@@ -1,10 +1,9 @@
 import React from 'react';
-import Header from '../Header';
 
-const LandingPage = () => {
+const LandingPage = ({imageurl}) => {
   return (
-    <div className="landing-page">
-      <div className="landing-img">
+    <div className="landing-page" id='home-main'>
+      <div className="landing-img" style={{backgroundImage:`url(${imageurl})`}}>
       </div>
       <div className="centered-text">
         <h2>
