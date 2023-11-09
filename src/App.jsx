@@ -8,6 +8,7 @@ import Course from './components/courses/Graphic Design/MainGraphic';
 import DownloadSyllabus from './components/forms/DownloadSyllabus';
 import Articlemain from './components/article/Articlemain';
 import Mainresource from './components/resources/Mainresource';
+import PrivacyPolicy from './components/Terms&Conditions/PrivacyPolicy';
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
         <Route path='/courses/:courseId' element={<Course/>}/>
         {/* <Route path='/success' element={<Articlemain/>}/>
         <Route path='/cancel' element={<Mainresource/>}/> */}
+        <Route path='/tnc/customer-support' element={<PrivacyPolicy />} />
+        <Route path='/tnc/terms-and-services' element={<PrivacyPolicy />} />
+        <Route path='/tnc/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/tnc/cancellation-and-refund-policy' element={<PrivacyPolicy />} />
       </Routes>
       </Router>
     </>
