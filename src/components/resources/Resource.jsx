@@ -5,6 +5,7 @@ import LandingPage from '../home/LandingPage'
 import Resources from '../home/Resource'
 import Heading from '../aboutus/Heading'
 import DesignCard from './DesignCard'
+import Blog from './Blog'
 
 const Resource = ({designCardData}) => {
   return (
@@ -227,6 +228,10 @@ const Resource = ({designCardData}) => {
       <Resources/>
       <div className="flip-resources" style={{marginTop:"15rem"}}>
         <Resources/>
+      </div>
+      <div className="container" style={{marginTop:"15rem"}}>
+        <Heading content={"Blogs"} left={"30.5%"} />
+        <Blog/>
       </div>
       <div className="banner-section">
         <div style={{

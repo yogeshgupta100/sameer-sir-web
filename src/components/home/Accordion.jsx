@@ -11,7 +11,7 @@ function AllCollapseExample() {
         setMenuData(updatedList);
     };
   return (
-    <>
+    <div id='faq'>
       <div className="faq-heading"><h4>FAQS</h4></div>
         <nav className="faq-nav">
                 <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Institute")}>Institute</button>
@@ -35,7 +35,7 @@ function AllCollapseExample() {
     })}
     </Accordion>
     </div>
-    </>
+    </div>
   );
 };
 

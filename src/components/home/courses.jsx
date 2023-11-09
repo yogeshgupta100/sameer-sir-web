@@ -34,7 +34,7 @@ const Courses = ({ cardData }) => {
 			>
 				{courses.map((course) => {
 					return (
-						<div className="row justify-content-around">
+						<div className="row justify-content-around" id={`${course.attributes.name}`}>
 							<div className="card my-3 px-0">
 								<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${course?.attributes?.thumbnail?.data?.attributes?.url}`} className="card-img-top" alt="course1" />
 								<div
