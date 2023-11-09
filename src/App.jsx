@@ -10,6 +10,7 @@ import Articlemain from './components/article/Articlemain';
 import Mainresource from './components/resources/Mainresource';
 import SuccessPayment from './components/SuccessPayment';
 import CancelPayment from './components/CancelPayment';
+import PrivacyPolicy from './components/Terms&Conditions/PrivacyPolicy';
 
 function App() {
   return (
@@ -26,6 +27,12 @@ function App() {
         <Route path='/courses/:courseId' element={<Course/>}/>
         <Route path='/success' element={<SuccessPayment/>}/>
         <Route path='/cancel' element={<CancelPayment/>}/>
+        {/* <Route path='/success' element={<Articlemain/>}/>
+        <Route path='/cancel' element={<Mainresource/>}/> */}
+        <Route path='/tnc/customer-support' element={<PrivacyPolicy />} />
+        <Route path='/tnc/terms-and-services' element={<PrivacyPolicy />} />
+        <Route path='/tnc/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/tnc/cancellation-and-refund-policy' element={<PrivacyPolicy />} />
       </Routes>
       </Router>
     </>

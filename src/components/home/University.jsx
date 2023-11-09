@@ -63,7 +63,7 @@ const University = ({color , textCol}) => {
             fontSize:"1.5rem"
         }}>
             {
-                university.map((uniEle) => (
+                university && university.map((uniEle) => (
                     <p style={{
                         fontFamily:"bebasneue",
                         fontStyle:"normal"

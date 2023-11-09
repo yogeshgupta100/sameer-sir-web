@@ -13,7 +13,7 @@ const Header = () => {
 	const [isResourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
 	const [isPartnersDropdownOpen, setPartnersDropdownOpen] = useState(false);
 
-  const [navModalActive, setNavModalActive] = useState(false);
+	const [navModalActive, setNavModalActive] = useState(false);
 
 	// Function to handle hover on Courses nav item
 	const handleCoursesHover = () => {
@@ -54,10 +54,8 @@ const Header = () => {
 	};
 	return (
 		<>
-			<div
-				className="navbar navbar-expand-lg" style={{padding:"0" , width:"100%" }}
-			>
-				<div className="container-fluid py-2" style={{backgroundColor:"#fff" ,margin:"0" , height:"6rem"}}>
+			<div className="navbar navbar-expand-lg" style={{ padding: "0", width: "100%" }}>
+				<div className="container-fluid py-2" style={{ backgroundColor: "#fff", margin: "0", height: "6rem" }}>
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -76,18 +74,19 @@ const Header = () => {
 							// position: "absolute",
 							left: "0",
 							display: "flex",
-							justifyContent:"start",
+							justifyContent: "start",
 						}}
 					>
-						<ul className="navbar-nav" style={{
-							display:"flex",
-							justifyContent:"space-evenly",
-							alignItems:"center",
-							marginLeft:"2rem"
-						}}>
-							<li
-								className="nav-item ms-3 dropdown"
-							>
+						<ul
+							className="navbar-nav"
+							style={{
+								display: "flex",
+								justifyContent: "space-evenly",
+								alignItems: "center",
+								marginLeft: "2rem",
+							}}
+						>
+							<li className="nav-item ms-3 dropdown">
 								<NavLink
 									to="/aboutus"
 									aria-current="page"
@@ -102,10 +101,10 @@ const Header = () => {
 											textUnderlinePosition: "none",
 											fontFamily: "Raleway",
 											color: " rgba(0, 0, 0, 0.80)",
-											fontSize:"1rem",
-											fontWeight:"medium",
-											fontStyle:"normal",
-											textAlign:"center"
+											fontSize: "1rem",
+											fontWeight: "medium",
+											fontStyle: "normal",
+											textAlign: "center",
 										}}
 									>
 										About
@@ -113,10 +112,10 @@ const Header = () => {
 								</NavLink>
 							</li>
 							<li
-								className={`nav-item ms-3 ${navModalActive?"active":""}`}
+								className={`nav-item ms-3 ${navModalActive ? "active" : ""}`}
 								// onMouseEnter={handleCoursesHover}
 								// onMouseLeave={handleNavLeave}
-                onClick={() => setNavModalActive(prev => !prev)}
+								onClick={() => setNavModalActive((prev) => !prev)}
 							>
 								<span
 									className="nav-link"
@@ -125,9 +124,9 @@ const Header = () => {
 										textAlign: "center",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize:"1rem",
-										fontWeight:"medium",
-										fontStyle:"normal",
+										fontSize: "1rem",
+										fontWeight: "medium",
+										fontStyle: "normal",
 									}}
 								>
 									Courses
@@ -159,12 +158,18 @@ const Header = () => {
 								className="nav-item ms-3"
 								// onMouseEnter={handleResourcesHover}
 								// onMouseLeave={handleNavLeave}
-                onClick={() => setNavModalActive(prev => !prev)}
+								onClick={() => setNavModalActive((prev) => !prev)}
 							>
 								<span
 									className="nav-link"
-									style={{ cursor: "pointer", fontFamily: "raleway", color: " rgba(0, 0, 0, 0.80)" , fontSize:"1rem" , fontWeight:"medium",
-									fontStyle:"normal",}}
+									style={{
+										cursor: "pointer",
+										fontFamily: "raleway",
+										color: " rgba(0, 0, 0, 0.80)",
+										fontSize: "1rem",
+										fontWeight: "medium",
+										fontStyle: "normal",
+									}}
 								>
 									Resources
 									<img
@@ -196,12 +201,18 @@ const Header = () => {
 								className="nav-item ms-3"
 								// onMouseEnter={handlePartnersHover}
 								// onMouseLeave={handleNavLeave}
-                onClick={() => setNavModalActive(prev => !prev)}
+								onClick={() => setNavModalActive((prev) => !prev)}
 							>
 								<span
 									className="nav-link"
-									style={{ cursor: "pointer", fontFamily: "raleway", color: " rgba(0, 0, 0, 0.80)", fontSize:"1rem" , fontWeight:"medium",
-									fontStyle:"normal",}}
+									style={{
+										cursor: "pointer",
+										fontFamily: "raleway",
+										color: " rgba(0, 0, 0, 0.80)",
+										fontSize: "1rem",
+										fontWeight: "medium",
+										fontStyle: "normal",
+									}}
 								>
 									Career
 									<img
@@ -230,6 +241,7 @@ const Header = () => {
 								</div> */}
 							</li>
 						</ul>
+					</div>
 					<NavLink
 						className="nav-link"
 						aria-current="page"
@@ -237,19 +249,24 @@ const Header = () => {
 						style={{
 							fontFamily: "Raleway",
 							fontSize: "1.5rem",
-							fontStyle:"normal",
+							fontStyle: "normal",
 							// position: "absolute",
 							// left: "50%",
-							marginLeft:"16rem",
+							// marginLeft: "16rem",
 							fontWeight: "700",
-							color:"#000",
 						}}
 					>
 						Logo
 					</NavLink>
+					<div
+						style={{
+							display: "inline-block",
+							width: "fit-content",
+						}}
+					>
+						<Contact />
+						<Signup />
 					</div>
-					<Contact />
-					<Signup />
 					{/* <Login /> */}
 				</div>
 

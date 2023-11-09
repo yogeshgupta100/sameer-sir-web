@@ -48,7 +48,7 @@ const Home = () => {
         <Testimonies/>
         <AllCollapseExample menuData={menuData}/>
         <Subscribe/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }

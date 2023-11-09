@@ -29,20 +29,20 @@
   .centered-text {
     position: absolute;
     top: 50%;
-    left: 39%;
-    transform: translate(-50%, -50%);
+    margin-left: clamp(2rem, 10vw, 7rem);
+    transform: translate(0, -50%);
     text-align: start;
+    width: 60%;
   }
 .centered-text h2{
   font-family: Raleway;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
   font-weight: 700;
   color: #fff;
   margin-bottom: 1rem;
 }
   .centered-text p{
-  width: 38rem;
   color: #fff;
   font-family: Raleway;
   font-size: 1rem;
@@ -54,3 +54,18 @@
   opacity: 0.9;
 }
   /* You can add more styles as needed */
+
+@media screen and (max-width: 640px) {
+  .landing-img {
+    display: none;
+  }
+  .centered-text {
+    width: 80%;
+  }
+  .btn {
+    height: fit-content;
+    width: fit-content;
+    font-size: 1rem;
+    padding: 4px 22px;
+  }
+}
