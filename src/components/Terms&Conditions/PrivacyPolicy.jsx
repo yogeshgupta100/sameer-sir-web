@@ -1,11 +1,13 @@
 import Header from "../Header";
 import Subscribe from "../aboutus/Subscribe";
+import styles from "./tnc.module.css";
 
 export default function PrivacyPolicy() {
 	return (
 		<>
 			<Header />
 			<div
+				className={styles.container}
 				style={{
 					padding: "158px 0",
 					width: "60%",
