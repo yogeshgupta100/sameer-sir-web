@@ -292,6 +292,7 @@ const Header = () => {
 			{/* Courses dropdown */}
 			<NavModal navModalActive={navModalActive} modalState={modalState} setNavModalActive={setNavModalActive} getNavLinks={getNavLinks} />
 		</div>
+		</>
 	);
 };
 
