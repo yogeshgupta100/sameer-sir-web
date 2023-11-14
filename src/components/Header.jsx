@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Login from "./Buttons/Login";
 import SignupBtn from "./Buttons/Signup";
@@ -6,52 +6,14 @@ import "./Header.css";
 import "./home/LandingPage.css";
 import Contact from "./Buttons/Contact";
 import NavModal from "./NavModal";
+import useMultiRefs from "../utility/useMultiRefs";
 
 const Header = () => {
-	const [isCoursesDropdownOpen, setCoursesDropdownOpen] = useState(false);
-	// const [isAboutDropdownOpen, setAboutDropdownOpen] = useState(false);
-	const [isResourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
-	const [isPartnersDropdownOpen, setPartnersDropdownOpen] = useState(false);
-
 	const [navModalActive, setNavModalActive] = useState(false);
+	const [modalState, setModalState] = useState("courses");
 
-	// Function to handle hover on Courses nav item
-	const handleCoursesHover = () => {
-		setCoursesDropdownOpen(true);
-		// setAboutDropdownOpen(false);  Close the About dropdown if open
-		setResourcesDropdownOpen(false); // Close the About dropdown if open
-		setPartnersDropdownOpen(false); // Close the About dropdown if open
-	};
+	const [getNavLinks, addNavLink] = useMultiRefs(null);
 
-	// Function to handle hover on About nav item
-	const handleAboutHover = () => {
-		setCoursesDropdownOpen(false);
-		// setAboutDropdownOpen(true);  Close the About dropdown if open
-		setResourcesDropdownOpen(false); // Close the About dropdown if open
-		setPartnersDropdownOpen(false); // Close the Courses dropdown if open
-	};
-
-	const handleResourcesHover = () => {
-		setCoursesDropdownOpen(false);
-		// setAboutDropdownOpen(false);  Close the About dropdown if open
-		setResourcesDropdownOpen(true); // Close the About dropdown if open
-		setPartnersDropdownOpen(false);
-	};
-
-	const handlePartnersHover = () => {
-		setCoursesDropdownOpen(false);
-		// setAboutDropdownOpen(false);  Close the About dropdown if open
-		setResourcesDropdownOpen(false); // Close the About dropdown if open
-		setPartnersDropdownOpen(true); // Close the Courses dropdown if open
-	};
-
-	// Function to handle mouse leaving the nav items
-	const handleNavLeave = () => {
-		setCoursesDropdownOpen(false);
-		// setAboutDropdownOpen(false);
-		setResourcesDropdownOpen(false);
-		setPartnersDropdownOpen(false);
-	};
 	return (
 		<>
 			<div className="navbar navbar-expand-lg" style={{ padding: "0", width: "100%" , boxShadow:"0px 1px 8px 0px rgba(0, 0, 0, 0.25)"}}>
@@ -327,10 +289,9 @@ const Header = () => {
 					{/* <Login /> */}
 				</div>
 
-				{/* Courses dropdown */}
-				<NavModal navModalActive={navModalActive} />
-			</div>
-		</>
+			{/* Courses dropdown */}
+			<NavModal navModalActive={navModalActive} modalState={modalState} setNavModalActive={setNavModalActive} getNavLinks={getNavLinks} />
+		</div>
 	);
 };
 
