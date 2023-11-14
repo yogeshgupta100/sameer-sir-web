@@ -7,7 +7,8 @@ const First = () => {
       width:"100%",
       height:"50rem",
       position:"relative",
-      overflow:"hidden"
+      overflow:"hidden",
+      paddingRight:"0"
     }}>
       <div className="first-main" style={{
         width:"100%",
@@ -30,7 +31,7 @@ const First = () => {
         position:"absolute",
         top:"3.5rem",
         display:"flex",
-        overflow:"hidden"
+        overflow:"hidden",
       }}>
         <div className="first-content" style={{
           width:"40rem",
@@ -107,17 +108,19 @@ const First = () => {
             left:"7rem",
             bottom:"-1.5rem"
           }}></div> */}
-          <div className="women" style={{
+          <span className="home-banner" style={{
             backgroundImage:`url(${"/assets/home-banner.png"})`,
             backgroundPosition:"center",
             backgroundRepeat:"no-repeat",
-            backgroundSize:"cover",
-            width: "50%",
-            height: "30%",
+            backgroundSize:"contain",
+            width: "40%",
+            height: "55%",
             position:"absolute",
-            bottom:"-4rem",
-            right:"0"
-        }}></div>
+            bottom:"0",
+            right:"-1rem",
+            marginLeft: "clamp(2rem, 10vw, 7rem)",
+            marginTop: "clamp(2rem, 10vw, 7rem)",
+        }}></span>
         </div>
       </div>
     {/* </div> */}

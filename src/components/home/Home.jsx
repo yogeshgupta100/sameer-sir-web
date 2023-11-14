@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import LandingPage from './LandingPage'
 import Section1 from './Section1'
 import Brands from './Brands'
-import Footer from '../Footer'
 import Courses from './courses'
-import CourseData from './CourseData'
 import Card from '../aboutus/cardApi'
 import Teachers from './Teachers'
 import AllCollapseExample from './Accordion'
@@ -17,7 +15,6 @@ import Header from '../Header'
 import University from './University'
 
 const Home = () => {
-  const [cardData , setCardData] = useState(CourseData);
   const [empData , setEmpData] = useState(Card);
   const [menuData , setMenuData] = useState(AccordionApi);
   const filterItem = ({category , position}) =>{
@@ -28,18 +25,13 @@ const Home = () => {
     const updateList = Card.filter((currEle) => {
         return currEle.position === position;
     });
-    setEmpData(updateList);
-    const updatedList = CourseData.filter((currEle) => {
-        return currEle.position === position;
-    });
-    setCardData(updatedList);
 };
   return (
     <div id='home'>
       <Header />
       <LandingPage imageurl={"/assets/home-landing-img.png"}/>
       <Section1/>
-      <Courses cardData={cardData}/>
+      <Courses/>
         <Brands color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="#fff"/>
         <Teachers/>
         <University color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="#fff"/>
@@ -48,7 +40,6 @@ const Home = () => {
         <Testimonies/>
         <AllCollapseExample menuData={menuData}/>
         <Subscribe/>
-      <Footer/>
     </div>
   )
 }

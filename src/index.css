@@ -829,7 +829,7 @@ letter-spacing: -0.72px;
 ::placeholder{
   color:#B86CD2;
   font-family: Open Sans;
-  font-size: 1.2rem;
+  font-size: clamp(0.5rem,5vw,1.2rem);
   font-style: normal;
   font-weight: 600;
   line-height: 1.49513rem; /* 150% */
@@ -922,4 +922,45 @@ letter-spacing: -0.72px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 640px) {
+  .home-banner {
+    display: none;
+  }
+  
+
+  .first {
+    width: 80%;
+  }
+  .btn {
+    height: fit-content;
+    width: fit-content;
+    font-size: 1rem;
+    padding: 4px 22px;
+  }
+  .navbar-logo{
+    display: none;
+  }
+  .collapse{
+    display: none;
+  }
+
+  .nav-item{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .nav-item{
+    display: none;
+  }
+  .navbar-logo{
+    display: none;
+  }
+  .navbar-toggler{
+    display: inline-block;
+  }
+  .footer-img{
+    display: none;
+  }
 }

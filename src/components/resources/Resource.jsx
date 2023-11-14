@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../Header'
-import { NavLink } from 'react-router-dom'
 import LandingPage from '../home/LandingPage'
 import Resources from '../home/Resource'
 import Heading from '../aboutus/Heading'
 import DesignCard from './DesignCard'
 import Blog from './Blog'
+import Small_nav from '../Small_nav';
+import Portfolio from './Portfolio'
 
 const Resource = ({designCardData}) => {
   return (
@@ -17,130 +18,7 @@ const Resource = ({designCardData}) => {
       <Header/>
         </div>
       <div className="full-body" style={{position:"relative" , width:"100vw" , marginBottom:"28rem"}}>
-      <div className="small-nav container" style={{position:"absolute" , top:"0" , left:"7%" , zIndex:"10"}}>
-          <ul
-            style={{
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              justifyContent: "space-evenly",
-              textDecoration: "none",
-              alignItems: "center",
-              listStyleType:"none",
-            }}
-          >
-            <li style={{ textDecoration: "none" }}>
-              <NavLink
-                to={"/all"}
-                style={{
-                  textDecoration: "none",
-                }}
-              >
-                <span
-                  style={{
-                    cursor: "pointer",
-                    fontFamily: "Raleway",
-                    color: "#fff",
-                    fontSize: "1rem",
-                    fontWeight: "medium",
-                    fontStyle: "normal",
-                    textAlign: "center",
-                  }}>
-                  All
-                </span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={"/graphic "}
-                style={{
-                  textDecoration: "none",
-                }}
-              >
-                
-                <span
-                  style={{
-                    cursor: "pointer",
-                    fontFamily: "Raleway",
-                    color: "#fff",
-                    fontSize: "1rem",
-                    fontWeight: "medium",
-                    fontStyle: "normal",
-                    textAlign: "center",
-                  }}
-                >
-                  Graphic Design 
-                </span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={"/ui/ux"}
-                style={{
-                  textDecoration: "none",
-                }}
-              >
-                <span
-                  style={{
-                    cursor: "pointer",
-                    fontFamily: "Raleway",
-                    color: "#fff",
-                    fontSize: "1rem",
-                    fontWeight: "medium",
-                    fontStyle: "normal",
-                    textAlign: "center",
-                  }}
-                >
-                  Ui/UX Design
-                </span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={"/virtualReality"}
-                style={{
-                  textDecoration: "none",
-                }}
-              >
-                <span
-                  style={{
-                    cursor: "pointer",
-                    fontFamily: "Raleway",
-                    color: "#fff",
-                    fontSize: "1rem",
-                    fontWeight: "medium",
-                    fontStyle: "normal",
-                    textAlign: "center",
-                  }}
-                >
-                  Virtual Reality
-                </span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={"/all"}
-                style={{
-                  textDecoration: "none",
-                }}
-              >
-                <span
-                  style={{
-                    cursor: "pointer",
-                    fontFamily: "Raleway",
-                    color: "#fff",
-                    fontSize: "1rem",
-                    fontWeight: "medium",
-                    fontStyle: "normal",
-                    textAlign: "center",
-                  }}
-                >
-                  Art
-                </span>
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+        <Small_nav/>
         <LandingPage/>
         <div
         className=" about-first2"
@@ -227,9 +105,9 @@ const Resource = ({designCardData}) => {
       </div>
       <Resources/>
       <div className="flip-resources" style={{marginTop:"15rem"}}>
-        <Resources/>
+        <Resources/>  
       </div>
-      <div className="container" style={{marginTop:"15rem"}}>
+      <div className="container" style={{marginTop:"15rem"}} id='blogs'>
         <Heading content={"Blogs"} left={"30.5%"} />
         <Blog/>
       </div>
@@ -246,6 +124,7 @@ const Resource = ({designCardData}) => {
         <button style={{marginTop:"2rem"}} id='button' className='btn'>Upload now</button>
         </div>
       </div>
+      <Portfolio/>
         <div className="container" style={{marginTop:"9rem"}}>
         <Heading content={"Design Challenges"} left={"30.5%"} />
         <div className="DesignCard container" style={{

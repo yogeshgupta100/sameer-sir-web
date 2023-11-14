@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Signup = () => {
+const SignupBtn = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -14,6 +15,7 @@ const Signup = () => {
   return (
     <>
       {/* <!-- Button trigger modal --> */}
+      <NavLink to={"/signup"}>
       <button
         type="button"
         className="button"
@@ -30,9 +32,10 @@ const Signup = () => {
       >
         Sign in
       </button>
+      </NavLink>
 
       {/* <!-- Modal --> */}
-      <div
+      {/* <div
         className={`modal fade ${isModalOpen ? 'show' : ''}`}
         id="signupModal"
         tabIndex="-1"
@@ -112,9 +115,9 @@ const Signup = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
 
-export default Signup;
+export default SignupBtn;

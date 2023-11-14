@@ -1,10 +1,10 @@
-import Header from "../Header";
+import Navbar from "../Navbar";
 import Subscribe from "../aboutus/Subscribe";
 
 export default function PrivacyPolicy() {
 	return (
 		<>
-			<Header />
+			<Navbar />
 			<div
 				style={{
 					padding: "158px 0",
@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
 					textAlign: "justify",
 				}}
 			>
-				<h3 style={{ color: "#B46BD1" }}>Privacy and Policy</h3>
+				<h2 style={{ color: "#B46BD1" }}>Privacy and Policy</h2>
 				<h5 style={{ fontWeight: "normal", margin: "3rem 0 7rem" }}>Effective Date: 09/11/2023</h5>
 				<p>
 					Welcome to Dxolve. We are committed to protecting your privacy and ensuring the security of your

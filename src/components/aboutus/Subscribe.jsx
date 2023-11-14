@@ -1,10 +1,21 @@
-import { useRef } from "react";
+import { useRef , useState , useEffect} from "react";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router-dom";
 
 const Subscribe = () => {
+	const [courses, setCourses] = useState([]);
 	const inputRef = useRef(null);
+
+	useEffect(() => {
+		(async () => {
+			const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/courses?populate=*`);
+			const data = await res.json();
+			console.log(data.data);
+			setCourses(data.data);
+		})();
+	}, []);
 
 	function subscribe() {
 		const email = inputRef.current.value;
@@ -38,7 +49,7 @@ const Subscribe = () => {
 								border: "none",
 								height: "100%",
 								padding: "0 2rem",
-								fontSize: "1.2rem",
+								fontSize: "clamp(1rem,5vw,1.2rem)",
 								color: "#B86CD2",
 								fontWeight: "600",
 							}}
@@ -51,9 +62,12 @@ const Subscribe = () => {
 						onClick={subscribe}
 						style={{
 							borderRadius: "0 10px 10px 0",
+							width:"35%",
+							padding:"0",
+							margin:"0"
 						}}
 					>
-						<Popup trigger={<button> Submit</button>} position="bottom right">
+						<Popup trigger={<button style={{fontSize:"clamp(0.3rem,5vw,1.2rem)" , paddingLeft:"0" , width:"100%"}}> Submit</button>} position="bottom right">
 							<div>Thank you for subscribing.</div>
 						</Popup>
 					</button>
@@ -62,7 +76,7 @@ const Subscribe = () => {
 			<div
 				className="final-foot"
 				style={{
-					width: "100vw",
+					width: "100%",
 					height: "32rem",
 					backgroundColor: "#F6F6F1",
 					position: "relative",
@@ -82,7 +96,7 @@ const Subscribe = () => {
 						className="icon-container"
 						style={{
 							display: "block",
-							width: "24rem",
+							width: "30%",
 							flexShrink: "0",
 						}}
 					>
@@ -196,78 +210,93 @@ const Subscribe = () => {
 							backgroundColor: "#797979",
 						}}
 					></div>
+					<div className="links" style={{
+						display:"grid",
+						gridTemplateColumns:"repeat(4,1fr)",
+						gap:"2rem",
+						justifyContent:"center",
+						// alignItems:"center",
+						marginLeft:"1rem"
+					}}>
 					<div
 						className="company"
 						style={{
-							margin: "0.6rem 2.5rem",
+							// margin: "0.6rem 2.5rem",
 							fontFamily: "Raleway",
 						}}
 					>
 						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Company</h5>
 						<div className="links" style={{ lineHeight: "0.9rem" }}>
-							<AnchorLink href={"#about"} style={{textDecoration:"none" , color:"#000"}}><p>About us</p></AnchorLink>
-							<AnchorLink href={"#home"} style={{textDecoration:"none" , color:"#000"}}><p>Home</p></AnchorLink>
-							<AnchorLink href={"#blogs"} style={{textDecoration:"none" , color:"#000"}}><p>Blogs</p></AnchorLink>
-							<AnchorLink href={"#"} style={{textDecoration:"none" , color:"#000"}}><p>Feedback</p></AnchorLink>
+							<Link to={"/about"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>About us</p></Link>
+							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Home</p></Link>
+							<Link to={"/resource#blogs"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Blogs</p></Link>
+							<Link to={"/#faq"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Feedback</p></Link>
 						</div>
 					</div>
 					<div
 						className="company"
 						style={{
-							margin: "0.6rem 2.5rem",
+							// margin: "0.6rem 2.5rem",
 							fontFamily: "Raleway",
 						}}
 					>
 						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Courses</h5>
 						<div className="links" style={{ lineHeight: "0.9rem" }}>
-							<AnchorLink href="#Graphic Design" style={{textDecoration:"none" , color:"#000"}}><p>UX Design</p></AnchorLink>
-							<AnchorLink href="#UI/UX Design" style={{textDecoration:"none" , color:"#000"}}><p>GR. Design</p></AnchorLink>
-							<AnchorLink href="#VR and AR" style={{textDecoration:"none" , color:"#000"}}><p>XR Design</p></AnchorLink>
+							{courses && courses.map((currEle)=>{
+								return(
+									<Link to={`#${currEle.attributes.name}`} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>{currEle?.attributes?.name}</p></Link>
+								)
+							})}
 						</div>
 					</div>
 					<div
 						className="company"
 						style={{
-							margin: "0.6rem 2.5rem",
+							// margin: "0.6rem 2.5rem",
 							fontFamily: "Raleway",
 						}}
 					>
 						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Resources</h5>
 						<div className="links" style={{ lineHeight: "0.9rem" }}>
-						<AnchorLink href="#faq" style={{textDecoration:"none" , color:"#000"}}><p>FAQ's</p></AnchorLink>
-							<p>Study material</p>
-							<p>Policy</p>
-							<p>Privacy</p>
+						<Link to="#faq" reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>FAQ's</p></Link>
+						<Link to={`/courses/1`} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Study material</p></Link>
+						<Link to="/tnc/privacy-policy" reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Privacy Policy</p></Link>	
+						<Link to="/tnc/terms-and-services" reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Terms and Services</p></Link>	
+						{/* <Link to="/tnc/customer-support" reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Customer Support</p></Link>	
+						<Link to="/tnc/cancellation-and-refund" reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Cancellation and Refund</p></Link>	 */}
 						</div>
 					</div>
 					<div
 						className="company"
 						style={{
-							margin: "0.6rem 2.5rem",
+							// margin: "0.6rem 2.5rem",
 							fontFamily: "Raleway",
 						}}
 					>
 						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Career</h5>
 						<div className="links" style={{ lineHeight: "0.9rem" }}>
-							<p>Join us</p>
-							<p>Achivements</p>
-							<p>Team</p>
+							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Join us</p></Link>
+							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Achivements</p></Link>
+							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Team</p></Link>
 						</div>
 					</div>
+					</div>
+					<span className="footer-img">
 					<img
-						src="/assets/man2.png"
+						src="https://s3-alpha-sig.figma.com/img/b23e/bc3e/fbcfdb6d7f8f4c60a3651ce309bce7fa?Expires=1700438400&Signature=kybANVmpeFojfwDimVPj3SsdaKWRpYsrSMG2XS~YRBBnwA2y2be-r~9RIY4M4VjXZfPgUPY~9su358Nt~mslaUZ~yMJN9jCf8UcTmn2ow3DY2dmqlmKDIJEGBqXY1HwlnzHEM06LRJqiPC2M6KvE6CfY4tuqfasVtN8kci-xWMGkaf32wd~6lSKs58MWRkjDGjgDAmKrJvP9~nSq0OREDt7HwkXUWMUIJ6GF6BZhd92HnIN63lcRYQEjkGVg9Dv6TCAqryL-pb4QTM9wZbtFTXc8prFOB0lxYZJAo2CDPm3obG0rmcHWJbGyh3D4JNGgLVpmariIX6uHpuk3wadUFw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
 						alt="man"
 						style={{
-							width: "20rem",
-							height: "27rem",
+							width: "35%",
+							height: "100%",
 							flexShrink: "0",
 							position: "absolute",
-							right: "0",
+							right: "-6rem",
 							bottom: "-3rem",
 							padding: "0",
 							margin: "0",
 						}}
 					></img>
+					</span>
 				</div>
 			</div>
 			<div
@@ -294,7 +323,7 @@ const Subscribe = () => {
 						lineHeight: "2.5rem" /* 250% */,
 					}}
 				>
-					Copyright @ xyz.com
+					Copyright @ Dxolve.com
 				</p>
 			</div>
 		</>

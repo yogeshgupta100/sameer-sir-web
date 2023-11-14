@@ -3,7 +3,7 @@ import React from "react";
 import Heading from "../aboutus/Heading";
 import { useState, useEffect } from "react";
 
-const Courses = ({ cardData }) => {
+const Courses = () => {
 	const [courses, setCourses] = useState([]);
 
 	useEffect(() => {
