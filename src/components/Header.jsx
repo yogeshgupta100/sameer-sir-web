@@ -82,10 +82,16 @@ const Header = () => {
 								</NavLink>
 							</li>
 							<li
-								className={`nav-item ms-3 ${navModalActive ? "active" : ""}`}
+								ref={addNavLink}
+								className={`nav-item ms-3 ${
+									navModalActive && modalState === "courses" ? "active" : ""
+								}`}
 								// onMouseEnter={handleCoursesHover}
 								// onMouseLeave={handleNavLeave}
-								onClick={() => setNavModalActive((prev) => !prev)}
+								onClick={() => {
+									setNavModalActive((prev) => modalState !== "courses" || !prev);
+									setModalState("courses");
+								}}
 							>
 								<span
 									className="nav-link"
@@ -125,10 +131,16 @@ const Header = () => {
 								</div> */}
 							</li>
 							<li
-								className="nav-item ms-3"
+								ref={addNavLink}
+								className={`nav-item ms-3 ${
+									navModalActive && modalState === "resources" ? "active" : ""
+								}`}
 								// onMouseEnter={handleResourcesHover}
 								// onMouseLeave={handleNavLeave}
-								onClick={() => setNavModalActive((prev) => !prev)}
+								onClick={() => {
+									setNavModalActive((prev) => modalState !== "resources" || !prev);
+									setModalState("resources");
+								}}
 							>
 								<span
 									className="nav-link"
@@ -168,10 +180,14 @@ const Header = () => {
 								</div> */}
 							</li>
 							<li
-								className="nav-item ms-3"
+								ref={addNavLink}
+								className={`nav-item ms-3 ${navModalActive && modalState === "career" ? "active" : ""}`}
 								// onMouseEnter={handlePartnersHover}
 								// onMouseLeave={handleNavLeave}
-								onClick={() => setNavModalActive((prev) => !prev)}
+								onClick={() => {
+									setNavModalActive((prev) => modalState !== "career" || !prev);
+									setModalState("career");
+								}}
 							>
 								<span
 									className="nav-link"
