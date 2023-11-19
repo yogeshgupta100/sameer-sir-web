@@ -28,7 +28,7 @@ export default function Carousal() {
 
 	useEffect(() => {
 		(async () => {
-			const res = await fetch(`${process.env.VITE_STRAPI_SERVER_URL}/api/testimonies?populate=*`);
+			const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/testimonies?populate=*`);
 			const data = await res.json();
 			setTestimonies(data.data);
 		})();
@@ -51,9 +51,7 @@ export default function Carousal() {
 				}}
 			>
 				{testimonies.map((testimony, index) => {
-					return (
-						<CarousalSlide key={index} {...testimony.attributes} />
-					)
+					return <CarousalSlide key={index} {...testimony.attributes} />;
 				})}
 			</div>
 
