@@ -28,7 +28,7 @@ export default function Carousal() {
 
 	useEffect(() => {
 		(async () => {
-			const res = await fetch("http://localhost:1337/api/testimonies?populate=*");
+			const res = await fetch(`${process.env.VITE_STRAPI_SERVER_URL}/api/testimonies?populate=*`);
 			const data = await res.json();
 			setTestimonies(data.data);
 		})();

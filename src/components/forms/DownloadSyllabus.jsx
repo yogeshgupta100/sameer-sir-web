@@ -15,7 +15,7 @@ export default function DownloadSyllabus() {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch('http://localhost:1337/api/courses');
+            const res = await fetch(`${process.env.VITE_STRAPI_SERVER_URL}/api/courses`);
             const data = await res.json();
             setCourses(data.data);
         })();
