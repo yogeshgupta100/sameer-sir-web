@@ -1,14 +1,20 @@
 import styles from "./chatbot.module.css";
 import { useState, useRef } from "react";
 
-const botMap = new Map([[1, { message: "Hi there!👋 How can I help you?", options: [1, 2, 3, 4, 5] }]]);
+const botMap = new Map([
+	[1, { message: "Hi there!👋 How can I help you?", options: [1, 2, 3, 4, 5] }],
+	[2, { message: "Option 2 Sucks dude!", options: [5] }],
+	[3, { message: "Option 3 Sucks dude!", options: [5] }],
+	[4, { message: "Option 4 Sucks dude!", options: [5] }],
+	[5, { message: "Option 5 Sucks dude!", options: [5] }],
+]);
 
 const userMap = new Map([
 	[1, { message: "option 1", trigger: 1 }],
-	[2, { message: "option 2", trigger: 1 }],
-	[3, { message: "option 3", trigger: 1 }],
-	[4, { message: "option 4", trigger: 1 }],
-	[5, { message: "option 5", trigger: 1 }],
+	[2, { message: "option 2", trigger: 2 }],
+	[3, { message: "option 3", trigger: 3 }],
+	[4, { message: "option 4", trigger: 4 }],
+	[5, { message: "reset", trigger: 1 }],
 ]);
 
 export default function Chatbot() {
