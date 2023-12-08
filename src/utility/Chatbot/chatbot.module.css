@@ -50,7 +50,7 @@
 	width: 100%;
 	overflow-x: hidden;
 }
-.chatbox::-webkit-scrollbar {
+.chat::-webkit-scrollbar {
 	display: none;
   }
 
