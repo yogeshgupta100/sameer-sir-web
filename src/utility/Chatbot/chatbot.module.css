@@ -1,7 +1,7 @@
 .btn {
 	position: fixed;
-	bottom: 30px;
-	right: 30px;
+	bottom: 1.875rem;
+	right: 1.875rem;
 	z-index: 999;
 	border-radius: 50%;
 	border: none;
@@ -40,6 +40,7 @@
 .active .collapsableContainer {
 	height: 300px;
 	width: 300px;
+	z-index: 10;
 }
 
 .chatbox {
@@ -48,9 +49,12 @@
 	background-color: white;
     height: 300px;
 	width: 300px;
-	overflow-y: auto;
 	overflow-x: hidden;
+	/* overflow-y: auto; */
 }
+.chatbox::-webkit-scrollbar {
+	display: none;
+  }
 
 .heading {
 	width: 300px;

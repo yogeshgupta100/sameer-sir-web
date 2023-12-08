@@ -50,14 +50,15 @@ function Section1() {
 					display: "flex",
 					justifyContent: "center",
 					alignItems: "center",
-					height: "80%",
+					minHeight: "80%",
 				}}
-			>
+				>
 				<div className="col">
 					<div
 						className="awesomeCounter"
 						style={{
 							textAlign: "center",
+							fontSize:"clamp(1rem , 4px , 5rem)"
 						}}
 					>
 						<span

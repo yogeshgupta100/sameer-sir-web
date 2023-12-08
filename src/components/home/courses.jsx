@@ -15,26 +15,18 @@ const Courses = () => {
 	}, []);
 
 	return (
-		<div className="container py-0 my-0 mb-0 mt-0">
+		<div className="course_section" style={{Width:"100vw" }}>
 			<div className="row mt-5">
 				<div className="col-12 text-center mt-5">
 					<Heading content={"Explore our well knitted courses"} left={"32.5%"} />
 				</div>
 			</div>
             
-
 			<div
-				className="mt-3"
-				style={{
-					width: "100%",
-					display: "grid",
-					gridTemplateColumns: "repeat(3,auto)",
-					margin: "0 0 12rem",
-				}}
+				className="course-container"
 			>
 				{courses.map((course) => {
 					return (
-						<div className="row justify-content-around" id={`${course.attributes.name}`}>
 							<div className="card my-3 px-0">
 								<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${course?.attributes?.thumbnail?.data?.attributes?.url}`} className="card-img-top" alt="course1" />
 								<div
@@ -152,32 +144,31 @@ const Courses = () => {
 									</NavLink>
 								</div>
 							</div>
-						</div>
 					);
 				})}
 
-				{/* <div className="row justify-content-around">
-                        <div className="card my-3 px-0" style={{width: "24.8rem" , overflow:"hidden"}}>
-                            <img src="/assets/course2.jpg" className="card-img-top" alt='course1'/>
-                    <div className="card-body text-center">
-                        <h5 className="card-title">UI/UX Design</h5>
-                        <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <NavLink to={`../components/Home.jsx`} className="btn btn-outline-primary">Buy Now</NavLink>
-                    </div>
-</div>
-                        </div>
-                        <div className="row justify-content-around">
-                        <div className="card my-3 px-0" style={{width: "24.8rem" , overflow:"hidden"}}>
-                            <img src="/assets/course3.jpg" className="card-img-top" alt='course1'/>
-                    <div className="card-body text-center">
-                        <h5 className="card-title">UI/UX Design</h5>
-                        <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <NavLink to={`../components/Home.jsx`} className="btn btn-outline-primary">Buy Now</NavLink>
-                    </div>
-</div>
-                        </div> */}
 			</div>
-		</div>
+			{/* <div className="row justify-content-around">
+					<div className="card my-3 px-0" style={{width: "24.8rem" , overflow:"hidden"}}>
+						<img src="/assets/course2.jpg" className="card-img-top" alt='course1'/>
+				<div className="card-body text-center">
+					<h5 className="card-title">UI/UX Design</h5>
+					<p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<NavLink to={`../components/Home.jsx`} className="btn btn-outline-primary">Buy Now</NavLink>
+				</div>
+</div>
+					</div>
+					<div className="row justify-content-around">
+					<div className="card my-3 px-0" style={{width: "24.8rem" , overflow:"hidden"}}>
+						<img src="/assets/course3.jpg" className="card-img-top" alt='course1'/>
+				<div className="card-body text-center">
+					<h5 className="card-title">UI/UX Design</h5>
+					<p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<NavLink to={`../components/Home.jsx`} className="btn btn-outline-primary">Buy Now</NavLink>
+				</div>
+</div>
+					</div> */}
+			</div>
 	);
 };
 
