@@ -3,18 +3,17 @@ import { useState, useRef } from "react";
 
 const botMap = new Map([
 	[1, { message: "Hi there!👋 How can I help you?", options: [1, 2, 3, 4, 5] }],
-	[2, { message: "Option 2 Sucks dude!", options: [5] }],
-	[3, { message: "Option 3 Sucks dude!", options: [5] }],
-	[4, { message: "Option 4 Sucks dude!", options: [5] }],
-	[5, { message: "Option 5 Sucks dude!", options: [5] }],
+	[2, { message: "Scheduled a Meeting at 10:30 A.M. IST on 31st December 2023 👍", options: [5] }],
+	[3, { message: "Serving Breakfast in 30 minutes 😋", options: [5] }],
+	[4, { message: "Sales Team : +91-8888888888", options: [5] }],
 ]);
 
 const userMap = new Map([
-	[1, { message: "option 1", trigger: 1 }],
-	[2, { message: "option 2", trigger: 2 }],
-	[3, { message: "option 3", trigger: 3 }],
-	[4, { message: "option 4", trigger: 4 }],
-	[5, { message: "reset", trigger: 1 }],
+	[1, { message: "Call Customer Care", trigger: 1 }],
+	[2, { message: "Schedule a Meeting", trigger: 2 }],
+	[3, { message: "Make Breakfast", trigger: 3 }],
+	[4, { message: "Contact Sales", trigger: 4 }],
+	[5, { message: "Restart Chat", trigger: 1 }],
 ]);
 
 export default function Chatbot() {
@@ -27,7 +26,7 @@ export default function Chatbot() {
 	}
 
 	return (
-		<div ref={chatbotRef}>
+		<div ref={chatbotRef} className={styles.active}>
 			<button className={styles.btn} onClick={toggleChatbot}>
 				<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
 					<path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z" />
