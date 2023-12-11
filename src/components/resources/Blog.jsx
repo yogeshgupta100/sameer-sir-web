@@ -16,10 +16,10 @@ const Blog = () => {
     <div
 				className="card-contain"
 				style={{
-					width: "100%",
+					maxWidth: "100vw",
 					display: "grid",
 					gridTemplateColumns: "repeat(3,auto)",
-					margin: "0 0 12rem",
+					margin: "0 0 13.32vw",
 				}}
 			>
       {blog.map((currEle) => {

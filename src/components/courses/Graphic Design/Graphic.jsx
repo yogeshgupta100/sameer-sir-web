@@ -33,7 +33,7 @@ const Graphic = ({ data }) => {
     <>
       <div
         className="landing-page"
-        style={{ height: "130vh", position: "relative" , marginBottom:"30rem"}}
+        style={{ height: "130vh", position: "relative" , marginBottom:"33.3vw"}}
       >
         <Header />
         <div
@@ -42,17 +42,17 @@ const Graphic = ({ data }) => {
         >
           <h2
             style={{
-              width: "48rem",
-              fontSize: "2.4rem",
+              maxWidth: "53.28vw",
+              fontSize: "2.664vw",
               fontWeight: "700",
-              lineHeight: "3rem",
+              lineHeight: "3.33vw",
               fontFamily: "Raleway",
-              letterSpacing: "0.1rem",
+              letterSpacing: "0.111vw",
             }}
           >
             {data ? data.attributes.name : "loading..."}
           </h2>
-          <p style={{ lineHeight: "1.875rem" }}>
+          <p style={{ lineHeight: "2.08vw" }}>
            {data ? data.attributes.description : "loading..."}
           </p>
           <div className="buttons" style={{ display: "flex" }}>
@@ -62,12 +62,12 @@ const Graphic = ({ data }) => {
               id="button"
               onClick={applyNow}
               style={{
-                borderRadius: "0.6rem",
-                border: "1.1px solid #B86CD2",
-                marginRight: "1rem",
-                padding: "0.625rem 3.3rem",
+                borderRadius: "0.666vw",
+                border: "0.076vw solid #B86CD2",
+                marginRight: "1.11vw",
+                padding: "0.693vw 3.663vw",
                 fontWeight: "500",
-                fontSize: "1.04rem",
+                fontSize: "1.1544vw",
               }}
             >
               Apply now
@@ -78,26 +78,26 @@ const Graphic = ({ data }) => {
               className="btn"
               // id='button'
               style={{
-                borderRadius: "0.6rem",
-                border: "1.1px solid #fff",
-                marginRight: "1rem",
-                padding: "0.625rem 1rem",
+                borderRadius: "0.666vw",
+                border: "0.076vw solid #B86CD2",
+                marginRight: "1.11vw",
+                padding: "0.693vw 3.663vw",
                 fontWeight: "500",
-                fontSize: "1.04rem",
+                fontSize: "1.1544vw",
               }}
             >
               Download syllabus
             </button>
             </NavLink>
           </div>
-          <div style={{ width: "100%", marginTop: "5rem" }}>
+          <div style={{ width: "100%", marginTop: "5.55vw" }}>
             <p style={{ margin: "0" }}>Tools covered</p>
             <div
               className="extra-buttons"
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(4,7rem)",
-                gap: "0.654rem",
+                gridTemplateColumns: "repeat(4,7.77vw)",
+                gap: "0.726vw",
                 marginTop: "0",
               }}
             >
@@ -106,10 +106,10 @@ const Graphic = ({ data }) => {
                 className="button"
                 id="button"
                 style={{
-                  borderRadius: "0.3rem",
-                  border: "1.1px solid #B86CD2",
+                  borderRadius: "0.333vw",
+                  border: "0.076vw solid #B86CD2",
                   fontWeight: "400",
-                  fontSize: "0.8rem",
+                  fontSize: "0.888vw",
                 }}
               >
                 Unreal Engine
@@ -119,10 +119,10 @@ const Graphic = ({ data }) => {
                 className="button"
                 id="button"
                 style={{
-                  borderRadius: "0.3rem",
-                  border: "1.1px solid #B86CD2",
+                  borderRadius: "0.333vw",
+                  border: "0.076vw solid #B86CD2",
                   fontWeight: "400",
-                  fontSize: "0.8rem",
+                  fontSize: "0.888vw",
                 }}
               >
                 Unity 3d
@@ -132,10 +132,10 @@ const Graphic = ({ data }) => {
                 className="button"
                 id="button"
                 style={{
-                  borderRadius: "0.3rem",
-                  border: "1.1px solid #B86CD2",
+                  borderRadius: "0.333vw",
+                  border: "0.076vw solid #B86CD2",
                   fontWeight: "400",
-                  fontSize: "0.8rem",
+                  fontSize: "0.888vw",
                 }}
               >
                 Steam VR
@@ -145,10 +145,10 @@ const Graphic = ({ data }) => {
                 className="button"
                 id="button"
                 style={{
-                  borderRadius: "0.3rem",
-                  border: "1.1px solid #B86CD2",
+                  borderRadius: "0.333vw",
+                  border: "0.076vw solid #B86CD2",
                   fontWeight: "400",
-                  fontSize: "0.8rem",
+                  fontSize: "0.888vw",
                 }}
               >
                 Vuforia
@@ -159,24 +159,24 @@ const Graphic = ({ data }) => {
       </div>
       <div
         className=" about-first2"
-        style={{ position: "absolute", bottom: "-33rem" , display:"flex", alignItems:"center" , height:"25rem" , paddingLeft:"3rem"}}
+        style={{ position: "absolute", bottom: "-36.63vw" , display:"flex", alignItems:"center" , height:"27.75vw" , paddingLeft:"3.33vw"}}
       >
         <div
           className="container about-content"
-          style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)" , gap:"1rem" , justifyContent:"center", height:"18rem" , alignContent:"center"}}
+          style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)" , gap:"1.11vw" , justifyContent:"center", height:"19.98vw" , alignContent:"center"}}
         >
-          <div className="part1" style={{width:"100%", textAlign:"center" , fontFamily:"Open Sans" , borderRight:"1px solid #CDCDCD" , paddingRight:"3rem"}} >
+          <div className="part1" style={{width:"100%", textAlign:"center" , fontFamily:"Open Sans" , borderRight:"0.069vw solid #CDCDCD" , paddingRight:"3.33vw"}} >
             <h3 style={{
               textAlign: "center",
-              fontSize:"1.3rem",
+              fontSize:"1.443vw",
               fontWeight:"600",
-              letterSpacing:"1px",
+              letterSpacing:"0.069vw",
               color:"#B46BD1"
             }}>Course description</h3>
             <p style={{
-              fontSize:"0.85rem",
+              fontSize:"0.9435vw",
               color:"#3D3D3D",
-              lineHeight:"1.6rem"
+              lineHeight:"1.776vw"
             }}>
               Welcome to the enchanting world of "Graphic Design Alchemy," where
               creativity knows no bounds, and the ordinary transforms into
@@ -187,26 +187,26 @@ const Graphic = ({ data }) => {
           </div>
           <div className="part2" style={{
               textAlign: "center",
-              borderRight:"1px solid #CDCDCD",
+              borderRight:"0.069vw solid #CDCDCD",
             }}>
             <h3 style={{
               textAlign: "center",
-              fontSize:"1.3rem",
+              fontSize:"1.443vw",
               fontWeight:"600",
-              letterSpacing:"1px",
+              letterSpacing:"0.069vw",
               color:"#B46BD1"
             }}>Course duration</h3>
             <p style={{
-              fontSize:"0.85rem",
+              fontSize:"0.9435vw",
               color:"#3D3D3D",
-              lineHeight:"1.6rem"
+              lineHeight:"1.776vw"
             }}>
               6 months
             </p>
             <p style={{
-              fontSize:"0.85rem",
+              fontSize:"0.9435vw",
               color:"#3D3D3D",
-              lineHeight:"1.6rem"
+              lineHeight:"1.776vw"
             }}>
               2 hours a day 
             </p>
@@ -217,22 +217,22 @@ const Graphic = ({ data }) => {
             }}>
             <h3 style={{
               textAlign: "center",
-              fontSize:"1.3rem",
+              fontSize:"1.443vw",
               fontWeight:"600",
-              letterSpacing:"1px",
+              letterSpacing:"0.069vw",
               color:"#B46BD1"
             }}>Next branch</h3>
             <p style={{
-              fontSize:"0.85rem",
+              fontSize:"0.9435vw",
               color:"#3D3D3D",
-              lineHeight:"1.6rem"
+              lineHeight:"1.776vw"
             }}>
               weekend
             </p>
             <p style={{
-              fontSize:"0.85rem",
+              fontSize:"0.9435vw",
               color:"#3D3D3D",
-              lineHeight:"1.6rem"
+              lineHeight:"1.776vw"
             }}>
               sat & sun 
             </p>

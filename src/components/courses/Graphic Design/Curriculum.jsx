@@ -8,21 +8,21 @@ const Curriculum = () => {
             <span style={{
                 color: "rgba(255, 255, 255, 0.85)",
                 fontFamily: "Inter",
-                fontSize: "2.1rem",
+                fontSize: "2.331vw",
                 fontStyle: "normal",
                 fontWeight: "700",
-                lineHeight: "2rem",
+                lineHeight: "2.22vw",
             }}>Curriculum
             </span>
             <span style={{
-              width: "14rem",
-              height: "0.03438rem",
+              width: "15.54vw",
+              height: "0.038vw",
               backgroundColor: "#B8B8B8",
-              marginTop:"1.2rem",
-              marginLeft:"1rem"
+              marginTop:"1.332vw",
+              marginLeft:"1.11vw"
             }}></span>
         </div>
-            <p style={{fontSize:"0.9rem" , color:"rgba(255, 255, 255, 0.80)" , lineHeight:"1.8rem"}}>Below is a  curriculum that covers the fundamentals of graphic design</p>
+            <p style={{fontSize:"0.999vw" , color:"rgba(255, 255, 255, 0.80)" , lineHeight:"1.998vw"}}>Below is a  curriculum that covers the fundamentals of graphic design</p>
             <div className="text-grid">
               <span className="text-content">
                 <h5>Introduction to Graphic Design</h5>

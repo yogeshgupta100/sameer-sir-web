@@ -9,14 +9,14 @@ export default function PrivacyPolicy() {
 			<div
 				className={styles.container}
 				style={{
-					padding: "158px 0",
-					width: "60%",
+					padding: "8.96vw 0",
+					maxWidth: "60vw",
 					margin: "auto",
 					textAlign: "justify",
 				}}
 			>
-				<h2 style={{ color: "#B46BD1" }}>Privacy and Policy</h2>
-				<h5 style={{ fontWeight: "normal", margin: "3rem 0 7rem" }}>Effective Date: 09/11/2023</h5>
+				<h2 style={{ color: "#B46BD1" , fontSize:"2.77vw"}}>Privacy and Policy</h2>
+				<h5 style={{ margin: "3vw 0 6.77vw" , fontSize:"1.66vw"}}><strong>Effective Date: 09/11/2023</strong></h5>
 				<p>
 					Welcome to Dxolve. We are committed to protecting your privacy and ensuring the security of your
 					personal information. This Privacy Policy outlines our practices concerning the collection, use, and
@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
 					this policy.
 				</p>
 
-				<h5 style={{ marginTop: "71px" }}>1. Information We Collect</h5>
+				<h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw"}}><strong>1. Information We Collect</strong></h5>
 				<p>
 					We may collect various types of information to provide you with a seamless and tailored learning
 					experience. This information includes:
@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
 					details, such as credit card information, to process transactions.
 				</p>
 
-				<h5 style={{ marginTop: "71px" }}>2. How We Use Your Information</h5>
+				<h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw"}}><strong>2. How We Use Your Information</strong></h5>
 				<p>We use the collected information for various purposes, including:</p>
 
 				<p>
@@ -78,7 +78,7 @@ export default function PrivacyPolicy() {
 					to protect our rights and interests.
 				</p>
 
-				<h5 style={{ marginTop: "71px" }}>3. Disclosure of Your Information</h5>
+				<h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw"}}><strong>3. Disclosure of Your Information</strong></h5>
 				<p>
 					We do not sell or rent your personal information to third parties. However, we may share your
 					information with:
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
 					portion of our assets, your information may be transferred to the acquiring entity.
 				</p>
 
-				<h5 style={{ marginTop: "71px" }}>4. Your Choices</h5>
+				<h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw"}}><strong>4. Your Choices</strong></h5>
 				<p>You have certain choices regarding your personal information, including the ability to:</p>
 
 				<p>
@@ -110,14 +110,14 @@ export default function PrivacyPolicy() {
 
 				<p>b. Communications Preferences: You can opt out of receiving promotional communications from us.</p>
 
-				<h5 style={{ marginTop: "71px" }}>5. Changes to this Privacy Policy</h5>
+				<h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw"}}><strong>5. Changes to this Privacy Policy</strong></h5>
 				<p>
 					We may update this Privacy Policy to reflect changes in our practices or for other operational,
 					legal, or regulatory reasons. We will notify you of any significant changes by posting an updated
 					version on our website.
 				</p>
 
-				<h5 style={{ marginTop: "71px" }}>6. Contact Us</h5>
+				<h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw"}}><strong>6. Contact Us</strong></h5>
 				<p>
 					If you have any questions, concerns, or requests regarding this Privacy Policy or your personal
 					information, please contact us at <strong>info@dxolve.com</strong>
@@ -127,7 +127,7 @@ export default function PrivacyPolicy() {
 					you with high-quality education while safeguarding your privacy.
 				</p>
 			</div>
-			<div style={{ marginTop: "-6rem" }}>
+			<div style={{ marginTop: "-6.66vw" }}>
 				<Subscribe />
 			</div>
 		</>

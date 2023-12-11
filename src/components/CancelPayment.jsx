@@ -12,7 +12,7 @@ const CancelPayment = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "100vw",
+        maxWidth: "100vw",
         height: "100vh",
       }}
     >
@@ -22,16 +22,16 @@ const CancelPayment = () => {
           alt="CanelPayment"
           style={{ width: "30%", height: "30%" }}
         />
-        <p style={{fontSize:"1.6rem" , lineHeight:"normal" , margin:"3rem 20rem 2rem"}}>Your payment was unsuccessful due to an abnormality. Please try again !</p>
+        <p style={{fontSize:"1.776vw" , lineHeight:"normal" , margin:"3.33vw 22.2vw 2.22vw"}}>Your payment was unsuccessful due to an abnormality. Please try again !</p>
         <NavLink to="/">
         <button className="button" id="button" onClick={goBack} style={{
-          borderRadius: "0.6rem",
-          border: "1.1px solid #3A68C6",
-          marginRight:"1rem",
-          padding:"0.625rem 1rem",
+          borderRadius: "0.666vw",
+          border: "0.076vw solid #3A68C6",
+          marginRight:"1.11vw",
+          padding:"0.69375vw 1.11vw",
           fontWeight:"500",
-          fontSize:"1.04rem",
-          marginTop:"1.7rem",
+          fontSize:"1.1544vw",
+          marginTop:"1.887vw",
           backgroundColor:"#3A68C6",
           color:"#fff"
         }}>Try Again</button> 

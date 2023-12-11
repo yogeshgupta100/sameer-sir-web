@@ -20,32 +20,31 @@ const University = ({color , textCol}) => {
     <div className="row" style={{
         background: color,
         color:textCol,
-        width:"100%",
-        height:"25rem",
-        margin:"0",
+        maxWidth:"100%",
+        minHeight:"28vw",
     }}>
         <div className="container1" style={{
             textAlign:"center"
         }}>
             <div className="heading" style={{
-                lineHeight:"0",
-                paddingTop:"5rem",
+                paddingTop:"5.55vw",
                 fontFamily:"Open Sans",
                 fontStyle:"normal"
             }}>
                 <p style={{
                     color: "#FFF",
                     fontWeight:"300",
-                    fontSize:"1.1rem",
+                    fontSize:"1.23vw",
                     opacity:"0.8"
                 }}>Our partners</p>
                 <h2 style={{
-                    fontSize:"2.5rem",
+                    fontSize:"2.78vw",
                     fontWeight:"700"
                 }}>Our Collaborative Network</h2>
                 <div className="para pt-2" style={{
                     fontWeight:"100",
-                    opacity:"0.8"
+                    opacity:"0.8",
+                    fontSize:"0.99vw"
                 }}>
                 <p>Meet the Key Players Shaping Our Design Ecosystem</p>
                 {/* <p> voluptas fuga pariatur? Iste eos ea ducimus sit?</p> */}
@@ -58,9 +57,10 @@ const University = ({color , textCol}) => {
             flexDirection:"row",
             justifyContent:"space-evenly",
             textAlign:"center",
-            paddingTop:"40px",
+            paddingTop:"2.8vw",
             fontWeight:"800",
-            fontSize:"1.5rem"
+            fontSize:"1.67vw",
+            paddingBottom:"1.7vw"
         }}>
             {
                 university && university.map((uniEle) => (

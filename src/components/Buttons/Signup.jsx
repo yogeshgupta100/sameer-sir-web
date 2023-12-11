@@ -15,22 +15,25 @@ const SignupBtn = () => {
   return (
     <>
       {/* <!-- Button trigger modal --> */}
-      <NavLink to={"/signup"}>
+      <NavLink to={"/signup"} style={{textDecoration:"none"}}>
       <button
         type="button"
         className="button"
         id='button'
         onClick={openModal}
         style={{
-          borderRadius: "0.6rem",
-          border: "1.1px solid #B86CD2",
-          marginRight:"1.5rem",
-          padding:"0.625rem 1.6rem",
+          maxWidth:"100vw",
+          borderRadius: "0.66vw",
+          border: "0.076vw solid #B86CD2",
+          margin:"0 1.11vw 0 0",
           fontWeight:"500",
-          fontSize:"1.04rem"
+          fontSize:"1.1544vw",
+          aspectRatio:"3/1",
+          padding:"0.4rem 1vw",
+          // padding:"0 1vw"
         }}
       >
-        Sign in
+        <p style={{fontSize:"1.154vw", margin:"0"}}>Sign in</p>
       </button>
       </NavLink>
 

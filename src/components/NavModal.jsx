@@ -43,7 +43,7 @@ export default function NavModal({ navModalActive, modalState, setNavModalActive
 			className="nav-modal"
 			ref={navModalRef}
 			style={{
-				padding: "4rem 7rem",
+				padding: "4.44vw 7.77vw",
 				position: "absolute",
 				zIndex: "-10",
 				height: "max-content",

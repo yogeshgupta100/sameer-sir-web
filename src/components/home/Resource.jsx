@@ -7,7 +7,7 @@ const Resource = () => {
       <div className="resource-page">
         <Heading content="Unlock a world of knowledge with our resource library" left="20.5%"/>
         <div className="resource-content">
-        <div className="vid1"></div>
+        <div className="vid1" style={{backgroundImage:`url(${"/assets/resources-img1.jpeg"})`}}></div>
         <div className="vid2"></div>
         <div className="vid-content">
           <h4>Typography Mastery: Crafting Beautiful Text in Your Designs</h4>

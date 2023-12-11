@@ -15,7 +15,7 @@ const Courses = () => {
 	}, []);
 
 	return (
-		<div className="course_section" style={{Width:"100vw" }}>
+		<div className="course_section" style={{width:"100vw" , minHeight:"60vh"}}>
 			<div className="row mt-5">
 				<div className="col-12 text-center mt-5">
 					<Heading content={"Explore our well knitted courses"} left={"32.5%"} />
@@ -23,7 +23,7 @@ const Courses = () => {
 			</div>
             
 			<div
-				className="course-container"
+				className="course-container container"
 			>
 				{courses.map((course) => {
 					return (
@@ -32,34 +32,34 @@ const Courses = () => {
 								<div
 									className="card-body container"
 									style={{
-										padding: "2rem 2.5rem",
+										padding: "2.22vw 2.77vw",
 										lineHeight: "1",
 									}}
 								>
-									<p
+									<span
 										style={{
 											textAlign: "start",
 											color: "#878787",
 											fontFamily: "Open Sans",
-											fontSize: "0.8rem",
+											fontSize: "1.11vw",
 											fontStyle: "normal",
 											fontWeight: "700",
-											lineHeight: "125%" /* 1.17188rem */,
-											marginBottom: "0.2rem",
+											marginBottom: "0.22vw",
+											lineHeight:"1"
 										}}
 									>
 										{course.attributes.category}
-									</p>
+									</span>
 									<h5
 										className="card-title"
 										style={{
 											color: "#B46BD1",
-											// fontFamily: "Open Sans",
-											fontSize: "1.3rem",
+											fontFamily: "Open Sans",
+											fontSize: "1.44vw",
 											fontStyle: "normal",
 											fontWeight: "700",
-											lineHeight: "120.5%" /* 1.8225rem */,
-											marginBottom: "2rem",
+											lineHeight: "140.5%",
+											marginBottom: "2.22vw",
 										}}
 									>
 										{course.attributes.name}
@@ -69,68 +69,68 @@ const Courses = () => {
 										style={{
 											display: "flex",
 											justifyContent: "space-evenly",
-											fontSize: "0.9rem",
+											fontSize: "0.99vw",
 											lineHeight: "1",
 											margin: "0",
 											padding: "0",
 										}}
 									>
 										<div className="content">
-											<p
+											<div
 												style={{
 													color: "rgba(117, 117, 117, 0.90)",
 													fontFamily: "Open Sans",
-													fontSize: "0.8rem",
+													fontSize: "1.11vw",
 													fontStyle: "normal",
 													fontWeight: "700",
-													lineHeight: "130%" /* 1.3rem */,
+													marginBottom:"1vw"
 												}}
 											>
 												Starting Date
-											</p>
-											<p className="course-content">{course.attributes.startDate}</p>
+											</div>
+											<div className="course-content">{course.attributes.startDate}</div>
 										</div>
 										<div
 											className="v-line"
 											style={{
-												margin: "0 0.81rem 0",
+												margin: "0 0.899vw 0",
 											}}
 										></div>
 										<div className="content">
-											<p
+											<div
 												style={{
 													color: "rgba(117, 117, 117, 0.90)",
 													fontFamily: "Open Sans",
-													fontSize: "0.8rem",
+													fontSize: "1.11vw",
 													fontStyle: "normal",
 													fontWeight: "700",
-													lineHeight: "130%" /* 1.3rem */,
+													marginBottom:"1vw"
 												}}
 											>
 												End Date
-											</p>
-											<p className="course-content">{course.attributes.endDate}</p>
+											</div>
+											<span className="course-content">{course.attributes.endDate}</span>
 										</div>
 										<div
 											className="v-line"
 											style={{
-												margin: "0 0.81rem 0",
+												margin: "0 0.899vw 0",
 											}}
 										></div>
 										<div className="content">
-											<p
+											<div
 												style={{
 													color: "rgba(117, 117, 117, 0.90)",
 													fontFamily: "Open Sans",
-													fontSize: "0.8rem",
+													fontSize: "1.11vw",
 													fontStyle: "normal",
 													fontWeight: "700",
-													lineHeight: "130%" /* 1.3rem */,
+													marginBottom:"1vw"
 												}}
 											>
 												Duration
-											</p>
-											<p className="course-content">{course.attributes.duration}</p>
+											</div>
+											<span className="course-content">{course.attributes.duration}</span>
 										</div>
 									</div>
 									<NavLink
@@ -148,26 +148,6 @@ const Courses = () => {
 				})}
 
 			</div>
-			{/* <div className="row justify-content-around">
-					<div className="card my-3 px-0" style={{width: "24.8rem" , overflow:"hidden"}}>
-						<img src="/assets/course2.jpg" className="card-img-top" alt='course1'/>
-				<div className="card-body text-center">
-					<h5 className="card-title">UI/UX Design</h5>
-					<p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<NavLink to={`../components/Home.jsx`} className="btn btn-outline-primary">Buy Now</NavLink>
-				</div>
-</div>
-					</div>
-					<div className="row justify-content-around">
-					<div className="card my-3 px-0" style={{width: "24.8rem" , overflow:"hidden"}}>
-						<img src="/assets/course3.jpg" className="card-img-top" alt='course1'/>
-				<div className="card-body text-center">
-					<h5 className="card-title">UI/UX Design</h5>
-					<p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<NavLink to={`../components/Home.jsx`} className="btn btn-outline-primary">Buy Now</NavLink>
-				</div>
-</div>
-					</div> */}
 			</div>
 	);
 };

@@ -6,7 +6,7 @@ import Carousal from './Carousal'
 const Testimonies = () => {
   return (
     <>
-    <div className="heading" id="Testimony" style={{marginLeft:"4rem" , marginTop:"10rem"}}>
+    <div className="heading" id="Testimony" style={{marginLeft:"4.44vw" , marginTop:"11.1vw"}}>
     <Heading content={"Our Testimonial"} left={"15%"}/>
     </div>
     <Carousal />

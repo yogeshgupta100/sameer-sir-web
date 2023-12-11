@@ -31,7 +31,127 @@ const Subscribe = () => {
 	return (
 		<>
 			<div className="Subscribe-main">
-				<h3>Logo</h3>
+				<span className="subscribe-logo">
+				<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="137"
+									height="37"
+									viewBox="0 0 137 37"
+									fill="none"
+								>
+									<path
+										d="M0 1.4505H9.42826C13.0718 1.4505 16.0764 2.18439 18.4421 3.65216C20.8251 5.10266 22.6037 7.11437 23.7779 9.68728C24.9521 12.2602 25.5392 15.2044 25.5392 18.5198C25.5392 21.8525 24.9521 24.8053 23.7779 27.3782C22.6037 29.9511 20.8251 31.9715 18.4421 33.4393C16.0764 34.907 13.0718 35.6409 9.42826 35.6409H0V1.4505ZM6.42365 7.22661V29.8648H8.85842C11.086 29.8648 12.9164 29.3813 14.3496 28.4143C15.8001 27.43 16.8794 26.0831 17.5873 24.3736C18.3126 22.6641 18.6752 20.7301 18.6752 18.5716C18.6925 16.3959 18.3471 14.4532 17.6391 12.7437C16.9312 11.0342 15.8433 9.68728 14.3755 8.70301C12.925 7.71874 11.086 7.22661 8.85842 7.22661H6.42365Z"
+										fill="url(#paint0_linear_741_3244)"
+									/>
+									<path
+										d="M43.6118 24.2959L52.7033 35.6409H45.3472L39.6229 28.3625L33.9245 35.6409H27.0346L36.1262 24.7621L27.9671 14.3755H35.375L40.0114 20.566L44.8292 14.3755H51.5896L43.6118 24.2959Z"
+										fill="url(#paint1_linear_741_3244)"
+									/>
+									<path
+										d="M65.1528 36.2626C62.8907 36.2626 60.8704 35.7791 59.0918 34.8121C57.3305 33.8451 55.949 32.5241 54.9475 30.8491C53.9459 29.1568 53.4452 27.2315 53.4452 25.073C53.4452 22.9145 53.9459 20.9891 54.9475 19.2969C55.949 17.5873 57.3305 16.2404 59.0918 15.2562C60.8704 14.2546 62.8907 13.7539 65.1528 13.7539C67.4322 13.7539 69.4439 14.2546 71.1879 15.2562C72.932 16.2404 74.2961 17.5873 75.2804 19.2969C76.2647 20.9891 76.7568 22.9145 76.7568 25.073C76.7568 27.2315 76.2647 29.1568 75.2804 30.8491C74.2961 32.5241 72.932 33.8451 71.1879 34.8121C69.4439 35.7791 67.4322 36.2626 65.1528 36.2626ZM65.1528 30.7973C66.2407 30.7973 67.1818 30.5555 67.9761 30.072C68.7877 29.5712 69.4093 28.8892 69.841 28.0258C70.29 27.1451 70.5145 26.1522 70.5145 25.0471C70.5145 23.9419 70.29 22.949 69.841 22.0684C69.4093 21.1877 68.7877 20.497 67.9761 19.9962C67.1818 19.4782 66.2407 19.2192 65.1528 19.2192C64.0649 19.2192 63.1152 19.4782 62.3036 19.9962C61.5093 20.497 60.8876 21.1877 60.4387 22.0684C59.9897 22.949 59.7652 23.9419 59.7652 25.0471C59.7652 26.1522 59.9897 27.1451 60.4387 28.0258C60.8876 28.8892 61.5093 29.5712 62.3036 30.072C63.1152 30.5555 64.0649 30.7973 65.1528 30.7973Z"
+										fill="url(#paint2_linear_741_3244)"
+									/>
+									<path
+										d="M86.2753 35.6409H79.6704V0H86.2753V35.6409Z"
+										fill="url(#paint3_linear_741_3244)"
+									/>
+									<path
+										d="M88.3127 14.3755H95.358L101.186 29.6317L107.014 14.3755H114.033L105.045 35.6409H97.3265L88.3127 14.3755Z"
+										fill="url(#paint4_linear_741_3244)"
+									/>
+									<path
+										d="M120.967 26.4717C121.019 27.4387 121.278 28.3021 121.744 29.0618C122.21 29.8216 122.884 30.4174 123.764 30.8491C124.662 31.2808 125.733 31.4966 126.976 31.4966C128.098 31.4966 129.083 31.3585 129.929 31.0822C130.792 30.8059 131.517 30.4692 132.105 30.072C132.709 29.6576 133.158 29.2604 133.451 28.8805L136.171 32.9212C135.688 33.5256 135.04 34.0868 134.229 34.6048C133.434 35.1056 132.415 35.5028 131.172 35.7963C129.946 36.1071 128.409 36.2626 126.562 36.2626C124.23 36.2626 122.184 35.805 120.423 34.8898C118.662 33.9746 117.289 32.6536 116.304 30.9268C115.32 29.2 114.828 27.1451 114.828 24.7621C114.828 22.69 115.268 20.8251 116.149 19.1673C117.03 17.4924 118.308 16.1714 119.983 15.2044C121.675 14.2374 123.704 13.7539 126.069 13.7539C128.297 13.7539 130.222 14.1856 131.846 15.049C133.486 15.8951 134.755 17.1384 135.653 18.7788C136.551 20.4193 137 22.4223 137 24.788C137 24.9262 136.991 25.2111 136.974 25.6428C136.974 26.0572 136.957 26.3335 136.922 26.4717H120.967ZM130.835 22.4051C130.818 21.8525 130.645 21.2568 130.317 20.6179C130.007 19.9789 129.514 19.435 128.841 18.986C128.167 18.5371 127.27 18.3126 126.147 18.3126C125.025 18.3126 124.101 18.5284 123.376 18.9601C122.668 19.3918 122.132 19.9271 121.77 20.566C121.407 21.1877 121.2 21.8007 121.148 22.4051H130.835Z"
+										fill="url(#paint5_linear_741_3244)"
+									/>
+									<defs>
+										<linearGradient
+											id="paint0_linear_741_3244"
+											x1="-43.3046"
+											y1="4.04715"
+											x2="147.317"
+											y2="42.4952"
+											gradientUnits="userSpaceOnUse"
+										>
+											<stop offset="0.2234" stopColor="#480CA8" />
+											<stop offset="0.367316" stopColor="#560BAD" />
+											<stop offset="0.545799" stopColor="#A615A1" />
+											<stop offset="0.711532" stopColor="#8A1879" />
+											<stop offset="1" stopColor="#88199B" />
+										</linearGradient>
+										<linearGradient
+											id="paint1_linear_741_3244"
+											x1="-43.3046"
+											y1="4.04715"
+											x2="147.317"
+											y2="42.4952"
+											gradientUnits="userSpaceOnUse"
+										>
+											<stop offset="0.2234" stopColor="#480CA8" />
+											<stop offset="0.367316" stopColor="#560BAD" />
+											<stop offset="0.545799" stopColor="#A615A1" />
+											<stop offset="0.711532" stopColor="#8A1879" />
+											<stop offset="1" stopColor="#88199B" />
+										</linearGradient>
+										<linearGradient
+											id="paint2_linear_741_3244"
+											x1="-43.3046"
+											y1="4.04715"
+											x2="147.317"
+											y2="42.4952"
+											gradientUnits="userSpaceOnUse"
+										>
+											<stop offset="0.2234" stopColor="#480CA8" />
+											<stop offset="0.367316" stopColor="#560BAD" />
+											<stop offset="0.545799" stopColor="#A615A1" />
+											<stop offset="0.711532" stopColor="#8A1879" />
+											<stop offset="1" stopColor="#88199B" />
+										</linearGradient>
+										<linearGradient
+											id="paint3_linear_741_3244"
+											x1="-43.3046"
+											y1="4.04715"
+											x2="147.317"
+											y2="42.4952"
+											gradientUnits="userSpaceOnUse"
+										>
+											<stop offset="0.2234" stopColor="#480CA8" />
+											<stop offset="0.367316" stopColor="#560BAD" />
+											<stop offset="0.545799" stopColor="#A615A1" />
+											<stop offset="0.711532" stopColor="#8A1879" />
+											<stop offset="1" stopColor="#88199B" />
+										</linearGradient>
+										<linearGradient
+											id="paint4_linear_741_3244"
+											x1="-43.3046"
+											y1="4.04715"
+											x2="147.317"
+											y2="42.4952"
+											gradientUnits="userSpaceOnUse"
+										>
+											<stop offset="0.2234" stopColor="#480CA8" />
+											<stop offset="0.367316" stopColor="#560BAD" />
+											<stop offset="0.545799" stopColor="#A615A1" />
+											<stop offset="0.711532" stopColor="#8A1879" />
+											<stop offset="1" stopColor="#88199B" />
+										</linearGradient>
+										<linearGradient
+											id="paint5_linear_741_3244"
+											x1="-43.3046"
+											y1="4.04715"
+											x2="147.317"
+											y2="42.4952"
+											gradientUnits="userSpaceOnUse"
+										>
+											<stop offset="0.2234" stopColor="#480CA8" />
+											<stop offset="0.367316" stopColor="#560BAD" />
+											<stop offset="0.545799" stopColor="#A615A1" />
+											<stop offset="0.711532" stopColor="#8A1879" />
+											<stop offset="1" stopColor="#88199B" />
+										</linearGradient>
+									</defs>
+								</svg>
+				</span>
+				<span className="subscribe-content">
 				<p>Subscribe to our news letter</p>
 				<div className="subscribe">
 					<div
@@ -39,17 +159,17 @@ const Subscribe = () => {
 						style={{
 							display: "flex",
 							alignItems: "center",
-							borderRadius: "10px 0 0 10px",
+							border:"none"
 						}}
-					>
-						<input
+						>
+						<input className="input-email"
 							type="email"
 							style={{
 								width: "100%",
 								border: "none",
 								height: "100%",
-								padding: "0 2rem",
-								fontSize: "clamp(1rem,5vw,1.2rem)",
+								padding: "0 2.22vw",
+								fontSize: "2vw",
 								color: "#B86CD2",
 								fontWeight: "600",
 							}}
@@ -61,35 +181,35 @@ const Subscribe = () => {
 						type="button"
 						onClick={subscribe}
 						style={{
-							borderRadius: "0 10px 10px 0",
+							borderRadius: "0 0.625rem 0.625rem 0",
 							width:"35%",
 							padding:"0",
-							margin:"0"
+							margin:"0",
+							textDecoration:"none",
+							border:"none"
 						}}
 					>
-						<Popup trigger={<button style={{fontSize:"clamp(0.3rem,5vw,1.2rem)" , paddingLeft:"0" , width:"100%"}}> Submit</button>} position="bottom right">
-							<div>Thank you for subscribing.</div>
-						</Popup>
+						Submit
 					</button>
 				</div>
+				</span>
 			</div>
 			<div
 				className="final-foot"
 				style={{
-					width: "100%",
-					height: "32rem",
+					maxWidth: "100%",
+					maxHeight: "36.52vw",
 					backgroundColor: "#F6F6F1",
-					position: "relative",
 					overflow: "hidden",
 				}}
 			>
 				<div
 					className="container"
 					style={{
-						height: "60%",
-						paddingLeft: "3rem",
+						minHeight: "60%",
+						paddingLeft: "1rem",
 						display: "flex",
-						paddingTop: "9rem",
+						paddingTop: "7vw",
 					}}
 				>
 					<div
@@ -104,10 +224,10 @@ const Subscribe = () => {
 							style={{
 								color: "rgba(0, 0, 0, 0.90)",
 								fontFamily: "Inter",
-								fontSize: "2.1rem",
+								fontSize: "2.33vw",
 								fontStyle: "normal",
 								fontWeight: "600",
-								lineHeight: "3.4rem" /* 100% */,
+								lineHeight: "3.77vw" /* 100% */,
 								textTransform: "uppercase",
 							}}
 						>
@@ -117,10 +237,9 @@ const Subscribe = () => {
 							style={{
 								color: " rgba(0, 0, 0, 0.90)",
 								fontFamily: "Raleway",
-								fontSize: "1.1rem",
+								fontSize: "1.22vw",
 								fontStyle: "normal",
 								fontWeight: "400",
-								lineHeight: "1.75rem" /* 127.273% */,
 							}}
 						>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in
@@ -129,7 +248,7 @@ const Subscribe = () => {
 						<div
 							className="icon-container"
 							style={{
-								marginTop: "3rem",
+								marginTop: "3vw",
 							}}
 						>
 							<svg
@@ -139,8 +258,8 @@ const Subscribe = () => {
 								viewBox="0 0 40 40"
 								fill="none"
 								style={{
-									width: "2rem",
-									height: "2rem",
+									width: "2.22vw",
+									height: "2.22vw",
 								}}
 							>
 								<circle cx="20" cy="20" r="20" fill="#B86CD2" />
@@ -156,8 +275,8 @@ const Subscribe = () => {
 								viewBox="0 0 40 40"
 								fill="none"
 								style={{
-									width: "2rem",
-									height: "2rem",
+									width: "2.22vw",
+									height: "2.22vw",
 								}}
 							>
 								<circle cx="20" cy="20" r="20" fill="#B86CD2" />
@@ -173,8 +292,8 @@ const Subscribe = () => {
 								viewBox="0 0 40 40"
 								fill="none"
 								style={{
-									width: "2rem",
-									height: "2rem",
+									width: "2.22vw",
+									height: "2.22vw",
 								}}
 							>
 								<circle cx="20" cy="20" r="20" fill="#B86CD2" />
@@ -190,8 +309,8 @@ const Subscribe = () => {
 								viewBox="0 0 40 40"
 								fill="none"
 								style={{
-									width: "2rem",
-									height: "2rem",
+									width: "2.22vw",
+									height: "2.22vw",
 								}}
 							>
 								<circle cx="20" cy="20" r="20" fill="#B86CD2" />
@@ -205,46 +324,43 @@ const Subscribe = () => {
 					<div
 						className="v-line"
 						style={{
-							height: "30vh",
-							marginTop: "0.9rem",
+							minHeight: "30vw",
+							marginTop: "1vw",
 							backgroundColor: "#797979",
 						}}
 					></div>
 					<div className="links" style={{
 						display:"grid",
 						gridTemplateColumns:"repeat(4,1fr)",
-						gap:"2rem",
+						gap:"2.22vw",
 						justifyContent:"center",
-						// alignItems:"center",
-						marginLeft:"1rem"
+						marginLeft:"3.11vw"
 					}}>
 					<div
 						className="company"
 						style={{
-							// margin: "0.6rem 2.5rem",
 							fontFamily: "Raleway",
 						}}
 					>
-						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Company</h5>
-						<div className="links" style={{ lineHeight: "0.9rem" }}>
-							<Link to={"/about"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>About us</p></Link>
-							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Home</p></Link>
-							<Link to={"/resource#blogs"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Blogs</p></Link>
-							<Link to={"/#faq"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Feedback</p></Link>
+						<h5 style={{ marginBottom: "2vw", fontSize: "1.88vw", fontWeight: "600" , opacity:"0.9"}}>Company</h5>
+						<div className="links">
+							<Link to={"/about"} reloadDocument style={{textDecoration:"none" , color:"#000" , marginBottom:"1.22vw" , fontSize:"1vw"}}><p>About us</p></Link>
+							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000" , marginBottom:"1.22vw" , fontSize:"1vw"}}><p>Home</p></Link>
+							<Link to={"/resource#blogs"} reloadDocument style={{textDecoration:"none" , color:"#000" , marginBottom:"1.22vw" , fontSize:"1vw"}}><p>Blogs</p></Link>
+							<Link to={"/#faq"} reloadDocument style={{textDecoration:"none" , color:"#000" , marginBottom:"1.22vw" , fontSize:"1vw"}}><p>Feedback</p></Link>
 						</div>
 					</div>
 					<div
 						className="company"
 						style={{
-							// margin: "0.6rem 2.5rem",
 							fontFamily: "Raleway",
 						}}
 					>
-						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Courses</h5>
-						<div className="links" style={{ lineHeight: "0.9rem" }}>
+						<h5 style={{ marginBottom: "2vw", fontSize: "1.88vw", fontWeight: "600" , opacity:"0.9"}}>Courses</h5>
+						<div className="links">
 							{courses && courses.map((currEle)=>{
 								return(
-									<Link to={`#${currEle.attributes.name}`} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>{currEle?.attributes?.name}</p></Link>
+									<Link to={`#${currEle.attributes.name}`} reloadDocument style={{textDecoration:"none" , color:"#000" , fontSize:"1vw" , marginBottom:"1.22vw"}}><p>{currEle?.attributes?.name}</p></Link>
 								)
 							})}
 						</div>
@@ -252,48 +368,43 @@ const Subscribe = () => {
 					<div
 						className="company"
 						style={{
-							// margin: "0.6rem 2.5rem",
 							fontFamily: "Raleway",
 						}}
 					>
-						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Resources</h5>
-						<div className="links" style={{ lineHeight: "0.9rem" }}>
-						<Link to="#faq" reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>FAQ's</p></Link>
-						<Link to={`/courses/1`} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Study material</p></Link>
-						<Link to="/tnc/privacy-policy" reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Privacy Policy</p></Link>	
-						<Link to="/tnc/terms-and-services" reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Terms and Services</p></Link>	
-						{/* <Link to="/tnc/customer-support" reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Customer Support</p></Link>	
-						<Link to="/tnc/cancellation-and-refund" reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Cancellation and Refund</p></Link>	 */}
+						<h5 style={{ marginBottom: "2vw", fontSize: "1.88vw", fontWeight: "600" , opacity:"0.9" }}>Resources</h5>
+						<div className="links">
+						<Link to="#faq" reloadDocument style={{textDecoration:"none" , color:"#000" , fontSize:"1vw" , marginBottom:"1.22vw"}}><p>FAQ's</p></Link>
+						<Link to={`/courses/1`} reloadDocument style={{textDecoration:"none" , color:"#000" , fontSize:"1vw" , marginBottom:"1.22vw"}}><p>Study material</p></Link>
+						<Link to="/tnc/privacy-policy" reloadDocument style={{textDecoration:"none" , color:"#000" , fontSize:"1vw" , marginBottom:"1.22vw"}}><p>Privacy Policy</p></Link>	
+						<Link to="/tnc/terms-and-services" reloadDocument style={{textDecoration:"none" , color:"#000" , fontSize:"1vw" , marginBottom:"1.22vw"}}><p>Terms and Services</p></Link>	
+							<Link to="/tnc/customer-support" reloadDocument style={{textDecoration:"none" , color:"#000" , fontSize:"1vw" , marginBottom:"1.22vw"}}><p>Customer Support</p></Link>	
+							<Link to="/tnc/cancellation-and-refund" reloadDocument style={{textDecoration:"none" , color:"#000" , fontSize:"1vw" , marginBottom:"1.22vw"}}><p>Cancellation and Refund</p></Link>	
 						</div>
 					</div>
 					<div
 						className="company"
 						style={{
-							// margin: "0.6rem 2.5rem",
 							fontFamily: "Raleway",
 						}}
 					>
-						<h5 style={{ marginBottom: "2rem", fontSize: "1.1rem", fontWeight: "600" }}>Career</h5>
-						<div className="links" style={{ lineHeight: "0.9rem" }}>
-							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Join us</p></Link>
-							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Achivements</p></Link>
-							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000"}}><p>Team</p></Link>
+						<h5 style={{ marginBottom: "2vw", fontSize: "1.88vw", fontWeight: "600" , opacity:"0.9" }}>Career</h5>
+						<div className="links">
+							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000" , fontSize:"1vw" , marginBottom:"1.22vw"}}><p>Join us</p></Link>
+							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000" , fontSize:"1vw" , marginBottom:"1.22vw"}}><p>Achivements</p></Link>
+							<Link to={"/"} reloadDocument style={{textDecoration:"none" , color:"#000" , fontSize:"1vw" , marginBottom:"1.22vw"}}><p>Team</p></Link>
 						</div>
 					</div>
 					</div>
-					<span className="footer-img">
+					<span className="footer-img" style={{
+						display:"flex",
+						alignItems:"flex-end",
+						justifyContent:"flex-end"
+					}}>
 					<img
-						src="https://s3-alpha-sig.figma.com/img/b23e/bc3e/fbcfdb6d7f8f4c60a3651ce309bce7fa?Expires=1700438400&Signature=kybANVmpeFojfwDimVPj3SsdaKWRpYsrSMG2XS~YRBBnwA2y2be-r~9RIY4M4VjXZfPgUPY~9su358Nt~mslaUZ~yMJN9jCf8UcTmn2ow3DY2dmqlmKDIJEGBqXY1HwlnzHEM06LRJqiPC2M6KvE6CfY4tuqfasVtN8kci-xWMGkaf32wd~6lSKs58MWRkjDGjgDAmKrJvP9~nSq0OREDt7HwkXUWMUIJ6GF6BZhd92HnIN63lcRYQEjkGVg9Dv6TCAqryL-pb4QTM9wZbtFTXc8prFOB0lxYZJAo2CDPm3obG0rmcHWJbGyh3D4JNGgLVpmariIX6uHpuk3wadUFw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+						src="/assets/footer-img.png"
 						alt="man"
 						style={{
-							width: "35%",
-							height: "100%",
-							flexShrink: "0",
-							position: "absolute",
-							right: "-6rem",
-							bottom: "-3rem",
-							padding: "0",
-							margin: "0",
+							maxWidth: "23vw",
 						}}
 					></img>
 					</span>
@@ -302,29 +413,29 @@ const Subscribe = () => {
 			<div
 				className="footer-end"
 				style={{
-					width: "100%",
-					height: "2.5rem",
-					textAlign: "center",
+					maxWidth: "100vw",
+					minHeight: "2.77vw",
 					backgroundImage: `url(${"/assets/subscribe-bg.jpg"})`,
 					backgroundPosition: "center",
 					backgroundSize: "cover",
 					backgroundRepeat: "no-repeat",
-					position: "relative",
-					bottom: "0rem",
+					textAlign:"center",
+					display:"flex",
+					alignItems:"center",
+					justifyContent:"center"
 				}}
 			>
-				<p
+				<span
 					style={{
 						color: "rgba(255, 255, 255, 0.90)",
 						fontFamily: "Raleway",
-						fontSize: "0.8rem",
+						fontSize: "0.88vw",
 						fontStyle: "normal",
 						fontWeight: "600",
-						lineHeight: "2.5rem" /* 250% */,
 					}}
 				>
 					Copyright @ Dxolve.com
-				</p>
+				</span>
 			</div>
 		</>
 	);

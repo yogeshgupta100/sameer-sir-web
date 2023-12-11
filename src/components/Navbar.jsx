@@ -12,14 +12,14 @@ const Navbar = () => {
         width:"100%",
         // height:"fit-content",
         display:"flex",
-        boxShadow:"0px 1px 8px 0px rgba(0, 0, 0, 0.25)",
+        boxShadow:"0 0.069vw 0.555vw 0 rgba(0, 0, 0, 0.25)",
         alignItems:"center",
-        padding:"1rem 2rem",
+        padding:"1.11vw 2.22vw",
         justifyContent:"space-between"
       }}>
         <span className="navbar-logo" style={{
-            width:"4rem",
-            height:"4rem",
+            width:"4.44vw",
+            height:"4.44vw",
             fill: "linear-gradient(93deg, #480CA8 1.27%, #560BAD 21.05%, #A615A1 45.58%, #8A1879 68.37%, #88199B 108.02%)"
         }}>
 					<button
@@ -104,9 +104,9 @@ const Navbar = () => {
 								display: "flex",
 								justifyContent: "space-between",
 								alignItems: "center",
-								marginLeft: "2rem",
+								marginLeft: "2.22vw",
                                 flexDirection:"row",
-								gap:"1rem"
+								gap:"1.11vw"
 							}}
 						>
 							<li className="nav-item ms-3 dropdown">
@@ -124,11 +124,11 @@ const Navbar = () => {
 											textUnderlinePosition: "none",
 											fontFamily: "Raleway",
 											color: " rgba(0, 0, 0, 0.80)",
-											fontSize: "1rem",
+											fontSize: "1.11vw",
 											fontWeight: "medium",
 											fontStyle: "normal",
 											textAlign: "center",
-											marginRight:"0.6rem"
+											marginRight:"0.66vw"
 										}}
 									>
 										About
@@ -148,17 +148,17 @@ const Navbar = () => {
 										textAlign: "center",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "1rem",
+										fontSize: "1.11vw",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
 								>
 									Courses
 									<img
-										src="/public/assets/down-arrow.png"
+										src="/assets/down-arrow.png"
 										alt="arrow"
 										style={{
-											width: "2rem",
+											width: "2.22vw",
 											background: "transparent",
 										}}
 									></img>
@@ -174,17 +174,17 @@ const Navbar = () => {
 										cursor: "pointer",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "1rem",
+										fontSize: "1.11vw",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
 								>
 									Resources
 									<img
-										src="/public/assets/down-arrow.png"
+										src="/assets/down-arrow.png"
 										alt="arrow"
 										style={{
-											width: "2rem",
+											width: "2.22vw",
 											background: "transparent",
 										}}
 									></img>
@@ -200,17 +200,17 @@ const Navbar = () => {
 										cursor: "pointer",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "1rem",
+										fontSize: "1.11vw",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
 								>
 									Career
 									<img
-										src="/public/assets/down-arrow.png"
+										src="/assets/down-arrow.png"
 										alt="arrow"
 										style={{
-											width: "2rem",
+											width: "2.22vw",
 											background: "transparent",
 										}}
 									></img>

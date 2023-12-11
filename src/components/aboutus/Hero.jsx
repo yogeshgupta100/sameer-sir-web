@@ -9,7 +9,7 @@ const Hero = () => {
         className="full"
         style={{
           background: "transparent",
-          marginBottom:"2rem",
+          marginBottom:"2.22vw",
           height:"150vh",
           position:"relative",
         }}

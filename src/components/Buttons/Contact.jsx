@@ -19,15 +19,17 @@ const Contact = () => {
         id='button'
         onClick={openModal}
         style={{
-          borderRadius: "0.6rem",
-          border: "1.1px solid #B86CD2",
-          marginRight:"1rem",
-          padding:"0.625rem 1rem",
+          maxWidth:"100vw",
+          borderRadius: "0.66vw",
+          border: "0.076vw solid #B86CD2",
+          margin:"0 1.11vw 0 0",
           fontWeight:"500",
-          fontSize:"1.04rem"
+          fontSize:"1.1544vw",
+          aspectRatio:"3/1",
+          padding:"0 1vw"
         }}
       >
-        Contact us
+        <p style={{fontSize:"1.154vw", margin:"0"}}>Contact us</p>
       </button>
 
       <div
