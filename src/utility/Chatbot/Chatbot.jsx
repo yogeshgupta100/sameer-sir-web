@@ -1,5 +1,5 @@
 import styles from "./chatbot.module.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const botMap = new Map([
 	[1, { message: "Hi there!👋 How can I help you?", options: [1, 2, 3, 4, 5] }],
@@ -24,6 +24,11 @@ export default function Chatbot() {
 	function toggleChatbot() {
 		chatbotRef.current.classList.toggle(styles.active);
 	}
+
+	useEffect(() => {
+		const timeout = setTimeout(toggleChatbot, 2500);
+		return () => clearTimeout(timeout);
+	}, []);
 
 	return (
 		<div ref={chatbotRef}>
