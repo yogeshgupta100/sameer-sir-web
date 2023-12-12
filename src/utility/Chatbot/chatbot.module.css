@@ -108,7 +108,7 @@
 }
 
 .chat {
-	height: calc(100% - 128px);
+	height: 100%;
 	width: 100%;
 	padding: 1.5vw 2vw;
 	overflow-y: auto;
@@ -160,8 +160,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 2vw;
-	height: 60px;
+	padding: 1vw 2vw;
 	box-shadow: 0.873px 0.873px 6.547px 0px rgba(0, 0, 0, 0.15);
 }
 
