@@ -19,7 +19,7 @@ const Brands = ({color , textCol}) => {
     <div className="row" style={{
         background: color,
         color:textCol,
-        maxWidth:"100%",
+        maxWidth:"100vw",
         minHeight:"28vw",
     }}>
         <div className="container1" style={{
@@ -43,9 +43,9 @@ const Brands = ({color , textCol}) => {
                 <div className="para pt-2" style={{
                     fontWeight:"100",
                     opacity:"0.8",
-                    fontSize:"0.99vw"
+                    fontSize:"0.99vw",
                 }}>
-                <p>Meet the Key Players Shaping Our Design Ecosystem</p>
+                <p style={{letterSpacing:"0.08vw"}}>Meet the Key Players Shaping Our Design Ecosystem</p>
                 {/* <p> voluptas fuga pariatur? Iste eos ea ducimus sit?</p> */}
                 </div>
             </div>

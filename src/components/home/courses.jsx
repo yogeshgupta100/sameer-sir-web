@@ -16,15 +16,15 @@ const Courses = () => {
 
 	return (
 		<div className="course_section" style={{width:"100vw" , minHeight:"60vh"}}>
-			<div className="row mt-5">
-				<div className="col-12 text-center mt-5">
+			<div className="row" style={{margin:"5.55vw 0 3.33vw 5.55vw"}}>
+				<div className="col-12 container">
 					<Heading content={"Explore our well knitted courses"} left={"32.5%"} />
 				</div>
 			</div>
             
 			<div
 				className="course-container container"
-			>
+			style={{marginBottom:"8vw"}}>
 				{courses.map((course) => {
 					return (
 							<div className="card my-3 px-0">

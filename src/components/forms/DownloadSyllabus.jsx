@@ -64,7 +64,7 @@ export default function DownloadSyllabus() {
   <path d="M24.5898 11.6479L11.6476 24.5902" stroke="#9844C5"/>
 </svg>
                     </div>
-                <div style={{margin:"3rem 0"}}>
+                <div style={{margin:"3.33vw 0"}}>
                 <form>
                     {/* <label>
                         Your Name:

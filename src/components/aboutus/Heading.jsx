@@ -10,7 +10,6 @@ const Heading = ({ content , left}) => {
         position: "relative",
         display: "flex",
         justifyContent: "start",
-        flexShrink:"0",
       }}
     >
       <div
@@ -33,17 +32,19 @@ const Heading = ({ content , left}) => {
             fontWeight: "750",
             letterSpacing:"0.11vw",
             fontStyle:"normal",
+            marginBottom:"1vw"
           }}
         >
           {content}
         </h3>
         <p style={{
-          maxWidth:"95vw",
+          maxWidth:"40vw",
           fontFamily:"Open Sans",
           fontSize:"0.98vw",
-          fontWeight:"300",
+          fontWeight:"400",
           color: "rgba(0, 0, 0, 0.65)",
-          lineHeight:"1.6",
+          // lineHeight:"1.6",
+          opacity:"0.8"
         }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
           mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla.
@@ -53,7 +54,7 @@ const Heading = ({ content , left}) => {
         position:"relative",
         top:"-0.7992vw"
       }}></span>
-      <div className="h-line"></div>
+      <div className="h-line" style={{maxHeight:"0.09vw" , minWidth:"50vw"}}></div>
     </div>
   );
 };

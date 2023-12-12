@@ -27,7 +27,7 @@ export default function Signup() {
             <div className="logo-section" style={{
                 backgroundImage:`url(${"/assets/Signup_vector.png"})`,
             }}>
-                {/* <p className='logo'>LOGO</p>
+                <p className='logo'>LOGO</p>
                 <div className="logo-img" style={{
                     width:"100%",
                     height:"60%",
@@ -36,24 +36,24 @@ export default function Signup() {
                     alignItems:"center"
                 }}>
                 <img src='/assets/form-logo.png' alt='form-logo'/>
-                </div> */}
+                </div>
             </div>
-            {/* <div className="form-section">
+            <div className="form-section">
                 <div className="container" style={{width:"80%" , height:"80%"}}>
                     <div className="top" style={{display:"flex" , width:"100%" , position:"relative"}}>
                         <div className="form-head">
                         <p style={{
                         color:"#9844C5",
                         fontFamily:"Open Sans",
-                        fontSize:"1.5rem",
+                        fontSize:"1.665vw",
                         fontStyle:"normal",
                         fontWeight:"600",
-                        lineHeight:"0.7rem"
+                        lineHeight:"0.777vw"
                     }}>Download Syllabus</p>
                     <p style={{
                         color:"#B86CD2",
                         fontFamily:"Open Sans",
-                        fontSize:"0.7rem",
+                        fontSize:"0.777vw",
                         fontWeight:"400",
                         fontStyle:"normal",
                     }}>Enter Your details to download the Course syllabus </p>
@@ -66,7 +66,7 @@ export default function Signup() {
   <path d="M24.5898 11.6479L11.6476 24.5902" stroke="#9844C5"/>
 </svg>
                     </div>
-                <div style={{margin:"3rem 0"}}>
+                <div style={{margin:"3.33vw 0"}}>
                 <form>
                         <input type="text" name="name" className='form-text' placeholder='Your Name*'/>
                         <input type="email" name="email" className='form-text' placeholder='Enter Email Address*'/>
@@ -76,14 +76,14 @@ export default function Signup() {
                             className='form-text'
                             value={phone}
                             style={{
-                                margin:"2rem 0",
+                                margin:"2.22vw 0",
                                 color:"transparent"
                             }}
                             onChange={phone => setPhone(phone)}
                         />
                         </div>
-                        <select className="form-text" style={{color:"#B86CD2" , fontFamily:"Open Sans" , fontSize:"1.2rem" }}>
-                            <option value={null} style={{lineHeight: "1.49513rem"}}>Select Courses</option>
+                        <select className="form-text" style={{color:"#B86CD2" , fontFamily:"Open Sans" , fontSize:"1.332vw" }}>
+                            <option value={null} style={{lineHeight: "1.66vw"}}>Select Courses</option>
                             {
                                 courses && courses.map(course => (
                                     <option key={course.id} value={course.id}>{course.attributes.name}</option>
@@ -100,7 +100,7 @@ export default function Signup() {
                 </div>
                 </div>
                 </div>
-            </div> */}
+            </div>
         </div>
         </>
       )

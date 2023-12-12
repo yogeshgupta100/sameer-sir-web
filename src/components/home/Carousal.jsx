@@ -18,6 +18,13 @@ const data = [
 		author: "Anna James",
 		role: "UX Designer",
 	},
+	{
+		image: "/assets/about-section1-1.jpg",
+		content:
+			"I can't express how grateful i am for my experience with [your business name]. as someone who was completely new to ux/ui design, i was initially overwhelmed by the vast world of design. however, their course, 'mastering ux/ui design: from novice to pro,' truly transformed my understanding and skills.",
+		author: "Anna James",
+		role: "UX Designer",
+	},
 ];
 
 export default function Carousal() {
@@ -46,7 +53,7 @@ export default function Carousal() {
 				style={{
 					width: "max-content",
 					color: "white",
-					marginLeft: "10vw",
+					marginLeft: "7vw",
 					transition: "all 0.5s ease-in-out",
 				}}
 			>
@@ -79,7 +86,7 @@ export default function Carousal() {
 								width: "0.66vw",
 								borderRadius: "50%",
 								background: currentSlide === index ? "#63017F" : "white",
-								border: "1px solid #63017F",
+								border: "0.069vw solid #63017F",
 								margin: "0 0.2vw 2.22vw",
 								cursor: "pointer",
 							}}
@@ -96,7 +103,7 @@ export default function Carousal() {
 						display: "flex",
 						justifyContent: "center",
 						alignItems: "center",
-						gap: "0.7rem",
+						gap: "0.887vw",
 					}}
 				>
 					<button

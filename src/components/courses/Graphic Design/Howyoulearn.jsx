@@ -40,7 +40,7 @@ const Howyoulearn = () => {
 </div>
                         </div> 
                         <div className="justify-content-around" >
-                        <div className="my-3 px-0" style={{boxShadow: "0.138vw 0.138vw 1.38vw 0px rgba(0, 0, 0, 0.15)" , borderRadius:"0.8325vw 0.8325vw 0rem 0rem" , overflow:"hidden"}}>
+                        <div className="my-3 px-0" style={{boxShadow: "0.138vw 0.138vw 1.38vw 0 rgba(0, 0, 0, 0.15)" , borderRadius:"0.8325vw 0.8325vw 0 0" , overflow:"hidden"}}>
                             <img src="https://s3-alpha-sig.figma.com/img/dc8b/a259/813f84c284b54c2dd41fcef1cd343eee?Expires=1699833600&Signature=TW~cgLR1IGvPkQUjzjUWo1gvP8L1jneM0jhWlHQ39drnYyY~pDx8YUQ3asH34P7XVZXbEu5PKiezNVjg2V1ipHjRag9xF0c4W8IEQIYZ98EiznTesXQ~j1t~WM7ecXZ7G~u9-5UEej7CO1H0V8FhpjFVAHrhlNDoSS6YSq3IoUMfA1qO5QYStCOVCZeLk~dOPqESEv8~HikSNb7IfhRxkqCuuu13VVDAJmowlcXbCBBtimrdl9~2hrdTRsw4qSslokPstWmoQ4YHExtVCUuouS07zMgCr3dcjTU16nJ0AAqhtqXqB0El8zhM9iGY3Ub2hEBTOpbm3igyahWDRL26QQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" className="card-img-top" alt='course1' style={{aspectRatio:"2/2"}}/>
                     <div className="card-body container" style={{
                         padding:"1.11vw 1.665vw",
@@ -70,7 +70,7 @@ const Howyoulearn = () => {
 </div>
                         </div> 
                         <div className="justify-content-around" >
-                        <div className="my-3 px-0" style={{boxShadow: "0.138vw 0.138vw 1.38vw 0px rgba(0, 0, 0, 0.15)" , borderRadius:"0.8325vw 0.8325vw 0rem 0rem" , overflow:"hidden"}}>
+                        <div className="my-3 px-0" style={{boxShadow: "0.138vw 0.138vw 1.38vw 0 rgba(0, 0, 0, 0.15)" , borderRadius:"0.8325vw 0.8325vw 0 0" , overflow:"hidden"}}>
                             <img src="https://s3-alpha-sig.figma.com/img/48bf/d284/63ba4923c3ca0ed22713352faa7bb92c?Expires=1699833600&Signature=nN8bSomMdnsOtLctzXKk6uv3XvfmOjmGCOtavjy8bwOn0cqmib38seNfKUcXbQyGyJJ5ZfdhTSdskvSEK6wrwTG8mf3IaBaYyhyLSnZg4g0nrcx6m7pxW16-LbF9wEyNtol0I4YCkt0gvJcug3aVsuqkRrIWOPYFxEIbncSSoluoOAQMoymTwaDBHZdivJLdZ3uk3p-ocCcDCIZ5JP18WRyHoIwffWCuOraAN0mjQqnOuuCbYVpw9xC0Fjn9ewreZhSHOuAk5HkOi4Ct6Ut6DRiyqdZgqG4HTsjpxU9joGnQekfuiDIhbL8yT2Z~BOp2KjHrJ7AmNNmmAi-TRcWN2g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" className="card-img-top" alt='course1' style={{aspectRatio:"2/2"}}/>
                     <div className="card-body container" style={{
                         padding:"1.11vw 1.665vw",
@@ -100,7 +100,7 @@ const Howyoulearn = () => {
 </div>
                         </div>
                         <div className="justify-content-around" >
-                        <div className="my-3 px-0" style={{boxShadow: "0.138vw 0.138vw 1.38vw 0px rgba(0, 0, 0, 0.15)" , borderRadius:"0.8325vw 0.8325vw 0rem 0rem" , overflow:"hidden"}}>
+                        <div className="my-3 px-0" style={{boxShadow: "0.138vw 0.138vw 1.38vw 0 rgba(0, 0, 0, 0.15)" , borderRadius:"0.8325vw 0.8325vw 0 0" , overflow:"hidden"}}>
                             <img src="https://s3-alpha-sig.figma.com/img/d098/0b31/ecdca299ca2cf345338e867cdcee2f74?Expires=1699833600&Signature=KaSl02deI6paO1udxGhFxBljC~RpAMnxrzjda9uUf1vYn3AnqDRFOIIHKkh4~PtYPMv5alKHmLpjM9XRRy8Oaa-m2bn6w7NTUF~Fv0kYCjmJvuHHer7r8EWaFwMgYQr65Lp5iWIg8UBwwdWLcqagu04IJlymABxlhsNs4yNP92ZZH8rQeXirUKBH5hxEfcCus2AY9z5CMxWHryiv90jJtzmlMYpN~Gl7orUER8SnfuchllQJoSzxtt5wHezWE~CaTsbXTndGOa3CM47AQjzhKPmu37syTMRooKMYgl9NBzbov7PSK7HiEOVuBYL1veDtTA1tWVuVF12T85gB--upjg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" className="card-img-top" alt='course1' style={{aspectRatio:"2/2"}}/>
                     <div className="card-body container" style={{
                         padding:"1.11vw 1.665vw",

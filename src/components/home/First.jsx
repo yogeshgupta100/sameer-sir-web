@@ -44,7 +44,7 @@ const First = () => {
           <p style={{ fontSize:"1.11vw" , marginBottom:"0"}}>Join the Creative Revolution</p>
           <h4 style={{fontSize:"2.22vw" , lineHeight:"130%" , width:"90%" , fontWeight:"700"}}>Your lifetime Access to our Design Community Membership Starts Here!</h4>
           <button type="button" className="btn" style={{borderRadius: "0.72vw",
-            border: "1.5px solid #FFF",
+            // border: "1.665vw solid #FFF",
             fontSize:"1.11vw",
             fontWeight:"500",
             width:"fit-content",
@@ -55,21 +55,21 @@ const First = () => {
               Explore Courses
         </button>
         <div className="first-count" style={{
-          width:"100%",
-          minHeight:"40%",
+          maxWidth:"100vw",
+          minHeight:"3vw",
           display:"grid",
-          gridTemplateColumns:"repeat(3,auto)",
-          alignItems:"end",
+          gridTemplateColumns:"repeat(3,1fr)",
+          alignItems:"flex-end",
         }}>
           <div className="content">
               <h3 style={{
               fontSize:"3.33vw",
-              fontWeight:"700"
-            }}>500+</h3>
+              fontWeight:"700",
+            }}>500+ </h3>
               <p style={{
-                maxWidth:"11vw",
+                width:"11vw",
                 fontSize:"1.11vw",
-                fontWeight:"400"
+                fontWeight:"400",
               }}>Experts working across the globe!</p>
           </div>
           <div className="content">

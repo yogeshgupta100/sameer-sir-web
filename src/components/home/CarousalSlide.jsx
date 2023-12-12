@@ -38,7 +38,7 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 					display: "flex",
 					flexDirection: "column",
 					justifyContent: "space-evenly",
-					maxWidth: "100%",
+					maxWidth: "100vw",
 					minHeight: "100%",
 					margin: "0 2.77vw",
 				}}
@@ -76,7 +76,7 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 							display: "inline-block",
 							fontSize: "2.22vw",
 							lineHeight: "1.11vw",
-							translate: "0 1.44vw",
+							translate: "0 0.55vw",
 						}}
 					>
 						”

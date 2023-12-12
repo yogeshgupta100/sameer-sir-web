@@ -10,17 +10,19 @@ const Hero = () => {
         style={{
           background: "transparent",
           marginBottom:"2.22vw",
-          height:"150vh",
+          minHeight:"80vw",
           position:"relative",
         }}
       >
-            <LandingPage imageurl={""} />
+            <div className="image-hero">
+            <LandingPage imageurl={"/assets/about-landing.png"}/>
+            </div>
             <div className=" about-first2">
             <div className="container about-content">
               <div className="part1">
                 <h3>About us.</h3>
                 <p>
-                  At [Your Website Name], we are passionate about empowering
+                  At Dxolve , we are passionate about empowering
                   creative minds to shape the digital world of tomorrow. We
                   believe in the transformative power of design, and our mission
                   is to provide an exceptional learning experience that nurtures
@@ -32,11 +34,11 @@ const Hero = () => {
                   and fostering innovation
                 </p>
               </div>
-              <div className="v-line"></div>
+              <div className="v-line" style={{minWidth:"0.07vw" , minHeight:"100%"}}></div>
               <div className="part2">
                 <h3>Our Vision.</h3>
                 <p>
-                  At [Your Website Name], we envision a world where design knows
+                  At Dxolve , we envision a world where design knows
                   no bounds—an interconnected realm where creativity and
                   innovation flourish in every digital corner. Our vision is to
                   be the guiding light for individuals seeking to master UX/UI

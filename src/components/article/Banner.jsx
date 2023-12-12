@@ -9,7 +9,7 @@ const Banner = () => {
       <div
         className="banner"
         style={{
-          boxShadow: "0px 1px 8px 0px rgba(0, 0, 0, 0.25)",
+          boxShadow: "0 0.069vw 0.552vw 0 rgba(0, 0, 0, 0.25)",
         }}
       >
         <Header />
@@ -143,7 +143,7 @@ const Banner = () => {
           className="icon-container"
           style={{
             width: "100%",
-            margin: "2rem 0",
+            margin: "2.22vw 0",
             display: "flex",
             justifyContent: "flex-end",
           }}
@@ -223,7 +223,7 @@ const Banner = () => {
             width: "100%",
             display: "flex",
             justifyContent: "center",
-            margin: "4rem 0 6rem",
+            margin: "4.44vw 0 6.66vw",
           }}
         >
           <span className="avatar"></span>
@@ -264,14 +264,14 @@ const Banner = () => {
       </div>
       <div
         className="container"
-        style={{ padding: "2rem 15rem 0", width: "100%", marginTop: "5rem"}}
+        style={{ padding: "2.22vw 16.65vw 0", width: "100%", marginTop: "5.55vw"}}
       >
         <div
           className="article 1"
           style={{
-            borderLeft: "0.4rem solid #B86CD2",
+            borderLeft: "0.444vw solid #B86CD2",
             width: "100%",
-            paddingLeft: "1.5rem",
+            paddingLeft: "1.665vw",
           }}
         >
           <p>
@@ -295,8 +295,8 @@ const Banner = () => {
           className="article 2"
           style={{
             width: "100%",
-            paddingLeft: "1.5rem",
-            margin:"6rem 0 0"
+            paddingLeft: "1.665vw",
+            margin:"6.66vw 0 0"
           }}
         >
           <h5>The Quest for Enhanced User Experience</h5>
@@ -335,8 +335,8 @@ const Banner = () => {
         </div>
         <div className="article 3" style={{
             width: "100%",
-            paddingLeft: "1.5rem",
-            margin:"6rem 0 0"
+            paddingLeft: "1.665vw",
+            margin:"6.66vw 0 0"
           }}>
           <h5>The "More" That Matters</h5>
           <p>
@@ -360,8 +360,8 @@ const Banner = () => {
         </div>
         <div className="article 4" style={{
             width: "100%",
-            paddingLeft: "1.5rem",
-            margin:"6rem 0 0"
+            paddingLeft: "1.665vw",
+            margin:"6.66vw 0 0"
           }}>
           <h5>The Impact of Regular Updates</h5>
           <p>
@@ -378,10 +378,10 @@ const Banner = () => {
           </p>
         </div>
         <div className="conclusion article" style={{
-            borderLeft: "0.4rem solid #B86CD2",
+            borderLeft: "0.444vw solid #B86CD2",
             width: "100%",
-            paddingLeft: "1.5rem",
-            margin:"6rem 0 0"
+            paddingLeft: "1.665vw",
+            margin:"6.66vw 0 0"
           }}>
           <h5>Conclusion</h5>
           <p>
