@@ -51,11 +51,13 @@
 	transition: all 0.3s ease-in-out;
 	border-radius: 1vw;
 	border: 1px solid #b86cd2;
+	z-index: -100;
 }
 
 .active .collapsableContainer {
 	opacity: 1;
 	bottom: 100px;
+	z-index: 999;
 }
 
 .chatbox {
