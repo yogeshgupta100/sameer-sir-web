@@ -18,11 +18,11 @@ const Header = () => {
 		<>
 			<div
 				className="navbar navbar-expand-lg"
-				style={{ padding: "0", width: "100%", boxShadow: "0px 1px 8px 0px rgba(0, 0, 0, 0.25)" }}
+				style={{ padding: "0", maxWidth: "100vw", boxShadow: "0 0.0625rem 0.5rem 0 rgba(0, 0, 0, 0.25)" }}
 			>
 				<div
 					className="container-fluid py-2"
-					style={{ backgroundColor: "#fff", margin: "0", height: "6rem", display: "flex" }}
+					style={{ backgroundColor: "#fff", margin: "0", minHeight: "6.66vw", display: "flex" }}
 				>
 					<button
 						className="navbar-toggler"
@@ -43,7 +43,7 @@ const Header = () => {
 							left: "0",
 							display: "flex",
 							justifyContent: "space-between",
-							width: "100%",
+							minWidth: "100%",
 						}}
 					>
 						<ul
@@ -52,7 +52,7 @@ const Header = () => {
 								display: "flex",
 								justifyContent: "space-between",
 								alignItems: "center",
-								marginLeft: "2rem",
+								marginLeft: "2.22vw",
 							}}
 						>
 							<li className="nav-item ms-3 dropdown">
@@ -70,11 +70,11 @@ const Header = () => {
 											textUnderlinePosition: "none",
 											fontFamily: "Raleway",
 											color: " rgba(0, 0, 0, 0.80)",
-											fontSize: "1rem",
+											fontSize: "1.11vw",
 											fontWeight: "medium",
 											fontStyle: "normal",
 											textAlign: "center",
-											marginRight: "0.6rem",
+											marginRight: "0.66vw",
 										}}
 									>
 										About
@@ -100,7 +100,7 @@ const Header = () => {
 										textAlign: "center",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "1rem",
+										fontSize: "1.11vw",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
@@ -110,7 +110,7 @@ const Header = () => {
 										src="assets/down-arrow.png"
 										alt="arrow"
 										style={{
-											width: "2rem",
+											maxWidth: "2.22vw",
 											background: "transparent",
 										}}
 									></img>
@@ -148,7 +148,7 @@ const Header = () => {
 										cursor: "pointer",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "1rem",
+										fontSize: "1.11vw",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
@@ -158,7 +158,7 @@ const Header = () => {
 										src="assets/down-arrow.png"
 										alt="arrow"
 										style={{
-											width: "2rem",
+											maxWidth: "2.22vw",
 											background: "transparent",
 										}}
 									></img>
@@ -195,7 +195,7 @@ const Header = () => {
 										cursor: "pointer",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "1rem",
+										fontSize: "1.11vw",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
@@ -205,7 +205,7 @@ const Header = () => {
 										src="assets/down-arrow.png"
 										alt="arrow"
 										style={{
-											width: "2rem",
+											maxWidth: "2.22vw",
 											background: "transparent",
 										}}
 									></img>
@@ -233,7 +233,7 @@ const Header = () => {
 							to="/"
 							style={{
 								fontFamily: "Raleway",
-								fontSize: "1.5rem",
+								fontSize: "1.66vw",
 								fontStyle: "normal",
 								fontWeight: "700",
 							}}
@@ -241,8 +241,8 @@ const Header = () => {
 							<span
 								className="navbar-logo"
 								style={{
-									width: "4rem",
-									height: "4rem",
+									maxWidth: "4.44vw",
+									minHeight: "4.44vw",	
 									fill: "linear-gradient(93deg, #480CA8 1.27%, #560BAD 21.05%, #A615A1 45.58%, #8A1879 68.37%, #88199B 108.02%)",
 								}}
 							>

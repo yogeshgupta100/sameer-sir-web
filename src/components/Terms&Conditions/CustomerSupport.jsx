@@ -7,13 +7,15 @@ export default function CustomerSupport() {
       <Navbar />
       <div
         style={{
-          padding: "5rem 0",
-          width: "60%",
-          margin: "auto",
-          textAlign: "justify",
+          padding: "1.96vw 0",
+					maxWidth: "60vw",
+					margin: "auto",
+					textAlign: "justify",
+          marginBottom:"0",
+          lineHeight:"1.5"
         }}
       >
-        <h2 style={{ color: "#B46BD1" , lineHeight:"6rem"}}>Customer Support</h2>
+        <h2 style={{ color: "#B46BD1" , lineHeight:"6.66vw" , fontSize:"2.77vw"}}>Customer Support</h2>
         <p>
           Welcome to Dxolve Online Customer Support page! We are dedicated to
           ensuring your learning experience is smooth and enjoyable as you
@@ -23,14 +25,14 @@ export default function CustomerSupport() {
         </p>
         <p>Here's how our Customer Support can assist you:</p>
 
-        <h5 style={{ paddingTop: "71px" }}>1. Course Assistance:</h5>
+        <h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw" }}>1. Course Assistance:</h5>
         <p>
           Whether you're a beginner or an advanced learner, our team can guide
           you in choosing the right courses, understanding course content, and
           addressing any issues related to your lessons.
         </p>
 
-        <h5 style={{ marginTop: "71px" }}>2. Technical Support:</h5>
+        <h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw" }}>2. Technical Support:</h5>
         <p>We use the collected information for various purposes, including:</p>
 
         <p>
@@ -40,34 +42,34 @@ export default function CustomerSupport() {
           without interruptions.
         </p>
 
-        <h5 style={{ marginTop: "71px" }}>3. Billing and Payments:</h5>
+        <h5 style={{marginTop: "4.92vw" , fontSize:"1.66vw" }}>3. Billing and Payments:</h5>
         <p>
           Have questions about subscriptions, payments, or billing? We're here
           to provide clarity and assist with any payment-related inquiries.
         </p>
 
-        <h5 style={{ marginTop: "71px" }}>4. Account Assistance:</h5>
+        <h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw" }}>4. Account Assistance:</h5>
         <p>
           If you need assistance with your account, such as password resets,
           account settings, or profile updates, our support team is just a
           message away.
         </p>
 
-        <h5 style={{ marginTop: "71px" }}>5. Feedback and Assistance:</h5>
+        <h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw" }}>5. Feedback and Assistance:</h5>
         <p>
           We value your feedback and suggestions. Share your ideas, concerns,
           and recommendations with us to help us improve our platform
           continually.
         </p>
 
-        <h5 style={{ marginTop: "71px" }}>6. FAQs and Resources:</h5>
+        <h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw" }}>6. FAQs and Resources:</h5>
         <p>
           Explore our Frequently Asked Questions (FAQs) and resources to find
           answers to common queries. If you can't find what you're looking for,
           our team is always ready to provide personalized assistance.
         </p>
 
-        <h5 style={{ marginTop: "71px" }}>7. Contact Us:</h5>
+        <h5 style={{ marginTop: "4.92vw" , fontSize:"1.66vw" }}>7. Contact Us:</h5>
         <p>
           Get in touch with our support team through the provided contact
           channels, whether it's through email, chat, or phone. We're here to
@@ -75,7 +77,7 @@ export default function CustomerSupport() {
         </p>
 
         <p style={{
-            marginTop:"6rem"
+            marginTop:"6.66vw" , fontSize:"1.11vw"
         }}>
           Join our design community and embark on your creative journey with
           confidence, knowing that our Customer Support team is dedicated to
@@ -85,9 +87,7 @@ export default function CustomerSupport() {
         </p>
 
       </div>
-      <div style={{ marginTop: "-6rem" }}>
         <Subscribe />
-      </div>
     </>
   );
 }

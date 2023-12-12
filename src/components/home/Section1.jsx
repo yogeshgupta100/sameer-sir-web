@@ -38,19 +38,22 @@ function Section1() {
 		<div
 			className="container counter"
 			style={{
-				height: "60vh",
+				minHeight: "25vw",
 			}}
 		>
-			<div className="counter-heading">
+			<div className="counter-heading" style={{fontSize:"1.49vw"}}>
 				<span>We Provide</span>
 			</div>
 			<div
-				className="row"
+				className="counter-row"
 				style={{
 					display: "flex",
 					justifyContent: "center",
 					alignItems: "center",
-					minHeight: "80%",
+					// minHeight: "80%",
+					flexWrap:"nowrap",
+					overflowX:"hidden",
+					padding:"8vw 0"
 				}}
 				>
 				<div className="col">
@@ -58,13 +61,12 @@ function Section1() {
 						className="awesomeCounter"
 						style={{
 							textAlign: "center",
-							fontSize:"clamp(1rem , 4px , 5rem)"
 						}}
-					>
-						<span
+						>
+						<span className="counter-number"
 							style={{
 								color: "#B46BD1",
-								fontSize: "5rem",
+								fontSize: "5.5vw",
 								fontWeight: "900",
 								fontFamily: "Open Sans",
 							}}
@@ -76,7 +78,7 @@ function Section1() {
 								color: "#B46BD1",
 								textAlign: "center",
 								fontFamily: "Open Sans",
-								fontSize: "1rem",
+								fontSize: "1.11vw",
 								fontStyle: "normal",
 								fontWeight: "500",
 							}}
@@ -92,10 +94,10 @@ function Section1() {
 							textAlign: "center",
 						}}
 					>
-						<span
+						<span className="counter-number"
 							style={{
 								color: "#B46BD1",
-								fontSize: "5rem",
+								fontSize: "5.5vw",
 								fontWeight: "900",
 								fontFamily: "Open Sans",
 							}}
@@ -107,7 +109,7 @@ function Section1() {
 								color: "#B46BD1",
 								textAlign: "center",
 								fontFamily: "Open Sans",
-								fontSize: "1rem",
+								fontSize: "1.11vw",
 								fontStyle: "normal",
 								fontWeight: "500",
 							}}
@@ -123,10 +125,10 @@ function Section1() {
 							textAlign: "center",
 						}}
 					>
-						<span
+						<span className="counter-number"
 							style={{
 								color: "#B46BD1",
-								fontSize: "5rem",
+								fontSize: "5.5vw",
 								fontWeight: "900",
 								fontFamily: "Open Sans",
 							}}
@@ -138,7 +140,7 @@ function Section1() {
 								color: "#B46BD1",
 								textAlign: "center",
 								fontFamily: "Open Sans",
-								fontSize: "1rem",
+								fontSize: "1.11vw",
 								fontStyle: "normal",
 								fontWeight: "500",
 							}}

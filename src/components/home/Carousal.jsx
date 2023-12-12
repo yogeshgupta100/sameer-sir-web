@@ -61,11 +61,11 @@ export default function Carousal() {
 					justifyContent: "space-between",
 					alignItems: "center",
 					gridTemplateColumns: "1fr 1fr 1fr",
-					marginTop: "2rem",
+					marginTop: "2.22vw",
 				}}
 			>
 				<div></div>
-				<div
+				<div 
 					style={{
 						display: "flex",
 						justifyContent: "center",
@@ -75,12 +75,12 @@ export default function Carousal() {
 						<div
 							key={index}
 							style={{
-								height: "0.6rem",
-								width: "0.6rem",
+								height: "0.66vw",
+								width: "0.66vw",
 								borderRadius: "50%",
 								background: currentSlide === index ? "#63017F" : "white",
 								border: "1px solid #63017F",
-								margin: "0 0.2rem",
+								margin: "0 0.2vw 2.22vw",
 								cursor: "pointer",
 							}}
 							onClick={() => {
@@ -108,8 +108,8 @@ export default function Carousal() {
 							color: "white",
 							background: currentSlide === 0 ? "#63017F" : "#710186",
 							borderRadius: "50%",
-							height: "2.7rem",
-							width: "2.7rem",
+							height: "3vw",
+							width: "3vw",
 							outline: "none",
 							border: "none",
 						}}
@@ -130,8 +130,8 @@ export default function Carousal() {
 							color: "white",
 							background: currentSlide === data.length - 1 ? "#63017F" : "#710186",
 							borderRadius: "50%",
-							height: "2.7rem",
-							width: "2.7rem",
+							height: "3vw",
+							width: "3vw",
 							outline: "none",
 							border: "none",
 						}}

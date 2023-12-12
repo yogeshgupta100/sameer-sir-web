@@ -2,21 +2,22 @@ import { BsPlay } from "react-icons/bs";
 
 export default function CarousalSlide({ authorImage, testimony, author, authorRole }) {
 	return (
-		<div
+		<div className="carousel-body"
 			style={{
 				display: "inline-flex",
-				padding: "3rem 3.2rem",
+				padding: "3.33vw 3.55vw",
 				background: "linear-gradient(263deg, #720186 0%, #58017A 47.51%, #4B0173 127.7%)",
-				height: "26rem",
-				width: "74rem",
-				margin: " 4rem 2vw 1rem",
+				minHeight: "28.86vw",
+				maxWidth: "82vw",
+				margin: " 4.44vw 2vw 1.11vw",
 			}}
 		>
 			<div
 				style={{
 					display: "flex",
 					alignItems: "flex-end",
-					padding: "1.5rem 1rem",
+					padding: "1.665vw 1.11vw",
+					minWidth:"20vw",
 					aspectRatio: "4/3",
 					backgroundImage: `url(${import.meta.env.VITE_STRAPI_SERVER_URL}${authorImage.data.attributes.url})`,
 					backgroundSize: "cover",
@@ -27,8 +28,8 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 				<BsPlay
 					style={{
 						color: "white",
-						height: "2.5rem",
-						width: "2.5rem",
+						minHeight: "2.77VW",
+						maxWidth: "2.77vw",
 					}}
 				/>
 			</div>
@@ -37,9 +38,9 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 					display: "flex",
 					flexDirection: "column",
 					justifyContent: "space-evenly",
-					width: "100%",
-					height: "100%",
-					margin: "0 40px",
+					maxWidth: "100%",
+					minHeight: "100%",
+					margin: "0 2.77vw",
 				}}
 			>
 				<div
@@ -47,15 +48,15 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 					style={{
 						position: "relative",
 						display: "inline-block",
-						fontSize: "14px",
+						fontSize: "1vw",
 					}}
 				>
 					<span
 						style={{
 							position: "absolute",
 							right: "101%",
-							fontSize: "2rem",
-							lineHeight: "1rem",
+							fontSize: "2.22vw",
+							lineHeight: "1.11vw",
 						}}
 					>
 						“
@@ -63,7 +64,7 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 					<span
 						style={{
 							fontWeight: "300",
-							fontSize:"1rem",
+							fontSize:"1.11vw",
 							fontStyle:"normal",
 							fontFamily:"Open Sans"
 						}}
@@ -73,9 +74,9 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 					<span
 						style={{
 							display: "inline-block",
-							fontSize: "2rem",
-							lineHeight: "1rem",
-							translate: "0 1.3rem",
+							fontSize: "2.22vw",
+							lineHeight: "1.11vw",
+							translate: "0 1.44vw",
 						}}
 					>
 						”
@@ -89,14 +90,14 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 					<div
 						style={{
 							fontWeight: "700",
-							fontSize: "1rem",
+							fontSize: "1.11vw",
 						}}
 					>
 						{author}
 					</div>
 					<div
 						style={{
-							fontSize: "12px",
+							fontSize: "0.83vw",
 							fontWeight: "300",
 						}}
 					>

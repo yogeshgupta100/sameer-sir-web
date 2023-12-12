@@ -8,7 +8,7 @@ const SuccessPayment = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "100vw",
+        maxWidth: "100vw",
         height: "100vh",
       }}
     >
@@ -18,16 +18,16 @@ const SuccessPayment = () => {
           alt="success"
           style={{ width: "30%", height: "30%" }}
         />
-        <p style={{fontSize:"1.3rem" , lineHeight:"normal"}}>Your Payment is Successful !</p>
+        <p style={{fontSize:"1.443vw" , lineHeight:"normal"}}>Your Payment is Successful !</p>
         <NavLink to="/">
         <button className="button" id="button" style={{
-          borderRadius: "0.6rem",
-          border: "1.1px solid #B86CD2",
-          marginRight:"1rem",
-          padding:"0.625rem 1rem",
+          borderRadius: "0.66vw",
+          border: "0.076vw solid #B86CD2",
+          marginRight:"1.11vw",
+          padding:"0.69vw 1.11vw",
           fontWeight:"500",
-          fontSize:"1.04rem",
-          marginTop:"1.7rem"
+          fontSize:"1.15vw",
+          marginTop:"1.887vw"
         }}>Home</button> 
         </NavLink>
       </div>

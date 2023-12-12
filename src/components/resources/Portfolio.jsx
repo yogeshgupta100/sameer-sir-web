@@ -5,7 +5,7 @@ const Portfolio = () => {
   return (
     <>
       <div className="container" style={{
-        padding:"6rem 0 0"
+        padding:"6.66vw 0 0"
       }}>
       <Heading content={"Portfolio"} left={"30%"}/>
       </div>
@@ -15,7 +15,7 @@ const Portfolio = () => {
         backgroundRepeat:"no-repeat",
         backgroundSize:"contain",
         width:"100%",
-        margin:"6rem 0",
+        margin:"6.66vw 0",
         display:"flex",
         justifyContent:"center",
         alignItems:"center",

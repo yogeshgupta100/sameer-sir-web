@@ -12,34 +12,34 @@ const Resource = ({designCardData}) => {
   return (
     <>
       <div className="banner" style={{
-          boxShadow: "0px 1px 8px 0px rgba(0, 0, 0, 0.25)",
+          boxShadow: "0 0.069vw 0.555vw 0 rgba(0, 0, 0, 0.25)",
           position:"sticky"
         }}>
       <Header/>
         </div>
-      <div className="full-body" style={{position:"relative" , width:"100vw" , marginBottom:"28rem"}}>
+      <div className="full-body" style={{position:"relative" , maxWidth:"100vw" , marginBottom:"31.08vw"}}>
         <Small_nav/>
         <LandingPage/>
         <div
         className=" about-first2"
-        style={{ position: "absolute", bottom: "-18rem" , display:"flex", alignItems:"center" , height:"25rem" , paddingLeft:"3rem"}}
+        style={{ position: "absolute", bottom: "-19.98vw" , display:"flex", alignItems:"center" , minHeight:"27.75vw" , paddingLeft:"3.33vw"}}
       >
         <div
           className="container about-content"
-          style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)" , gap:"1rem" , justifyContent:"center", height:"18rem" , alignContent:"center"}}
+          style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)" , gap:"1.11vw" , justifyContent:"center", height:"19.98vw" , alignContent:"center"}}
         >
-          <div className="part1" style={{width:"100%", textAlign:"center" , fontFamily:"Open Sans" , borderRight:"1px solid #CDCDCD" , paddingRight:"3rem"}} >
+          <div className="part1" style={{width:"100%", textAlign:"center" , fontFamily:"Open Sans" , borderRight:"0.069vw solid #CDCDCD" , paddingRight:"3.33vw"}} >
             <h3 style={{
               textAlign: "center",
-              fontSize:"1.3rem",
+              fontSize:"1.443vw",
               fontWeight:"600",
-              letterSpacing:"1px",
+              letterSpacing:"0.069vw",
               color:"#B46BD1"
             }}>Course description</h3>
             <p style={{
-              fontSize:"0.85rem",
+              fontSize:"0.9435vw",
               color:"#3D3D3D",
-              lineHeight:"1.6rem"
+              lineHeight:"1.776vw"
             }}>
               Welcome to the enchanting world of "Graphic Design Alchemy," where
               creativity knows no bounds, and the ordinary transforms into
@@ -50,26 +50,26 @@ const Resource = ({designCardData}) => {
           </div>
           <div className="part2" style={{
               textAlign: "center",
-              borderRight:"1px solid #CDCDCD",
+              borderRight:"0.069vw solid #CDCDCD",
             }}>
             <h3 style={{
               textAlign: "center",
-              fontSize:"1.3rem",
+              fontSize:"1.443vw",
               fontWeight:"600",
-              letterSpacing:"1px",
+              letterSpacing:"0.069vw",
               color:"#B46BD1"
             }}>Course duration</h3>
             <p style={{
-              fontSize:"0.85rem",
+              fontSize:"0.9435vw",
               color:"#3D3D3D",
-              lineHeight:"1.6rem"
+              lineHeight:"1.776vw"
             }}>
               6 months
             </p>
             <p style={{
-              fontSize:"0.85rem",
+              fontSize:"0.9435vw",
               color:"#3D3D3D",
-              lineHeight:"1.6rem"
+              lineHeight:"1.776vw"
             }}>
               2 hours a day 
             </p>
@@ -80,22 +80,22 @@ const Resource = ({designCardData}) => {
             }}>
             <h3 style={{
               textAlign: "center",
-              fontSize:"1.3rem",
+              fontSize:"1.443vw",
               fontWeight:"600",
-              letterSpacing:"1px",
+              letterSpacing:"0.069vw",
               color:"#B46BD1"
             }}>Next branch</h3>
             <p style={{
-              fontSize:"0.85rem",
+              fontSize:"0.9435vw",
               color:"#3D3D3D",
-              lineHeight:"1.6rem"
+              lineHeight:"1.776vw"
             }}>
               weekend
             </p>
             <p style={{
-              fontSize:"0.85rem",
+              fontSize:"0.9435vw",
               color:"#3D3D3D",
-              lineHeight:"1.6rem"
+              lineHeight:"1.776vw"
             }}>
               sat & sun 
             </p>
@@ -104,10 +104,10 @@ const Resource = ({designCardData}) => {
       </div>
       </div>
       <Resources/>
-      <div className="flip-resources" style={{marginTop:"15rem"}}>
+      <div className="flip-resources" style={{marginTop:"16.65vw"}}>
         <Resources/>  
       </div>
-      <div className="container" style={{marginTop:"15rem"}} id='blogs'>
+      <div className="container" style={{marginTop:"16.65vw"}} id='blogs'>
         <Heading content={"Blogs"} left={"30.5%"} />
         <Blog/>
       </div>
@@ -116,22 +116,22 @@ const Resource = ({designCardData}) => {
           color:"#fff",
           textAlign:"center",
           fontFamily:"Open Sans",
-          fontSize:"2rem",
+          fontSize:"2.22vw",
           fontWeight:"700",
-          lineHeight:"3rem",
-          width:"40rem"
+          lineHeight:"3.33vw",
+          maxWidth:"44.4vw"
         }}>Want To Upload Your Assets And Become Part Of Our Resource Community
-        <button style={{marginTop:"2rem"}} id='button' className='btn'>Upload now</button>
+        <button style={{marginTop:"2.22vw"}} id='button' className='btn'>Upload now</button>
         </div>
       </div>
       <Portfolio/>
-        <div className="container" style={{marginTop:"9rem"}}>
+        <div className="container" style={{marginTop:"9.99vw"}}>
         <Heading content={"Design Challenges"} left={"30.5%"} />
         <div className="DesignCard container" style={{
           display:"grid",
           gridTemplateColumns:"repeat(2,auto)",
           justifyContent:"center",
-          gap:"2rem"
+          gap:"2.22vw"
         }}>
           {designCardData.map((currEle) => {
       return(

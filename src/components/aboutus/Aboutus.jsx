@@ -2,7 +2,6 @@ import React,{useState} from 'react'
 import Hero from './Hero'
 import Section1 from './section1'
 import Brands from '../home/Brands'
-import Card from './cardApi'
 import Subscribe from './Subscribe'
 import Header from '../Header'
 import Teachers from '../home/Teachers'
@@ -17,18 +16,18 @@ const Aboutus = () => {
         <Brands color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="white"/>
         <Section1 text={"Our Commitment"}/>
         <div style={{
-          width:"100vw",
+          maxWidth:"100vw",
           display:"flex",
           justifyContent:"center",
-          marginTop:"3rem"
+          marginTop:"3.33vw"
         }}>
         <button className='purple-btn' id='btn' style={{
         textDecoration:"none",
         border:"none",
-        width:"10rem",
+        maxWidth:"11.1vw",
         fontWeight:"500",
-        padding:"1.1rem",
-        marginTop:"1.8rem",
+        padding:"1.221vw",
+        marginTop:"1.998vw",
       }}>Explore Courses</button>
         </div>
         <Subscribe/>

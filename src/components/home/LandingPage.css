@@ -1,71 +1,45 @@
-/* landing-page.css */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 .landing-page {
     background: linear-gradient(261deg, #8663CB 0%, #A665D9 49.31%, #9840A4 91.94%);
-    flex-shrink: 0;
-    min-height: 96vh;
-    position: relative;
-    overflow:hidden;
+    max-width: 100vw;
+    min-height: 50vw;
+    display: flex;
+    align-items: center;
   }
-  .landing-img{
-    width: 40%;
-    height: 70%;
-    flex-shrink: 0;
-    /* background: url("/assets/home-landing-img.png"), lightgray 50% / cover no-repeat; */
-    background-position: center;
-    background-color: transparent;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 2rem;
-    bottom: 5rem;
-  }
+.landing-page-content{
+  min-width: 100vw;
+  min-height: 30vw;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
   
   .navbar {
-    z-index: 1000; /* Ensure the navbar is on top of the image */
+    z-index: 1000;
   }
   
   .centered-text {
-    position: absolute;
-    top: 50%;
     margin-left: clamp(2rem, 10vw, 7rem);
-    transform: translate(0, -50%);
-    text-align: start;
-    width: 60%;
+    max-width: 50vw;
+    letter-spacing: 0.11vw;
   }
 .centered-text h2{
   font-family: Raleway;
   font-style: normal;
-  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  font-size: 2.22vw;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 1rem;
+  margin-bottom: 1.11vw;
 }
   .centered-text p{
   color: #fff;
   font-family: Raleway;
-  font-size: 1rem;
+  font-size: 1.11vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.875rem; /* 150% */
-  letter-spacing: 0.075rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.22vw;
   opacity: 0.9;
-}
-  /* You can add more styles as needed */
-
-@media screen and (max-width: 640px) {
-  .landing-img {
-    display: none;
-  }
-  .centered-text {
-    width: 80%;
-  }
-  .btn {
-    height: fit-content;
-    width: fit-content;
-    font-size: 1rem;
-    padding: 4px 22px;
-  }
+  letter-spacing: 0.11vw;
 }

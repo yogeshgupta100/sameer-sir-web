@@ -18,19 +18,19 @@ const BlogCard = ({currEle}) => {
 								<div
 									className="card-body container"
 									style={{
-										padding: "1rem",
-										lineHeight: "1rem",
+										padding: "1.11vw",
+										lineHeight: "1.11vw",
 									}}
 								>
 									<p
 										style={{
 											color: "rgba(91, 91, 91, 0.80)",
                       fontFamily: "Open Sans",
-                      fontSize: "0.7rem",
+                      fontSize: "0.777vw",
                       fontStyle: "normal",
                       fontWeight: "600",
                       // lineHeight: "129.836%",
-                      letterSpacing: "0.04494rem",
+                      letterSpacing: "0.05vw",
 										}}
 									>
 										{currEle.attributes.publishDate}
@@ -38,22 +38,22 @@ const BlogCard = ({currEle}) => {
                   <h5 style={{
                     color: "rgba(0, 0, 0, 0.80)",
                     fontFamily: "Open Sans",
-                    fontSize: "1.25rem",
+                    fontSize: "1.3875vw",
                     fontStyle: "normal",
                     fontWeight: "600",
-                    marginBottom:"1rem"
+                    marginBottom:"1.11vw"
                   }}>
                     {currEle.attributes.title}
                   </h5>
                   <p style={{
                     color: "rgba(0, 0, 0, 0.75)",
                     fontFamily: "Open Sans",
-                    fontSize: "0.8rem",
+                    fontSize: "0.888vw",
                     fontStyle: "normal",
                     fontWeight: "300",
                     lineHeight: "135.836%",
                     textTransform: "capitalize",
-                    height:"2.1rem",
+                    minHeight:"2.331vw",
                     overflow:"hidden"
                   }}>
                     {currEle.attributes.content}
@@ -64,10 +64,10 @@ const BlogCard = ({currEle}) => {
                   <NavLink to={"/article"}>
                   <button className='button' id='button'style={{
                     border:"none",
-                    borderRadius:"0.42144rem",
+                    borderRadius:"0.4677vw",
                     background: "#B46BD1",
                     color:"#fff",
-                    padding:"0.8rem 2rem"
+                    padding:"0.888vw 2.22vw"
                   }}>
                     Read more
                   </button>

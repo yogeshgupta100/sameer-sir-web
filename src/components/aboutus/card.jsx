@@ -10,10 +10,10 @@ const EmpCard = ({ currEle }) => {
 				backgroundPosition: "center",
 				backgroundSize: "cover",
 				backgroundRepeat: "no-repeat",
-				height: "23rem",
-				width: "17rem",
-				borderRadius: "0.75rem",
-				border: "1px solid #B86CD2",
+				minHeight: "25vw",
+				minWidth: "19vw",
+				borderRadius: "0.8325vw",
+				border: "0.069vw solid #B86CD2",
 				backgroundImage: `url(${import.meta.env.VITE_STRAPI_SERVER_URL}${
 					currEle?.attributes?.picture?.data?.attributes?.url
 				})`,
@@ -23,26 +23,26 @@ const EmpCard = ({ currEle }) => {
 				className="text"
 				style={{
 					position: "absolute",
-					bottom: "6px",
+					bottom: "0.41625vw",
 					right: "10%",
 				}}
 			>
-				<div className="card-emp-content">
-					<h4>{currEle.attributes.name}</h4>
+				<div className="card-emp-content" style={{fontSize:"1.66vw"}}>
+					<h4 style={{fontSize:"1.66vw"}}>{currEle.attributes.name}</h4>
 				</div>
-				<div className="card-emp-content">
+				<div className="card-emp-content" style={{fontSize:"1.66vw"}}>
 					<p>{currEle.attributes.role}</p>
 				</div>
 			</div>
 			<div className="hidden-content">
-				<div className="hidden-content">
-					<h3>{currEle.attributes.name}</h3>
+				<div className="hidden-container" style={{padding:"0 0 4vw"}}>
+					<h3 style={{fontSize:"1.67vw"}}>{currEle.attributes.name}</h3>
 					<p>
 						{currEle.attributes.role} at {currEle.attributes.company}
 					</p>
-					<hr />
+					<hr style={{margin:"0.8vw 0"}}/>
 					<p>{currEle.attributes.description}</p>
-					<hr />
+					<hr style={{margin:"0.8vw 0"}}/>
 					<div className="icon-container">
 						<a href={currEle.attributes.instagram}>
 							<RiInstagramFill />

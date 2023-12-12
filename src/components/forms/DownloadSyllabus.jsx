@@ -43,15 +43,15 @@ export default function DownloadSyllabus() {
                         <p style={{
                         color:"#9844C5",
                         fontFamily:"Open Sans",
-                        fontSize:"1.5rem",
+                        fontSize:"1.665vw",
                         fontStyle:"normal",
                         fontWeight:"600",
-                        lineHeight:"0.7rem"
+                        lineHeight:"0.777vw"
                     }}>Download Syllabus</p>
                     <p style={{
                         color:"#B86CD2",
                         fontFamily:"Open Sans",
-                        fontSize:"0.7rem",
+                        fontSize:"0.777vw",
                         fontWeight:"400",
                         fontStyle:"normal",
                     }}>Enter Your details to download the Course syllabus </p>
@@ -77,14 +77,14 @@ export default function DownloadSyllabus() {
                             className='form-text'
                             value={phone}
                             style={{
-                                margin:"2rem 0",
+                                margin:"2.22vw 0",
                                 color:"transparent"
                             }}
                             onChange={phone => setPhone(phone)}
                         />
                         </div>
-                        <select className="form-text" style={{color:"#B86CD2" , fontFamily:"Open Sans" , fontSize:"1.2rem" }}>
-                            <option value={null} style={{lineHeight: "1.49513rem"}}>Select Courses</option>
+                        <select className="form-text" style={{color:"#B86CD2" , fontFamily:"Open Sans" , fontSize:"1.332vw" }}>
+                            <option value={null} style={{lineHeight: "1.66vw"}}>Select Courses</option>
                             {
                                 courses && courses.map(course => (
                                     <option key={course.id} value={course.id}>{course.attributes.name}</option>

@@ -8,9 +8,9 @@ const DesignCard = ({ currEle }) => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(2,auto)",
-          gap: "1rem",
+          gap: "1.11vw",
           justifyContent:"center",
-          marginTop:"4rem"
+          marginTop:"4.44vw"
         }}
       >
         <div
@@ -19,22 +19,22 @@ const DesignCard = ({ currEle }) => {
             width: "100%",
             height: "fit-content",
             display: "flex",
-            padding: "1rem",
+            padding: "1.11vw",
             flexDirection:"row",
             alignItems:"center",
             backgroundColor:"#F6F6F1",
           }}
         >
-          <div className="content" style={{width:"60%" , margin:"1rem 0.8rem"}}>
+          <div className="content" style={{width:"60%" , margin:"1.11vw 0.888vw"}}>
             <p>
               {currEle.content}
             </p>
             <button className='button' id='button'style={{
               border:"none",
-              borderRadius:"0.42144rem",
+              borderRadius:"0.4677vw",
               background: "#B46BD1",
               color:"#fff",
-              padding:"0.8rem 2rem"
+              padding:"0.888vw 2.22vw"
             }}>
               View now
               </button>
@@ -46,7 +46,7 @@ const DesignCard = ({ currEle }) => {
             backgroundSize:"cover",
             width:"40%",
             aspectRatio:"3/3",
-            borderRadius: "0.625rem"
+            borderRadius: "0.694vw"
           }}>
           </div>
         </div>

@@ -6,7 +6,7 @@ const Heading = ({ content , left}) => {
       className="container"
       style={{
         padding:"0",
-        margin:"4rem 0 6rem 0",
+        margin:"4.44vw 0 6.66vw 0",
         position: "relative",
         display: "flex",
         justifyContent: "start",
@@ -19,28 +19,28 @@ const Heading = ({ content , left}) => {
           textAlign: "start",
           fontStyle: "normal",
           position: "absolute",
-          top: "-1.2rem",
+          top: "-1.332vw",
           left: `${left}`,
           backgroundColor:"#fff",
           flexShrink:"0",
-          width:"40%"
+          maxWidth:"40vw"
         }}
       >
         <h3
           style={{
             color: "rgba(173, 96, 200, 0.90)",
-            fontSize: "32px",
+            fontSize: "2.22vw",
             fontWeight: "750",
-            letterSpacing:"1px",
+            letterSpacing:"0.11vw",
             fontStyle:"normal",
           }}
         >
           {content}
         </h3>
         <p style={{
-          width:"95%",
+          maxWidth:"95vw",
           fontFamily:"Open Sans",
-          fontSize:"0.89rem",
+          fontSize:"0.98vw",
           fontWeight:"300",
           color: "rgba(0, 0, 0, 0.65)",
           lineHeight:"1.6",
@@ -51,7 +51,7 @@ const Heading = ({ content , left}) => {
       </div>
       <span className="dot" style={{
         position:"relative",
-        top:"-0.72rem"
+        top:"-0.7992vw"
       }}></span>
       <div className="h-line"></div>
     </div>

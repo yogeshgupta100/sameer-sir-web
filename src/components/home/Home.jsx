@@ -3,7 +3,6 @@ import LandingPage from './LandingPage'
 import Section1 from './Section1'
 import Brands from './Brands'
 import Courses from './courses'
-import Card from '../aboutus/cardApi'
 import Teachers from './Teachers'
 import AllCollapseExample from './Accordion'
 import Resource from './Resource'
@@ -15,21 +14,16 @@ import Header from '../Header'
 import University from './University'
 
 const Home = () => {
-  const [empData , setEmpData] = useState(Card);
   const [menuData , setMenuData] = useState(AccordionApi);
-  const filterItem = ({category , position}) =>{
-    const updatedList1 = AccordionApi.filter((currEle) => {
+  const filterItem = ({category}) =>{
+    const updatedList = AccordionApi.filter((currEle) => {
         return currEle.category === category;
-    });
-    setMenuData(updatedList1);
-    const updateList = Card.filter((currEle) => {
-        return currEle.position === position;
     });
 };
   return (
     <div id='home'>
       <Header />
-      <LandingPage imageurl={"/assets/home-landing-img.png"}/>
+      <LandingPage/>
       <Section1/>
       <Courses/>
         <Brands color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="#fff"/>

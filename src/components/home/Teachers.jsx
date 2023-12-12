@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Heading from "../aboutus/Heading";
 import EmpCard from "../aboutus/card";
-import Card from "../aboutus/cardApi";
 
 const Teachers = () => {
 	const [empData, setEmpData] = useState([]);
@@ -26,7 +25,7 @@ const Teachers = () => {
 			<div
 				className="container"
 				style={{
-					marginTop: "10rem",
+					marginTop: "11vw",
 				}}
 			>
 				<Heading content={"Explore our well knitted courses"} left={"20.5%"}></Heading>
@@ -35,25 +34,26 @@ const Teachers = () => {
 					style={{
 						textDecoration: "none",
 						border: "none",
-						width: "6rem",
-						fontSize: "0.79rem",
-						position: "relative",
-						left: "20.5%",
-						top: "-2rem",
+						maxWidth: "8vw",
+						fontSize: "0.87vw",
+						position: "relative",	
+						left: "2vw",
+						top: "-2.2vw",
 						display: "flex",
-						padding: "0",
+						padding: "0.6vw",
 						alignItems: "center",
-						height: "2.4rem",
-						borderRadius: "0.4rem",
+						maxHeight: "2.66vw",
+						borderRadius: "0.44vw",
 					}}
 				>
 					<p
 						style={{
 							display: "flex",
 							textDecoration: "none",
-							marginLeft: "0",
 							marginTop: "1rem",
 							fontWeight: "500",
+							fontSize:"1.2vw",
+							flexWrap:"wrap"
 						}}
 					>
 						View all
@@ -72,7 +72,12 @@ const Teachers = () => {
 			<section
 				className="main-card--container container"
 				style={{
-					marginBottom: "10rem",
+					// marginBottom: "11vw",
+					maxWidth:"90vw",
+					display:"flex",
+					justifyContent:"center",
+					gap:"1.3rem",
+					minHeight:"30vw"
 				}}
 			>
 				{empData.map((currEle) => {
@@ -80,7 +85,7 @@ const Teachers = () => {
 						<div
 							className="teacher"
 							style={{
-								overflowY: "hidden",
+								overflowY: "hidden"
 							}}
 						>
 							<EmpCard currEle={currEle} />

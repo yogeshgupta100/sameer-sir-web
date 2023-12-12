@@ -5,30 +5,30 @@ const Pricing = () => {
   return (
     <>
     <div className="container">
-    <Heading content={"Pricing process"} left={"20rem"} />
+    <Heading content={"Pricing process"} left={"22.2vw"} />
     </div>
     <div style={{
         width:"100vw",
         display:"flex",
-        height:"44rem",
+        height:"48.84vw",
         translate:"5% 0",
-        marginTop:"10rem",
+        marginTop:"11.1vw",
     }}>
         <div className="price-content">
             <h3 style={{
                 color:"#FFF",
                 fontFamily: "Inter",
-                fontSize: "2rem",
+                fontSize: "2.22vw",
                 fontStyle: "normal",
                 fontWeight: "700",
             }}>Payment</h3>
             <p style={{
                 fontFamily: "Open Sans",
-                fontSize: "1.7rem",
+                fontSize: "1.887vw",
                 fontStyle: "normal",
                 fontWeight: "600",
                 lineHeight: "normal",
-                margin:"2rem 3rem 1rem 0"
+                margin:"2.22vw 3.33vw 1.11vw 0"
             }}>Ignite Your Learning Journey: Secure Your Seat!</p>
             <p>Unlock a World of Knowledge and Opportunity</p>
             <button
@@ -36,31 +36,31 @@ const Pricing = () => {
               className="button"
               id="button"
               style={{
-                borderRadius: "0.75rem",
-                border: "1.5px solid #B46BD1",
-                marginRight: "1rem",
-                padding: "1.1rem 1.5625rem",
+                borderRadius: "0.8325vw",
+                border: "0.104vw solid #B46BD1",
+                marginRight: "1.11vw",
+                padding: "1.1.11vw 1.734vw",
                 fontWeight: "600",
-                fontSize: "1.04rem",
+                fontSize: "1.1544vw",
                 fontFamily:"Raleway",
-                lineHeight:"2rem",
-                marginTop:"3rem",
+                lineHeight:"2.22vw",
+                marginTop:"3.33vw",
               }}
             >
               View details
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 15" fill="none" style={{marginLeft:"0.6rem"}}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 15" fill="none" style={{marginLeft:"0.66vw"}}>
   <path d="M1 7.5L17 7.5M17 7.5L11 13.5M17 7.5L11 1.5" stroke="#B46BD1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
             </button>
-                <div style={{marginTop:"3rem"}}>
+                <div style={{marginTop:"3.33vw"}}>
                 <p style={{
                     color: "#F8E8FF",
                     fontFamily: "Open Sans",
-                    fontSize: "1.1rem",
+                    fontSize: "1.11vw",
                     fontStyle: "normal",
                     fontWeight: "400",
                     lineHeight: "normal",
-                    marginBottom:"1.5rem",
+                    marginBottom:"1.665vw",
                 }}>What we will you provide</p>
             <div className="check" style={{display:"flex"}}>
             <svg xmlns="http://www.w3.org/2000/svg" width="54" height="206" viewBox="0 0 54 206" fill="none">
@@ -77,16 +77,16 @@ const Pricing = () => {
             <div className="points" style={{
                 color: "#FFF",
                 fontFamily: "Open Sans",
-                fontSize: "0.8rem",
+                fontSize: "0.888vw",
                 fontStyle: "normal",
                 fontWeight: "400",
                 lineHeight: "normal",
                 display:"grid",
                 gridTemplateRows:"repeat(3,auto)",
-                gap:"2rem",
-                marginLeft:"0.7rem"
+                gap:"2.22vw",
+                marginLeft:"0.777vw"
             }}>
-                <p style={{paddingTop:"0.5rem"}}>Access to High-Quality Course Content</p>
+                <p style={{paddingTop:"0.555vw"}}>Access to High-Quality Course Content</p>
                 <p>Access to High-Quality Course Content</p>
                 <p>Access to High-Quality Course Content</p>
             </div>

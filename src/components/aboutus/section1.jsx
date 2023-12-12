@@ -5,14 +5,14 @@ const Section1 = ({text}) => {
   return (
     <>
         <div className="section1-main container">
-        <Heading content={text} left="30%"/>
+        <Heading content={text} left="30vw"/>
         </div>
         <div className="section1-main2">
           <div className="first">
               <div className="first-img1">
               </div>
               <div className="first-para" style={{
-                top:"6rem",
+                top:"6.66vw",
                 right:"5%"
               }}>
               <h4>
@@ -23,7 +23,7 @@ const Section1 = ({text}) => {
             <div className="first-img2">
             </div>
             <div className="first-para" style={{
-              bottom:"2rem",
+              bottom:"2.22vw",
               left:"45%",
             }}>
               <h4>
