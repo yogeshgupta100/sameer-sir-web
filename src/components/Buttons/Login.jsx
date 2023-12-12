@@ -19,9 +19,9 @@ const Login = () => {
         id='button'
         onClick={openModal}
         style={{
-          borderRadius: "0.625rem",
-          border: "1px solid #B86CD2",
-          marginRight:"1.5rem"
+          borderRadius: "0.69vw",
+          border: "0.069vw solid #B86CD2",
+          marginRight:"1.665vw"
         }}
       >
         <span className="fa fa-sign-in me-1"></span> Login

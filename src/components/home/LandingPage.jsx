@@ -8,7 +8,7 @@ const LandingPage = ({ imageurl }) => {
 				<h2>User Experience Revolution: Designing Tomorrow's World</h2>
 				<p>Unlocking the Secrets of User-Centered Design: A Comprehensive Journey into UX Excellence"</p>
 				<button type="button" className="btn" style={{borderRadius: "0.72vw",
-            border: "1.5px solid #FFF",
+            border: "0.104vw solid #FFF",
             fontSize:"1.11vw",
             fontWeight:"500",
             width:"fit-content",
@@ -20,9 +20,9 @@ const LandingPage = ({ imageurl }) => {
         </button>
 			</div>
 				<span className="landing-img">
-					<img src="/assets/home-landing-img.png" style={{
+					<img src={imageurl} style={{
 						maxWidth:"40vw",
-						minHeight:"30vw"
+						minHeight:"30vw",
 					}}/>
 				</span>
 			</div>

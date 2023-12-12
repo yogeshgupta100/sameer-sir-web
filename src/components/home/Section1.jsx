@@ -117,6 +117,7 @@ function Section1() {
 							Industry orientated modules
 						</p>
 					</div>
+					<div className="v-line" style={{minWidth:"0.07vw" , minHeight:"100%"}}></div>
 				</div>
 				<div className="col">
 					<div
