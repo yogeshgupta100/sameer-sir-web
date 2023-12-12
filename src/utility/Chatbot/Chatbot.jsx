@@ -146,7 +146,7 @@ export default function Chatbot() {
 	}
 
 	return (
-		<div ref={chatbotRef} className={styles.active}>
+		<div ref={chatbotRef}>
 			<button type="button" className={styles.btn} onClick={toggleChatbot}>
 				<div></div>
 			</button>
