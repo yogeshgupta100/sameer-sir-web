@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div id='home'>
       <Header />
-      <LandingPage/>
+      <LandingPage imageurl={"/assets/home-landing-img.png"}/>
       <Section1/>
       <Courses/>
         <Brands color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="#fff"/>

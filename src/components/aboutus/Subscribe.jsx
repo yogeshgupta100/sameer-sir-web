@@ -176,6 +176,7 @@ const Subscribe = () => {
 								fontSize: "2vw",
 								color: "#B86CD2",
 								fontWeight: "600",
+								alignSelf:"center"
 							}}
 							placeholder="Enter your Email Address"
 							ref={inputRef}

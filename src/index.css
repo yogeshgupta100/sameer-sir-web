@@ -987,8 +987,10 @@ letter-spacing: -0.04995vw;
     font-size: 3.33vw !important;
     padding: 0 0 0.777vw 0;
   }
-  .input-email::-webkit-input-placeholder{
-    font-size: 1.88vw !important;
+  .input-email::placeholder{
+    font-size: 2vw !important;
+    text-align: center;
+    align-self: center;
   }
   .subscribe button{
     font-size: 2.33vw !important ;

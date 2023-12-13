@@ -45,17 +45,19 @@
 	opacity: 0;
 	z-index: 998;
 	/* box-shadow: 0 0 0.69vw rgba(0, 0, 0, 0.2); */
-	width: clamp(250px, 40vw, 378px);
+	width: 0;
 	aspect-ratio: 3 / 4;
 	overflow: hidden;
-	transition: all 0.3s ease-in-out;
+	transition: bottom 0.3s ease-in-out , opacity 0.3s ease-in-out;
 	border-radius: 1vw;
 	border: 1px solid #b86cd2;
 }
 
 .active .collapsableContainer {
 	opacity: 1;
-	bottom: 100px;
+	bottom: 7vw;
+	width: clamp(250px, 40vw, 378px);
+	transition: bottom 0.3s ease-in-out , opacity 0.3s ease-in-out;
 }
 
 .chatbox {
