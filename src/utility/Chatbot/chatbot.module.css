@@ -1,15 +1,16 @@
 .btn {
 	position: fixed;
-	bottom: 2vw;
-	right: 2vw;
+	bottom: 28.82px;
+	right: 28.82px;
 	z-index: 9999;
 	border-radius: 50%;
 	border: none;
 	background-color: #A056C3;
 	box-shadow: 0 0 0.69vw rgba(0, 0, 0, 0.2);
 	transition: all 0.1s ease-in-out;
-	height: 60px;
-	width: 60px;
+	min-height: clamp(30px , 4vw , 60px);
+	min-width: clamp(30px , 4vw , 60px);
+	margin: 0.33rem;
 }
 
 .btn:hover {
@@ -25,7 +26,7 @@
 .btn div {
 	display: block;
 	margin: auto;
-	height: 25px;
+	height: 1.56rem;
 	cursor: pointer;
 	background-image: url("/assets/chat-icon.svg");
 	background-repeat: no-repeat;
@@ -40,7 +41,7 @@
 
 .collapsableContainer {
 	position: fixed;
-	bottom: 4.5vw;
+	bottom: 72px;
 	right: 2vw;
 	opacity: 0;
 	z-index: 998;
@@ -56,10 +57,9 @@
 
 .active .collapsableContainer {
 	opacity: 1;
-	bottom: 7vw;
 	width: clamp(250px, 40vw, 378px);
 	transition: bottom 0.3s ease-in-out , opacity 0.3s ease-in-out;
-	bottom: 100px;
+	bottom: 75.36px;
 	z-index: 999;
 }
 
@@ -124,8 +124,8 @@
 	overflow: hidden;
 	height: max-content;
 	margin: 1vw 0;
-	font-size: 1.11vw;
-	padding: 0.6vw 0.7vw;
+	font-size: clamp(0.66rem , 1.11vw , 1.66rem);
+	padding: 0.54rem 0.63rem;
 	width: fit-content;
 	margin-right: auto;
 	border: none;
@@ -143,9 +143,9 @@
 	display: block;
 	width: 70%;
 	margin: 0.5vw auto;
-	font-size: medium;
+	font-size: clamp(0.66rem , 1.11vw , 1.66rem);
 	background-color: #fbedff;
-	padding: 0.5vw 0.7vw;
+	padding: 0.45rem 0.63rem;
 	border-radius: 5px;
 }
 
@@ -180,14 +180,14 @@
 	color: #000;
 	font-weight: 500;
 	font-family: Raleway;
-	font-size: 14px;
+	font-size: clamp(0.66rem , 1.11vw , 1.66rem);
 }
 
 .inputBox input::placeholder {
 	color: #000;
 	font-weight: 500;
 	font-family: Raleway;
-	font-size: 14px;
+	font-size: clamp(0.66rem , 1.11vw , 1.66rem);
 }
 
 .inputBox input:focus {
