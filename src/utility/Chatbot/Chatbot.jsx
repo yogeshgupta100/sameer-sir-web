@@ -54,6 +54,7 @@ export default function Chatbot() {
 	const selectRef = useRef();
 	const inputRef = useRef();
 	const sendButtonRef = useRef();
+	const chatRef = useRef();
 
 	const [messages, setMessages] = useState(chatFlow.slice(0, 6));
 	const [data, setData] = useState([]);
@@ -145,6 +146,10 @@ export default function Chatbot() {
 		inputRef.current.value = "";
 	}
 
+	useEffect(() => {
+		chatRef.current.scrollTop = chatRef.current.scrollHeight;
+	}, [messages]);
+
 	return (
 		<div ref={chatbotRef}>
 			<button type="button" className={styles.btn} onClick={toggleChatbot}>
@@ -158,7 +163,7 @@ export default function Chatbot() {
 						<span>Mrinali</span>
 					</div>
 
-					<div className={styles.chat}>
+					<div className={styles.chat} ref={chatRef}>
 						{messages.map((message, index) => {
 							if (message.type === "option") {
 								return (

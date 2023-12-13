@@ -51,6 +51,7 @@
 	transition: bottom 0.3s ease-in-out , opacity 0.3s ease-in-out;
 	border-radius: 1vw;
 	border: 1px solid #b86cd2;
+	z-index: -100;
 }
 
 .active .collapsableContainer {
@@ -58,6 +59,8 @@
 	bottom: 7vw;
 	width: clamp(250px, 40vw, 378px);
 	transition: bottom 0.3s ease-in-out , opacity 0.3s ease-in-out;
+	bottom: 100px;
+	z-index: 999;
 }
 
 .chatbox {
@@ -110,7 +113,7 @@
 }
 
 .chat {
-	height: calc(100% - 128px);
+	height: 100%;
 	width: 100%;
 	padding: 1.5vw 2vw;
 	overflow-y: auto;
@@ -162,8 +165,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 2vw;
-	height: 60px;
+	padding: 1vw 2vw;
 	box-shadow: 0.873px 0.873px 6.547px 0px rgba(0, 0, 0, 0.15);
 }
 
