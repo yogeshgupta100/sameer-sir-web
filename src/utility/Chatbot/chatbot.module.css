@@ -10,7 +10,7 @@
 	transition: all 0.1s ease-in-out;
 	min-height: clamp(30px , 4vw , 60px);
 	min-width: clamp(30px , 4vw , 60px);
-	margin: 0.33rem;
+	/* margin: 0.33rem; */
 }
 
 .btn:hover {
@@ -41,7 +41,7 @@
 
 .collapsableContainer {
 	position: fixed;
-	bottom: 72px;
+	bottom: 3.6rem;
 	right: 2vw;
 	opacity: 0;
 	z-index: 998;
@@ -59,7 +59,7 @@
 	opacity: 1;
 	width: clamp(250px, 40vw, 378px);
 	transition: bottom 0.3s ease-in-out , opacity 0.3s ease-in-out;
-	bottom: 75.36px;
+	bottom: 5.77rem;
 	z-index: 999;
 }
 

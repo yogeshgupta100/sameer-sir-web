@@ -935,11 +935,51 @@ letter-spacing: -0.04995vw;
   justify-content: center;
   align-items: center;
 }
+.signin-body{
+  max-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  overflow-x: hidden;
+}
+.signin-1{
+  background-image: url("/public/assets/signin-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.signin-image{
+  width: 60%;
+  height: 100%;
+  background-image: url("/public/assets/blog1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.signin-form-body{
+  height: 70%;  
+  margin: 3rem;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+.icon{
+  border-radius: 0.4351rem;
+  border: 0.5px solid #B46BD1;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  height: clamp(1.55rem , 1.11vw , 3rem);
+  aspect-ratio: 2/2;
+}
+
 @media screen and (max-width: 425px){
-  /* .counter-row{
+  .counter-row{
     flex-direction: column;
     align-items: flex-end;
-  } */
+  }
 }
 
 @media screen and (max-width: 768px) {
