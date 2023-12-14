@@ -13,9 +13,9 @@ const Graphic = ({ data }) => {
 				"Content-Type": "application/json",
 			},
 			body: JSON.stringify({
-        email: "aryavbhola@gmail.com",
+				email: "aryavbhola@gmail.com",
 				token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAyMjAwODU3LCJleHAiOjE3MDQ3OTI4NTd9.z7NY-ri7GouinjcuN3oPfoAMxUOOyNWUuQ_69P60WXc",
-				items: [{ id: courseId, quantity: 1 }],
+				courseId,
 			}),
 		})
 			.then((res) => {
@@ -29,7 +29,7 @@ const Graphic = ({ data }) => {
 				console.error(e.error);
 			});
 	};
-	
+
 	return (
 		<>
 			<div className="landing-page" style={{ height: "130vh", position: "relative", marginBottom: "30rem" }}>
