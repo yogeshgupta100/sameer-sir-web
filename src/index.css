@@ -956,7 +956,7 @@ letter-spacing: -0.04995vw;
   background-image: url("/assets/signin.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .signin-form-body{
   height: 70%;  
