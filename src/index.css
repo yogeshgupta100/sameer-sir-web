@@ -948,7 +948,7 @@ letter-spacing: -0.04995vw;
 .signin-image{
   width: 60%;
   height: 100%;
-  background-image: url("/assets/blog1.jpeg");
+  background-image: url("/assets/signin.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
