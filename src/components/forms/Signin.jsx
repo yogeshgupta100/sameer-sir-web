@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Signin = () => {
   return (
@@ -31,16 +32,6 @@ const Signin = () => {
                 </div>
                 <div className="signin-2" style={{backgroundColor:"#F8E8FF"}}>
                     <div className="signin-form-body">
-                        <div className="social-media-icons" style={{width:"100%" , display:"flex" , flexDirection:"column" , alignItems:"flex-end" , justifyContent:"flex-end"}}>
-                            <div className="icon-container-signin" style={{display:"flex" , justifyContent:"flex-end" , width:"100%"}}>
-                            <div className="icons" style={{display:"grid" , gridTemplateColumns:"1fr 1fr 1fr" , width:"15%"}}>
-                                <span className="icon"><img src="/assets/google-icon.png" style={{width:"clamp(0.99rem , 1vw , 100%)"}}/></span>
-                                <span className="icon"><img src="/assets/apple-icon.png" style={{width:"clamp(0.99rem , 1vw , 100%)"}}/></span>
-                                <span className="icon"><img src="/assets/facebook-icon.png" style={{width:"clamp(0.99rem , 1vw , 100%)"}}/></span>
-                            </div>
-                            </div>
-                            <p style={{color:"#B86CD2" , fontSize:"clamp(0.88rem , 1vw , 1.125rem)"}}>Create account with</p>
-                        </div>
                         <div className="form-section" style={{maxWidth:"100%" , boxShadow:"none"}}>
                             <form style={{display:"flex" , flexDirection:"column" , width:"60%" , fontFamily:"Raleway"}}>
                                 <input type="email" name="email" className="form-text" placeholder="Email/Username" style={{textDecoration:"none"}}/>
@@ -52,7 +43,7 @@ const Signin = () => {
                                 flexDirection:"column",
                                 alignItems:"end",
                                }}>
-                               <span style={{fontSize:"clamp(0.88rem , 1.55vw , 1.125rem)" , color:"#B86CD2" , fontWeight:"400"}}>Forgot Password?</span>
+                               <NavLink to={"/forgotPassword"} style={{textDecoration:"none"}}><span style={{fontSize:"clamp(0.88rem , 1.55vw , 1.125rem)" , color:"#B86CD2" , fontWeight:"400"}}>Forgot Password?</span></NavLink>
                                <button type="button" className="purple-btn" style={{border:"none" , width:"26%" , fontSize:"clamp(0.9rem , 1.55vw , 1.25rem)" , fontWeight:"700"}}>Sign in</button>
                                </div>
                             </form>

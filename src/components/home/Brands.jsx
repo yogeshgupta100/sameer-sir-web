@@ -46,7 +46,6 @@ const Brands = ({color , textCol}) => {
                     fontSize:"0.99vw",
                 }}>
                 <p style={{letterSpacing:"0.08vw"}}>Meet the Key Players Shaping Our Design Ecosystem</p>
-                {/* <p> voluptas fuga pariatur? Iste eos ea ducimus sit?</p> */}
                 </div>
             </div>
         </div>

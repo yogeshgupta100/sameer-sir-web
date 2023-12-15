@@ -32,9 +32,9 @@ const Graphic = ({ data }) => {
 
 	return (
 		<>
-			<div className="landing-page" style={{ height: "130vh", position: "relative", marginBottom: "30rem" }}>
+			<div className="landing-page" style={{ height: "auto", marginBottom: "3rem" }}>
 				<Header />
-				<div className="centered-text" style={{ top: "48%", fontStyle: "normal", left: "34%" }}>
+				<div className="centered-text" style={{ }}>
 					<h2
 						style={{
 							width: "48rem",

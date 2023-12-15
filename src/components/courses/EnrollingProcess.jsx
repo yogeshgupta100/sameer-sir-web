@@ -37,7 +37,7 @@ const EnrollingProcess = () => {
           }}
         >
           <div>
-            <span className="why-image" style={{backgroundImage:`url(${"/public/assets/enrolling-women.png"})` , left:"-4.44vw" , width:"30%" , height:"80%"}}></span>
+            <span className="why-image" style={{backgroundImage:`url(${"/assets/enrolling-women.png"})` , left:"-4.44vw" , width:"30%" , height:"80%"}}></span>
           </div>
           <div
             style={{

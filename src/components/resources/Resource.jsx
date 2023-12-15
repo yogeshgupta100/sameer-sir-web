@@ -18,7 +18,7 @@ const Resource = ({designCardData}) => {
         }}>
       <Header/>
         </div>
-      <div className="full-body" style={{position:"relative" , maxWidth:"100vw" , marginBottom:"31.08vw"}}>
+      <div className="full-body" style={{position:"relative" , maxWidth:"100vw" , marginBottom:"31.08vw" , zIndex:"-100"}}>
         <Small_nav/>
         <LandingPage/>
         <div
