@@ -938,7 +938,7 @@ letter-spacing: -0.04995vw;
   overflow-x: hidden;
 }
 .signin-1{
-  background-image: url("/assets/signin-bg.png");
+  background-image: url("/public/assets/signin-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -951,7 +951,7 @@ letter-spacing: -0.04995vw;
   background-image: url("/assets/blog1.jpeg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .signin-form-body{
   height: 90%;  
