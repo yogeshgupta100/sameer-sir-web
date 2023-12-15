@@ -1,5 +1,5 @@
 import React , {useState} from "react"
-import { useNavigate , NavLink} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Signup = () => {
@@ -7,6 +7,14 @@ const Signup = () => {
 	const navigate = useNavigate();
 	const goBack = () => {
 		navigate(-1);
+	};
+
+	const navigateSignin = () =>{
+		navigate('/signin')
+	};
+
+	const navigateSignup = () =>{
+		navigate('/signup')
 	};
 
 	// useEffect(() => {
@@ -72,8 +80,8 @@ const Signup = () => {
 					</div>
 					<div style={{color:"#F8E8FF" , position:"relative"}}>
                     <div className="buttons" style={{width:"auto" , position:"absolute" , right:"-1rem" , display:"flex" , flexDirection:"column" , gap:"0.5rem" , alignItems:"flex-end"}}>
-                    <button className="signup-btn purple-btn" style={{backgroundColor:"transparent" , border:"none" , margin:"0"}}>Sign in</button>
-                    <button className="signin-btn btn" id="button" style={{border:"none" , paddingLeft:"1.5vw" , backgroundColor:"#F8E8FF"}}>Sign up</button>
+                    <button onClick={navigateSignin} className="signup-btn purple-btn" style={{backgroundColor:"transparent" , border:"none" , margin:"0"}}>Sign in</button>
+                    <button onClick={navigateSignup} className="signin-btn btn" id="button" style={{border:"none" , paddingLeft:"1.5vw" , backgroundColor:"#F8E8FF"}}>Sign up</button>
                     </div>
                 </div>
 				</div>
