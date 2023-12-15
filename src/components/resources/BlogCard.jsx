@@ -3,8 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const BlogCard = ({currEle}) => {
   return (
-    <div style={{height:"fit-content"}}>
-       {/* <div className="row"> */}
+    <div style={{height:"fit-content" , borderRadius:"1.2rem 1.2rem 0 0" , overflow:"hidden"}}>
 							<div className="card" style={{height:"100%"}}>
 								<div className="blog-img" style={{
                   aspectRatio:"3/2" ,
@@ -29,7 +28,6 @@ const BlogCard = ({currEle}) => {
                       fontSize: "0.777vw",
                       fontStyle: "normal",
                       fontWeight: "600",
-                      // lineHeight: "129.836%",
                       letterSpacing: "0.05vw",
 										}}
 									>
@@ -53,7 +51,7 @@ const BlogCard = ({currEle}) => {
                     fontWeight: "300",
                     lineHeight: "135.836%",
                     textTransform: "capitalize",
-                    minHeight:"2.331vw",
+                    maxHeight:"2.331vw",
                     overflow:"hidden"
                   }}>
                     {currEle.attributes.content}
@@ -74,7 +72,6 @@ const BlogCard = ({currEle}) => {
                   </NavLink>
 								</div> 
 							</div>
-						 {/* </div> */}
     </div>
   )
 }

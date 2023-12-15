@@ -18,8 +18,10 @@ const Blog = () => {
 				style={{
 					maxWidth: "100vw",
 					display: "grid",
-					gridTemplateColumns: "repeat(3,auto)",
+					gridTemplateColumns: "1fr 1fr 1fr",
 					margin: "0 0 13.32vw",
+          gap:"2rem",
+          rowGap:"7rem",
 				}}
 			>
       {blog.map((currEle) => {

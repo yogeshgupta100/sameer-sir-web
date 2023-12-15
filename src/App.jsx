@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-d
 import Contact from "./components/Contact";
 import Home from "./components/home/Home";
 import Aboutus from "./components/aboutus/Aboutus";
-import Course from "./components/courses/Graphic Design/MainGraphic";
+import Course from "./components/courses/MainGraphic";
 import DownloadSyllabus from "./components/forms/DownloadSyllabus";
 import Articlemain from "./components/article/Articlemain";
 import Mainresource from "./components/resources/Mainresource";
@@ -16,6 +16,7 @@ import CustomerSupport from "./components/Terms&Conditions/CustomerSupport";
 import TermsAndServices from "./components/Terms&Conditions/TermsAndServices";
 import Signup from "./components/forms/Signup";
 import Chatbot from "./utility/Chatbot/Chatbot";
+import Signin from "./components/forms/Signin";
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
 					<Route path="/resource" element={<Mainresource />} />
 					<Route path="/courses/:courseId" element={<Course />} />
 					<Route path="/signup" element={<Signup />} />
+					<Route path="/signin" element={<Signin />} />
 					<Route path="/blogs" element={<MainBlog />} />
 					<Route path="/success" element={<SuccessPayment />} />
 					<Route path="/cancel" element={<CancelPayment />} />

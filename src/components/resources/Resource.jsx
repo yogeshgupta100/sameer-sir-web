@@ -7,6 +7,7 @@ import DesignCard from './DesignCard'
 import Blog from './Blog'
 import Small_nav from '../Small_nav';
 import Portfolio from './Portfolio'
+import Upload from './Upload'
 
 const Resource = ({designCardData}) => {
   return (
@@ -109,27 +110,16 @@ const Resource = ({designCardData}) => {
       </div>
       <div className="container" style={{marginTop:"16.65vw"}} id='blogs'>
         <Heading content={"Blogs"} left={"30.5%"} />
-        <Blog/>
+        <div className="blogs-container container" style={{width:"95%", paddingTop:"2rem"}}><Blog/></div>
       </div>
-      <div className="banner-section">
-        <div style={{
-          color:"#fff",
-          textAlign:"center",
-          fontFamily:"Open Sans",
-          fontSize:"2.22vw",
-          fontWeight:"700",
-          lineHeight:"3.33vw",
-          maxWidth:"44.4vw"
-        }}>Want To Upload Your Assets And Become Part Of Our Resource Community
-        <button style={{marginTop:"2.22vw"}} id='button' className='btn'>Upload now</button>
-        </div>
-      </div>
+      <Upload/>
       <Portfolio/>
+      <Upload/>
         <div className="container" style={{marginTop:"9.99vw"}}>
         <Heading content={"Design Challenges"} left={"30.5%"} />
         <div className="DesignCard container" style={{
           display:"grid",
-          gridTemplateColumns:"repeat(2,auto)",
+          gridTemplateColumns:"1fr 1fr",
           justifyContent:"center",
           gap:"2.22vw"
         }}>

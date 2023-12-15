@@ -40,10 +40,10 @@ const Heading = ({ content , left}) => {
         <p style={{
           maxWidth:"40vw",
           fontFamily:"Open Sans",
-          fontSize:"0.98vw",
+          fontSize:"clamp(0.66rem , 1.33vw , 1rem)",
           fontWeight:"400",
           color: "rgba(0, 0, 0, 0.65)",
-          // lineHeight:"1.6",
+          lineHeight:"1.1",
           opacity:"0.8"
         }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa

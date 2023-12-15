@@ -10,7 +10,7 @@ const HeroSection = () => {
         display:"flex",
         justifyContent:"start",
         alignItems:"center",
-        height:"70vh", 
+        height:"60vh", 
       }}>
         <div className="content" style={{
             display:"block",
@@ -19,7 +19,7 @@ const HeroSection = () => {
         }}>
         <h4 style={{
             color: "#B46BD1",
-            fontSize:"clamp(1.5rem , 5vw , 3rem)",
+            fontSize:"clamp(1.5rem , 2.66vw , 3rem)",
             fontFamily: "Raleway",
             fontStyle: "normal",
             fontWeight: "700",
@@ -28,11 +28,10 @@ const HeroSection = () => {
         <p style={{
             color: "#B46BD1",
             fontFamily: "Raleway",
-            fontSize: "clamp(0.5rem , 5vw , 1.2rem)",
+            fontSize: "clamp(0.5rem , 2.66vw , 1.2rem)",
             fontStyle: "normal",
             fontWeight: "400",
-            lineHeight: "1.875rem",
-            letterSpacing: "0.075rem",
+            width:"85%"
         }}>Provide a versatile and dynamic means of sharing information, expressing thoughts, and connecting with an audience.</p>
       </div>
         </div>

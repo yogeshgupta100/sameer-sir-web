@@ -1,9 +1,8 @@
-import React , {useState} from "react"
-import { useNavigate } from "react-router-dom";
+import React from "react"
+import { useNavigate , NavLink} from "react-router-dom";
 
 
 const Signup = () => {
-    const [phone, setPhone] = useState(null);
     const navigate = useNavigate();
     const goBack = ()=>{
         navigate(-1);
@@ -19,7 +18,7 @@ const Signup = () => {
         
     return (
         <>
-            <div className="signin-body">
+        <div className="signin-body">
                 <div className="signin-1">
                 <span className="subscribe-logo" style={{margin:"2.6rem 0 0 1rem"}}>
 								<svg xmlns="http://www.w3.org/2000/svg" width="12vw" height="49" viewBox="0 0 188 49" fill="none">
@@ -38,27 +37,21 @@ const Signup = () => {
                     <p style={{fontSize:"clamp(0.88rem , 1vw , 1.2rem)" , fontWeight:"300" , color:"#F8E8FF" , opacity:"0.8"}}>We're glad to see you again. Please log in to access your account and enjoy a seamless experience.</p>
                 </div>
                 </div>
-                <div style={{color:"#F8E8FF" , display:"flex" , flexDirection:"column" , gap:"1rem" , alignItems:"flex-end"}}>
-                    <span className="signin-btn btn" style={{right:"-1rem"}}>Sign in</span>
-                    <span className="signup-btn">Sign up</span>
+                <div style={{color:"#F8E8FF" , position:"relative"}}>
+                    <div className="buttons" style={{width:"auto" , position:"absolute" , right:"-1rem" , display:"flex" , flexDirection:"column" , gap:"0.5rem" , alignItems:"flex-end"}}>
+                    <button className="signin-btn purple-btn" style={{border:"none" , margin:"0" , backgroundColor:"transparent"}}>Sign in</button>
+                    <button className="signup-btn btn" id="button" style={{backgroundColor:"#F8E8FF" , border:"none" , paddingLeft:"1.5vw"}}>Sign up</button>
+                    </div>
                 </div>
                 </div>
                 <div className="signin-2" style={{backgroundColor:"#F8E8FF"}}>
                     <div className="signin-form-body">
-                        <div className="social-media-icons" style={{width:"100%" , display:"flex" , flexDirection:"column" , alignItems:"flex-end" , justifyContent:"flex-end"}}>
-                            <div className="icon-container-signin" style={{display:"flex" , justifyContent:"flex-end" , width:"100%"}}>
-                            <div className="icons" style={{display:"grid" , gridTemplateColumns:"1fr 1fr 1fr" , width:"15%"}}>
-                                <span className="icon"><img src="/assets/google-icon.png" style={{width:"clamp(0.99rem , 1vw , 100%)"}}/></span>
-                                <span className="icon"><img src="/assets/apple-icon.png" style={{width:"clamp(0.99rem , 1vw , 100%)"}}/></span>
-                                <span className="icon"><img src="/assets/facebook-icon.png" style={{width:"clamp(0.99rem , 1vw , 100%)"}}/></span>
-                            </div>
-                            </div>
-                            <p style={{color:"#B86CD2" , fontSize:"clamp(0.88rem , 1vw , 1.125rem)"}}>Create account with</p>
-                        </div>
-                        <div className="form-section" style={{maxWidth:"100%" , boxShadow:"none"}}>
-                            <form style={{display:"flex" , flexDirection:"column" , width:"60%" , fontFamily:"Raleway"}}>
-                                <input type="email" name="email" className="form-text" placeholder="Email/Username" style={{textDecoration:"none"}}/>
+                        <div className="form-section" style={{width:"100%" , boxShadow:"none"}}>
+                            <form style={{display:"flex" , flexDirection:"column" , width:"70%" , fontFamily:"Raleway"}}>
+                                <input type="name" name="name" className="form-text" placeholder="Name" style={{textDecoration:"none"}}/>
+                                <input type="email" name="email" className="form-text" placeholder="Email" style={{textDecoration:"none"}}/>
                                 <input type="password" name="password" className="form-text" placeholder="Password" style={{textDecoration:"none"}}/>
+                                <input type="password" name="confirm-password" className="form-text" placeholder="Confirm Password" style={{textDecoration:"none"}}/>
                                <div className="button-signin" style={{
                                 width:"100%",
                                 height:"100%",
@@ -66,8 +59,7 @@ const Signup = () => {
                                 flexDirection:"column",
                                 alignItems:"end",
                                }}>
-                               <span style={{fontSize:"clamp(0.88rem , 1.55vw , 1.125rem)" , color:"#B86CD2" , fontWeight:"400"}}>Forgot Password?</span>
-                               <button type="button" className="purple-btn" style={{border:"none" , width:"26%" , fontSize:"clamp(0.9rem , 1.55vw , 1.25rem)" , fontWeight:"700"}}>Sign in</button>
+                               <button type="button" className="purple-btn" style={{border:"none" , width:"auto" , fontSize:"clamp(0.66rem , 1.55vw , 1.125rem)" , fontWeight:"700" , aspectRatio:"2/1"}}>Sign up</button>
                                </div>
                             </form>
                         </div>

@@ -13,13 +13,6 @@ const Teachers = () => {
     })();
   }, []);
 
-	// const filterItem = (position) => {
-	// 	const updatedList = Card.filter((currEle) => {
-	// 		return currEle.id === position;
-	// 	});
-	// 	setEmpData(updatedList);
-	// };
-
 	return (
 		<>
 			<div
@@ -28,22 +21,23 @@ const Teachers = () => {
 					marginTop: "11vw",
 				}}
 			>
+				<span className="view-all-heading">
 				<Heading content={"Explore our well knitted courses"} left={"20.5%"}></Heading>
+				</span>
 				<button
 					className="purple-btn"
 					style={{
 						textDecoration: "none",
 						border: "none",
 						maxWidth: "8vw",
-						fontSize: "0.87vw",
-						position: "relative",	
-						left: "2vw",
-						top: "-2.2vw",
+						fontSize: "0.87vw",	
+						margin: " 3.33vw 0 0 20.5%",	
 						display: "flex",
 						padding: "0.6vw",
 						alignItems: "center",
 						maxHeight: "2.66vw",
 						borderRadius: "0.44vw",
+						textAlign:"center"
 					}}
 				>
 					<p
@@ -53,7 +47,7 @@ const Teachers = () => {
 							marginTop: "1rem",
 							fontWeight: "500",
 							fontSize:"1.2vw",
-							flexWrap:"wrap"
+							flexWrap:"wrap",
 						}}
 					>
 						View all
@@ -72,7 +66,6 @@ const Teachers = () => {
 			<section
 				className="main-card--container container"
 				style={{
-					// marginBottom: "11vw",
 					maxWidth:"90vw",
 					display:"flex",
 					justifyContent:"center",
@@ -89,7 +82,6 @@ const Teachers = () => {
 							}}
 						>
 							<EmpCard currEle={currEle} />
-							{/* <div className="teacher-hover"></div> */}
 						</div>
 					);
 				})}

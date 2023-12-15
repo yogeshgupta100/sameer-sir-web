@@ -456,14 +456,14 @@ letter-spacing: -0.04995vw;
 
 /* Home-Resource Section */
 .resource-page{
- max-width: 100%;
+ width: 100vw;
  /* min-height: auto; */
   padding: 0;
   margin: 11vw 4.44vw 11vw 6vw;
 }
 .resource-content{
-  /* position: relative; */
-  max-width: 100%;
+  position: relative;
+  width: 100%;
   margin-top: 11vw;
   display: flex;
   margin-right: 3vw;
@@ -471,8 +471,9 @@ letter-spacing: -0.04995vw;
 
 .vid1{
   display: flex;
-  max-width: 25.53vw;
-  min-height: 36.63vw;
+  width: 25.53vw;
+  height: 36.63vw;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -481,21 +482,21 @@ letter-spacing: -0.04995vw;
   background: url("/assets/resources-img1.jpeg"), 50% / cover no-repeat, #623434;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .vid2{
   display: flex;
-  max-width: 25.53vw;
-  min-height: 36.63vw;
+  width: 25.53vw;
+  height: 36.63vw;
   position: relative;
-  top: 6vw;
+  top: 6vw; 
   left: 1.33vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   border-radius: 0.555vw;
-  background: url("/assets/resources-img2.jpeg"), 50% / cover no-repeat, #623434;
+  background-image: url("/assets/resources-img2.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -505,29 +506,27 @@ letter-spacing: -0.04995vw;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
- max-width: 42vw;
-  margin-left: 5.55vw;
+  max-width: 42vw;
+  margin: 0 10.11vw 0 5.55vw;
 }
 .vid-content h4{
   color: rgba(61, 61, 61, 0.95);
   font-family: Open Sans;
-  font-size: 2.22vw;
+  font-size: clamp(1rem , 2.665vw , 2rem);
   font-style: normal;
   font-weight: 600;
-  line-height: 3vw; /* 118.421% */
- max-width: 42vw;
+  line-height: 3vw;
+  max-width: 100%;
 }
 .vid-content p{
- max-width: 33vw;
+  max-width: 100%;
   color: #3D3D3D;
   font-family: Open Sans;
-  font-size: 1.11vw;
+  font-size: clamp(0.5rem , 1.66vw , 1rem);
   font-style: normal;
   font-weight: 400;
-  line-height: 1.9vw; /* 160% */
+  line-height: 1.9vw;
 }
-
-/* Testimonies Section */
 
 
 
@@ -651,11 +650,12 @@ letter-spacing: -0.04995vw;
 .why-this-main{
  max-width: 100vw;
  min-height: 51vw;
-  background: url("https://s3-alpha-sig.figma.com/img/2d90/e3b5/291f19051b6c4bdd64c845e2e9bf06e3?Expires=1699833600&Signature=RP3UgOZnrboJUbXr5Tmvi66ETcB15GmQfwZdaayR8D~ZsjL-NRkAG6wbubznm~x-iJC1gARWt7hccqBIXaYW~x55nBnBX3-Igy0kDJ2uMot4Nl~dLPm5WqHGbaWaGoCcdjYA6O5xy~Gsln7HrqxI3xO1DJ6ZpYtRUciLhIq3bxTqeneiXwfksJe~OwQh~ZqCH-mamSdL~lpQY9cYUBQR9LOKn3zRl6NFw8CUTDivF3-XWflFI9M0ac1Ad1YAPXY1UidtLEqIo6KcOevhZ5xz5PctRvvljlUgot-iu4r5NgyI7pVHHCcpAmb5kdfPm~fXD3noq4c5KlyLMAYND09i7A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), lightgray -136.636px -799.975px / 151.674% 232.87% no-repeat;
+  background: url("/assets/why-course-img.jpeg"), lightgray -136.636px -799.975px / 151.674% 232.87% no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
 }
 .why-text{
   margin-left: 1.554vw;
@@ -668,22 +668,21 @@ letter-spacing: -0.04995vw;
 }
 
 .why-cards{
-  position: relative;
- min-height: 22.2vw;
+  height: 22.2vw;
   display: grid;
-  grid-template-columns: repeat(3,27%);
+  grid-template-columns: 2fr 2fr 2fr 1fr;
   justify-content: center;
   margin: 8.88vw 8.88vw;
 }
 .why-image{
-  background: url("https://s3-alpha-sig.figma.com/img/752c/7bb5/d97954c848db9e7bfbd9072d4e059c2a?Expires=1699833600&Signature=MLkKGKkXu2utR3gHqsE~mhGvmPTxE9Jlxjlfr-ImMTtH~2zsbnfGZW3GN-56s0ENNZIGOYaG-u04~c3ciWkuwVKnRxcd2kNU4ruZlkngi1N0zGXUtsN9xTNv~jfjZM8RaXeOUdL3n5ahZe2O1RpTprq6qryJjBHzMoAlEgePm4XkqbUxW6~nX4K8oVhWEUkG~rRE~fCJGqes8D0YjLf6Wn5fTK7jRhLqxwIp~SDaifR4RGHP4tPEjctCV1XkkoOIEFUqyJ1i2LMkdKiBHOuDUtssIR4rvHiEYYFRWjiJbnDnf5ZfT4Fj0ZfrrWK8yruqDf6NPzGbJ~zLrqr1HHBeYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), transparent -122.16px -54.899px / 176.214% 139.167% no-repeat;
+  background: url("/assets/why-course-women.png");
   position: absolute;
- max-width: 24.9vw;
- min-height: 31.567vw;
+  width: 24.9vw;
+  height: 31.567vw;
   flex-shrink: 0;
   background-position: center;
   background-size: cover;
-  bottom: -7.215vw;
+  bottom: 0;
   right: -4.44vw;
 }
 .card-heading{
@@ -737,15 +736,15 @@ letter-spacing: -0.04995vw;
   background: linear-gradient(254deg, #6C0082 0.31%, #44006F 46.97%, #7A0089 114.38%);
 }
 .curr-image{
-  background: url("https://s3-alpha-sig.figma.com/img/f3fa/957b/9a25d6d47345f5aef415b4d1bd915d09?Expires=1699833600&Signature=k-AJ7ufR1uTQWTgzwNMcG8V92q1sBc1kDh~PwTEZXbOqKydGsjYJf7K0cw9rmwWQeqDWC2KtPQLtKVFc5xzZBNwBoTR4modwLI3Y0rshn5B3ilyU12kNHZKYumOwFE4bskPgq9R7wio7Mi19loy~FnIybuP0t0At9PgBbHz06nuxfpVBD6WKRx~xvZ3RVtdPVmcFJ7yEexHkIM2LKLC5U9nXYiZQiMOj6rstGYDVdK190GMUQLPTksy8n5Hr0JPaZhmuhDm83FvUWNU3ow7GP5N7da6JGXoSuuVPEbr6lcnVUfzpJxy-~yrv9ntJmZLjUN~Qh0lWi7UQnCRj1LnCUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), transparent -122.16px -54.899px / 176.214% 139.167% no-repeat;
+  background: url("/assets/curriculum-women.png");
   position: absolute;
- max-width: 41.07vw;
- min-height: 80%;
+  width: 30vw;
+  height: 70%;
   flex-shrink: 0;
   background-position: center;
   background-size: cover;
   bottom: 0;
-  right: 15.4%;
+  right: 0rem;  
 }
 .text-grid{
   margin-top: 5.55vw;
@@ -774,7 +773,6 @@ letter-spacing: -0.04995vw;
   font-family: Open Sans;
   font-size: 1.887vw;
   font-weight: 800;
-  line-height: 4.1625vw;
   font-style: normal;
 }
 .howtolearn-content h6{
@@ -783,7 +781,6 @@ letter-spacing: -0.04995vw;
   font-size: 1.11vw;
   font-style: normal;
   font-weight: 600;
-  /* line-height: 3.75rem; */
 }
 
 .howtolearn-content p{
@@ -792,25 +789,26 @@ letter-spacing: -0.04995vw;
   font-size: 1.04vw;
   font-style: normal;
   font-weight: 400;
-  /* line-height: 3.75rem;  */
 }
 
 /* download syllabus form  */
 .download-syll{
- max-width: 100vw;
- min-height: 100vh;
-  display: flex;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 .logo-section{
- max-width: 30%;
+ max-width: 100%;
  min-height: 100%;
-  background: url("https://s3-alpha-sig.figma.com/img/8f55/e9ad/4117eff5e62b83d37a7a9028ebafd3f5?Expires=1699833600&Signature=nNG51Lfd1FGtGT9uiHPJjlvPkbwyHHu-gpLGsB2VjD~xSMrkusNprlPMl5hIxZ-L9D8kY3AfdTZ4Kgzy56fA71273xEKI2K0oQyY1cZFRi3Ju2u-M0sZqdlJ08mxpQGc3II6kuWDYZuivm-dgbMgNavP0m5EnNjyflIjMqnCfEDyeIqlfaTTFKXEbEzCgBZUv58WCR0aJEQgSBmjH8Pi9iZ44~1LEMNLvJXsOSR5LzjWjUJ~ViC4e4njvDrV46sFKiffBicyxGGJbQpFJPODNNMeSOuM~C85bivCdrqYrxHGQhjHYAtUAs7F4yWKeuQN4cqAahM3J2ChWp-Mjcw~og__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), lightgray 50% / cover no-repeat;
+ background-image: url("/public/assets/signin-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 2rem 0;
 }
 .form-section{
- max-width: 70%;
+ max-width: 100%;
  min-height: 100%;
   background: #F8E8FF;
   box-shadow: 0.276vw 0.276vw 2.76vw 0.69vw rgba(0, 0, 0, 0.20);
@@ -821,7 +819,6 @@ letter-spacing: -0.04995vw;
 .logo-section p{
   color: #FFF;
   font-family: Inter;
-  font-size: 2.775vw;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -830,7 +827,7 @@ letter-spacing: -0.04995vw;
 .form-section .form-text{
  max-width: 100%;
   font-family: Open Sans;
-  font-size: 1.22vw;
+  font-size: clamp(1rem , 1.556vw , 3rem );
   font-style: normal;
   font-weight: 600;
   line-height: 4.99vw;
@@ -841,7 +838,7 @@ letter-spacing: -0.04995vw;
 ::placeholder{
   color:#B86CD2;
   font-family: Open Sans;
-  font-size: clamp(0.5rem,5vw,1.2rem);
+  font-size: clamp(0.5rem,1.556vw,1.25rem);
   font-style: normal;
   font-weight: 600;
   line-height: 1.66vw; /* 150% */
@@ -849,14 +846,12 @@ letter-spacing: -0.04995vw;
 
 /* article */
 .small-nav{
- max-width: 100vw;
+  max-width: 100vw;
   display: flex;
   padding-top: 1.11vw;
-  /* padding: 1.5625rem 5.8125rem; */
   justify-content: center;
   align-items: center;
-  /* gap: 6.875rem; */
-  background: url("https://s3-alpha-sig.figma.com/img/954b/f585/bbb62c4bf11b391b5a590a5c7f62e819?Expires=1699833600&Signature=dN-zOccOlLGm7wipVXI6fHT2X5g-cM1Wv1MacMCswK0sa2NLDy8te2Gkl69RQa-sco2Xurb8XzQZ0bgNr0GCBHH2IzzH8Fzk0wHs-NJx6ALz2rh0VEM2aW59XvNbro4QVcwk3OsI34ZJFOuqysObrbM1pLuFL0EZ7Y-qXuu9q4FzgncUUevy8DWSruabwCjlCnMDoufzwwr9cSM9dtxNTGIsTnWabT8Fo6Yw~s3ad~FTdFNNmzaaawUnnX0xyoNhzrnpnM9t1e9D60M5PSknRnZ7cGrGMkyl1MCTOoQeNZC4puGByQ9~ElwC7jeQgYrG4lxD4wPnO5aIYjhX~VNEcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), lightgray 50% / cover no-repeat;
+  background: url("/assets/subscribe-bg.jpg"), lightgray 50% / cover no-repeat;
   box-shadow: 0.138vw 0.138vw 1vw 0 rgba(0, 0, 0, 0.20);
   background-position: center;
   background-repeat: no-repeat;
@@ -925,9 +920,9 @@ letter-spacing: -0.04995vw;
   line-height: 1.66vw; /* 150% */
 }
 .banner-section{
-  background: url("https://s3-alpha-sig.figma.com/img/b929/3968/7cefd5a262dcf5d741a8274656a611d2?Expires=1699833600&Signature=GenprUj0c7s0AoBqlUFsL0AGFYMnjy0BXpgs4RH~f0AebicjjvBk5Q5JiARt-uaRnrLc~yD2jx78O-jp9ToMaRbNhtR3uTM2PfdO7y3tJIqN9EBDTjT5xHcbpoUTbHh3V4hE3X04tnaD5VRKOajxIq~SOze4qwuOlOXKNbU3fHTMSH6X9MAky~8vVNSMQimqMItCqkiYY6OxALB8np6usTdX-qlc60UVbb2jp4zMMTED1k2JpyOWb1C4oyxRiDPLxRvcmwTvcWDs6o5KxuZHYnqtefYRNJ8pP7b7d-H3x2-O-VboAOd2LmxrCeI4hUv34de-c077xRswa9kclsJeSQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
- max-width: 100%;
- min-height: 33.3vw;
+  background: url("/assets/resource-banner-bg.jpeg");
+  max-width: 100%;
+  min-height: 33.3vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -943,7 +938,7 @@ letter-spacing: -0.04995vw;
   overflow-x: hidden;
 }
 .signin-1{
-  background-image: url("/public/assets/signin-bg.png");
+  background-image: url("/assets/signin-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -953,16 +948,14 @@ letter-spacing: -0.04995vw;
 .signin-image{
   width: 60%;
   height: 100%;
-  background-image: url("/public/assets/blog1.jpeg");
+  background-image: url("/assets/blog1.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .signin-form-body{
-  height: 70%;  
+  height: 90%;  
   margin: 3rem;
-  display: grid;
-  grid-template-rows: 1fr 5fr;
 }
 .icon{
   border-radius: 0.4351rem;
