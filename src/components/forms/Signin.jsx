@@ -1,7 +1,19 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink , useNavigate} from 'react-router-dom'
 
 const Signin = () => {
+    const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	};
+
+    const navigateSignin = () =>{
+		navigate('/signin')
+	};
+
+	const navigateSignup = () =>{
+		navigate('/signup')
+	};
   return (
     <>
         <div className="signin-body">
@@ -25,8 +37,8 @@ const Signin = () => {
                 </div>
                 <div style={{color:"#F8E8FF" , position:"relative"}}>
                     <div className="buttons" style={{width:"auto" , position:"absolute" , right:"-1rem" , display:"flex" , flexDirection:"column" , gap:"0.5rem" , alignItems:"flex-end"}}>
-                    <button className="signup-btn btn" id="button" style={{backgroundColor:"#F8E8FF" , border:"none" , paddingLeft:"1.5vw"}}>Sign in</button>
-                    <button className="signin-btn purple-btn" style={{border:"none" , margin:"0" , backgroundColor:"transparent"}}>Sign up</button>
+                    <button onClick={navigateSignin} className="signup-btn btn" id="button" style={{backgroundColor:"#F8E8FF" , border:"none" , paddingLeft:"1.5vw"}}>Sign in</button>
+                    <button onClick={navigateSignup} className="signin-btn purple-btn" style={{border:"none" , margin:"0" , backgroundColor:"transparent"}}>Sign up</button>
                     </div>
                 </div>
                 </div>
