@@ -17,10 +17,11 @@ import TermsAndServices from "./components/Terms&Conditions/TermsAndServices";
 import Signup from "./components/forms/Signup";
 import Chatbot from "./utility/Chatbot/Chatbot";
 import Signin from "./components/forms/Signin";
+import TokenProvider from "./contexts/TokenProvider";
 
 function App() {
 	return (
-		<>
+		<TokenProvider>
 			<Chatbot />
 			<Router>
 				<Routes>
@@ -42,7 +43,7 @@ function App() {
 					<Route path="/tnc/cancellation-and-refund-policy" element={<CancellationPolicy />} />
 				</Routes>
 			</Router>
-		</>
+		</TokenProvider>
 	);
 }
 

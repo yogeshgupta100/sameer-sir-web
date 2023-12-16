@@ -1,13 +1,16 @@
-import React , {useState} from "react"
+import React, { useRef } from "react"
 import { useNavigate } from "react-router-dom";
+import { useToken } from "../../contexts/TokenProvider";
 
 
 const Signup = () => {
-	const [phone, setPhone] = useState(null);
 	const navigate = useNavigate();
-	const goBack = () => {
-		navigate(-1);
-	};
+	const nameInputRef = useRef();
+	const emailInputRef = useRef();
+	const passwordInputRef = useRef();
+	const confirmPasswordInputRef = useRef();
+
+	const [token, setToken] = useToken();
 
 	const navigateSignin = () =>{
 		navigate('/signin')
@@ -16,14 +19,39 @@ const Signup = () => {
 	const navigateSignup = () =>{
 		navigate('/signup')
 	};
+	const registerUser = async (e) =>{
+		e.preventDefault();
 
-	// useEffect(() => {
-	//     (async () => {
-	//         const res = await fetch('http://localhost:1337/api/courses');
-	//         const data = await res.json();
-	//         setCourses(data.data);
-	//     })();
-	// }, [])
+		const username = nameInputRef.current.value;
+		const email = emailInputRef.current.value;
+		const password = passwordInputRef.current.value;
+		const confirmPassword = confirmPasswordInputRef.current.value;
+
+		if (password !== confirmPassword) {
+			alert("Password does not match!");
+			return;
+		};
+
+		const response = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/auth/local/register`, {
+			method: 'POST',
+			headers: { 'Content-type': 'application/json' },
+			body: JSON.stringify({
+				username,
+				email,
+				password
+			}),
+		})
+
+		const data = await response.json();
+
+		console.log(data);
+
+		setToken(() => {
+			const _token = data.jwt;
+			navigate('/');
+			return _token;
+		});
+	};
 
 	return (
 		<>
@@ -88,11 +116,11 @@ const Signup = () => {
 				<div className="signin-2" style={{ backgroundColor: "#F8E8FF" }}>
 					<div className="signin-form-body">
 					<div className="form-section" style={{maxWidth:"100%" , boxShadow:"none"}}>
-                            <form style={{display:"flex" , flexDirection:"column" , width:"60%" , fontFamily:"Raleway"}}>
-                                <input type="name" name="name" className="form-text" placeholder="Name" style={{textDecoration:"none"}}/>
-                                <input type="email" name="email" className="form-text" placeholder="Email/Username" style={{textDecoration:"none"}}/>
-                                <input type="password" name="password" className="form-text" placeholder="Password" style={{textDecoration:"none"}}/>
-                                <input type="password" name="confirm password" className="form-text" placeholder="Confirm Password" style={{textDecoration:"none"}}/>
+                            <form onSubmit={registerUser} style={{display:"flex" , flexDirection:"column" , width:"60%" , fontFamily:"Raleway"}}>
+                                <input type="name" name="name" className="form-text" placeholder="Name" style={{textDecoration:"none"}} ref={nameInputRef}/>
+                                <input type="email" name="email" className="form-text" placeholder="Email/Username" style={{textDecoration:"none"}} ref={emailInputRef}/>
+                                <input type="password" name="password" className="form-text" placeholder="Password" style={{textDecoration:"none"}} ref={passwordInputRef}/>
+                                <input type="password" name="confirm password" className="form-text" placeholder="Confirm Password" style={{textDecoration:"none"}} ref={confirmPasswordInputRef}/>
                                <div className="button-signin" style={{
                                 width:"100%",
                                 height:"100%",
@@ -100,7 +128,7 @@ const Signup = () => {
                                 flexDirection:"column",
                                 alignItems:"end",
                                }}>
-                               <button type="button" className="purple-btn" style={{width:"26%" , fontSize:"clamp(0.9rem , 1.33vw , 1.25rem)" , fontWeight:"700" , padding:"0.5rem 1.5625rem" , borderRadius:"0.7rem", border:"1.5px solid #F8E8FF" , background:"#B86CD2"}}>Sign up</button>
+                               <button type="submit" className="purple-btn" style={{width:"26%" , fontSize:"clamp(0.9rem , 1.33vw , 1.25rem)" , fontWeight:"700" , padding:"0.5rem 1.5625rem" , borderRadius:"0.7rem", border:"1.5px solid #F8E8FF" , background:"#B86CD2"}}>Sign up</button>
                                </div>
                             </form>
                         </div>

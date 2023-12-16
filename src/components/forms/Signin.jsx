@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import { useToken } from "../../contexts/TokenProvider";
 
 const Signin = () => {
 	const navigate = useNavigate();
-    
-	const goBack = () => {
-		navigate(-1);
-	};
+
+	const [token , setToken] = useToken();
+	const emailInputRef = useRef();
+	const passwordInputRef = useRef();
 
 	const navigateSignin = () => {
 		navigate("/signin");
@@ -14,6 +15,34 @@ const Signin = () => {
 
 	const navigateSignup = () => {
 		navigate("/signup");
+	};
+	const loginUser = async (e) =>{
+		e.preventDefault();
+
+		const email = emailInputRef.current.value;
+		const password = passwordInputRef.current.value;
+
+		const response = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/auth/local`, {
+			method: 'POST',
+			headers: { 'Content-type': 'application/json' },
+			body: JSON.stringify({
+				identifier: email,
+				password
+			}),
+		})
+
+		const data = await response.json();
+
+		if (!data?.jwt) {
+			alert(data.error.message);
+			return;
+		}
+
+		setToken(() => {
+			const _token = data.jwt;
+			navigate('/');
+			return _token;
+		});
 	};
 	return (
 		<>
@@ -102,7 +131,7 @@ const Signin = () => {
 				<div className="signin-2" style={{ backgroundColor: "#F8E8FF" }}>
 					<div className="signin-form-body">
 						<div className="form-section" style={{ maxWidth: "100%", boxShadow: "none" }}>
-							<form
+							<form onSubmit={loginUser}
 								style={{
 									display: "flex",
 									flexDirection: "column",
@@ -116,6 +145,7 @@ const Signin = () => {
 									className="form-text"
 									placeholder="Email/Username"
 									style={{ textDecoration: "none" }}
+									ref={emailInputRef}
 								/>
 								<input
 									type="password"
@@ -123,6 +153,7 @@ const Signin = () => {
 									className="form-text"
 									placeholder="Password"
 									style={{ textDecoration: "none" }}
+									ref={passwordInputRef}
 								/>
 								<div
 									className="button-signin"
@@ -146,7 +177,7 @@ const Signin = () => {
 										</span>
 									</NavLink>
 									<button
-										type="button"
+										type="submit"
 										className="purple-btn"
 										style={{
 											border: "none",
