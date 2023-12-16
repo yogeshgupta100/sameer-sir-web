@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../Header";
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
@@ -155,10 +155,10 @@ const Graphic = ({ data }) => {
 				className=" about-first2"
 				style={{
 					position: "absolute",
-					bottom: "-17.77vw",
+					// bottom: "-33rem",
 					display: "flex",
 					alignItems: "center",
-					maxHeight: "29vw",
+					height: "25rem",
 					paddingLeft: "3rem",
 				}}
 			>
@@ -166,15 +166,15 @@ const Graphic = ({ data }) => {
 					className="container about-content"
 					style={{
 						display: "grid",
-						gridTemplateColumns: "1fr 1fr 1fr",
+						gridTemplateColumns: "repeat(3,1fr)",
 						gap: "1rem",
 						justifyContent: "center",
-						height: "19vw",
+						height: "18rem",
 						alignContent: "center",
 					}}
 				>
 					<div
-						className="course-duration"
+						className="part1"
 						style={{
 							width: "100%",
 							textAlign: "center",
@@ -186,23 +186,19 @@ const Graphic = ({ data }) => {
 						<h3
 							style={{
 								textAlign: "center",
-								fontSize: "clamp(1rem , 1.44vw , 0.1rem)",
+								fontSize: "1.3rem",
 								fontWeight: "600",
-								// letterSpacing: "1px",
+								letterSpacing: "1px",
 								color: "#B46BD1",
-								backgroundColor:"red",
-								minWidth:"100%",
-								maxHeight:"3rem"
 							}}
 						>
 							Course description
 						</h3>
 						<p
 							style={{
-								fontSize: "clamp(0.88vw , 1vw , 100vw)",
+								fontSize: "0.85rem",
 								color: "#3D3D3D",
-								// lineHeight: "1.776vw",
-								height:"80%",
+								lineHeight: "1.6rem",
 							}}
 						>
 							Welcome to the enchanting world of "Graphic Design Alchemy," where creativity knows no

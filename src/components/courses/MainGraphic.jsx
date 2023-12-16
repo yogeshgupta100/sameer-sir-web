@@ -26,6 +26,8 @@ const Course = () => {
                 const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/courses/${courseId}?populate=*`)
                 const data = await res.json();
 
+                console.log(data);
+
                 if (data.data === null) {
                     navigate("/");
                 } else {
