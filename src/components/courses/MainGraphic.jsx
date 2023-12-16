@@ -28,12 +28,12 @@ const Course = () => {
                 console.log(data);
 
                 if (data.data === null) {
-                    // navigate("/");
+                    navigate("/");
                 } else {
                     setCourseData(data.data);
                 }
             } catch (err) {
-                // navigate("/");
+                navigate("/");
             }
         })();
     }, [])
