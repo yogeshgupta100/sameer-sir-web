@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../Header";
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
@@ -34,7 +34,7 @@ const Graphic = ({ data }) => {
 		<>
 			<div className="landing-page" style={{ height: "auto", marginBottom: "3rem" }}>
 				<Header />
-				<div className="centered-text" style={{ }}>
+				<div className="centered-text" style={{}}>
 					<h2
 						style={{
 							width: "48rem",
@@ -149,137 +149,137 @@ const Graphic = ({ data }) => {
 						</div>
 					</div>
 				</div>
-			<div
-				className=" about-first2"
-				style={{
-					position: "absolute",
-					// bottom: "-33rem",
-					display: "flex",
-					alignItems: "center",
-					height: "25rem",
-					paddingLeft: "3rem",
-				}}
-			>
 				<div
-					className="container about-content"
+					className=" about-first2"
 					style={{
-						display: "grid",
-						gridTemplateColumns: "repeat(3,1fr)",
-						gap: "1rem",
-						justifyContent: "center",
-						height: "18rem",
-						alignContent: "center",
+						position: "absolute",
+						// bottom: "-33rem",
+						display: "flex",
+						alignItems: "center",
+						height: "25rem",
+						paddingLeft: "3rem",
 					}}
 				>
 					<div
-						className="part1"
+						className="container about-content"
 						style={{
-							width: "100%",
-							textAlign: "center",
-							fontFamily: "Open Sans",
-							borderRight: "1px solid #CDCDCD",
-							paddingRight: "3rem",
+							display: "grid",
+							gridTemplateColumns: "repeat(3,1fr)",
+							gap: "1rem",
+							justifyContent: "center",
+							height: "18rem",
+							alignContent: "center",
 						}}
 					>
-						<h3
+						<div
+							className="part1"
+							style={{
+								width: "100%",
+								textAlign: "center",
+								fontFamily: "Open Sans",
+								borderRight: "1px solid #CDCDCD",
+								paddingRight: "3rem",
+							}}
+						>
+							<h3
+								style={{
+									textAlign: "center",
+									fontSize: "1.3rem",
+									fontWeight: "600",
+									letterSpacing: "1px",
+									color: "#B46BD1",
+								}}
+							>
+								Course description
+							</h3>
+							<p
+								style={{
+									fontSize: "0.85rem",
+									color: "#3D3D3D",
+									lineHeight: "1.6rem",
+								}}
+							>
+								Welcome to the enchanting world of "Graphic Design Alchemy," where creativity knows no
+								bounds, and the ordinary transforms into extraordinary. it's a journey of
+								self-discovery, artistic expression
+							</p>
+						</div>
+						<div
+							className="part2"
 							style={{
 								textAlign: "center",
-								fontSize: "1.3rem",
-								fontWeight: "600",
-								letterSpacing: "1px",
-								color: "#B46BD1",
+								borderRight: "1px solid #CDCDCD",
 							}}
 						>
-							Course description
-						</h3>
-						<p
-							style={{
-								fontSize: "0.85rem",
-								color: "#3D3D3D",
-								lineHeight: "1.6rem",
-							}}
-						>
-							Welcome to the enchanting world of "Graphic Design Alchemy," where creativity knows no
-							bounds, and the ordinary transforms into extraordinary. it's a journey of self-discovery,
-							artistic expression
-						</p>
-					</div>
-					<div
-						className="part2"
-						style={{
-							textAlign: "center",
-							borderRight: "1px solid #CDCDCD",
-						}}
-					>
-						<h3
-							style={{
-								textAlign: "center",
-								fontSize: "1.3rem",
-								fontWeight: "600",
-								letterSpacing: "1px",
-								color: "#B46BD1",
-							}}
-						>
-							Course duration
-						</h3>
-						<p
-							style={{
-								fontSize: "0.85rem",
-								color: "#3D3D3D",
-								lineHeight: "1.6rem",
-							}}
-						>
-							6 months
-						</p>
-						<p
-							style={{
-								fontSize: "0.85rem",
-								color: "#3D3D3D",
-								lineHeight: "1.6rem",
-							}}
-						>
-							2 hours a day
-						</p>
-					</div>
-					{/* <span className="v-line" ></span> */}
-					<div
-						className="part3"
-						style={{
-							textAlign: "center",
-						}}
-					>
-						<h3
+							<h3
+								style={{
+									textAlign: "center",
+									fontSize: "1.3rem",
+									fontWeight: "600",
+									letterSpacing: "1px",
+									color: "#B46BD1",
+								}}
+							>
+								Course duration
+							</h3>
+							<p
+								style={{
+									fontSize: "0.85rem",
+									color: "#3D3D3D",
+									lineHeight: "1.6rem",
+								}}
+							>
+								6 months
+							</p>
+							<p
+								style={{
+									fontSize: "0.85rem",
+									color: "#3D3D3D",
+									lineHeight: "1.6rem",
+								}}
+							>
+								2 hours a day
+							</p>
+						</div>
+						{/* <span className="v-line" ></span> */}
+						<div
+							className="part3"
 							style={{
 								textAlign: "center",
-								fontSize: "1.3rem",
-								fontWeight: "600",
-								letterSpacing: "1px",
-								color: "#B46BD1",
 							}}
 						>
-							Next branch
-						</h3>
-						<p
-							style={{
-								fontSize: "0.85rem",
-								color: "#3D3D3D",
-								lineHeight: "1.6rem",
-							}}
-						>
-							weekend
-						</p>
-						<p
-							style={{
-								fontSize: "0.85rem",
-								color: "#3D3D3D",
-								lineHeight: "1.6rem",
-							}}
-						>
-							sat & sun
-						</p>
+							<h3
+								style={{
+									textAlign: "center",
+									fontSize: "1.3rem",
+									fontWeight: "600",
+									letterSpacing: "1px",
+									color: "#B46BD1",
+								}}
+							>
+								Next branch
+							</h3>
+							<p
+								style={{
+									fontSize: "0.85rem",
+									color: "#3D3D3D",
+									lineHeight: "1.6rem",
+								}}
+							>
+								weekend
+							</p>
+							<p
+								style={{
+									fontSize: "0.85rem",
+									color: "#3D3D3D",
+									lineHeight: "1.6rem",
+								}}
+							>
+								sat & sun
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 		</>
 	);
