@@ -18,31 +18,34 @@ import Signup from "./components/forms/Signup";
 import Chatbot from "./utility/Chatbot/Chatbot";
 import Signin from "./components/forms/Signin";
 import TokenProvider from "./contexts/TokenProvider";
+import UserProvider from "./contexts/UserProvider";
 
 function App() {
 	return (
 		<TokenProvider>
-			<Chatbot />
-			<Router>
-				<Routes>
-					<Route exact path="/" element={<Home />} />
-					<Route exact path="/contact" element={<Contact />} />
-					<Route path="/about" element={<Aboutus />} />
-					<Route path="/forms/downloadSyllabus" element={<DownloadSyllabus />} />
-					<Route path="/article" element={<Articlemain />} />
-					<Route path="/resource" element={<Mainresource />} />
-					<Route path="/courses/:courseId" element={<Course />} />
-					<Route path="/signup" element={<Signup />} />
-					<Route path="/signin" element={<Signin />} />
-					<Route path="/blogs" element={<MainBlog />} />
-					<Route path="/success" element={<SuccessPayment />} />
-					<Route path="/cancel" element={<CancelPayment />} />
-					<Route path="/tnc/customer-support" element={<CustomerSupport />} />
-					<Route path="/tnc/terms-and-services" element={<TermsAndServices />} />
-					<Route path="/tnc/privacy-policy" element={<PrivacyPolicy />} />
-					<Route path="/tnc/cancellation-and-refund-policy" element={<CancellationPolicy />} />
-				</Routes>
-			</Router>
+			<UserProvider>
+				<Chatbot />
+				<Router>
+					<Routes>
+						<Route exact path="/" element={<Home />} />
+						<Route exact path="/contact" element={<Contact />} />
+						<Route path="/about" element={<Aboutus />} />
+						<Route path="/forms/downloadSyllabus" element={<DownloadSyllabus />} />
+						<Route path="/article" element={<Articlemain />} />
+						<Route path="/resource" element={<Mainresource />} />
+						<Route path="/courses/:courseId" element={<Course />} />
+						<Route path="/signup" element={<Signup />} />
+						<Route path="/signin" element={<Signin />} />
+						<Route path="/blogs" element={<MainBlog />} />
+						<Route path="/success" element={<SuccessPayment />} />
+						<Route path="/cancel" element={<CancelPayment />} />
+						<Route path="/tnc/customer-support" element={<CustomerSupport />} />
+						<Route path="/tnc/terms-and-services" element={<TermsAndServices />} />
+						<Route path="/tnc/privacy-policy" element={<PrivacyPolicy />} />
+						<Route path="/tnc/cancellation-and-refund-policy" element={<CancellationPolicy />} />
+					</Routes>
+				</Router>
+			</UserProvider>
 		</TokenProvider>
 	);
 }

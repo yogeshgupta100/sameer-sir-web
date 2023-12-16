@@ -1,7 +1,7 @@
-import React, { useRef } from "react"
+import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useToken } from "../../contexts/TokenProvider";
-
+import { useUser } from "../../contexts/UserProvider";
 
 const Signup = () => {
 	const navigate = useNavigate();
@@ -11,15 +11,17 @@ const Signup = () => {
 	const confirmPasswordInputRef = useRef();
 
 	const [token, setToken] = useToken();
+	const [user, setUser] = useUser();
 
-	const navigateSignin = () =>{
-		navigate('/signin')
+	const navigateSignin = () => {
+		navigate("/signin");
 	};
 
-	const navigateSignup = () =>{
-		navigate('/signup')
+	const navigateSignup = () => {
+		navigate("/signup");
 	};
-	const registerUser = async (e) =>{
+
+	const registerUser = async (e) => {
 		e.preventDefault();
 
 		const username = nameInputRef.current.value;
@@ -30,27 +32,24 @@ const Signup = () => {
 		if (password !== confirmPassword) {
 			alert("Password does not match!");
 			return;
-		};
+		}
 
 		const response = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/auth/local/register`, {
-			method: 'POST',
-			headers: { 'Content-type': 'application/json' },
+			method: "POST",
+			headers: { "Content-type": "application/json" },
 			body: JSON.stringify({
 				username,
 				email,
-				password
+				password,
 			}),
-		})
+		});
 
 		const data = await response.json();
 
-		console.log(data);
+		setToken(data.jwt);
+		setUser(data.user);
 
-		setToken(() => {
-			const _token = data.jwt;
-			navigate('/');
-			return _token;
-		});
+		navigate("/");
 	};
 
 	return (
@@ -106,32 +105,109 @@ const Signup = () => {
 							</p>
 						</div>
 					</div>
-					<div style={{color:"#F8E8FF" , position:"relative"}}>
-                    <div className="buttons" style={{width:"auto" , position:"absolute" , right:"-1rem" , display:"flex" , flexDirection:"column" , gap:"0.5rem" , alignItems:"flex-end"}}>
-                    <button onClick={navigateSignin} className="signup-btn purple-btn" style={{backgroundColor:"transparent" , border:"none" , margin:"0"}}>Sign in</button>
-                    <button onClick={navigateSignup} className="signin-btn btn" id="button" style={{border:"none" , paddingLeft:"1.5vw" , backgroundColor:"#F8E8FF"}}>Sign up</button>
-                    </div>
-                </div>
+					<div style={{ color: "#F8E8FF", position: "relative" }}>
+						<div
+							className="buttons"
+							style={{
+								width: "auto",
+								position: "absolute",
+								right: "-1rem",
+								display: "flex",
+								flexDirection: "column",
+								gap: "0.5rem",
+								alignItems: "flex-end",
+							}}
+						>
+							<button
+								onClick={navigateSignin}
+								className="signup-btn purple-btn"
+								style={{ backgroundColor: "transparent", border: "none", margin: "0" }}
+							>
+								Sign in
+							</button>
+							<button
+								onClick={navigateSignup}
+								className="signin-btn btn"
+								id="button"
+								style={{ border: "none", paddingLeft: "1.5vw", backgroundColor: "#F8E8FF" }}
+							>
+								Sign up
+							</button>
+						</div>
+					</div>
 				</div>
 				<div className="signin-2" style={{ backgroundColor: "#F8E8FF" }}>
 					<div className="signin-form-body">
-					<div className="form-section" style={{maxWidth:"100%" , boxShadow:"none"}}>
-                            <form onSubmit={registerUser} style={{display:"flex" , flexDirection:"column" , width:"60%" , fontFamily:"Raleway"}}>
-                                <input type="name" name="name" className="form-text" placeholder="Name" style={{textDecoration:"none"}} ref={nameInputRef}/>
-                                <input type="email" name="email" className="form-text" placeholder="Email/Username" style={{textDecoration:"none"}} ref={emailInputRef}/>
-                                <input type="password" name="password" className="form-text" placeholder="Password" style={{textDecoration:"none"}} ref={passwordInputRef}/>
-                                <input type="password" name="confirm password" className="form-text" placeholder="Confirm Password" style={{textDecoration:"none"}} ref={confirmPasswordInputRef}/>
-                               <div className="button-signin" style={{
-                                width:"100%",
-                                height:"100%",
-                                display:"flex",
-                                flexDirection:"column",
-                                alignItems:"end",
-                               }}>
-                               <button type="submit" className="purple-btn" style={{width:"26%" , fontSize:"clamp(0.9rem , 1.33vw , 1.25rem)" , fontWeight:"700" , padding:"0.5rem 1.5625rem" , borderRadius:"0.7rem", border:"1.5px solid #F8E8FF" , background:"#B86CD2"}}>Sign up</button>
-                               </div>
-                            </form>
-                        </div>
+						<div className="form-section" style={{ maxWidth: "100%", boxShadow: "none" }}>
+							<form
+								onSubmit={registerUser}
+								style={{
+									display: "flex",
+									flexDirection: "column",
+									width: "60%",
+									fontFamily: "Raleway",
+								}}
+							>
+								<input
+									type="name"
+									name="name"
+									className="form-text"
+									placeholder="Name"
+									style={{ textDecoration: "none" }}
+									ref={nameInputRef}
+								/>
+								<input
+									type="email"
+									name="email"
+									className="form-text"
+									placeholder="Email/Username"
+									style={{ textDecoration: "none" }}
+									ref={emailInputRef}
+								/>
+								<input
+									type="password"
+									name="password"
+									className="form-text"
+									placeholder="Password"
+									style={{ textDecoration: "none" }}
+									ref={passwordInputRef}
+								/>
+								<input
+									type="password"
+									name="confirm password"
+									className="form-text"
+									placeholder="Confirm Password"
+									style={{ textDecoration: "none" }}
+									ref={confirmPasswordInputRef}
+								/>
+								<div
+									className="button-signin"
+									style={{
+										width: "100%",
+										height: "100%",
+										display: "flex",
+										flexDirection: "column",
+										alignItems: "end",
+									}}
+								>
+									<button
+										type="submit"
+										className="purple-btn"
+										style={{
+											width: "26%",
+											fontSize: "clamp(0.9rem , 1.33vw , 1.25rem)",
+											fontWeight: "700",
+											padding: "0.5rem 1.5625rem",
+											borderRadius: "0.7rem",
+											border: "1.5px solid #F8E8FF",
+											background: "#B86CD2",
+										}}
+									>
+										Sign up
+									</button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

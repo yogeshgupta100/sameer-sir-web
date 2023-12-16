@@ -1,11 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useToken } from "../../contexts/TokenProvider";
+import { useUser } from "../../contexts/UserProvider";
 
 const Signin = () => {
 	const navigate = useNavigate();
 
-	const [token , setToken] = useToken();
+	const [token, setToken] = useToken();
+	const [user, setUser] = useUser();
+
 	const emailInputRef = useRef();
 	const passwordInputRef = useRef();
 
@@ -16,20 +19,21 @@ const Signin = () => {
 	const navigateSignup = () => {
 		navigate("/signup");
 	};
-	const loginUser = async (e) =>{
+
+	const loginUser = async (e) => {
 		e.preventDefault();
 
 		const email = emailInputRef.current.value;
 		const password = passwordInputRef.current.value;
 
 		const response = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/auth/local`, {
-			method: 'POST',
-			headers: { 'Content-type': 'application/json' },
+			method: "POST",
+			headers: { "Content-type": "application/json" },
 			body: JSON.stringify({
 				identifier: email,
-				password
+				password,
 			}),
-		})
+		});
 
 		const data = await response.json();
 
@@ -38,11 +42,10 @@ const Signin = () => {
 			return;
 		}
 
-		setToken(() => {
-			const _token = data.jwt;
-			navigate('/');
-			return _token;
-		});
+		setToken(data.jwt);
+		setUser(data.user);
+
+		navigate("/");
 	};
 	return (
 		<>
@@ -131,7 +134,8 @@ const Signin = () => {
 				<div className="signin-2" style={{ backgroundColor: "#F8E8FF" }}>
 					<div className="signin-form-body">
 						<div className="form-section" style={{ maxWidth: "100%", boxShadow: "none" }}>
-							<form onSubmit={loginUser}
+							<form
+								onSubmit={loginUser}
 								style={{
 									display: "flex",
 									flexDirection: "column",
