@@ -56,7 +56,7 @@ const Signin = () => {
                                 alignItems:"end",
                                }}>
                                <NavLink to={"/forgotPassword"} style={{textDecoration:"none"}}><span style={{fontSize:"clamp(0.88rem , 1.55vw , 1.125rem)" , color:"#B86CD2" , fontWeight:"400"}}>Forgot Password?</span></NavLink>
-                               <button type="button" className="purple-btn" style={{border:"none" , width:"26%" , fontSize:"clamp(0.9rem , 1.55vw , 1.25rem)" , fontWeight:"700"}}>Sign in</button>
+                               <button type="button" className="purple-btn" style={{width:"26%" , fontSize:"clamp(0.9rem , 1.33vw , 1.25rem)" , fontWeight:"700" , padding:"0.5rem 1.5625rem" , borderRadius:"0.7rem", border:"1.5px solid #F8E8FF" , background:"#B86CD2"}}>Sign in</button>
                                </div>
                             </form>
                         </div>

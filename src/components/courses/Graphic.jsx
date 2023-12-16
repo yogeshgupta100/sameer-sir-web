@@ -32,22 +32,22 @@ const Graphic = ({ data }) => {
 
 	return (
 		<>
-			<div className="landing-page" style={{ height: "auto", marginBottom: "3rem" }}>
-				<Header />
-				<div className="centered-text" style={{ }}>
-					<h2
+			<div className="landing-page" style={{ height: "20vw", position: "relative", marginBottom: "31vw" }}>
+				<div className="centered-text container" style={{display:"flex" , flexDirection:"column" , alignItems:"flex-start" , height:"70%"}}>
+				<span>
+				<h2
 						style={{
-							width: "48rem",
-							fontSize: "2.4rem",
+							maxWidth: "48rem",
+							fontSize: "clamp(1.3rem , 2.33vw , 3.4rem)",
 							fontWeight: "700",
-							lineHeight: "3rem",
+							lineHeight: "3vw",
 							fontFamily: "Raleway",
 							letterSpacing: "0.1rem",
 						}}
 					>
 						{data ? data.attributes.name : "loading..."}
 					</h2>
-					<p style={{ lineHeight: "1.875rem" }}>{data ? data.attributes.description : "loading..."}</p>
+					<p style={{ lineHeight: "2vw" , fontSize:"clamp(0.77rem , 1.2vw , 1.25rem)" , marginBottom:"1rem"}}>{data ? data.attributes.description : "loading..."}</p>
 					<div className="buttons" style={{ display: "flex" }}>
 						<button
 							type="button"
@@ -58,9 +58,10 @@ const Graphic = ({ data }) => {
 								borderRadius: "0.6rem",
 								border: "1.1px solid #B86CD2",
 								marginRight: "1rem",
-								padding: "0.625rem 3.3rem",
+								padding: "0.625rem 3.3vw",
 								fontWeight: "500",
-								fontSize: "1.04rem",
+								fontSize: "clamp(0.8rem , 1.2vw , 1.25rem)",
+								maxHeight:"3rem"
 							}}
 						>
 							Apply now
@@ -69,27 +70,27 @@ const Graphic = ({ data }) => {
 							<button
 								type="button"
 								className="btn"
-								// id='button'
 								style={{
-									borderRadius: "0.6rem",
-									border: "1.1px solid #fff",
-									marginRight: "1rem",
-									padding: "0.625rem 1rem",
-									fontWeight: "500",
-									fontSize: "1.04rem",
+								borderRadius: "0.6rem",
+								border: "1.1px solid #fff",
+								marginRight: "1rem",
+								padding: "0.625rem 3.3vw",
+								fontWeight: "500",
+								fontSize: "clamp(0.8rem , 1.2vw , 1.25rem)",
+								maxHeight:"3rem"
 								}}
 							>
 								Download syllabus
 							</button>
 						</NavLink>
 					</div>
-					<div style={{ width: "100%", marginTop: "5rem" }}>
+					<div style={{ width: "100%", marginTop: "5vw" }}>
 						<p style={{ margin: "0" }}>Tools covered</p>
 						<div
 							className="extra-buttons"
 							style={{
 								display: "grid",
-								gridTemplateColumns: "repeat(4,7rem)",
+								gridTemplateColumns: "repeat(4,7vw)",
 								gap: "0.654rem",
 								marginTop: "0",
 							}}
@@ -148,15 +149,16 @@ const Graphic = ({ data }) => {
 							</button>
 						</div>
 					</div>
+				</span>
 				</div>
 			<div
 				className=" about-first2"
 				style={{
 					position: "absolute",
-					// bottom: "-33rem",
+					bottom: "-17.77vw",
 					display: "flex",
 					alignItems: "center",
-					height: "25rem",
+					maxHeight: "29vw",
 					paddingLeft: "3rem",
 				}}
 			>
@@ -164,15 +166,15 @@ const Graphic = ({ data }) => {
 					className="container about-content"
 					style={{
 						display: "grid",
-						gridTemplateColumns: "repeat(3,1fr)",
+						gridTemplateColumns: "1fr 1fr 1fr",
 						gap: "1rem",
 						justifyContent: "center",
-						height: "18rem",
+						height: "19vw",
 						alignContent: "center",
 					}}
 				>
 					<div
-						className="part1"
+						className="course-duration"
 						style={{
 							width: "100%",
 							textAlign: "center",
@@ -184,19 +186,23 @@ const Graphic = ({ data }) => {
 						<h3
 							style={{
 								textAlign: "center",
-								fontSize: "1.3rem",
+								fontSize: "clamp(1rem , 1.44vw , 0.1rem)",
 								fontWeight: "600",
-								letterSpacing: "1px",
+								// letterSpacing: "1px",
 								color: "#B46BD1",
+								backgroundColor:"red",
+								minWidth:"100%",
+								maxHeight:"3rem"
 							}}
 						>
 							Course description
 						</h3>
 						<p
 							style={{
-								fontSize: "0.85rem",
+								fontSize: "clamp(0.88vw , 1vw , 100vw)",
 								color: "#3D3D3D",
-								lineHeight: "1.6rem",
+								// lineHeight: "1.776vw",
+								height:"80%",
 							}}
 						>
 							Welcome to the enchanting world of "Graphic Design Alchemy," where creativity knows no

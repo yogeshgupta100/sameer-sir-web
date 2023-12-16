@@ -12,6 +12,7 @@ import Howyoulearn from './Howyoulearn'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import EnrollingProcess from './EnrollingProcess'
+import Header from '../Header'
 
 const Course = () => {
     const { courseId } = useParams();
@@ -45,6 +46,7 @@ const Course = () => {
     }
   return (
     <>
+        <Header/>
         <Graphic data={courseData} />
         <Whycourse data={courseData} />
         <Howyoulearn data={courseData} />

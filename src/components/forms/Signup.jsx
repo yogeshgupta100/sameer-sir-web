@@ -53,7 +53,7 @@ const Signup = () => {
 						className="welcome-body"
 						style={{ display: "grid", gridTemplateRows: "2fr 1fr", justifyItems: "center" }}
 					>
-						<span className="signin-image"></span>
+						<span className="signup-image"></span>
 						<div
 							className="welcome-text"
 							style={{
@@ -100,7 +100,7 @@ const Signup = () => {
                                 flexDirection:"column",
                                 alignItems:"end",
                                }}>
-                               <button type="button" className="purple-btn" style={{border:"none" , width:"26%" , fontSize:"clamp(0.9rem , 1.55vw , 1.25rem)" , fontWeight:"700"}}>Sign up</button>
+                               <button type="button" className="purple-btn" style={{width:"26%" , fontSize:"clamp(0.9rem , 1.33vw , 1.25rem)" , fontWeight:"700" , padding:"0.5rem 1.5625rem" , borderRadius:"0.7rem", border:"1.5px solid #F8E8FF" , background:"#B86CD2"}}>Sign up</button>
                                </div>
                             </form>
                         </div>
