@@ -1206,6 +1206,6 @@ footer .right-container ul li a {
   }
 
   footer .right-container ul li {
-    margin-top: 0 !important;
+    margin-top: 5px !important;
   }
 }
