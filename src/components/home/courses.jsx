@@ -31,20 +31,16 @@ const Courses = () => {
 								<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${course?.attributes?.thumbnail?.data?.attributes?.url}`} className="card-img-top" alt="course1" />
 								<div
 									className="card-body container"
-									style={{
-										padding: "2.22vw 2.77vw",
-										lineHeight: "1",
-									}}
 								>
 									<span
 										style={{
 											textAlign: "start",
 											color: "#878787",
 											fontFamily: "Open Sans",
-											fontSize: "1.11vw",
+											fontSize: "clamp(0.7rem , 2vw , 1.4rem)",
 											fontStyle: "normal",
 											fontWeight: "700",
-											marginBottom: "0.22vw",
+											// marginBottom: "0.22vw",
 											lineHeight:"1"
 										}}
 									>
@@ -55,24 +51,25 @@ const Courses = () => {
 										style={{
 											color: "#B46BD1",
 											fontFamily: "Open Sans",
-											fontSize: "1.44vw",
+											fontSize: "clamp(0.8rem , 2vw , 1.5rem)",
 											fontStyle: "normal",
 											fontWeight: "700",
 											lineHeight: "140.5%",
 											marginBottom: "2.22vw",
+											height:"5rem",
+											overflow:"hidden"
 										}}
 									>
 										{course.attributes.name}
 									</h5>
 									<div
-										className="container"
+										className="content-course"
 										style={{
 											display: "flex",
 											justifyContent: "space-evenly",
-											fontSize: "0.99vw",
+											fontSize: "clamp(1rem , 2vw , 1.4rem)",
 											lineHeight: "1",
-											margin: "0",
-											padding: "0",
+
 										}}
 									>
 										<div className="content">
