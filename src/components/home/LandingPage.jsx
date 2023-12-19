@@ -5,19 +5,32 @@ const LandingPage = ({ imageurl }) => {
 		<div className="landing-page" id="home-main">
 			<div className="landing-page-content">
 			<div className="centered-text">
-				<h2>User Experience Revolution: Designing Tomorrow's World</h2>
+				<h2>Immerse yourself into the world of Design, Technology and Innovation.</h2>
 				<p>Unlocking the Secrets of User-Centered Design: A Comprehensive Journey into UX Excellence"</p>
-				<button type="button" className="btn" style={{borderRadius: "0.72vw",
+				<div className="buttons" style={{width:"100%" , display:"flex" , justifyContent:"start" , gap:"0.5rem"}}>
+				<button type="button" className="button btn" style={{borderRadius: "0.77rem",
             border: "0.104vw solid #FFF",
-            fontSize:"1.11vw",
+            fontSize:"clamp(0.44rem , 2vw , 1.25rem)",
             fontWeight:"500",
-            width:"fit-content",
-            minHeight:"4vw",
-            padding:"0 1.44vw",
+            minWidth: "35%",
+    		aspectRatio: "10/2.7",
+            padding:"0 1.6vw",
             margin:"2.22vw 0"
 		}}>
               Explore Now
         </button>
+		<button type="button" className="button" id="button" style={{borderRadius: "0.77rem",
+            border: "0.104vw solid #FFF",
+            fontSize:"clamp(0.44rem , 2vw , 1.25rem)",
+            fontWeight:"500",
+            minWidth: "35%",
+    		aspectRatio: "10/2.7",
+            padding:"0 1.6vw",
+            margin:"2.22vw 0"
+		}}>
+              Request a call
+        </button>
+				</div>
 			</div>
 				<span className="landing-img">
 					<img src={imageurl} style={{

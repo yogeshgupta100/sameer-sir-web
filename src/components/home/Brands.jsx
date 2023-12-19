@@ -30,22 +30,16 @@ const Brands = ({color , textCol}) => {
                 fontFamily:"Open Sans",
                 fontStyle:"normal"
             }}>
-                <p style={{
-                    color: "#FFF",
-                    fontWeight:"300",
-                    fontSize:"1.23vw",
-                    opacity:"0.8"
-                }}>Our partners</p>
                 <h2 style={{
-                    fontSize:"2.78vw",
+                    fontSize:"3vw",
                     fontWeight:"700"
                 }}>Our Collaborative Network</h2>
-                <div className="para pt-2" style={{
+                <div className="para" style={{
                     fontWeight:"100",
                     opacity:"0.8",
-                    fontSize:"0.99vw",
+                    fontSize:"clamp(0.5rem , 2.2vw , 1.2rem)",
                 }}>
-                <p style={{letterSpacing:"0.08vw"}}>Meet the Key Players Shaping Our Design Ecosystem</p>
+                <span>Meet the Key Players Shaping Our Design Ecosystem</span>
                 </div>
             </div>
         </div>

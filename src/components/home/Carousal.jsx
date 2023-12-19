@@ -53,7 +53,7 @@ export default function Carousal() {
 				style={{
 					width: "max-content",
 					color: "white",
-					marginLeft: "7vw",
+					marginLeft: "0",
 					transition: "all 0.5s ease-in-out",
 				}}
 			>
@@ -62,7 +62,7 @@ export default function Carousal() {
 				})}
 			</div>
 
-			<div
+			<div 
 				style={{
 					display: "grid",
 					justifyContent: "space-between",
@@ -79,11 +79,11 @@ export default function Carousal() {
 					}}
 				>
 					{data.map((item, index) => (
-						<div
+						<div id="carousel-circle-btn"
 							key={index}
 							style={{
-								height: "0.66vw",
-								width: "0.66vw",
+								minHeight: "0.667vw",
+								aspectRatio:"1/1",
 								borderRadius: "50%",
 								background: currentSlide === index ? "#63017F" : "white",
 								border: "0.069vw solid #63017F",
@@ -98,7 +98,7 @@ export default function Carousal() {
 					))}
 				</div>
 				{/* Buttons */}
-				<div
+				<div className="carousel-button"
 					style={{
 						display: "flex",
 						justifyContent: "center",

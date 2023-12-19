@@ -41,7 +41,7 @@ function Section1() {
 				minHeight: "25vw",
 			}}
 		>
-			<div className="counter-heading" style={{fontSize:"1.49vw"}}>
+			<div className="counter-heading" style={{fontSize:"clamp(0.55rem , 3vw , 1.2rem)"}}>
 				<span>We Provide</span>
 			</div>
 			<div
@@ -61,6 +61,8 @@ function Section1() {
 						className="awesomeCounter"
 						style={{
 							textAlign: "center",
+							display:"flex",
+							flexDirection:"column"
 						}}
 						>
 						<span className="counter-number"
@@ -73,18 +75,18 @@ function Section1() {
 						>
 							{countriesCounter}+
 						</span>
-						<p
+						<span
 							style={{
 								color: "#B46BD1",
 								textAlign: "center",
 								fontFamily: "Open Sans",
-								fontSize: "1.11vw",
+								fontSize: "clamp(0.33rem , 2.8vw , 1.2rem)",
 								fontStyle: "normal",
 								fontWeight: "500",
 							}}
 						>
 							Industry leading experts
-						</p>
+						</span>
 					</div>
 				</div>
 				<div className="col">
@@ -92,6 +94,8 @@ function Section1() {
 						className="awesome-counter"
 						style={{
 							textAlign: "center",
+							display:"flex",
+							flexDirection:"column"
 						}}
 					>
 						<span className="counter-number"
@@ -104,18 +108,18 @@ function Section1() {
 						>
 							{graduatesCounter}+
 						</span>
-						<p
+						<span
 							style={{
 								color: "#B46BD1",
 								textAlign: "center",
 								fontFamily: "Open Sans",
-								fontSize: "1.11vw",
+								fontSize: "clamp(0.33rem , 2.8vw , 1.2rem)",
 								fontStyle: "normal",
 								fontWeight: "500",
 							}}
 						>
 							Industry orientated modules
-						</p>
+						</span>
 					</div>
 					<div className="v-line" style={{minWidth:"0.07vw" , minHeight:"100%"}}></div>
 				</div>
@@ -124,6 +128,8 @@ function Section1() {
 						className="awesome-counter"
 						style={{
 							textAlign: "center",
+							display:"flex",
+							flexDirection:"column"
 						}}
 					>
 						<span className="counter-number"
@@ -136,18 +142,18 @@ function Section1() {
 						>
 							{placementRateCounter}+
 						</span>
-						<p
+						<span
 							style={{
 								color: "#B46BD1",
 								textAlign: "center",
 								fontFamily: "Open Sans",
-								fontSize: "1.11vw",
+								fontSize: "clamp(0.33rem , 2.8vw , 1.2rem)",
 								fontStyle: "normal",
 								fontWeight: "500",
 							}}
 						>
 							Hiring partners
-						</p>
+						</span>
 					</div>
 				</div>
 			</div>

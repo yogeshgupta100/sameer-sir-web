@@ -32,7 +32,8 @@ const Courses = () => {
 								<div
 									className="card-body container"
 								>
-									<span
+									<div>
+									<span className="course-subtitle"
 										style={{
 											textAlign: "start",
 											color: "#878787",
@@ -57,87 +58,75 @@ const Courses = () => {
 											lineHeight: "140.5%",
 											marginBottom: "2.22vw",
 											height:"5rem",
-											overflow:"hidden"
+											overflow:"hidden",
 										}}
 									>
 										{course.attributes.name}
 									</h5>
+									</div>
 									<div
 										className="content-course"
 										style={{
-											display: "flex",
-											justifyContent: "space-evenly",
-											fontSize: "clamp(1rem , 2vw , 1.4rem)",
+											display: "grid",
+											gridTemplateColumns:"1fr 1fr 1fr",
+											fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
 											lineHeight: "1",
-
+											gap:"0.3rem"
 										}}
 									>
-										<div className="content">
+										<div className="content" style={{textAlign:"start"}}>
 											<div
 												style={{
 													color: "rgba(117, 117, 117, 0.90)",
 													fontFamily: "Open Sans",
-													fontSize: "1.11vw",
+													// fontSize: "1.11vw",
 													fontStyle: "normal",
 													fontWeight: "700",
-													marginBottom:"1vw"
+													marginBottom:"0.88vw",
 												}}
 											>
 												Starting Date
 											</div>
-											<div className="course-content">{course.attributes.startDate}</div>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.startDate}</span>
 										</div>
-										<div
-											className="v-line"
-											style={{
-												margin: "0 0.899vw 0",
-											}}
-										></div>
-										<div className="content">
+										<div className="content" style={{textAlign:"center"}}>
 											<div
 												style={{
 													color: "rgba(117, 117, 117, 0.90)",
 													fontFamily: "Open Sans",
-													fontSize: "1.11vw",
 													fontStyle: "normal",
 													fontWeight: "700",
-													marginBottom:"1vw"
+													marginBottom:"0.88vw"
 												}}
 											>
 												End Date
 											</div>
-											<span className="course-content">{course.attributes.endDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.endDate}</span>
 										</div>
-										<div
-											className="v-line"
-											style={{
-												margin: "0 0.899vw 0",
-											}}
-										></div>
-										<div className="content">
+										<div className="content" style={{textAlign:"center"}}>
 											<div
 												style={{
 													color: "rgba(117, 117, 117, 0.90)",
 													fontFamily: "Open Sans",
-													fontSize: "1.11vw",
 													fontStyle: "normal",
 													fontWeight: "700",
-													marginBottom:"1vw"
+													marginBottom:"0.88vw"
 												}}
 											>
 												Duration
 											</div>
-											<span className="course-content">{course.attributes.duration}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.duration}</span>
 										</div>
 									</div>
 									<NavLink
 										to={`../components/Home.jsx`}
-										className="purple-btn"
+										className="purple-btn course-btn"
 										style={{
 											textDecoration: "none",
+											fontSize: "clamp(0.5rem , 1.5vw , 1rem)"
 										}}
 									>
-										Learn more
+										Request a call
 									</NavLink>
 								</div>
 							</div>

@@ -3,10 +3,10 @@ import React from "react";
 const Heading = ({ content , left}) => {
   return (
     <div
-      className="container"
+      className="container heading"
       style={{
         padding:"0",
-        margin:"4.44vw 0 6.66vw 0",
+        margin:"4.44vw 0 6vw 0",
         position: "relative",
         display: "flex",
         justifyContent: "start",
@@ -28,17 +28,15 @@ const Heading = ({ content , left}) => {
         <h3
           style={{
             color: "rgba(173, 96, 200, 0.90)",
-            fontSize: "2.22vw",
+            fontSize: "clamp(1rem , 4vw , 2rem)",
             fontWeight: "750",
             letterSpacing:"0.11vw",
             fontStyle:"normal",
-            marginBottom:"1vw"
           }}
         >
           {content}
         </h3>
         <p style={{
-          maxWidth:"40vw",
           fontFamily:"Open Sans",
           fontSize:"clamp(0.66rem , 1.33vw , 1rem)",
           fontWeight:"400",

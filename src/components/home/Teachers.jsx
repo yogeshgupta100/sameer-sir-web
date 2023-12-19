@@ -63,7 +63,7 @@ const Teachers = () => {
 					</svg>
 				</button>
 			</div>
-			<section
+			<div
 				className="main-card--container container"
 				style={{
 					maxWidth:"90vw",
@@ -85,7 +85,7 @@ const Teachers = () => {
 						</div>
 					);
 				})}
-			</section>
+			</div>
 		</>
 	);
 };
