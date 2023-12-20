@@ -18,7 +18,7 @@ const Teachers = () => {
 			<div
 				className="container"
 				style={{
-					marginTop: "11vw",
+					margin: "11vw 0 0",
 				}}
 			>
 				<span className="view-all-heading">
@@ -40,7 +40,7 @@ const Teachers = () => {
 						textAlign:"center"
 					}}
 				>
-					<p
+					<span
 						style={{
 							display: "flex",
 							textDecoration: "none",
@@ -51,7 +51,7 @@ const Teachers = () => {
 						}}
 					>
 						View all
-					</p>
+					</span>
 					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 15" fill="none">
 						<path
 							d="M1 7.5L17 7.5M17 7.5L11 13.5M17 7.5L11 1.5"

@@ -17,9 +17,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* body::-webkit-scrollbar {
-	display: none;
-  } */
 *:focus {
 	outline: none;
 }
@@ -465,12 +462,10 @@ code {
 /* Home-Resource Section */
 .resource-page {
 	width: 100vw;
-	/* min-height: auto; */
 	padding: 0;
 	margin: 11vw 4.44vw 11vw 6vw;
 }
 .resource-content {
-	position: relative;
 	width: 100%;
 	margin-top: 11vw;
 	display: flex;
@@ -481,7 +476,7 @@ code {
 	display: flex;
 	width: 25.53vw;
 	height: 36.63vw;
-	position: relative;
+	/* position: relative; */
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -512,9 +507,10 @@ code {
 .vid-content {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
-	position: relative;
-	max-width: 42vw;
+	justify-content: center;
+	/* position: relative; */
+	max-width: 100%;
+	min-height: 100%;
 	margin: 0 10.11vw 0 5.55vw;
 }
 .vid-content h4 {
@@ -1059,10 +1055,11 @@ code {
     border-radius: 0.3125rem !important;
   }
   .main-card--container{
-    display: flex !important;
-    max-width: 100vw !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    display: grid !important;
+	grid-template-columns: repeat(2 , 1fr) !important;
+	grid-gap: 5vw 0 !important;
+	justify-content: center !important;
+	margin: 6.66vw auto !important;
   }
   .first{
     display: none;
@@ -1085,23 +1082,32 @@ code {
   #carousel-circle-btn{
     height: 2vw !important;
   }
-}
-
-@media screen and (max-width: 768px) {
+  .header{
+	aspect-ratio: 4/1;
+  }
   .nav-item{
     display: none;
   }
-  .navbar-logo{
-    display: none;
+  .navbar:active .nav-item{
+	display: block;
   }
   .navbar-toggler{
     display: inline-block;
   }
+  .signup-main .button{
+	display: none;
+  }
+  .footer-container {
+	flex-direction: column;
+}
+}
+
+@media screen and (max-width: 768px) {
+	/* .collapse{
+		display: none;
+	} */
   .footer-img{
     display: none;
-  }
-  .collapse{
-    display: block;
   }
   .counter-number{
     font-size: 5vw !important;
@@ -1179,9 +1185,9 @@ code {
 	.collapse {
 		display: none;
 	}
-	.nav-item {
+	/* .nav-item {
 		display: none;
-	}
+	} */
 }
 
 @media screen and (min-width: 1024px) {
@@ -1203,9 +1209,12 @@ code {
 	}
 }
 
-@media screen and (max-width: 500px) {
-	.footer-container {
-		flex-direction: column;
+@media screen and (min-width: 500px) {
+	.signup-vector > img{
+		display: none;
+	}
+	.signup-vector{
+		display: none;
 	}
 }
 

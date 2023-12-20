@@ -6,7 +6,7 @@ const Heading = ({ content , left}) => {
       className="container heading"
       style={{
         padding:"0",
-        margin:"4.44vw 0 6vw 0",
+        margin:"4.44vw 0 2rem",
         position: "relative",
         display: "flex",
         justifyContent: "start",
@@ -28,7 +28,7 @@ const Heading = ({ content , left}) => {
         <h3
           style={{
             color: "rgba(173, 96, 200, 0.90)",
-            fontSize: "clamp(1rem , 4vw , 2rem)",
+            fontSize: "clamp(1.2rem , 4vw , 2rem)",
             fontWeight: "750",
             letterSpacing:"0.11vw",
             fontStyle:"normal",
