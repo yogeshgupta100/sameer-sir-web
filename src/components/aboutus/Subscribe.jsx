@@ -221,7 +221,7 @@ const Subscribe = () => {
 							<ul>
 								{courses.map((course) => (
 									<li>
-										<Link to={`/courses/${course.id}`}>{course.title}</Link>
+										<Link to={`/courses/${course.id}`}>{course.attributes.name}</Link>
 									</li>
 								))}
 							</ul>
@@ -289,7 +289,7 @@ const Subscribe = () => {
 					style={{
 						color: "rgba(255, 255, 255, 0.90)",
 						fontFamily: "Raleway",
-						fontSize: "0.88vw",
+						fontSize: "clamp(12px , 1.5vw , 16px)",
 						fontStyle: "normal",
 						fontWeight: "600",
 					}}

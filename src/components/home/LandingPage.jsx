@@ -19,23 +19,14 @@ const LandingPage = ({ imageurl }) => {
 		}}>
               Explore Now
         </button>
-		<button type="button" className="button" id="button" style={{borderRadius: "0.77rem",
-            border: "0.104vw solid #FFF",
-            fontSize:"clamp(0.44rem , 2vw , 1.25rem)",
-            fontWeight:"500",
-            minWidth: "35%",
-    		aspectRatio: "10/2.7",
-            padding:"0 1.6vw",
-            margin:"2.22vw 0"
-		}}>
-              Request a call
-        </button>
 				</div>
 			</div>
 				<span className="landing-img">
 					<img src={imageurl} style={{
 						maxWidth:"40vw",
-						minHeight:"30vw",
+						// maxHeight:"40vw",
+						aspectRatio:"1/0.99",
+						marginLeft:"0.5rem"
 					}}/>
 				</span>
 			</div>

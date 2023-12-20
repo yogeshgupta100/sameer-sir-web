@@ -39,6 +39,9 @@ function Section1() {
 			className="container counter"
 			style={{
 				minHeight: "25vw",
+				// position:"relative",
+				// top:"-3.3rem"
+				marginTop:"-4.5vw"
 			}}
 		>
 			<div className="counter-heading" style={{fontSize:"clamp(0.55rem , 3vw , 1.2rem)"}}>

@@ -26,6 +26,7 @@ const Header = () => {
 				>
 					<button style={{border:"none"}}
 						className="navbar-toggler"
+						// onClick={menu}
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarExternalContent"

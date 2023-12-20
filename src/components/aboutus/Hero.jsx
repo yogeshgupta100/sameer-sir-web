@@ -17,6 +17,7 @@ const Hero = () => {
             <div className="image-hero">
             <LandingPage imageurl={"/assets/about-landing.png"}/>
             </div>
+            <div className="about" style={{maxWidth:"100vw" , display:"flex" , justifyContent:"center"}}>
             <div className=" about-first2">
             <div className="container about-content">
               <div className="part1">
@@ -54,6 +55,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
+            </div>
         </div>
         {/* </div>  */}
     </>

@@ -69,8 +69,8 @@ const Teachers = () => {
 					maxWidth:"90vw",
 					display:"flex",
 					justifyContent:"center",
-					gap:"1.3rem",
-					minHeight:"30vw"
+					// gap:"1.3rem",
+					// minHeight:"30vw"
 				}}
 			>
 				{empData.map((currEle) => {
@@ -78,7 +78,7 @@ const Teachers = () => {
 						<div
 							className="teacher"
 							style={{
-								overflowY: "hidden"
+								overflowY: "hidden",
 							}}
 						>
 							<EmpCard currEle={currEle} />
