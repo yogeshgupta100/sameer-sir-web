@@ -1,13 +1,17 @@
 import { useRef, useState, useEffect } from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Subscribe = () => {
 	const [courses, setCourses] = useState([]);
 	const inputRef = useRef(null);
+	const componentDidMount = () =>{
+		window.scrollTo(0, 0);
+	}
 
 	useEffect(() => {
 		(async () => {
@@ -118,6 +122,7 @@ const Subscribe = () => {
 								marginTop: "40px",
 							}}
 						>
+							<NavLink to={"https://www.instagram.com/dxolve_official?igsh=OGQ5ZDc2ODk2ZA=="}>
 							<span style={{
 								display: "flex",
 								alignItems: "center",
@@ -133,6 +138,8 @@ const Subscribe = () => {
 							}}>
 								<AiFillInstagram />
 							</span>
+							</NavLink>
+							<NavLink to={"https://youtube.com/@dxolve_official?si=C4s_wlnZZJdeNqHe"}>
 							<span style={{
 								display: "flex",
 								alignItems: "center",
@@ -148,6 +155,8 @@ const Subscribe = () => {
 							}}>
 								<FaYoutube />
 							</span>
+							</NavLink>
+							<NavLink to={""}>
 							<span style={{
 								display: "flex",
 								alignItems: "center",
@@ -163,6 +172,8 @@ const Subscribe = () => {
 							}}>
 								<FaLinkedinIn />
 							</span>
+							</NavLink>
+							<NavLink  to={""}>
 							<span style={{
 								display: "flex",
 								alignItems: "center",
@@ -178,6 +189,7 @@ const Subscribe = () => {
 							}}>
 								<FaFacebookF />
 							</span>
+							</NavLink>
 						</div>
 					</div>
 
@@ -194,16 +206,16 @@ const Subscribe = () => {
 							<h5 style={{ fontSize: "clamp(1rem, 2vw ,1.25rem)" }}>Company</h5>
 							<ul>
 								<li>
-									<Link to="/about">About Us</Link>
+									<NavLink to="/about" onClick={componentDidMount}>About us</NavLink>
 								</li>
 								<li>
-									<Link to="/">Home</Link>
+									<NavLink to="/" onClick={componentDidMount}>Home</NavLink>
 								</li>
 								<li>
-									<Link to="/blogs">Blogs</Link>
+									<NavLink to="/blogs" onClick={componentDidMount}>Blogs</NavLink>
 								</li>
 								<li>
-									<Link to="/feedback">Feedback</Link>
+									<NavLink to="/resource" onClick={componentDidMount}>Resources</NavLink>
 								</li>
 							</ul>
 						</div>
@@ -213,7 +225,7 @@ const Subscribe = () => {
 							<ul>
 								{courses.map((course) => (
 									<li>
-										<Link to={`/courses/${course.id}`}>{course.attributes.name}</Link>
+										<NavLink to={`/courses/${course.id}`}>{course.attributes.name}</NavLink>
 									</li>
 								))}
 							</ul>
@@ -223,13 +235,13 @@ const Subscribe = () => {
 							<h5 style={{ fontSize: "clamp(1rem, 2vw ,1.25rem)" }}>Resources</h5>
 							<ul>
 								<li>
-									<Link to="/faq">FAQ's</Link>
+									<AnchorLink href="#faq">FAQ's</AnchorLink>
 								</li>
 								<li>
-									<Link to="/">Privacy Policy</Link>
+									<NavLink to="/tnc/privacy-policy" onClick={componentDidMount}>Privacy Policy</NavLink>
 								</li>
 								<li>
-									<Link to="/">Cancellation and refund policy</Link>
+									<NavLink to="/tnc/cancellation-and-refund-policy" onClick={componentDidMount}>Cancellation and refund policy</NavLink>
 								</li>
 							</ul>
 						</div>
@@ -238,13 +250,13 @@ const Subscribe = () => {
 							<h5 style={{ fontSize: "clamp(1rem, 2vw ,1.25rem)" }}>Career</h5>
 							<ul>
 								<li>
-									<Link to="/">Join us</Link>
+									<NavLink to="/">Join us</NavLink>
 								</li>
 								<li>
-									<Link to="/">Achievements</Link>
+									<NavLink to="/">Achievements</NavLink>
 								</li>
 								<li>
-									<Link to="/">Team</Link>
+									<NavLink to="/">Team</NavLink>
 								</li>
 							</ul>
 						</div>

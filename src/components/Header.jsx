@@ -189,22 +189,21 @@ const Header = () => {
 								className="navbar-logo"
 								style={{
 									fontFamily: "Raleway",
-									// fontSize: "1.66vw",
 									fontStyle: "normal",
 									fontWeight: "700",
 									marginLeft:"2rem",
 								}}
 							>
-								<img src="/assets/logo.svg" />
+								<img src="/assets/logo.svg" style={{width:"100%" , aspectRatio:"2/1"}}/>
 							</span>
 						</NavLink>
 						<div
 							style={{
 								display: "flex",
 								width: "fit-content",
-								justifyContent:"space-between",
+								justifyContent:"space-around",
 								gap:"0.7rem",
-								marginLeft:"0",
+								marginRight:"1rem",
 							}}
 						>
 							<Contact />

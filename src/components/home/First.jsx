@@ -43,6 +43,7 @@ const First = () => {
         }}>
           <p style={{ fontSize:"1.11vw" , marginBottom:"0"}}>Join the Creative Revolution</p>
           <h4 style={{fontSize:"2.22vw" , lineHeight:"130%" , width:"90%" , fontWeight:"700"}}>Your lifetime Access to our Design Community Membership Starts Here!</h4>
+          <a href='#courses' style={{textDecoration:"none"}}>
           <button type="button" className="btn" style={{borderRadius: "0.72vw",
             // border: "1.665vw solid #FFF",
             fontSize:"1.11vw",
@@ -52,8 +53,9 @@ const First = () => {
             padding:"0 1.44vw",
             margin:"2.22vw 0"
             }}>
-              Explore Courses
+              <span>Explore Courses</span>
         </button>
+          </a>
         <div className="first-count" style={{
           maxWidth:"100vw",
           minHeight:"3vw",

@@ -24,6 +24,7 @@ const Courses = () => {
             
 			<div
 				className="course-container container"
+				id="courses"
 			style={{marginBottom:"8vw"}}>
 				{courses.map((course) => {
 					return (
@@ -119,14 +120,14 @@ const Courses = () => {
 										</div>
 									</div>
 									<NavLink
-										to={`../components/Home.jsx`}
+										to={`../courses/:courseId`}
 										className="purple-btn course-btn"
 										style={{
 											textDecoration: "none",
 											fontSize: "clamp(0.5rem , 1.5vw , 1rem)"
 										}}
 									>
-										Request a call
+										Learn more
 									</NavLink>
 								</div>
 							</div>
