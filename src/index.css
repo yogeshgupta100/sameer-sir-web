@@ -130,7 +130,7 @@ code {
 	color: #ad60c8;
 	text-align: start;
 	font-family: Raleway;
-	font-size: clamp(1.2rem , 3.5vw , 2rem);
+	font-size: clamp(1rem , 1.5vw , 1.5rem) !important;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 4.1625vw;
@@ -173,7 +173,7 @@ code {
 	max-width: 100%;
 	color: #2e2e2e;
 	font-family: Open Sans;
-	font-size: clamp(1rem , 1.5vw , 1.2rem);
+	font-size: clamp(1rem , 1.5vw , 1.2rem) !important;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 2.08vw;
@@ -235,41 +235,42 @@ code {
 }
 
 .section1-main {
-	max-width: 100vw;
+	width: 100vw;
 	margin-top: 9.435vw;
+	padding: 1rem;
 }
 .section1-main2 {
-	max-width: 100%;
-	min-height: 88vw;
-	margin: 6.66vw 0 0 0;
+	width: 100vw;
+	height: auto;
+	margin: 4rem 0 0 0;
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 
 .section1-main2 .first {
-	max-width: 42%;
-	min-height: 100%;
+	width: 70%;
+	height: 100%;
 }
 
 .section1-main2 .second {
-	max-width: 58%;
-	min-height: 92%;
-	background-image: linear-gradient(to bottom right, rgb(40, 11, 50), rgb(161, 81, 187));
+	width: 100%;
+	aspect-ratio: 1/1;
+	background: linear-gradient(to bottom right, rgb(40, 11, 50), rgb(161, 81, 187));
 	border-radius: 0.552vw 0 0 0;
+	margin-top: 1rem;
 }
 
 .first {
-	max-width: 100%;
 	min-height: 100%;
-	position: relative;
 	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
 }
 
 .first-para {
-	position: absolute;
 	color: #ad60c8;
 	text-align: center;
-	line-height: 2.76vw;
 }
 
 .first-para h4 {
@@ -290,29 +291,24 @@ code {
 }
 
 .first-img1 {
-	max-width: 17.094vw;
-	min-height: 60%;
-	border-radius: 0.276vw;
+	border-radius: 0.25rem;
 	background: url("/assets/man1.jpg"), lightgray 50% / cover no-repeat;
-	position: absolute;
-	top: 2.775vw;
-	flex-shrink: 0;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	width: 60%;
+	aspect-ratio: 1/1.2;
 }
 
 .first-img2 {
-	max-width: 17.094vw;
-	min-height: 60%;
+	min-width: 60%;
+	aspect-ratio: 1/1.2;
 	background: url("/assets/women1.jpg"), lightgray 50% / cover no-repeat;
-	position: absolute;
-	right: -4.662vw;
-	bottom: 0;
 	border-radius: 0.276vw;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	border-radius: 0.25rem;
 }
 .bar {
 	list-style: none;
@@ -325,6 +321,7 @@ code {
 	position: relative;
 	padding: 0 3.45vw;
 	padding-bottom: 0.276vw;
+	font-size: clamp(0.8rem , 1.5vw , 1.3rem);
 }
 
 .bar li:last-child {
@@ -337,9 +334,9 @@ code {
 	top: 0;
 	left: 0;
 	translate: -50% 0;
-	min-height: 1.38vw;
-	max-width: 1.38vw;
-	border-radius: 50%;
+	min-height: 1.33vw;
+	min-width: 1.33vw;
+	border-radius: 50% ;
 	background-color: rgba(181, 112, 205, 1);
 	border: 0.207vw solid white;
 }
@@ -432,10 +429,8 @@ code {
 	text-align: start;
 	padding: 3vw 1.33vw;
 	min-height: 100%;
-	color: #ffff;
+	color: #fff;
 	position: absolute;
-	/* left: 0;
-  right: 0; */
 	transition: all 0.3s ease-in-out;
 	top: 100%;
 	font-size: 1.1vw;
@@ -1051,19 +1046,6 @@ code {
   .buttons > .button{
     border-radius: 0.3125rem !important;
   }
-  .main-card--container{
-    display: grid !important;
-	grid-template-columns: 1fr 1fr !important;
-	gap: 5vw !important;
-	column-gap: 0;
-	justify-content: center !important;
-	margin: 6.66vw auto !important;
-  }
-  .card-emp{
-	width: 100%;
-	min-height: auto;
-	aspect-ratio: 2/3;
-  }
   
   .first{
     display: none;
@@ -1098,23 +1080,24 @@ code {
   .footer-container {
 	flex-direction: column;
 }
-	.about-content{
-		flex-direction: column !important;
-		justify-content: space-between;
-		width: 100vw;
-	}
-	.about-content > .v-line{
-		display: none;
-	}
-	.about{
-		width: 100% !important;
-		aspect-ratio: 1/1.2 !important;
-		max-height: auto !important;
-	}
-	.about-content p{
-		font-size: clamp(0.66rem , 3.5vw , 2rem) !important;
-		line-height: 1.2 !important;
-	}
+.about-content{
+	flex-direction: column !important;
+	justify-content: space-between;
+	width: 100vw;
+}
+.about-content > .v-line{
+	display: none;
+}
+.about{
+	width: 100% !important;
+	aspect-ratio: 1/1.2 !important;
+	max-height: auto !important;
+}
+.about-content p{
+	font-size: clamp(0.66rem , 3.5vw , 2rem) !important;
+	line-height: 1.2 !important;
+}
+	
 }
 
 @media screen and (max-width: 768px) {
@@ -1124,19 +1107,36 @@ code {
   .footer-img{
     display: none;
   }
+  .nav-item{
+	display: none;
+  }
+  .main-card--container{
+    display: grid !important;
+	grid-template-columns: 1fr 1fr !important;
+	gap: 5vw !important;
+	column-gap: 0;
+	justify-content: center !important;
+	margin: 6.66vw auto !important;
+  }
   .counter-number{
     font-size: 5vw !important;
   }
   .card-emp{
-    min-height: 30vw !important;
-		max-width: 30vw !important;
+	width: 100%;
+	min-height: auto;
+	aspect-ratio: 2/3;
   }
-  .hidden-content h4,p{
-    font-size: 1.66vw !important;
+  .hidden-content h4,span{
+    font-size: 3.3vw !important;
     margin: 0;
   }
-  .icon-container a{
-    min-height: 2.66vw !important;
+  .icon-container {
+    min-height: 1rem !important;
+	display: flex !important;
+	align-items: stretch;
+	width: 100% !important;
+	justify-content: flex-start !important;
+	gap: 0.8rem;
   }
   .Subscribe-main{
     display: flex !important;
@@ -1182,30 +1182,31 @@ code {
   .heading .content > p{
     display: none;
   }
+  .section1-main{
+	background: linear-gradient(to bottom right, rgb(40, 11, 50), rgb(161, 81, 187)) !important;
+	width: 100vw !important;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-	.home-banner {
-		display: none;
-	}
-
-	.first {
-		max-width: 100%;
-	}
-	.btn {
-		min-height: fit-content;
-		max-width: fit-content;
-		font-size: 1.11vw;
-		/* padding: 4px 22px; */
-	}
-	.collapse {
-		display: none;
-	}
-	.nav-item {
-		display: none;
+.section1-main .second{
+	background: transparent !important;
+	width: 100% !important;
+	margin: 0;
+}
+.section1-main2{
+	display: flex !important;
+	flex-direction: column;
+	.first{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 }
-
-@media screen and (min-width: 1024px) {
+.heading-all{
+	background: transparent !important;
+}
+.subscribe-logo{
+	display: none;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
 	.home-banner {
 		display: none;
 	}
@@ -1222,6 +1223,28 @@ code {
 	/* .collapse {
 		display: none;
 	} */
+	.nav-item {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	.home-banner {
+		display: none;
+	}
+
+	.first {
+		max-width: 100%;
+	}
+	.btn {
+		min-height: fit-content;
+		max-width: fit-content;
+		font-size: 1.11vw;
+		/* padding: 4px 22px; */
+	}
+	.collapse {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 500px) {

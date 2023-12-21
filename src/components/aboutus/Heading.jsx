@@ -13,7 +13,7 @@ const Heading = ({ content , left}) => {
       }}
     >
       <div
-        className="content"
+        className="content heading-all"
         style={{
           textAlign: "start",
           fontStyle: "normal",
@@ -22,7 +22,7 @@ const Heading = ({ content , left}) => {
           left: `${left}`,
           backgroundColor:"#fff",
           flexShrink:"0",
-          maxWidth:"40vw"
+          maxWidth:"40vw",
         }}
       >
         <h3

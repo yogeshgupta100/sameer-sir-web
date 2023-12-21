@@ -18,18 +18,20 @@ const Resource = ({designCardData}) => {
         }}>
       <Header/>
         </div>
-      <div className="full-body" style={{position:"relative" , maxWidth:"100vw" , marginBottom:"31.08vw" , zIndex:"-100"}}>
+      <div className="full-body" style={{position:"relative" , maxWidth:"100vw" , marginBottom:"3vw" , zIndex:"-100" , display:"flex" , flexDirection:"column" , alignItems:"center"}}>
         <Small_nav/>
-        <LandingPage/>
+        <LandingPage imageurl={"/public/assets/home-landing-img.png"}/>
         <div
         className=" about-first2"
-        style={{ position: "absolute", bottom: "-19.98vw" , display:"flex", alignItems:"center" , minHeight:"27.75vw" , paddingLeft:"3.33vw"}}
+        // style={{ position: "relative", bottom: "-23.98vw" , display:"flex", alignItems:"center" , minHeight:"27.75vw" , paddingLeft:"3.33vw"}}
       >
         <div
           className="container about-content"
           style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)" , gap:"1.11vw" , justifyContent:"center", height:"19.98vw" , alignContent:"center"}}
         >
-          <div className="part1" style={{width:"100%", textAlign:"center" , fontFamily:"Open Sans" , borderRight:"0.069vw solid #CDCDCD" , paddingRight:"3.33vw"}} >
+          <div className="part1" 
+          style={{width:"100%", textAlign:"center" , fontFamily:"Open Sans" , borderRight:"0.069vw solid #CDCDCD" , paddingRight:"3.33vw"}} 
+          >
             <h3 style={{
               textAlign: "center",
               fontSize:"1.443vw",

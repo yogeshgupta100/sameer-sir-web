@@ -31,13 +31,13 @@ const Teachers = () => {
 						border: "none",
 						maxWidth: "8vw",
 						fontSize: "0.87vw",	
-						margin: " 3.33vw 0 0 20.5%",	
+						margin: " 3rem 0 0 20.5%",	
 						display: "flex",
 						padding: "0.6vw",
 						alignItems: "center",
 						maxHeight: "2.66vw",
 						borderRadius: "0.44vw",
-						textAlign:"center"
+						textAlign:"center",
 					}}
 				>
 					<span
@@ -66,11 +66,10 @@ const Teachers = () => {
 			<div
 				className="main-card--container container"
 				style={{
-					maxWidth:"90vw",
+					maxWidth:"100vw",
 					display:"flex",
 					justifyContent:"center",
-					// gap:"1.3rem",
-					// minHeight:"30vw"
+					gap:"1.3rem",
 				}}
 			>
 				{empData.map((currEle) => {

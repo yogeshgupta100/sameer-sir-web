@@ -27,8 +27,8 @@ const First = () => {
         backgroundPosition:"center",
         backgroundRepeat:"no-repeat",
         backgroundSize:"cover",
-        position:"absolute",
-        top:"3.88vw",
+        position:"relative",
+        top:"0vw",
         display:"flex",
         overflow:"hidden",
         padding:"0"

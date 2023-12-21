@@ -24,10 +24,12 @@ const Aboutus = () => {
         <button className='purple-btn' id='btn' style={{
         textDecoration:"none",
         border:"none",
-        maxWidth:"11.1vw",
+        // maxWidth:"11.1vw",
         fontWeight:"500",
         padding:"1.221vw",
         marginTop:"1.998vw",
+        fontSize:"clamp(0.6rem , 2vw , 1rem)",
+        whiteSpace:"nowrap"
       }}>Explore Courses</button>
         </div>
         <Subscribe/>

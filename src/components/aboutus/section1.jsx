@@ -6,30 +6,27 @@ const Section1 = ({text}) => {
     <>
         <div className="section1-main container">
         <Heading content={text} left="30vw"/>
-        </div>
         <div className="section1-main2">
           <div className="first">
+              <div style={{display:"flex" , alignItems:"center" , justifyContent:"space-around"}}>
               <div className="first-img1">
               </div>
-              <div className="first-para" style={{
-                top:"6.66vw",
-                right:"5%"
-              }}>
+              <div className="first-para">
               <h4>
                 Jason James
               </h4>
               <p>UX Lead</p>
             </div>
-            <div className="first-img2">
-            </div>
-            <div className="first-para" style={{
-              bottom:"2.22vw",
-              left:"45%",
-            }}>
+              </div>
+            <div style={{display:"flex" , alignItems:"center" , justifyContent:"space-around"}}>
+            <div className="first-para">
               <h4>
                 Ammy Jay
               </h4>
               <p>Graphic Lead</p>
+            </div>
+            <div className="first-img2">
+            </div>
             </div>
           </div>
           <div className="second">
@@ -44,6 +41,7 @@ const Section1 = ({text}) => {
           </div>
           </div>
         </div>
+              </div>
         </>
   )
 }

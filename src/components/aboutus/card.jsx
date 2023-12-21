@@ -25,23 +25,24 @@ const EmpCard = ({ currEle }) => {
 					position: "absolute",
 					bottom: "0.41625vw",
 					right: "10%",
+					fontSize:"clamp(0.5rem , 1.5vw , 2rem)",
 				}}
 			>
-				<div className="card-emp-content" style={{fontSize:"1.66vw"}}>
-					<h4 style={{fontSize:"1.66vw"}}>{currEle.attributes.name}</h4>
+				<div className="card-emp-content">
+					<h4>{currEle.attributes.name}</h4>
 				</div>
-				<div className="card-emp-content" style={{fontSize:"1.66vw"}}>
+				<div className="card-emp-content">
 					<p>{currEle.attributes.role}</p>
 				</div>
 			</div>
 			<div className="hidden-content">
 				<div className="hidden-container" style={{padding:"0 0 4vw"}}>
-					<h3 style={{fontSize:"1.67vw"}}>{currEle.attributes.name}</h3>
-					<p>
+					<h3 style={{whiteSpace:"nowrap" , fontSize:"clamp(1.2rem , 2vw , 2rem)"}}>{currEle.attributes.name}</h3>
+					<span style={{fontSize:"clamp(0.8rem , 1.5vw , 1rem)" , lineHeight:"1"}}>
 						{currEle.attributes.role} at {currEle.attributes.company}
-					</p>
+					</span>
 					<hr style={{margin:"0.8vw 0"}}/>
-					<p>{currEle.attributes.description}</p>
+					<span style={{fontSize:"clamp(0.5rem , 1.15vw , 1.2rem)" , letterSpacing:"1" , lineHeight:"1.5"}}>{currEle.attributes.description}</span>
 					<hr style={{margin:"0.8vw 0"}}/>
 					<div className="icon-container">
 						<a href={currEle.attributes.instagram}>

@@ -39,8 +39,6 @@ function Section1() {
 			className="container counter"
 			style={{
 				minHeight: "25vw",
-				// position:"relative",
-				// top:"-3.3rem"
 				marginTop:"-4.5vw"
 			}}
 		>
