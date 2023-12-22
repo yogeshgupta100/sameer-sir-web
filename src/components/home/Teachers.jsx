@@ -14,40 +14,39 @@ const Teachers = () => {
   }, []);
 
 	return (
-		<>
+		<div className="container" style={{margin:"11vw 0 0" , paddingBottom:"0"}}>
+				<div className="view-all-heading">
+				<Heading content={"Explore our well knitted courses"} left={"20.5%"}></Heading>
+				</div>
 			<div
-				className="container"
 				style={{
-					margin: "11vw 0 0",
+					display:"flex",
+					width:"27vw",
+					justifyContent:"flex-end",
 				}}
 			>
-				<span className="view-all-heading">
-				<Heading content={"Explore our well knitted courses"} left={"20.5%"}></Heading>
-				</span>
 				<button
 					className="purple-btn"
 					style={{
 						textDecoration: "none",
 						border: "none",
-						maxWidth: "8vw",
-						fontSize: "0.87vw",	
-						margin: " 3rem 0 0 20.5%",	
+						minWidth: "fit-content",	
+						margin: " 0 0 2rem",	
 						display: "flex",
-						padding: "0.6vw",
+						padding: "0 0.5rem",
 						alignItems: "center",
-						maxHeight: "2.66vw",
 						borderRadius: "0.44vw",
-						textAlign:"center",
+						whiteSpace:"nowrap",
+						aspectRatio:"3/1"
 					}}
 				>
 					<span
 						style={{
 							display: "flex",
 							textDecoration: "none",
-							marginTop: "1rem",
 							fontWeight: "500",
-							fontSize:"1.2vw",
-							flexWrap:"wrap",
+							fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
+							paddingRight:"0.3rem",
 						}}
 					>
 						View all
@@ -85,7 +84,7 @@ const Teachers = () => {
 					);
 				})}
 			</div>
-		</>
+		</div>
 	);
 };
 

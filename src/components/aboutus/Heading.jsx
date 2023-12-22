@@ -6,20 +6,23 @@ const Heading = ({ content , left}) => {
       className="container heading"
       style={{
         padding:"0",
-        margin:"4.44vw 0 2rem",
+        margin:"4.44vw 0 0",
         position: "relative",
         display: "flex",
-        justifyContent: "start",
       }}
-    >
+      >
+      <span className="dot" style={{
+        position:"relative",
+        top:"-0.7992vw"
+      }}></span>
+      <div className="h-line" style={{maxHeight:"0.09vw" , minWidth:`${left}`}}></div>
       <div
         className="content heading-all"
         style={{
           textAlign: "start",
           fontStyle: "normal",
-          position: "absolute",
+          position: "relative",
           top: "-1.332vw",
-          left: `${left}`,
           backgroundColor:"#fff",
           flexShrink:"0",
           maxWidth:"40vw",
@@ -48,11 +51,6 @@ const Heading = ({ content , left}) => {
           mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla.
         </p>
       </div>
-      <span className="dot" style={{
-        position:"relative",
-        top:"-0.7992vw"
-      }}></span>
-      <div className="h-line" style={{maxHeight:"0.09vw" , minWidth:"50vw"}}></div>
     </div>
   );
 };

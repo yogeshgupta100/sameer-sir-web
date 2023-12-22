@@ -1,5 +1,4 @@
 import React from "react";
-import Heading from "./Heading";
 import { RiInstagramFill } from "react-icons/ri";
 
 const EmpCard = ({ currEle }) => {
@@ -59,7 +58,6 @@ const EmpCard = ({ currEle }) => {
 							</svg>
 						</a>
 					</div>
-					{/* <p>Phone: (123) 456-7890</p> */}
 				</div>
 			</div>
 		</div>
