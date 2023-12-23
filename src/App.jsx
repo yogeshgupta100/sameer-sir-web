@@ -20,6 +20,7 @@ import Signin from "./components/forms/Signin";
 import TokenProvider from "./contexts/TokenProvider";
 import UserProvider from "./contexts/UserProvider";
 import MainTutorial from "./components/tutorials/MainTutorial";
+import MainPanel from "./components/studentPanel/MainPanel";
 
 function App() {
 	return (
@@ -38,6 +39,7 @@ function App() {
 						<Route path="/signup" element={<Signup />} />
 						<Route path="/signin" element={<Signin />} />
 						<Route path="/blogs" element={<MainBlog />} />
+						<Route path="/panel" element={<MainPanel />} />
 						<Route path="/tutorials" element={<MainTutorial />} />
 						<Route path="/success" element={<SuccessPayment />} />
 						<Route path="/cancel" element={<CancelPayment />} />

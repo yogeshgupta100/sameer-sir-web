@@ -56,7 +56,6 @@ const TutorialCard = () => {
 								alignItems: "center",
 								justifyContent: "center",
 								padding: "2px",
-								// fontSize: "1.2rem",
 								background: "#B86CD2",
 								color: "white",
 								borderRadius: "50%",
