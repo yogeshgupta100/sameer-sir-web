@@ -33,7 +33,7 @@ const Teachers = () => {
 						minWidth: "fit-content",	
 						margin: " 0 0 2rem",	
 						display: "flex",
-						padding: "0 0.5rem",
+						padding: "0 0.88vw",
 						alignItems: "center",
 						borderRadius: "0.44vw",
 						whiteSpace:"nowrap",
@@ -46,7 +46,7 @@ const Teachers = () => {
 							textDecoration: "none",
 							fontWeight: "500",
 							fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
-							paddingRight:"0.3rem",
+							paddingRight:"0.6rem",
 						}}
 					>
 						View all
@@ -65,7 +65,7 @@ const Teachers = () => {
 			<div
 				className="main-card--container container"
 				style={{
-					maxWidth:"100vw",
+					minWidth:"100vw",
 					display:"flex",
 					justifyContent:"center",
 					gap:"1.3rem",

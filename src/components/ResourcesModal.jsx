@@ -9,6 +9,7 @@ export default function ResourcesModal() {
 				borderRadius: "0.971vw",
 				background: "white",
 				boxShadow: "0.138vw 0.138vw 1.04vw 0 rgba(0, 0, 0, 0.15)",
+				margin:"4.44vw 7.77vw",
 			}}
 		>
 			<div

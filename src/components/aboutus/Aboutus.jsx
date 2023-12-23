@@ -21,16 +21,17 @@ const Aboutus = () => {
           justifyContent:"center",
           marginTop:"3.33vw"
         }}>
+        <a href='/' style={{textDecoration:"none"}}>
         <button className='purple-btn' id='btn' style={{
         textDecoration:"none",
         border:"none",
-        // maxWidth:"11.1vw",
         fontWeight:"500",
         padding:"1.221vw",
         marginTop:"1.998vw",
         fontSize:"clamp(0.6rem , 2vw , 1rem)",
         whiteSpace:"nowrap"
       }}>Explore Courses</button>
+        </a>
         </div>
         <Subscribe/>
     </div>

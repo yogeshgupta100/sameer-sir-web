@@ -15,12 +15,11 @@ export default function CoursesModal() {
 	return (
 		<div
 			style={{
-				alignItems: "center",
+				alignItems: "start",
 				borderRadius: "0.99vw",
-				background: "white",
 				display:"grid",
 				gridTemplateColumns:"3fr 1fr",
-				backgroundColor:"transparent",
+				margin:"3.77vw 4.77vw",
 			}}
 		>
 			<div
@@ -30,8 +29,8 @@ export default function CoursesModal() {
 					borderRadius: "0.99vw",
 					backgroundColor: "transparent",
 					width: "100%",
-					aspectRatio: "7/3",
-					alignItems: "center",
+					aspectRatio: "8/4",
+					alignItems: "start",
 					fontWeight: "bold",
 					fontSize: "1.332vw",
 					display:"grid",
@@ -44,18 +43,19 @@ export default function CoursesModal() {
 						<div className="card" style={{
 								border:"0.714px solid #B46BD1",
 								borderRadius: "0.89238rem",
+								height:"100%",
+								overflow:"hidden",
 							}}>
-								<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${course?.attributes?.thumbnail?.data?.attributes?.url}`} className="card-img-top" alt="course1" style={{width:"100%" , aspectRatio:"1/1.1" , borderRadius: "0.89238rem 0.89238rem 0 0"}} />
+								<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${course?.attributes?.thumbnail?.data?.attributes?.url}`} className="card-img-top" alt="course1" style={{width:"100%" , aspectRatio:"2/1.3" , borderRadius: "0.89238rem 0.89238rem 0 0"}} />
 								<div
-									className="card-body container"
-								>
+									className="card-body container">
 									<div>
 									<span className="course-subtitle"
 										style={{
 											textAlign: "start",
 											color: "#878787",
 											fontFamily: "Open Sans",
-											fontSize: "clamp(0.4rem , 2vw , 1.4rem)",
+											fontSize: "clamp(0.3rem , 1.5vw , 1rem)",
 											fontStyle: "normal",
 											fontWeight: "700",
 											lineHeight:"1",
@@ -69,11 +69,10 @@ export default function CoursesModal() {
 										style={{
 											color: "#B46BD1",
 											fontFamily: "Open Sans",
-											fontSize: "clamp(0.7rem , 2.5vw , 1.3rem)",
+											fontSize: "clamp(0.4rem , 1.5vw , 1.2rem)",
 											fontStyle: "normal",
 											fontWeight: "700",
 											lineHeight: "140.5%",
-											marginBottom: "2.22vw",
 											height:"5.5rem",
 											overflow:"hidden",
 										}}
@@ -86,7 +85,7 @@ export default function CoursesModal() {
 										style={{
 											display: "grid",
 											gridTemplateColumns:"1fr 1fr 1fr",
-											fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
+											fontSize: "clamp(0.3rem , 1.5vw , 0.8rem)",
 											lineHeight: "1",
 											gap:"0.3rem"
 										}}
@@ -102,7 +101,7 @@ export default function CoursesModal() {
 											>
 												Starting Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.batches.startDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.3rem , 1.5vw , 0.8rem)"}}>{course.attributes.batches.startDate}</span>
 										</div>
 										<div className="content" style={{textAlign:"center"}}>
 											<div
@@ -116,7 +115,7 @@ export default function CoursesModal() {
 											>
 												End Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.batches.endDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.3rem , 1.5vw , 0.8rem)"}}>{course.attributes.batches.endDate}</span>
 										</div>
 										<div className="content" style={{textAlign:"center"}}>
 											<div
@@ -130,7 +129,7 @@ export default function CoursesModal() {
 											>
 												Duration
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.duration}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.3rem , 1.5vw , 0.8rem)"}}>{course.attributes.duration}</span>
 										</div>
 									</div>
 									<NavLink
@@ -138,7 +137,8 @@ export default function CoursesModal() {
 										className="purple-btn course-btn"
 										style={{
 											textDecoration: "none",
-											fontSize: "clamp(0.5rem , 1.5vw , 1rem)"
+											fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
+											marginTop:"0"
 										}}
 									>
 										Learn more
@@ -155,8 +155,8 @@ export default function CoursesModal() {
 					display: "flex",
 					backgroundColor: "transparent",
 					width: "120%",
-					aspectRatio: "1/2",
-					alignItems: "center",
+					aspectRatio: "1/1.3",
+					alignItems: "start",
 					fontWeight: "bold",
 					fontSize: "1.332vw",
 				}}
@@ -169,12 +169,12 @@ export default function CoursesModal() {
 					height:"95%",
 					width:"100%",
 					color:"#9844C5",
-					paddingTop:"2rem"
+					// paddingTop:"2rem"
 				}}
 			>
 				<div style={{ fontWeight: "700", marginBottom: "0.555vw" , paddingLeft:"2rem", fontSize:"clamp(16px , 2vw , 20px)"}}>Lorem ipsum dolor sit amet consectetur.</div>
 				<div style={{ fontWeight: "600" , paddingLeft:"2rem" , fontSize:"clamp(12px , 2vw , 16px)"}}>Lorem ipsum dolor sit amet consectetur.</div>
-				<div style={{height:"80%", width:"auto" , display:"flex" , flexDirection:"column" , justifyContent:"flex-end" , fontWeight: "600" , paddingLeft:"2rem" , fontSize:"clamp(12px , 2vw , 16px)"}}>
+				<div style={{height:"80%", width:"auto" , display:"flex" , flexDirection:"column" , justifyContent:"flex-end" , fontWeight: "600" , fontSize:"clamp(12px , 2vw , 16px)"}}>
 					<ul style={{display:"flex" , flexDirection:"column"  , gap:"2rem" , alignItems:"center" , justifyContent:"center"}}>
 						<li className="course-modal-items">Lorem ipsum dolor sit amet consectetur.</li>
 						<li className="course-modal-items">Lorem ipsum dolor sit amet consectetur.</li>
