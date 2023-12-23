@@ -37,8 +37,8 @@ const Signin = () => {
 
 		const data = await response.json();
 
-		if (!data?.jwt) {
-			alert(data.error.message);
+		if (data.hasOwnProperty("error")) {
+			alert(data.error.message || "Something went wrong!");
 			return;
 		}
 

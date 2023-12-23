@@ -25,7 +25,6 @@ export default function CoursesModal() {
 			<div
 				className="inner-card"
 				style={{
-					display: "flex",
 					borderRadius: "0.99vw",
 					backgroundColor: "transparent",
 					width: "100%",
