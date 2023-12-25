@@ -8,7 +8,6 @@ const University = ({color , textCol}) => {
             try {
                 const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/universities?populate=*`);
                 const data = await res.json();
-                console.log(data.data);
                 setUniversity(data.data);
             } catch (err) {
                 console.log(err);

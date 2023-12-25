@@ -1,10 +1,19 @@
 import React from 'react'
+import { useState , useEffect } from 'react';
 
 const StudentPanel = () => {
-    
+    const [students, setStudents] = useState([]);
+
+	useEffect(() => {
+		(async () => {
+			const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/user?populate=*`);
+			const data = await res.json();
+            console.log(data);
+			setStudents(data.data);
+		})();
+	}, []);
   return (
     <div>
-
 <div className="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
     <nav className="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg" id="navbarVertical">
         <div className="container-fluid">
