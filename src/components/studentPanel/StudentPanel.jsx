@@ -1,140 +1,164 @@
-import React from 'react'
-import { useUser } from '../../contexts/UserProvider';
-import { useToken } from '../../contexts/TokenProvider';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useUser } from "../../contexts/UserProvider";
+import { useToken } from "../../contexts/TokenProvider";
+import { useNavigate } from "react-router-dom";
 
 const StudentPanel = () => {
-    const [, setToken] = useToken();
-    const [user , setUser] = useUser();
-    const navigate = useNavigate();
-    const userId = user && user.id;
-    const userName = user && user.username;
-    const userEmail = user && user.email;
+	const [token, setToken] = useToken();
+	const [user, setUser] = useUser();
+	const navigate = useNavigate();
+	const userId = user && user.id;
+	const userName = user && user.username;
+	const userEmail = user && user.email;
 
-    const handleLogout = () => {
-        setToken(null);
-        setUser(null); 
-    
-        navigate("/"); 
-      };
+	const handleLogout = () => {
+		setToken(null);
+		setUser(null);
 
-  return (
-    <div>
-<div className="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
-    <nav className="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg" id="navbarVertical">
-        <div className="container-fluid">
-            <div style={{width:"100%" , padding:"1vw" , textAlign:"center"}}>
-            <button className="navbar-toggler ms-n2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <a className="navbar-brand" href="/" style={{width:"80%"}}>
-                <img src="/assets/logo.svg" alt="..." style={{width:"80%"}}/>
-            </a>
-            </div>
-            <div className="navbar-user d-lg-none">
-                <div className="dropdown">
-                    <a href="#" id="sidebarAvatar" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div className="avatar-parent-child">
-                            <img alt="Image Placeholder" src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" className="avatar avatar- rounded-circle"/>
-                            <span className="avatar-child avatar-badge bg-success"></span>
-                        </div>
-                    </a>
-                    <div className="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarAvatar">
-                        <a href="#" className="dropdown-item">Profile</a>
-                        <a href="#" className="dropdown-item">Settings</a>
-                        <hr className="dropdown-divider"/>
-                        <a href="#" className="dropdown-item" onClick={handleLogout}>Logout</a>
-                    </div>
-                </div>
-            </div>
+		navigate("/");
+	};
 
-            <div className="collapse navbar-collapse" id="sidebarCollapse" style={{marginTop:"1rem"}}>
-                <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="/panel">
-                            <i className="bi bi-house"></i> Dashboard
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#courses">
-                            <i className="bi bi-bookmarks"></i> Courses
-                        </a>
-                    </li>
-                </ul>
-                <hr className="navbar-divider my-5 opacity-20"/>
-                <div className="mt-auto"></div>
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <a className="nav-link" href="/">
-                            <i className="bi bi-box-arrow-left" onClick={handleLogout}></i> Logout
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div className="h-screen flex-grow-1 overflow-y-lg-auto">
-        <header className="bg-surface-primary border-bottom pt-6">
-            <div className="container-fluid">
-                <div className="mb-npx">
-                    <div className="row align-items-center mb-5">
-                        <div className="col-sm-6 col-12 mb-4 mb-sm-0">
-                            <h1 className="h2 mb-0 ls-tight">Dashboard</h1>
-                        </div>
-                </div>
-            </div>
-            </div>
-        </header>
-        <main className="py-6 bg-surface-secondary">
-            <div className="container-fluid">
-                <div className="row g-6 mb-6">
+	return (
+		<div>
+			<div className="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+				<nav
+					className="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg"
+					id="navbarVertical"
+				>
+					<div className="container-fluid">
+						<div style={{ width: "100%", padding: "1vw", textAlign: "center" }}>
+							<button
+								className="navbar-toggler ms-n2"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#sidebarCollapse"
+								aria-controls="sidebarCollapse"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span className="navbar-toggler-icon"></span>
+							</button>
+							<a className="navbar-brand" href="/" style={{ width: "80%" }}>
+								<img src="/assets/logo.svg" alt="..." style={{ width: "80%" }} />
+							</a>
+						</div>
+						<div className="navbar-user d-lg-none">
+							<div className="dropdown">
+								<a
+									href="#"
+									id="sidebarAvatar"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									<div className="avatar-parent-child">
+										<img
+											alt="Image Placeholder"
+											src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+											className="avatar avatar- rounded-circle"
+										/>
+										<span className="avatar-child avatar-badge bg-success"></span>
+									</div>
+								</a>
+								<div className="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarAvatar">
+									<a href="#" className="dropdown-item">
+										Profile
+									</a>
+									<a href="#" className="dropdown-item">
+										Settings
+									</a>
+									<hr className="dropdown-divider" />
+									<button className="dropdown-item" onClick={handleLogout}>
+										Logout
+									</button>
+								</div>
+							</div>
+						</div>
 
-                </div>
-                <div className="card shadow border-0 mb-7">
-                    <div className="card-header">
-                        <h5 className="mb-0">Your Details</h5>
-                    </div>
-                    <div className="table-responsive">
-                        <table className="table table-hover table-nowrap">
-                            <thead className="thead-light">
-                                <tr>
-                                    <th scope="col">id</th>
-                                    <th scope="col">name</th>
-                                    <th scope="col">Email</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <a className="text-heading font-semibold" href="#">
-                                            {userId}
-                                        </a>
-                                    </td>
-                                    <td>
-                                        {userName}
-                                    </td>
-                                    <td>
-                                        <a className="text-heading font-semibold" href="#">
-                                            {userEmail}
-                                        </a>
-                                    </td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-</div>
-    </div>
-  )
-}
+						<div className="collapse navbar-collapse" id="sidebarCollapse" style={{ marginTop: "1rem" }}>
+							<ul className="navbar-nav">
+								<li className="nav-item active">
+									<a className="nav-link" href="/panel">
+										<i className="bi bi-house"></i> Dashboard
+									</a>
+								</li>
+								<li className="nav-item">
+									<a className="nav-link" href="#courses">
+										<i className="bi bi-bookmarks"></i> Courses
+									</a>
+								</li>
+							</ul>
+							<hr className="navbar-divider my-5 opacity-20" />
+							<div className="mt-auto"></div>
+							<ul className="navbar-nav">
+								<li className="nav-item">
+									<button className="nav-link" onClick={handleLogout}>
+										<i className="bi bi-box-arrow-left"></i> Logout
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div className="h-screen flex-grow-1 overflow-y-lg-auto">
+					<header className="bg-surface-primary border-bottom pt-6">
+						<div className="container-fluid">
+							<div className="mb-npx">
+								<div className="row align-items-center mb-5">
+									<div className="col-sm-6 col-12 mb-4 mb-sm-0">
+										<h1 className="h2 mb-0 ls-tight">Dashboard</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</header>
+					<main className="py-6 bg-surface-secondary">
+						<div className="container-fluid">
+							<div className="row g-6 mb-6"></div>
+							<div className="card shadow border-0 mb-7">
+								<div className="card-header">
+									<h5 className="mb-0">Your Details</h5>
+								</div>
+								<div className="table-responsive">
+									<table className="table table-hover table-nowrap">
+										<thead className="thead-light">
+											<tr>
+												<th scope="col">id</th>
+												<th scope="col">name</th>
+												<th scope="col">Email</th>
+												<th></th>
+												<th></th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<a className="text-heading font-semibold" href="#">
+														{userId}
+													</a>
+												</td>
+												<td>{userName}</td>
+												<td>
+													<a className="text-heading font-semibold" href="#">
+														{userEmail}
+													</a>
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+			</div>
+		</div>
+	);
+};
 
-export default StudentPanel
+export default StudentPanel;
