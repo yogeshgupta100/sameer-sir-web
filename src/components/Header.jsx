@@ -214,7 +214,7 @@ const Header = () => {
 									<div style={{width:"clamp(50px , 1vw , 60px)" , aspectRatio:"1/1" , backgroundImage:`url(${"/assets/emp1.jpg"})`, backgroundPosition:"center" , backgroundSize:"cover" , backgroundRepeat:"no-repeat" , borderRadius:"50%"}}></div>
 								</NavLink>
 							) : (
-							<SignupBtn />)};
+							<SignupBtn />)}
 						</div>
 					</div>
 				</div>

@@ -6,7 +6,6 @@ const MainPanel = () => {
   return (
     <div>
         <StudentPanel/>
-        <StudentCourses/>
     </div>
   )
 }
