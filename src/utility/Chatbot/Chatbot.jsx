@@ -216,9 +216,9 @@ export default function Chatbot() {
 								<path
 									d="M19.6157 1.65454L1.37109 8.85634L8.09277 9.81658M19.6157 1.65454L17.2151 16.0581L8.09277 9.81658M19.6157 1.65454L8.09277 9.81658M8.09277 9.81658V15.0979L11.2126 11.9512"
 									stroke="#B86CD2"
-									stroke-width="1.44036"
-									stroke-linecap="round"
-									stroke-linejoin="round"
+									strokeWidth="1.44036"
+									strokeLinecap="round"
+									strokeLinejoin="round"
 								/>
 							</svg>
 						</button>

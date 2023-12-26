@@ -55,9 +55,9 @@ const Teachers = () => {
 						<path
 							d="M1 7.5L17 7.5M17 7.5L11 13.5M17 7.5L11 1.5"
 							stroke="white"
-							stroke-width="1.5"
-							stroke-linecap="round"
-							stroke-linejoin="round"
+							strokeWidth="1.5"
+							strokeLinecap="round"
+							strokeLinejoin="round"
 						/>
 					</svg>
 				</button>

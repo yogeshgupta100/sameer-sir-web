@@ -49,7 +49,7 @@ const Pricing = () => {
             >
               View details
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 15" fill="none" style={{marginLeft:"0.66vw"}}>
-  <path d="M1 7.5L17 7.5M17 7.5L11 13.5M17 7.5L11 1.5" stroke="#B46BD1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1 7.5L17 7.5M17 7.5L11 13.5M17 7.5L11 1.5" stroke="#B46BD1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
             </button>
                 <div style={{marginTop:"3.33vw"}}>

@@ -52,7 +52,7 @@ const Whycourse = () => {
             >
               <p style={{alignItems:"flex-end" , marginRight:"0.276vw" , translate:"0 0.414vw"}}>Join Today</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 15" fill="none">
-  <path d="M1 7.5L17 7.5M17 7.5L11 13.5M17 7.5L11 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1 7.5L17 7.5M17 7.5L11 13.5M17 7.5L11 1.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
             </button>
                 </div>

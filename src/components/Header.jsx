@@ -7,8 +7,10 @@ import "./home/LandingPage.css";
 import Contact from "./Buttons/Contact";
 import NavModal from "./NavModal";
 import useMultiRefs from "../utility/useMultiRefs";
+import {useUser} from "../contexts/UserProvider";
 
 const Header = () => {
+	const [user , setUser] = useUser();
 	const [navModalActive, setNavModalActive] = useState(false);
 	const [modalState, setModalState] = useState("courses");
 
@@ -207,10 +209,14 @@ const Header = () => {
 							}}
 						>
 							<Contact />
-							<SignupBtn />
+							{user && user? (
+								<NavLink to={"/panel"}>
+									<div style={{width:"clamp(50px , 1vw , 60px)" , aspectRatio:"1/1" , backgroundImage:`url(${"/assets/emp1.jpg"})`, backgroundPosition:"center" , backgroundSize:"cover" , backgroundRepeat:"no-repeat" , borderRadius:"50%"}}></div>
+								</NavLink>
+							) : (
+							<SignupBtn />)};
 						</div>
 					</div>
-					{/* <Login /> */}
 				</div>
 
 				{/* Courses dropdown */}
