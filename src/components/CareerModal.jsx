@@ -84,7 +84,7 @@ export default function CareerModal() {
 			>
 				<div className="career_img" style={{width:"45%" ,
 				 height:"100%" ,
-				  background:`url(${"/public/assets/career.jpeg"})`,
+				  background:`url(${"/assets/career.jpeg"})`,
 				  backgroundPosition:"center",
 				  backgroundSize:"cover",
 				  backgroundRepeat:"no-repeat",

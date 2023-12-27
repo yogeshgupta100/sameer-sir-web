@@ -34,8 +34,6 @@ code {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	justify-items: center;
-	/* padding: 0 1.11vw; */
-	/* margin: 3.33vw 0 9vw; */
 	flex-wrap: wrap;
 	gap: 1.11vw;
 }
@@ -353,13 +351,12 @@ code {
 	position: relative;
 }
 .card-emp-content {
-	width: fit-content;
+	width: auto;
 	color: #fff;
 	display: block;
 	text-align: center;
 	padding: 0 0.693vw 0 0.693vw;
 	background: #b86cd2;
-	/* font-size:1.66vw; */
 }
 
 .Subscribe-main {
@@ -418,8 +415,8 @@ code {
 
 .card-emp {
 	position: relative;
-	max-width: 100%;
-	min-height: 100%;
+	width: 100%;
+	height: 100%;
 	background-color: #fff;
 	overflow: hidden;
 	cursor: pointer;
@@ -932,7 +929,7 @@ code {
 	min-height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 .signin-1 {
 	background-image: url("/assets/signin-bg.png");
@@ -1125,7 +1122,7 @@ code {
   }
   .card-emp{
 	width: 100%;
-	min-height: auto;
+	height: auto;
 	aspect-ratio: 2/3;
   }
   .hidden-content h4,span{

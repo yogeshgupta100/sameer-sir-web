@@ -79,7 +79,7 @@ const Courses_container = () => {
 											>
 												Starting Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.startDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.batches.startDate}</span>
 										</div>
 										<div className="content" style={{textAlign:"center"}}>
 											<div
