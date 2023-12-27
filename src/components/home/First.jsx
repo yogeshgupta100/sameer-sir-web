@@ -9,7 +9,7 @@ const First = () => {
       minHeight:"55vw",
       position:"relative",
       overflow:"hidden",
-      paddingRight:"0"
+      paddingRight:"0",
     }}>
       <div className="first-main" style={{
         width:"100%",
@@ -32,7 +32,7 @@ const First = () => {
         top:"0vw",
         display:"flex",
         overflow:"hidden",
-        padding:"0"
+        padding:"0",
       }}>
         <div className="first-content" style={{
           maxWidth:"44vw",
@@ -43,7 +43,7 @@ const First = () => {
           fontFamily:"Open Sans" 
         }}>
           <p style={{ fontSize:"1.11vw" , marginBottom:"0"}}>Join the Creative Revolution</p>
-          <h4 style={{fontSize:"2.22vw" , lineHeight:"130%" , width:"90%" , fontWeight:"700"}}>Your lifetime Access to our Design Community Membership Starts Here!</h4>
+          <h4 style={{fontSize:"2.22vw" , lineHeight:"130%" , width:"90%" , fontWeight:"700" , color:"#fff"}}>Your lifetime Access to our Design Community Membership Starts Here!</h4>
           <a href='#courses' style={{textDecoration:"none"}}>
           <button type="button" className="btn" style={{borderRadius: "0.72vw",
             // border: "1.665vw solid #FFF",
@@ -68,6 +68,7 @@ const First = () => {
               <h3 style={{
               fontSize:"3.33vw",
               fontWeight:"700",
+              color:"#fff"
             }}>500+ </h3>
               <p style={{
                 width:"11vw",
@@ -78,7 +79,8 @@ const First = () => {
           <div className="content">
             <h3 style={{
               fontSize:"3.33vw",
-              fontWeight:"700"
+              fontWeight:"700",
+              color:"#fff"
             }}>2000+</h3>
               <p style={{
                 width:"12vw",
@@ -89,7 +91,8 @@ const First = () => {
           <div className="content">
             <h3 style={{
               fontSize:"3.33vw",
-              fontWeight:"700"
+              fontWeight:"700",
+              color:"#fff"
             }}>2000+</h3>
               <p style={{
                 width:"12vw", 

@@ -32,7 +32,8 @@ const Brands = ({color , textCol}) => {
             }}>
                 <h2 style={{
                     fontSize:"3vw",
-                    fontWeight:"700"
+                    fontWeight:"700",
+                    color:"#fff"
                 }}>Our Collaborative Network</h2>
                 <div className="para" style={{
                     fontWeight:"100",

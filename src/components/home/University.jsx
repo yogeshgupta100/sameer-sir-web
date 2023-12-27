@@ -32,7 +32,8 @@ const University = ({color , textCol}) => {
             }}>
                 <h2 style={{
                     fontSize:"2.78vw",
-                    fontWeight:"700"
+                    fontWeight:"700",
+                    color:"#fff"
                 }}>Our Collaborative Network</h2>
                 <div className="para" style={{
                     fontWeight:"100",

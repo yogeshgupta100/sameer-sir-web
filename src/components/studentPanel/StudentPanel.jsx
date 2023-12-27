@@ -234,7 +234,7 @@ const StudentPanel = () => {
 								className="student-courses "
 								style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}
 							>
-								{userCourses.length > 0
+								{userCourses && userCourses.length > 0
 									? userCourses.map((course, index) => <StudentCourses key={index} course={course} />)
 									: "Not enrolled in any course"}
 							</div>

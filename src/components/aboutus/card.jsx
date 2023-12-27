@@ -27,16 +27,12 @@ const EmpCard = ({ currEle }) => {
 					fontSize:"clamp(0.5rem , 1.5vw , 2rem)",
 				}}
 			>
-				<div className="card-emp-content">
-					<h4>{currEle.attributes.name}</h4>
-				</div>
-				<div className="card-emp-content">
-					<p>{currEle.attributes.role}</p>
-				</div>
+					<span className="card-emp-content" style={{marginBottom:"5px"}}><h4 style={{color:"#fff" ,}}>{currEle.attributes.name}</h4></span>
+					<span className="card-emp-content">{currEle.attributes.role}</span>
 			</div>
 			<div className="hidden-content">
 				<div className="hidden-container" style={{padding:"0 0 4vw"}}>
-					<h3 style={{whiteSpace:"nowrap" , fontSize:"clamp(1.2rem , 2vw , 2rem)"}}>{currEle.attributes.name}</h3>
+					<h3 style={{whiteSpace:"nowrap" , fontSize:"clamp(1.2rem , 2vw , 2rem)" , color:"#fff"}}>{currEle.attributes.name}</h3>
 					<span style={{fontSize:"clamp(0.8rem , 1.5vw , 1rem)" , lineHeight:"1"}}>
 						{currEle.attributes.role} at {currEle.attributes.company}
 					</span>
