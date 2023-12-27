@@ -2,36 +2,17 @@ import CarousalSlide from "./CarousalSlide";
 import { useEffect, useRef, useState } from "react";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
-
-const data = [
-	{
-		image: "/assets/carousal-image.jpg",
-		content:
-			"I can't express how grateful I am for my experience with [Your Business Name]. As someone who was completely new to UX/UI design, I was initially overwhelmed by the vast world of design. However, their course, 'Mastering UX/UI Design: From Novice to Pro,' truly transformed my understanding and skills.",
-		author: "Anna James",
-		role: "UX Designer",
-	},
-	{
-		image: "/assets/about-section1-1.jpg",
-		content:
-			"I can't express how grateful i am for my experience with [your business name]. as someone who was completely new to ux/ui design, i was initially overwhelmed by the vast world of design. however, their course, 'mastering ux/ui design: from novice to pro,' truly transformed my understanding and skills.",
-		author: "Anna James",
-		role: "UX Designer",
-	},
-	{
-		image: "/assets/about-section1-1.jpg",
-		content:
-			"I can't express how grateful i am for my experience with [your business name]. as someone who was completely new to ux/ui design, i was initially overwhelmed by the vast world of design. however, their course, 'mastering ux/ui design: from novice to pro,' truly transformed my understanding and skills.",
-		author: "Anna James",
-		role: "UX Designer",
-	},
-];
+import styles from "./carousal.module.css";
 
 export default function Carousal() {
-	const sliderRef = useRef(null);
 	const [currentSlide, setCurrentSlide] = useState(0);
-
 	const [testimonies, setTestimonies] = useState([]);
+	const sliderRef = useRef(null);
+
+	const setSlide = (index) => {
+		sliderRef.current.scrollLeft = index * sliderRef.current.children[0].offsetWidth;
+		setCurrentSlide(index);
+	};
 
 	useEffect(() => {
 		(async () => {
@@ -39,119 +20,80 @@ export default function Carousal() {
 			const data = await res.json();
 			setTestimonies(data.data);
 		})();
+
+		const scrollHandler = () => {
+			const scrollPosition = sliderRef.current.scrollLeft;
+			const slideWidth = sliderRef.current.children[0].offsetWidth;
+			const slideIndex = Math.round(scrollPosition / slideWidth);
+			setCurrentSlide(slideIndex);
+		};
+
+		sliderRef.current.addEventListener("scroll", scrollHandler);
+
+		return () => {
+			sliderRef.current.removeEventListener("scroll", scrollHandler);
+		};
 	}, []);
 
 	return (
-		<div
-			style={{
-				width: "100vw",
-				overflow: "hidden",
-			}}
-		>
-			<div
-				ref={sliderRef}
-				style={{
-					width: "max-content",
-					color: "white",
-					marginLeft: "0",
-					transition: "all 0.5s ease-in-out",
-				}}
-			>
+		<>
+			<div className={styles.container} ref={sliderRef}>
 				{testimonies.map((testimony, index) => {
-					return <CarousalSlide key={index} {...testimony.attributes} />;
+					return (
+						<CarousalSlide
+							key={index}
+							author={testimony.attributes.author}
+							authorRole={testimony.attributes.authorRole}
+							authorImage={testimony.attributes.authorImage}
+							testimony={testimony.attributes.testimony}
+							currentSlide={currentSlide}
+							index={index}
+						/>
+					);
 				})}
 			</div>
 
-			<div 
-				style={{
-					display: "grid",
-					justifyContent: "space-between",
-					alignItems: "center",
-					gridTemplateColumns: "1fr 1fr 1fr",
-					marginTop: "2.22vw",
-				}}
-			>
-				<div></div>
-				<div 
-					style={{
-						display: "flex",
-						justifyContent: "center",
-					}}
-				>
-					{data.map((item, index) => (
-						<div id="carousel-circle-btn"
-							key={index}
-							style={{
-								minHeight: "0.667vw",
-								aspectRatio:"1/1",
-								borderRadius: "50%",
-								background: currentSlide === index ? "#63017F" : "white",
-								border: "0.069vw solid #63017F",
-								margin: "0 0.2vw 2.22vw",
-								cursor: "pointer",
-							}}
-							onClick={() => {
-								setCurrentSlide(index);
-								sliderRef.current.style.transform = `translateX(-${index * 75}vw)`;
-							}}
-						/>
-					))}
+			<div className={styles.controls}>
+				<div className={styles.dotContainer}>
+					{testimonies.map((testimony, index) => {
+						return (
+							<div
+								key={index}
+								className={styles.dot}
+								style={{
+									backgroundColor: currentSlide === index ? "#63017F" : "transparent",
+								}}
+								onClick={() => {
+									setSlide(index);
+								}}
+							/>
+						);
+					})}
 				</div>
-				{/* Buttons */}
-				<div className="carousel-button"
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItems: "center",
-						gap: "0.887vw",
-					}}
-				>
+
+				<div className={styles.btnContainer}>
 					<button
-						type="button"
-						style={{
-							display: "flex",
-							justifyContent: "center",
-							alignItems: "center",
-							color: "white",
-							background: currentSlide === 0 ? "#63017F" : "#710186",
-							borderRadius: "50%",
-							height: "3vw",
-							width: "3vw",
-							outline: "none",
-							border: "none",
-						}}
-						onClick={() => {
-							setCurrentSlide((prev) => prev - 1);
-							sliderRef.current.style.transform = `translateX(-${(currentSlide - 1) * 75}vw)`;
-						}}
 						disabled={currentSlide === 0}
+						style={{
+							backgroundColor: currentSlide === 0 ? "#4C0174" : "#710186",
+							color: currentSlide === 0 ? "rgba(255, 255, 255, 0.6)" : "#fff",
+						}}
+						onClick={() => setSlide(currentSlide - 1)}
 					>
 						<SlArrowLeft />
 					</button>
 					<button
-						type="button"
+						disabled={currentSlide === testimonies.length - 1}
 						style={{
-							display: "flex",
-							justifyContent: "center",
-							alignItems: "center",
-							color: "white",
-							background: currentSlide === data.length - 1 ? "#63017F" : "#710186",
-							borderRadius: "50%",
-							height: "3vw",
-							width: "3vw",
-							outline: "none",
-							border: "none",
+							backgroundColor: currentSlide === testimonies.length - 1 ? "#4C0174" : "#710186",
+							color: currentSlide === testimonies.length - 1 ? "rgba(255, 255, 255, 0.6)" : "#fff",
 						}}
-						onClick={() => {
-							setCurrentSlide((prev) => prev + 1);
-							sliderRef.current.style.transform = `translateX(-${(currentSlide + 1) * 75}vw)`;
-						}}
-						disabled={currentSlide === data.length - 1}
+						onClick={() => setSlide(currentSlide + 1)}
 					>
 						<SlArrowRight />
 					</button>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }

@@ -8,8 +8,8 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 				padding: "3.33vw 3.55vw",
 				background: "linear-gradient(263deg, #720186 0%, #58017A 47.51%, #4B0173 127.7%)",
 				maxWidth: "82vw",
-				margin: " 4.44vw 2vw 1.11vw",
-				aspectRatio:"3/1.5"
+				aspectRatio:"3/1.5",
+				color: "white",
 			}}
 		>
 			<div id="carousel-image"
