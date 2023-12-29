@@ -4,20 +4,59 @@ import Heading from '../aboutus/Heading'
 const Resource = () => {
   return (
     <>
-      <div className="resource-page">
+      <div className="resource-page container">
         <Heading content="Unlock a world of knowledge with our resource library" left="20.5%"/>
-        <div className="resource-content">
-        <div className="vid1"></div>
-        <div className="vid2"></div>
-        <div className="vid-content">
+        <div className="resource-content2">
+        <div className="resource-container" style={{display:"flex" , justifyContent:"space-between" , width:"100vw"}}>
+        <div className="vid1" style={{ width:"50%" }}>
+          </div>
+        <div className="vid-content" style={{textAlign:"start" , width:"50%"}}>
           <h4>Typography Mastery: Crafting Beautiful Text in Your Designs</h4>
-          <p>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</p>
+          <span>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</span>
           <button className='purple-btn' style={{
         textDecoration:"none",
         border:"none",
-        width:"11.1vw",
+        maxWidth:"70%",
         fontWeight:"500",  
         marginTop:"2.1vw",
+        fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
+        whiteSpace:"nowrap",
+      }}>Explore more</button>
+        </div>
+        </div>
+        <div className="resource-container" style={{display:"flex" , justifyContent:"space-between"}}>
+        <div className="vid-content" style={{margin:"0" , textAlign:"start"}}>
+          <h4>Typography Mastery: Crafting Beautiful Text in Your Designs</h4>
+          <span>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</span>
+          <button className='purple-btn' style={{
+            textDecoration:"none",
+            border:"none",
+            maxWidth:"70%",
+            fontWeight:"500",  
+            marginTop:"2.1vw",
+            fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
+            whiteSpace:"nowrap",
+          }}>Explore more</button>
+        </div>
+          <div className="vid2" style={{width:"50%" }}>
+            </div>
+        </div>
+        
+        </div>
+        <div className="resource-content1">
+        <div className="vid1"></div>
+        <div className="vid2" style={{position:"relative"}}></div>
+        <div className="vid-content">
+          <h4>Typography Mastery: Crafting Beautiful Text in Your Designs</h4>
+          <span>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</span>
+          <button className='purple-btn' style={{
+        textDecoration:"none",
+        border:"none",
+        maxWidth:"12.1vw",
+        fontWeight:"500",  
+        marginTop:"2.1vw",
+        fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
+        whiteSpace:"nowrap",
       }}>Explore more</button>
         </div>
         </div>

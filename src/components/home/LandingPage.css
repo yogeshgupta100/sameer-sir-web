@@ -24,12 +24,12 @@
   .centered-text {
     /* margin-left: clamp(2rem, 10vw, 7rem); */
     max-width: 50vw;
-    letter-spacing: 0.11vw;
+    letter-spacing: 0.11rem;
   }
 .centered-text h2{
   font-family: Raleway;
   font-style: normal;
-  font-size: clamp(0.88rem , 3vw , 2.2rem);
+  font-size: clamp(1rem , 3vw , 2.2rem);
   font-weight: 700;
   color: #fff;
   margin-bottom: 1.11vw;

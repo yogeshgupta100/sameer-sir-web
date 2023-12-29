@@ -14,14 +14,14 @@ const Teachers = () => {
   }, []);
 
 	return (
-		<div className="container" style={{margin:"11vw 0 0" , paddingBottom:"0"}}>
+		<div className="container" style={{margin:"11vw 0 0" , paddingBottom:"0" , minWidth:"100%"}}>
 				<div className="view-all-heading">
 				<Heading content={"Explore our well knitted courses"} left={"20.5%"}></Heading>
 				</div>
 			<div
 				style={{
 					display:"flex",
-					width:"27vw",
+					width:"30vw",
 					justifyContent:"flex-end",
 				}}
 			>
@@ -65,9 +65,8 @@ const Teachers = () => {
 			<div
 				className="main-card--container container"
 				style={{
-					minWidth:"100vw",
-					display:"flex",
-					justifyContent:"center",
+					maxWidth:"100%",
+					display:"flex",	
 					gap:"1.3rem",
 				}}
 			>
@@ -76,7 +75,7 @@ const Teachers = () => {
 						<div
 							className="teacher"
 							style={{
-								overflowY: "hidden",
+								overflow:"hidden"
 							}}
 						>
 							<EmpCard currEle={currEle} />

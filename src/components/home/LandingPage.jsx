@@ -11,14 +11,15 @@ const LandingPage = ({ imageurl }) => {
 				<p>Unlocking the Secrets of User-Centered Design: A Comprehensive Journey into UX Excellence"</p>
 				<a href={"#courses"} style={{textDecoration:"none"}}>
 				<button type="button" className="button btn" style={{
-					borderRadius: "0.77rem",
+					borderRadius: "12.32px",
 					border: "0.104vw solid #FFF",
 					fontSize:"clamp(0.44rem , 2vw , 1.25rem)",
 					fontWeight:"500",
 					minWidth: "35%",
 					aspectRatio: "10/2.7",
 					padding:"0 1.6vw",
-					margin:"2.22vw 0"
+					margin:"2.22vw 0",
+					whiteSpace:"nowrap"
 				}}>
 				<span>
               Explore Now

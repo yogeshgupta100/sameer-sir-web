@@ -9,8 +9,8 @@ const EmpCard = ({ currEle }) => {
 				backgroundPosition: "center",
 				backgroundSize: "cover",
 				backgroundRepeat: "no-repeat",
-				minHeight: "25vw",
-				minWidth: "19vw",
+				minWidth: "20vw",
+				aspectRatio:"2/3.2",
 				borderRadius: "0.8325vw",
 				border: "0.069vw solid #B86CD2",
 				backgroundImage: `url(${import.meta.env.VITE_STRAPI_SERVER_URL}${
@@ -24,20 +24,20 @@ const EmpCard = ({ currEle }) => {
 					position: "absolute",
 					bottom: "0.41625vw",
 					right: "10%",
-					fontSize:"clamp(0.5rem , 1.5vw , 2rem)",
+					fontSize:"clamp(0.6rem , 3vw , 1.2rem)",
 				}}
 			>
-					<span className="card-emp-content" style={{marginBottom:"5px"}}><h4 style={{color:"#fff" ,}}>{currEle.attributes.name}</h4></span>
+					<span className="card-emp-content" style={{marginBottom:"5px" , color:"#fff"}}>{currEle.attributes.name}</span>
 					<span className="card-emp-content">{currEle.attributes.role}</span>
 			</div>
 			<div className="hidden-content">
 				<div className="hidden-container" style={{padding:"0 0 4vw"}}>
-					<h3 style={{whiteSpace:"nowrap" , fontSize:"clamp(1.2rem , 2vw , 2rem)" , color:"#fff"}}>{currEle.attributes.name}</h3>
-					<span style={{fontSize:"clamp(0.8rem , 1.5vw , 1rem)" , lineHeight:"1"}}>
+					<div style={{whiteSpace:"nowrap" , fontSize:"clamp(1rem , 3vw , 1.5rem)" , color:"#fff"}}><strong>{currEle.attributes.name}</strong></div>
+					<div style={{fontSize:"clamp(0.5rem , 3vw , 1rem)" , lineHeight:"1"}}>
 						{currEle.attributes.role} at {currEle.attributes.company}
-					</span>
+					</div>
 					<hr style={{margin:"0.8vw 0"}}/>
-					<span style={{fontSize:"clamp(0.5rem , 1.15vw , 1.2rem)" , letterSpacing:"1" , lineHeight:"1.5"}}>{currEle.attributes.description}</span>
+					<div style={{fontSize:"clamp(0.5rem , 3vw , 1rem)" , letterSpacing:"1" , lineHeight:"1.5"}}>{currEle.attributes.description}</div>
 					<hr style={{margin:"0.8vw 0"}}/>
 					<div className="icon-container">
 						<a href={currEle.attributes.instagram}>

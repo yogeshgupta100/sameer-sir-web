@@ -20,7 +20,7 @@ const Brands = ({color , textCol}) => {
         background: color,
         color:textCol,
         maxWidth:"100vw",
-        minHeight:"28vw",
+        minHeight:"35vw",
     }}>
         <div className="container1" style={{
             textAlign:"center"
@@ -30,17 +30,17 @@ const Brands = ({color , textCol}) => {
                 fontFamily:"Open Sans",
                 fontStyle:"normal"
             }}>
-                <h2 style={{
-                    fontSize:"3vw",
-                    fontWeight:"700",
+                <div style={{
+                    fontSize:"clamp(1.2rem , 3vw , 2.4rem)",
+                    fontWeight:"600",
                     color:"#fff"
-                }}>Our Collaborative Network</h2>
+                }}>Our Collaborative Network</div>
                 <div className="para" style={{
                     fontWeight:"100",
                     opacity:"0.8",
-                    fontSize:"clamp(0.5rem , 2.2vw , 1.2rem)",
+                    fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
                 }}>
-                <span>Meet the Key Players Shaping Our Design Ecosystem</span>
+                Meet the Key Players Shaping Our Design Ecosystem
                 </div>
             </div>
         </div>
@@ -57,13 +57,12 @@ const Brands = ({color , textCol}) => {
         }}>
             {
                 brands.map((brand) => (
-                    <p style={{
+                    <span style={{
                         fontFamily:"bebasneue",
                         fontStyle:"normal"
                     }}>
-                        {/* <img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${brand?.attributes?.logo?.data?.attributes?.url}`} alt="" /> */}
                         {brand.attributes.name}
-                    </p>
+                    </span>
                 ))
             }
         </div>

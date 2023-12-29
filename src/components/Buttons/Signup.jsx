@@ -31,11 +31,11 @@ const Signup = () => {
           margin:"0 1.11vw 0 0",
           fontWeight:"500",
           fontSize:"1.1544vw",
-          aspectRatio:"3/2",
+          aspectRatio:"3/1.9",
           padding:"0.4vw 1vw"
         }}
       >
-        <p style={{fontSize:"1.154vw", margin:"0"}}>Sign in</p>
+        <p style={{fontSize:"1.154rem", margin:"0"}}>Sign in</p>
       </button>
       </NavLink>
     </div>

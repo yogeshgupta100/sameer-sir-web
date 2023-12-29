@@ -26,9 +26,10 @@ const Header = () => {
 					className="container-fluid header py-2"
 					style={{ backgroundColor: "#fff", margin: "0", minHeight: "6.66vw", display: "flex"}}
 				>
-					<button style={{border:"none"}}
-						className="navbar-toggler"
-						// onClick={menu}
+    <input id="toggle1" type="checkbox" style={{position:"relative" , zIndex:"120" }}/>
+    <label style={{border:"none"}}
+						className="hamburger1"
+            for="toggle1"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarExternalContent"
@@ -39,7 +40,14 @@ const Header = () => {
 						<span>
 							<img src="/assets/hamburger.svg" />
 						</span>
-					</button>
+					</label>
+  
+    <nav className="menu1" style={{zIndex:"10" , position:"absolute" , top:"6.5vw" , maxWidth:"100%" , marginLeft:"-1.5rem" , marginTop:"0"}}>
+    <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} >About us</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} >Courses</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} >Resources</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff" , marginBottom:"0"}} >Career</button>
+    </nav>
 					<div
 						className="collapse navbar-collapse"
 						id="navbarSupportedContent"
@@ -58,6 +66,7 @@ const Header = () => {
 								justifyContent: "space-between",
 								alignItems: "center",
 								marginLeft: "2.22vw",
+								flexDirection:"row"
 							}}
 						>
 							<li className="nav-item ms-3 dropdown">
@@ -193,7 +202,7 @@ const Header = () => {
 									fontFamily: "Raleway",
 									fontStyle: "normal",
 									fontWeight: "700",
-									marginLeft:"2rem",
+									marginLeft:"1rem",
 								}}
 							>
 								<img src="/assets/logo.svg" style={{width:"100%" , aspectRatio:"2/1"}}/>
