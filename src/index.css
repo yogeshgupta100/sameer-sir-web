@@ -432,6 +432,7 @@ code {
 	position: absolute;
 	transition: all 0.3s ease-in-out;
 	top: 100%;
+	width: 100%;
 	/* font-size: 1.1vw; */
 }
 .card-emp:hover .hidden-content {
@@ -1494,4 +1495,10 @@ footer .right-container ul li a {
   footer .right-container ul li {
     margin-top: 5px !important;
   }
+}
+
+.content-container blockquote {
+	margin: 2rem 0;
+	padding-left: 1rem;
+	border-left: 3px solid #b46bd1;
 }

@@ -54,7 +54,7 @@ const BlogCard = ({currEle}) => {
                     maxHeight:"2.331vw",
                     overflow:"hidden"
                   }}>
-                    {currEle.attributes.content}
+                    {currEle.attributes.description}
                   </p> 
                   <p style={{color:"rgba(91, 91, 91, 0.80)"}}>
                     By {currEle.attributes.author}

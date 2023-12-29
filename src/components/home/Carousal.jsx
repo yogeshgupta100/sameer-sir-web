@@ -15,6 +15,8 @@ export default function Carousal() {
 	};
 
 	useEffect(() => {
+		const slider = sliderRef.current;
+
 		(async () => {
 			const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/testimonies?populate=*`);
 			const data = await res.json();
@@ -22,16 +24,16 @@ export default function Carousal() {
 		})();
 
 		const scrollHandler = () => {
-			const scrollPosition = sliderRef.current.scrollLeft;
-			const slideWidth = sliderRef.current.children[0].offsetWidth;
+			const scrollPosition = slider.scrollLeft;
+			const slideWidth = slider.children[0].offsetWidth;
 			const slideIndex = Math.round(scrollPosition / slideWidth);
 			setCurrentSlide(slideIndex);
 		};
 
-		sliderRef.current.addEventListener("scroll", scrollHandler);
+		slider.addEventListener("scroll", scrollHandler);
 
 		return () => {
-			sliderRef.current.removeEventListener("scroll", scrollHandler);
+			slider.removeEventListener("scroll", scrollHandler);
 		};
 	}, []);
 

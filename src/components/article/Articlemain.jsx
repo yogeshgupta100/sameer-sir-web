@@ -1,15 +1,14 @@
-import React from 'react'
-import Header from '../Header'
-import Banner from './Banner'
-import Subscribe from '../aboutus/Subscribe'
+import Header from "../Header";
+import Banner from "./Banner";
+import Subscribe from "../aboutus/Subscribe";
 
 const Articlemain = () => {
-  return (
-    <>
-    <Banner/>
-    <Subscribe/>
-    </>
-  )
-}
+	return (
+		<>
+			<Banner />
+			<Subscribe />
+		</>
+	);
+};
 
-export default Articlemain
+export default Articlemain;

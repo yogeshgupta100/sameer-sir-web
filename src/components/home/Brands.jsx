@@ -61,7 +61,7 @@ const Brands = ({color , textCol}) => {
                         fontFamily:"bebasneue",
                         fontStyle:"normal"
                     }}>
-                        {brand.attributes.name}
+                        <img src={import.meta.env.VITE_STRAPI_SERVER_URL + brand.attributes.logo.data.attributes.url} alt={brand.name} />
                     </span>
                 ))
             }
