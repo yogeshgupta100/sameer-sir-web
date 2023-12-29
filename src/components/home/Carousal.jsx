@@ -11,7 +11,6 @@ export default function Carousal() {
 
 	const setSlide = (index) => {
 		sliderRef.current.scrollLeft = index * sliderRef.current.children[0].offsetWidth;
-		setCurrentSlide(index);
 	};
 
 	useEffect(() => {
@@ -26,6 +25,7 @@ export default function Carousal() {
 		const scrollHandler = () => {
 			const scrollPosition = slider.scrollLeft;
 			const slideWidth = slider.children[0].offsetWidth;
+
 			const slideIndex = Math.round(scrollPosition / slideWidth);
 			setCurrentSlide(slideIndex);
 		};
