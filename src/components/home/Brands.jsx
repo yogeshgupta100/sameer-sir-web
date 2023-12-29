@@ -1,20 +1,19 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 
-const Brands = ({color , textCol}) => {
-    const [brands, setBrands] = useState([]);
+const Brands = ({ color, textCol }) => {
+	const [brands, setBrands] = useState([]);
 
-    useEffect(() => {
-        (async () => {
-            try {
-                const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/partners?populate=*`);
-                const data = await res.json();
-                setBrands(data.data);
-                console.log(data.data);
-            } catch (err) {
-                console.log(err);
-            }
-        })();
-    }, [])
+	useEffect(() => {
+		(async () => {
+			try {
+				const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/partners?populate=*`);
+				const data = await res.json();
+				setBrands(data.data);
+			} catch (err) {
+				console.log(err);
+			}
+		})();
+	}, []);
 
   return (
     <div className="row" style={{
@@ -78,9 +77,9 @@ const Brands = ({color , textCol}) => {
   )
 }
 
-Brands.defaultProps = { 
-    color: "rgba(1,160,179,0.1)",
-    textCol:"linear-gradient(114.53deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)"
-}
+Brands.defaultProps = {
+	color: "rgba(1,160,179,0.1)",
+	textCol: "linear-gradient(114.53deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)",
+};
 
-export default Brands
+export default Brands;
