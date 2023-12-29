@@ -49,7 +49,7 @@ const Signin = () => {
 	};
 	return (
 		<>
-			<div className="signin-body">
+			<div className="signin-body" >
 				<div className="signin-1">
 					<span className="subscribe-logo" style={{ margin: "2.6rem 0 0 1rem" }}>
 						<svg
@@ -102,9 +102,9 @@ const Signin = () => {
 					</div>
 					<div style={{ color: "#F8E8FF", position: "relative" }}>
 						<div
-							className="buttons"
+							className="buttons-signup"
 							style={{
-								width: "auto",
+								width: "100%",
 								position: "absolute",
 								right: "-1rem",
 								display: "flex",
@@ -117,14 +117,14 @@ const Signin = () => {
 								onClick={navigateSignin}
 								className="signup-btn btn"
 								id="button"
-								style={{ backgroundColor: "#F8E8FF", border: "none", paddingLeft: "1.5vw" }}
+								style={{ backgroundColor: "#F8E8FF", border: "none", paddingLeft: "1.5vw" , fontSize:"clamp(1rem , 1.3vw , 1.6rem)", whiteSpace:"nowrap" }}
 							>
 								Sign in
 							</button>
 							<button
 								onClick={navigateSignup}
 								className="signin-btn purple-btn"
-								style={{ border: "none", margin: "0", backgroundColor: "transparent" }}
+								style={{ border: "none", margin: "0", backgroundColor: "transparent", fontSize:"clamp(1rem , 1.3vw , 1.6rem)" , whiteSpace:"nowrap" , width:"auto"}}
 							>
 								Sign up
 							</button>
@@ -172,7 +172,7 @@ const Signin = () => {
 									<NavLink to={"/forgotPassword"} style={{ textDecoration: "none" }}>
 										<span
 											style={{
-												fontSize: "clamp(0.88rem , 1.55vw , 1.125rem)",
+												fontSize: "clamp(0.7rem , 2vw , 1.125rem)",
 												color: "#B86CD2",
 												fontWeight: "400",
 											}}

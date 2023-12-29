@@ -112,11 +112,11 @@ const Signup = () => {
 							</p>
 						</div>
 					</div>
-					<div style={{ color: "#F8E8FF", position: "relative" }}>
+					<div className="signup-btn" style={{ color: "#F8E8FF" , position:"relative"}}>
 						<div
-							className="buttons"
+							className="buttons-signup"
 							style={{
-								width: "auto",
+								width: "100%",
 								position: "absolute",
 								right: "-1rem",
 								display: "flex",
@@ -128,7 +128,7 @@ const Signup = () => {
 							<button
 								onClick={navigateSignin}
 								className="signup-btn purple-btn"
-								style={{ backgroundColor: "transparent", border: "none", margin: "0" }}
+								style={{ backgroundColor: "transparent", border: "none", margin: "0", fontSize:"clamp(1rem , 1.3vw , 1.6rem)", whiteSpace:"nowrap"}}
 							>
 								Sign in
 							</button>
@@ -136,7 +136,7 @@ const Signup = () => {
 								onClick={navigateSignup}
 								className="signin-btn btn"
 								id="button"
-								style={{ border: "none", paddingLeft: "1.5vw", backgroundColor: "#F8E8FF" }}
+								style={{ border: "none", paddingLeft: "1.5vw", backgroundColor: "#F8E8FF" , fontSize:"clamp(1rem , 1.3vw , 1.6rem)", whiteSpace:"nowrap" }}
 							>
 								Sign up
 							</button>
@@ -201,13 +201,11 @@ const Signup = () => {
 										type="submit"
 										className="purple-btn"
 										style={{
+											border: "none",
 											width: "26%",
-											fontSize: "clamp(0.9rem , 1.33vw , 1.25rem)",
+											fontSize: "clamp(0.9rem , 1.55vw , 1.25rem)",
 											fontWeight: "700",
-											padding: "0.5rem 1.5625rem",
-											borderRadius: "0.7rem",
-											border: "1.5px solid #F8E8FF",
-											background: "#B86CD2",
+											whiteSpace:"nowrap"
 										}}
 									>
 										Sign up

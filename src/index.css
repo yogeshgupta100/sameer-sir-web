@@ -954,21 +954,22 @@ button {
 .form-section .form-text {
 	max-width: 100%;
 	font-family: Open Sans;
-	font-size: clamp(1rem, 1.556vw, 3rem);
+	font-size: clamp(1rem, 2vw, 1.25rem);
 	font-style: normal;
 	font-weight: 600;
 	line-height: 4.99vw;
 	border: none;
 	background-color: transparent;
 	border-bottom: 0.138vw solid #ad60c8;
+	color: #b86cd2;
 }
 ::placeholder {
 	color: #b86cd2;
 	font-family: Open Sans;
-	font-size: clamp(0.5rem, 1.556vw, 1.25rem);
+	font-size: clamp(0.8rem, 2vw, 1.25rem);
 	font-style: normal;
 	font-weight: 600;
-	line-height: 1.66vw; /* 150% */
+	line-height: 1.66vw;
 }
 
 /* article */
@@ -1045,7 +1046,7 @@ button {
 	font-size: 1.332vw;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 1.66vw; /* 150% */
+	line-height: 1.66vw;
 }
 .banner-section {
 	background: url("/assets/resource-banner-bg.jpeg");
@@ -1073,22 +1074,21 @@ button {
 	display: grid;
 	grid-template-rows: 1fr 2fr 1fr;
 }
-.signin-image {
-	width: 60%;
-	height: 100%;
-	background-image: url("/assets/signin.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-}
+.signin-image,
 .signup-image {
-	width: 60%;
-	height: 100%;
-	background-image: url("/assets/signup.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+  width: 60%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
+.signin-image {
+	background-image: url("/assets/signin.svg");
+  }
+  
+  .signup-image {
+	background-image: url("/assets/signup.svg");
+  }
 .signin-form-body {
 	height: 90%;
 	margin: 3rem;
@@ -1237,6 +1237,48 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+	.signin-body {
+		grid-template-columns: 1fr;
+	  }
+	
+	  .signin-1 {
+		grid-template-rows: 1fr auto 1fr;
+	  }
+	
+	  .signin-image,
+	  .signup-image {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto; 
+	  }
+	
+	  .signin-form-body {
+		margin: 1rem;
+	  }
+	  .signup-body {
+		grid-template-columns: 1fr;
+	  }
+	
+	  .signup-1 {
+		grid-template-rows: 1fr auto 1fr;
+	  }
+	
+	  .signin-image,
+	  .signup-image {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto; 
+	  }
+	
+	  .signup-form-body {
+		margin: 1rem;
+	  }
+	  .buttons-signup{
+		display: flex !important;
+		justify-content: center !important;
+		flex-direction: row !important;
+		margin-top: 3rem;
+	  }
 	.hamburger1{
 		display: grid;	
 	}
