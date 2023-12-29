@@ -37,7 +37,7 @@ const Subscribe = () => {
 		<>
 			<div className="Subscribe-main">
 				<span className="subscribe-logo" style={{width:"20%"}}>
-					<img src="/assets/logo.svg" style={{width:"100%" , aspectRatio:"2/1"}}/>
+					<img src="/assets/logo_white.png" style={{width:"100%" , aspectRatio:"3/1"}}/>
 				</span>
 				<span className="subscribe-content">
 					<p>Subscribe to our news letter</p>
@@ -110,10 +110,9 @@ const Subscribe = () => {
 							height: "fit-content",
 						}}
 					>
-						<h2 style={{ marginBottom: "15px", fontSize: "clamp(1.2rem, 2.5vw, 2rem)" }}>LANDING PAGE</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in
-							hendrerit urna.
+						<h2 style={{ marginBottom: "15px", fontSize: "clamp(1.2rem, 2.5vw, 2rem)" }}>crafting visions</h2>
+						<p style={{color:"#000"}}>
+						Make us a part of your design journey and elevate your career!
 						</p>
 						<div
 							style={{

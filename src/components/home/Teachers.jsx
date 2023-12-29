@@ -16,9 +16,9 @@ const Teachers = () => {
 	return (
 		<div className="container" style={{margin:"11vw 0 0" , paddingBottom:"0" , minWidth:"100%"}}>
 				<div className="view-all-heading">
-				<Heading content={"Explore our well knitted courses"} left={"20.5%"}></Heading>
+				<Heading content={"Mentors empowering your journey"} subContent={"Get groomed by elite professionals and academic gurus of the industry to accelerate your professional journey."} left={"20.5%"}></Heading>
 				</div>
-			<div
+			<div className="teacher-btn"
 				style={{
 					display:"flex",
 					width:"30vw",
@@ -45,7 +45,7 @@ const Teachers = () => {
 							display: "flex",
 							textDecoration: "none",
 							fontWeight: "500",
-							fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
+							fontSize:"clamp(0.8rem , 2vw , 1rem)",
 							paddingRight:"0.6rem",
 						}}
 					>

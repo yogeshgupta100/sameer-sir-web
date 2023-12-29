@@ -14,12 +14,12 @@ const Courses_container = () => {
 	}, []);
   return (
     <div
-				className="course-container container"
+				className="course-container"
 				id="courses"
-			style={{marginBottom:"8vw"}}>
+			style={{marginBottom:"8vw" , padding:""}}>
 				{courses.map((course) => {
 					return (
-							<div className="card my-3 px-0">
+							<div className="card">
 								<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${course?.attributes?.thumbnail?.data?.attributes?.url}`} className="card-img-top" alt="course1" />
 								<div
 									className="card-body container"
@@ -33,7 +33,6 @@ const Courses_container = () => {
 											fontSize: "clamp(0.7rem , 2vw , 1.4rem)",
 											fontStyle: "normal",
 											fontWeight: "700",
-											// marginBottom: "0.22vw",
 											lineHeight:"1"
 										}}
 									>
@@ -63,7 +62,8 @@ const Courses_container = () => {
 											gridTemplateColumns:"1fr 1fr 1fr",
 											fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
 											lineHeight: "1",
-											gap:"0.3rem"
+											gap:"0.3rem",
+											whiteSpace:"nowrap"
 										}}
 									>
 										<div className="content" style={{textAlign:"start"}}>
@@ -71,7 +71,6 @@ const Courses_container = () => {
 												style={{
 													color: "rgba(117, 117, 117, 0.90)",
 													fontFamily: "Open Sans",
-													// fontSize: "1.11vw",
 													fontStyle: "normal",
 													fontWeight: "700",
 													marginBottom:"0.88vw",
@@ -79,7 +78,7 @@ const Courses_container = () => {
 											>
 												Starting Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.batches.startDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].startDate}</span>
 										</div>
 										<div className="content" style={{textAlign:"center"}}>
 											<div
@@ -93,7 +92,7 @@ const Courses_container = () => {
 											>
 												End Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.endDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
 										</div>
 										<div className="content" style={{textAlign:"center"}}>
 											<div
@@ -107,7 +106,7 @@ const Courses_container = () => {
 											>
 												Duration
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)"}}>{course.attributes.duration}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
 										</div>
 									</div>
 									<NavLink

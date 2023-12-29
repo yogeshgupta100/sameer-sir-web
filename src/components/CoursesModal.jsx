@@ -72,7 +72,7 @@ export default function CoursesModal() {
 											fontStyle: "normal",
 											fontWeight: "700",
 											lineHeight: "140.5%",
-											height:"5.5rem",
+											height:"5rem",
 											overflow:"hidden",
 										}}
 									>
@@ -84,9 +84,11 @@ export default function CoursesModal() {
 										style={{
 											display: "grid",
 											gridTemplateColumns:"1fr 1fr 1fr",
-											fontSize: "clamp(0.3rem , 1.5vw , 0.8rem)",
+											fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
 											lineHeight: "1",
-											gap:"0.3rem"
+											gap:"0.3rem",
+											whiteSpace:"nowrap",
+											marginBottom:"1rem"
 										}}
 									>
 										<div className="content" style={{textAlign:"start"}}>
@@ -96,11 +98,12 @@ export default function CoursesModal() {
 													fontFamily: "Open Sans",
 													fontStyle: "normal",
 													fontWeight: "700",
+													marginBottom:"0.88vw",
 												}}
 											>
 												Starting Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.3rem , 1.5vw , 0.8rem)"}}>{course.attributes.batches.startDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].startDate}</span>
 										</div>
 										<div className="content" style={{textAlign:"center"}}>
 											<div
@@ -114,7 +117,7 @@ export default function CoursesModal() {
 											>
 												End Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.3rem , 1.5vw , 0.8rem)"}}>{course.attributes.batches.endDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
 										</div>
 										<div className="content" style={{textAlign:"center"}}>
 											<div
@@ -128,7 +131,7 @@ export default function CoursesModal() {
 											>
 												Duration
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.3rem , 1.5vw , 0.8rem)"}}>{course.attributes.duration}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
 										</div>
 									</div>
 									<NavLink

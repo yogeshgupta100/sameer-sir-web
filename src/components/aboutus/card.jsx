@@ -10,7 +10,7 @@ const EmpCard = ({ currEle }) => {
 				backgroundSize: "cover",
 				backgroundRepeat: "no-repeat",
 				minWidth: "20vw",
-				aspectRatio:"2/3.2",
+				aspectRatio:"2/3",
 				borderRadius: "0.8325vw",
 				border: "0.069vw solid #B86CD2",
 				backgroundImage: `url(${import.meta.env.VITE_STRAPI_SERVER_URL}${

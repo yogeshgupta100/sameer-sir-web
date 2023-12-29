@@ -1,14 +1,12 @@
 import React from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { NavLink } from "react-router-dom";
 
 const LandingPage = ({ imageurl }) => {
 	return (
 		<div className="landing-page" id="home-main">
-			<div className="landing-page-content">
+			<div className="landing-page-content container">
 			<div className="centered-text">
 				<h2>Immerse yourself into the world of Design, Technology and Innovation.</h2>
-				<p>Unlocking the Secrets of User-Centered Design: A Comprehensive Journey into UX Excellence"</p>
+				<p>Join us and up-skill yourself to compete with the current industry trends and the booming job markets.</p>
 				<a href={"#courses"} style={{textDecoration:"none"}}>
 				<button type="button" className="button btn" style={{
 					borderRadius: "12.32px",

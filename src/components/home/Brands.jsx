@@ -9,6 +9,7 @@ const Brands = ({color , textCol}) => {
                 const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/partners?populate=*`);
                 const data = await res.json();
                 setBrands(data.data);
+                console.log(data.data);
             } catch (err) {
                 console.log(err);
             }
@@ -20,7 +21,7 @@ const Brands = ({color , textCol}) => {
         background: color,
         color:textCol,
         maxWidth:"100vw",
-        minHeight:"35vw",
+        minHeight:"33vw",
     }}>
         <div className="container1" style={{
             textAlign:"center"
@@ -30,6 +31,13 @@ const Brands = ({color , textCol}) => {
                 fontFamily:"Open Sans",
                 fontStyle:"normal"
             }}>
+                <div className="para" style={{
+                    fontWeight:"100",
+                    opacity:"0.8",
+                    fontSize:"clamp(0.6rem , 1.5vw , 1rem)",
+                }}>
+                Our partners
+                </div>
                 <div style={{
                     fontSize:"clamp(1.2rem , 3vw , 2.4rem)",
                     fontWeight:"600",
@@ -38,15 +46,15 @@ const Brands = ({color , textCol}) => {
                 <div className="para" style={{
                     fontWeight:"100",
                     opacity:"0.8",
-                    fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
+                    fontSize:"clamp(0.65rem , 1.5vw , 1rem)",
                 }}>
-                Meet the Key Players Shaping Our Design Ecosystem
+                Top companies where our collaborators work  
                 </div>
             </div>
         </div>
         <div className="container2" style={{
             display:"flex",
-            flexWrap:"wrap",
+            flexWrap:"nowrap",
             flexDirection:"row",
             justifyContent:"space-evenly",
             textAlign:"center",
@@ -61,7 +69,7 @@ const Brands = ({color , textCol}) => {
                         fontFamily:"bebasneue",
                         fontStyle:"normal"
                     }}>
-                        <img src={import.meta.env.VITE_STRAPI_SERVER_URL + brand.attributes.logo.data.attributes.url} alt={brand.name} />
+                        <img style={{maxWidth:"80%"}} src={import.meta.env.VITE_STRAPI_SERVER_URL + brand.attributes?.logo?.data?.attributes.url} alt={brand.name} />
                     </span>
                 ))
             }

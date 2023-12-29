@@ -21,7 +21,7 @@ const First = () => {
       }}>
       </div>
       <div className="container" style={{
-        backgroundImage: `url(${"/assets/home-bg-img.jpg"})`,
+        background: "linear-gradient(254deg, #6C0082 0.31%, #44006F 46.97%, #7A0089 114.38%)",
         width: "84vw",
         height: "44vw",
         flexShrink: "0",
@@ -42,11 +42,10 @@ const First = () => {
           fontStyle:"normal",
           fontFamily:"Open Sans" 
         }}>
-          <p style={{ fontSize:"1.11vw" , marginBottom:"0"}}>Join the Creative Revolution</p>
-          <h4 style={{fontSize:"2.22vw" , lineHeight:"130%" , width:"90%" , fontWeight:"700" , color:"#fff"}}>Your lifetime Access to our Design Community Membership Starts Here!</h4>
+          <p style={{ fontSize:"clamp(0.6rem , 2vw , 1.1rem)" , marginBottom:"0"}}>Join the Creative Revolution</p>
+          <h4 style={{fontSize:"2.33vw" , lineHeight:"130%" , width:"90%" , fontWeight:"700" , color:"#fff"}}>Your lifetime Access to our Design Community Membership Starts Here!</h4>
           <a href='#courses' style={{textDecoration:"none"}}>
           <button type="button" className="btn" style={{borderRadius: "0.72vw",
-            // border: "1.665vw solid #FFF",
             fontSize:"1.11vw",
             fontWeight:"500",
             width:"fit-content",
@@ -72,7 +71,7 @@ const First = () => {
             }}>500+ </h3>
               <p style={{
                 width:"11vw",
-                fontSize:"1.11vw",
+                fontSize:"clamp(0.7rem , 1.1vw , 1rem)",
                 fontWeight:"400",
               }}>Experts working across the globe!</p>
           </div>
@@ -84,7 +83,7 @@ const First = () => {
             }}>2000+</h3>
               <p style={{
                 width:"12vw",
-                fontSize:"1.11vw",
+                fontSize:"clamp(0.6rem , 1.1vw , 1rem)",
                 fontWeight:"400"
               }}>Community members, growing as you read!</p>
           </div>
@@ -96,7 +95,7 @@ const First = () => {
             }}>2000+</h3>
               <p style={{
                 width:"12vw", 
-                fontSize:"1.11vw",
+                fontSize:"clamp(0.6rem , 1.1vw , 1rem)",
                 fontWeight:"400"
               }}>Community members, growing as you read!</p>
           </div>
