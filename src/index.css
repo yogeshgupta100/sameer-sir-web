@@ -1502,3 +1502,7 @@ footer .right-container ul li a {
 	padding-left: 1rem;
 	border-left: 3px solid #b46bd1;
 }
+
+.portfolio-container {
+	font-size: 1vw;
+}
