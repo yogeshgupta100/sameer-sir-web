@@ -15,82 +15,67 @@ const Brands = ({ color, textCol }) => {
 		})();
 	}, []);
 
-	return (
-		<div
-			className="row"
-			style={{
-				background: color,
-				color: textCol,
-				maxWidth: "100vw",
-				minHeight: "35vw",
-			}}
-		>
-			<div
-				className="container1"
-				style={{
-					textAlign: "center",
-				}}
-			>
-				<div
-					className="heading"
-					style={{
-						paddingTop: "5.55vw",
-						fontFamily: "Open Sans",
-						fontStyle: "normal",
-					}}
-				>
-					<div
-						style={{
-							fontSize: "clamp(1.2rem , 3vw , 2.4rem)",
-							fontWeight: "600",
-							color: "#fff",
-						}}
-					>
-						Our Collaborative Network
-					</div>
-					<div
-						className="para"
-						style={{
-							fontWeight: "100",
-							opacity: "0.8",
-							fontSize: "clamp(0.8rem , 1.5vw , 1rem)",
-						}}
-					>
-						Meet the Key Players Shaping Our Design Ecosystem
-					</div>
-				</div>
-			</div>
-			<div
-				className="container2"
-				style={{
-					display: "flex",
-					flexWrap: "wrap",
-					flexDirection: "row",
-					justifyContent: "space-evenly",
-					textAlign: "center",
-					paddingTop: "2.8vw",
-					fontWeight: "800",
-					fontSize: "1.67vw",
-					paddingBottom: "1.7vw",
-				}}
-			>
-				{brands.map((brand) => (
-					<span
-						style={{
-							fontFamily: "bebasneue",
-							fontStyle: "normal",
-						}}
-					>
-						<img
-							src={import.meta.env.VITE_STRAPI_SERVER_URL + brand.attributes.logo.data.attributes.url}
-							alt={brand.name}
-						/>
-					</span>
-				))}
-			</div>
-		</div>
-	);
-};
+  return (
+    <div className="row" style={{
+        background: color,
+        color:textCol,
+        maxWidth:"100vw",
+        minHeight:"33vw",
+    }}>
+        <div className="container1" style={{
+            textAlign:"center"
+        }}>
+            <div className="heading" style={{
+                paddingTop:"5.55vw",
+                fontFamily:"Open Sans",
+                fontStyle:"normal"
+            }}>
+                <div className="para" style={{
+                    fontWeight:"100",
+                    opacity:"0.8",
+                    fontSize:"clamp(0.6rem , 1.5vw , 1rem)",
+                }}>
+                Our partners
+                </div>
+                <div style={{
+                    fontSize:"clamp(1.2rem , 3vw , 2.4rem)",
+                    fontWeight:"600",
+                    color:"#fff"
+                }}>Our Collaborative Network</div>
+                <div className="para" style={{
+                    fontWeight:"100",
+                    opacity:"0.8",
+                    fontSize:"clamp(0.65rem , 1.5vw , 1rem)",
+                }}>
+                Top companies where our collaborators work  
+                </div>
+            </div>
+        </div>
+        <div className="container2" style={{
+            display:"flex",
+            flexWrap:"nowrap",
+            flexDirection:"row",
+            justifyContent:"space-evenly",
+            textAlign:"center",
+            paddingTop:"2.8vw",
+            fontWeight:"800",
+            fontSize:"1.67vw",
+            paddingBottom:"1.7vw"
+        }}>
+            {
+                brands.map((brand) => (
+                    <span style={{
+                        fontFamily:"bebasneue",
+                        fontStyle:"normal"
+                    }}>
+                        <img style={{maxWidth:"80%"}} src={import.meta.env.VITE_STRAPI_SERVER_URL + brand.attributes?.logo?.data?.attributes.url} alt={brand.name} />
+                    </span>
+                ))
+            }
+        </div>
+    </div>
+  )
+}
 
 Brands.defaultProps = {
 	color: "rgba(1,160,179,0.1)",

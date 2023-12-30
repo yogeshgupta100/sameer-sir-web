@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Login from "./Buttons/Login";
 import SignupBtn from "./Buttons/Signup";
 import "./Header.css";
 import "./home/LandingPage.css";
@@ -202,10 +201,10 @@ const Header = () => {
 									fontFamily: "Raleway",
 									fontStyle: "normal",
 									fontWeight: "700",
-									marginLeft:"1rem",
+									// marginLeft:"1rem",
 								}}
 							>
-								<img src="/assets/logo.svg" style={{width:"100%" , aspectRatio:"2/1"}}/>
+								<img src="/assets/final_logo.jpg" style={{width:"100%" , aspectRatio:"4/1"}}/>
 							</span>
 						</NavLink>
 						<div

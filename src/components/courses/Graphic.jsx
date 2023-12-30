@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useToken } from "../../contexts/TokenProvider";
 import { useUser } from "../../contexts/UserProvider";
+import Header from "../Header";
+import LandingPage from "../home/LandingPage";
 
 const Graphic = ({ data }) => {
 	const { courseId } = useParams();
@@ -38,7 +40,7 @@ const Graphic = ({ data }) => {
 
 	return (
 		<>
-			<div className="landing-page" style={{ height: "20vw", position: "relative", marginBottom: "31vw" }}>
+			{/* <div className="landing-page" style={{ height: "20vw", position: "relative", marginBottom: "31vw"}}>
 				<div
 					className="centered-text container"
 					style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", height: "70%" }}
@@ -171,8 +173,8 @@ const Graphic = ({ data }) => {
 				<div
 					className=" about-first2"
 					style={{
-						position: "absolute",
-						// bottom: "-33rem",
+						position: "relative",
+						bottom: "-33rem",
 						display: "flex",
 						alignItems: "center",
 						height: "25rem",
@@ -260,7 +262,7 @@ const Graphic = ({ data }) => {
 								2 hours a day
 							</p>
 						</div>
-						{/* <span className="v-line" ></span> */}
+						
 						<div
 							className="part3"
 							style={{
@@ -299,7 +301,267 @@ const Graphic = ({ data }) => {
 						</div>
 					</div>
 				</div>
+			</div> */}
+			<div
+        className="full"
+        style={{
+          background: "transparent",
+          marginBottom:"2.22vw",
+          minHeight:"80vw",
+          position:"relative",
+        }}
+      >
+            <div className="landing-page" id="home-main">
+			<div className="landing-page-content container" style={{ display:"flex" , justifyContent:"space-around" , backgroundColor:"#000"}}>
+			<div className="centered-text" style={{display: "flex", justifyContent: "space-between" , padding:"1rem 2rem"}}>
+			<div style={{width:"100%" , backgroundColor:"red"}}>
+						<h2
+							style={{
+								// maxWidth: "48rem",
+								fontSize: "clamp(1.3rem , 2.33vw , 3.4rem)",
+								fontWeight: "700",
+								lineHeight: "3vw",
+								fontFamily: "Raleway",
+								letterSpacing: "0.1rem",
+							}}
+						>
+							{data ? data.attributes.name : "loading..."}
+						</h2>
+						<p
+							style={{
+								lineHeight: "2vw",
+								fontSize: "clamp(0.77rem , 1.2vw , 1.25rem)",
+								marginBottom: "1rem",
+							}}
+						>
+							{data ? data.attributes.description : "loading..."}
+						</p>
+						<div className="buttons" style={{ display: "flex" }}>
+							<button
+								type="button"
+								className="button"
+								id="button"
+								onClick={applyNow}
+								style={{
+									borderRadius: "0.6rem",
+									border: "1.1px solid #B86CD2",
+									marginRight: "1rem",
+									padding: "0.625rem 3.3vw",
+									fontWeight: "500",
+									fontSize: "clamp(0.8rem , 1.2vw , 1.25rem)",
+									maxHeight: "3rem",
+								}}
+							>
+								Apply now
+							</button>
+							<NavLink to={"/forms/downloadSyllabus"}>
+								<button
+									type="button"
+									className="btn"
+									style={{
+										borderRadius: "0.6rem",
+										border: "1.1px solid #fff",
+										marginRight: "1rem",
+										padding: "0.625rem 3.3vw",
+										fontWeight: "500",
+										fontSize: "clamp(0.8rem , 1.2vw , 1.25rem)",
+										maxHeight: "3rem",
+									}}
+								>
+									Download syllabus
+								</button>
+							</NavLink>
+						</div>
+						<div style={{ width: "100%", marginTop: "5vw" }}>
+							<p style={{ margin: "0" }}>Tools covered</p>
+							<div
+								className="extra-buttons"
+								style={{
+									display: "grid",
+									gridTemplateColumns: "repeat(4,7vw)",
+									gap: "0.654rem",
+									marginTop: "0",
+								}}
+							>
+								<button
+									type="button"
+									className="button"
+									id="button"
+									style={{
+										borderRadius: "0.3rem",
+										border: "1.1px solid #B86CD2",
+										fontWeight: "400",
+										fontSize: "0.8rem",
+									}}
+								>
+									Unreal Engine
+								</button>
+								<button
+									type="button"
+									className="button"
+									id="button"
+									style={{
+										borderRadius: "0.3rem",
+										border: "1.1px solid #B86CD2",
+										fontWeight: "400",
+										fontSize: "0.8rem",
+									}}
+								>
+									Unity 3d
+								</button>
+								<button
+									type="button"
+									className="button"
+									id="button"
+									style={{
+										borderRadius: "0.3rem",
+										border: "1.1px solid #B86CD2",
+										fontWeight: "400",
+										fontSize: "0.8rem",
+									}}
+								>
+									Steam VR
+								</button>
+								<button
+									type="button"
+									className="button"
+									id="button"
+									style={{
+										borderRadius: "0.3rem",
+										border: "1.1px solid #B86CD2",
+										fontWeight: "400",
+										fontSize: "0.8rem",
+									}}
+								>
+									Vuforia
+								</button>
+							</div>
+						</div>
+					</div>
+				<div className="landing-img">
+					<img src={import.meta.env.VITE_STRAPI_SERVER_URL + data?.attributes?.thumbnail?.data?.attributes?.url} style={{
+						maxWidth:"40vw",
+						aspectRatio:"1/0.99",
+						marginLeft:"0.5rem",
+					}}/>
+				</div>
 			</div>
+		</div>	
+            <div className="about" style={{maxWidth:"100vw" , display:"flex" , justifyContent:"center"}}>
+            <div className=" about-first2">
+            <div className="container about-content" style={{display:"grid" , gridTemplateColumns:"1fr 1fr 1fr"}}>
+			<div
+							className="part1"
+							style={{
+								width: "100%",
+								textAlign: "center",
+								fontFamily: "Open Sans",
+								borderRight: "1px solid #CDCDCD",
+								paddingRight: "3rem",
+							}}
+						>
+							<h3
+								style={{
+									textAlign: "center",
+									fontSize: "1.3rem",
+									fontWeight: "600",
+									letterSpacing: "1px",
+									color: "#B46BD1",
+								}}
+							>
+								Course description
+							</h3>
+							<p
+								style={{
+									fontSize: "0.85rem",
+									color: "#3D3D3D",
+									lineHeight: "1.6rem",
+								}}
+							>
+								Welcome to the enchanting world of "Graphic Design Alchemy," where creativity knows no
+								bounds, and the ordinary transforms into extraordinary. it's a journey of
+								self-discovery, artistic expression
+							</p>
+						</div>
+						<div
+							className="part2"
+							style={{
+								textAlign: "center",
+								borderRight: "1px solid #CDCDCD",
+							}}
+						>
+							<h3
+								style={{
+									textAlign: "center",
+									fontSize: "1.3rem",
+									fontWeight: "600",
+									letterSpacing: "1px",
+									color: "#B46BD1",
+								}}
+							>
+								Course duration
+							</h3>
+							<p
+								style={{
+									fontSize: "0.85rem",
+									color: "#3D3D3D",
+									lineHeight: "1.6rem",
+								}}
+							>
+								6 months
+							</p>
+							<p
+								style={{
+									fontSize: "0.85rem",
+									color: "#3D3D3D",
+									lineHeight: "1.6rem",
+								}}
+							>
+								2 hours a day
+							</p>
+						</div>
+						
+						<div
+							className="part3"
+							style={{
+								textAlign: "center",
+							}}
+						>
+							<h3
+								style={{
+									textAlign: "center",
+									fontSize: "1.3rem",
+									fontWeight: "600",
+									letterSpacing: "1px",
+									color: "#B46BD1",
+								}}
+							>
+								Next branch
+							</h3>
+							<p
+								style={{
+									fontSize: "0.85rem",
+									color: "#3D3D3D",
+									lineHeight: "1.6rem",
+								}}
+							>
+								weekend
+							</p>
+							<p
+								style={{
+									fontSize: "0.85rem",
+									color: "#3D3D3D",
+									lineHeight: "1.6rem",
+								}}
+							>
+								sat & sun
+							</p>
+						</div>
+            </div>
+          </div>
+            </div>
+        </div>
+		</div>
 		</>
 	);
 };

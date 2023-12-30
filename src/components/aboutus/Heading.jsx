@@ -1,6 +1,6 @@
 import React from "react";
 
-const Heading = ({ content , left}) => {
+const Heading = ({ content , subContent , left}) => {
   return (
     <div
       className="container heading"
@@ -15,7 +15,7 @@ const Heading = ({ content , left}) => {
         position:"relative",
         top:"-0.7992vw"
       }}></span>
-      <div className="h-line" style={{maxHeight:"0.09vw" , minWidth:`${left}`}}></div>
+      <div className="h-line" style={{maxHeight:"0.09vw" , minWidth:`${left}` , marginRight:"1rem"}}></div>
       <div
         className="content heading-all"
         style={{
@@ -24,31 +24,32 @@ const Heading = ({ content , left}) => {
           position: "relative",
           top: "-1.332vw",
           backgroundColor:"#fff",
-          flexShrink:"0",
-          maxWidth:"40vw",
+          // flexShrink:"0",
+          maxWidth:"50vw",
         }}
       >
-        <h3
+        <h4
           style={{
             color: "rgba(173, 96, 200, 0.90)",
             fontSize: "clamp(1.2rem , 4vw , 2rem)",
             fontWeight: "750",
-            letterSpacing:"0.11vw",
+            // letterSpacing:"0.11vw",
             fontStyle:"normal",
+            lineHeight:"1.1"
           }}
         >
           {content}
-        </h3>
+        </h4>
         <p style={{
           fontFamily:"Open Sans",
           fontSize:"clamp(0.66rem , 1.33vw , 1rem)",
           fontWeight:"400",
           color: "rgba(0, 0, 0, 0.65)",
-          lineHeight:"1.1",
-          opacity:"0.8"
+          lineHeight:"1.3",
+          opacity:"0.9",
+          marginTop:"0.6rem"
         }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-          mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla.
+          {subContent}
         </p>
       </div>
     </div>

@@ -20,7 +20,7 @@ const University = ({color , textCol}) => {
         background: color,
         color:textCol,
         maxWidth:"100vw",
-        minHeight:"35vw",
+        minHeight:"38vw",
     }}>
         <div className="container1" style={{
             textAlign:"center"
@@ -30,38 +30,48 @@ const University = ({color , textCol}) => {
                 fontFamily:"Open Sans",
                 fontStyle:"normal"
             }}>
+                <div className="para" style={{
+                    fontWeight:"100",
+                    opacity:"0.8",
+                    fontSize:"clamp(0.6rem , 1.5vw , 1rem)",
+                }}>
+                In the footsteps of giants
+                </div>
                 <div style={{
                     fontSize:"clamp(1.2rem , 3vw , 2.4rem)",
                     fontWeight:"600",
                     color:"#fff"
-                }}>Our Collaborative Network</div>
+                }}>Top Universities where our mentors teach </div>
                 <div className="para" style={{
                     fontWeight:"100",
                     opacity:"0.8",
-                    fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
+                    fontSize:"clamp(0.65rem , 2vw , 1rem)",
+                    width:"100%",
+                    display:"flex",
+                    justifyContent:"center"
                 }}>
-                Meet the Key Players Shaping Our Design Ecosystem
+                <div style={{width:"75%"}}>Our Mentors are the guardians of knowledge, passing down valuable insights and life lessons to the next generation. Their role goes beyond imparting information; they cultivate talent and nurture ambition.  </div>
                 </div>
             </div>
         </div>
         <div className="container2-counter" style={{
             display:"flex",
-            flexWrap:"wrap",
+            flexWrap:"no-wrap",
             flexDirection:"row",
             justifyContent:"space-evenly",
             textAlign:"center",
             paddingTop:"2.8vw",
             fontWeight:"800",
             fontSize:"1.67vw",
-            paddingBottom:"1.7vw"
+            paddingBottom:"1.7vw",
         }}>
             {
                 university && university.map((uniEle) => (
-                    <span style={{
+                    <span className='university-logo' style={{
                         fontFamily:"bebasneue",
                         fontStyle:"normal"
                     }}>
-                        {uniEle.attributes.name}
+                        <img style={{maxWidth:"80%"}} src={import.meta.env.VITE_STRAPI_SERVER_URL + uniEle.attributes?.logo?.data?.attributes.url} alt={uniEle.name} />
                     </span>
                 ))
             }

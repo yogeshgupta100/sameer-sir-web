@@ -11,7 +11,7 @@ const Aboutus = () => {
     <div id='about'>
         <Header/>
         <Hero/>
-        <Section1 text={"What Sets Us Apart"}/>
+        <Section1 text={"Our working at Dxolve"}/>
         <Teachers/>
         <Brands color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="white"/>
         <Section1 text={"Our Commitment"}/>
