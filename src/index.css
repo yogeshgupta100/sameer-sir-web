@@ -85,29 +85,6 @@ code {
 	cursor: pointer;
 }
 
-/* .about-first{
-  background: url("/assets/about_hero_bg.jpg"), lightgray 50% / cover no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0;
-  background-repeat: no-repeat;
- max-width: 100%;
- min-height: 38rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.about-first h3 {
-	max-width: 70%;
-	color: #fff;
-	font-family: Raleway;
-	font-size: 4.22vw;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 5.55vw;
-} */
-
 .about-first2 {
 	background: #fff;
 	box-shadow: 0.069vw 0.069vw 1.04vw 0.104vw rgba(0, 0, 0, 0.15);
@@ -276,9 +253,10 @@ code {
 	font-size: 1.67vw;
 	font-weight: 600;
 	letter-spacing: 0.03312vw;
-	line-height: 0.5;
+	line-height: 0.8;
 	font-family: Open Sans;
 	font-style: normal;
+	color: #ad60c8;
 }
 
 .first-para p {
@@ -1242,12 +1220,18 @@ button {
 	.resource-content1 {
 		display: none;
 	}
-.hamburger1{
-	display: grid;	
+.bar{
+	min-width: 100% !important;
+}
+.bar >li{
+	font-size: clamp(1rem , 1vw , 1.4rem) !important;
 }
 }
 
 @media screen and (max-width: 768px) {
+	.hamburger1{
+		display: grid;	
+	}
 .university-logo img{
 	max-width: 50% !important;
 }
@@ -1383,14 +1367,38 @@ button {
 .section1-main .second{
 	background: transparent !important;
 	width: 100% !important;
-	margin: 0;
+	margin-top: 1rem !important;
+}
+.bar >li{
+	font-size: clamp(1.2rem , 2vw , 1.5rem);
 }
 .section1-main2{
 	display: flex !important;
 	flex-direction: column;
+	width: 100% !important;
+	margin-top: 2rem !important;
 	.first{
+		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		.first-para h4,p{
+			color: #fff !important;
+			font-size: clamp(0.7rem , 2vw , 1rem);
+		}
+		.first-content{
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
+		.first-content2{
+			display: flex;
+			flex-direction: column-reverse;
+			gap: 1rem;
+		}
+		.first-img1 , .first-img2{
+			aspect-ratio: 2/3 !important;
+		}
 	}
 }
 .heading-all{
