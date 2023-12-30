@@ -65,7 +65,7 @@ const Teachers = () => {
 			<div
 				className="main-card--container container"
 				style={{
-					maxWidth:"100%",
+					width:"100%",	
 					display:"flex",	
 					gap:"1.3rem",
 				}}

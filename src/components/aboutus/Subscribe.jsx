@@ -1,9 +1,8 @@
 import { useRef, useState, useEffect } from "react";
-import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { Link, NavLink } from "react-router-dom";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaYoutube, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import { FaYoutube, FaLinkedinIn, FaMediumM } from "react-icons/fa";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Subscribe = () => {
@@ -172,7 +171,7 @@ const Subscribe = () => {
 								<FaLinkedinIn />
 							</span>
 							</NavLink>
-							<NavLink  to={""}>
+							<NavLink  to={"https://medium.com/@dxolve_official"}>
 							<span style={{
 								display: "flex",
 								alignItems: "center",
@@ -186,7 +185,7 @@ const Subscribe = () => {
 								width: "30px",
 								cursor: "pointer"
 							}}>
-								<FaFacebookF />
+								<FaMediumM />
 							</span>
 							</NavLink>
 						</div>

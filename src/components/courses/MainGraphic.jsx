@@ -6,7 +6,6 @@ import Teachers from '../home/Teachers'
 import AccordionApi from '../home/AccordionApi'
 import AllCollapseExample from '../home/Accordion'
 import Whycourse from './Whycourse'
-import Pricing from './Pricing'
 import Curriculum from './Curriculum'
 import Howyoulearn from './Howyoulearn'
 import { useNavigate } from 'react-router-dom'
@@ -54,7 +53,6 @@ const Course = () => {
         <Howyoulearn data={courseData} />
         <Curriculum data={courseData} />
         <Teachers data={courseData} />
-        {/* <Pricing data={courseData} /> */}
         <EnrollingProcess/>
         <Testimonies data={courseData} />
         <AllCollapseExample menuData={menuData} data={courseData} />
