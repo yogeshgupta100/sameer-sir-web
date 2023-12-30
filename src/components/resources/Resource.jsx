@@ -20,14 +20,13 @@ const Resource = ({designCardData}) => {
         </div>
       <div className="full-body" style={{position:"relative" , maxWidth:"100vw" , marginBottom:"3vw" , zIndex:"-100" , display:"flex" , flexDirection:"column" , alignItems:"center"}}>
         <Small_nav/>
-        <LandingPage imageurl={"/public/assets/home-landing-img.png"}/>
+        <LandingPage imageurl={"/assets/home-landing-img.png"}/>
         <div
         className=" about-first2"
-        // style={{ position: "relative", bottom: "-23.98vw" , display:"flex", alignItems:"center" , minHeight:"27.75vw" , paddingLeft:"3.33vw"}}
       >
         <div
           className="container about-content"
-          style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)" , gap:"1.11vw" , justifyContent:"center", height:"19.98vw" , alignContent:"center"}}
+          style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" , gap:"1.11vw" , justifyContent:"center", height:"19.98vw" , alignContent:"center"}}
         >
           <div className="part1" 
           style={{width:"100%", textAlign:"center" , fontFamily:"Open Sans" , borderRight:"0.069vw solid #CDCDCD" , paddingRight:"3.33vw"}} 
@@ -107,7 +106,7 @@ const Resource = ({designCardData}) => {
       </div>
       </div>
       <Resources/>
-      <div className="flip-resources" style={{marginTop:"16.65vw"}}>
+      <div className="flip-resources" style={{display:"flex"}}>
         <Resources/>  
       </div>
       <div className="container" style={{marginTop:"16.65vw"}} id='blogs'>

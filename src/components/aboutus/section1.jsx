@@ -5,7 +5,7 @@ const Section1 = ({text}) => {
   return (
     <>
         <div className="section1-main container">
-        <Heading content={text} left="30vw"/>
+        <Heading content={text} subContent={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla."} left="30vw"/>
         <div className="section1-main2">
           <div className="first">
               <div className='first-content' style={{display:"flex" , alignItems:"center" , justifyContent:"space-around"}}>
@@ -18,7 +18,7 @@ const Section1 = ({text}) => {
               <p>UX Lead</p>
             </div>
               </div>
-            <div className='first-content2' style={{display:"flex" , alignItems:"center" , justifyContent:"space-around"}}>
+            <div className='first-content2' style={{display:"flex" , alignItems:"center" , justifyContent:"space-around" , position:"relative"}}>
             <div className="first-para">
               <h4>
                 Ammy Jay

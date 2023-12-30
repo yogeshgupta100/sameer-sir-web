@@ -38,7 +38,7 @@ const Graphic = ({ data }) => {
 
 	return (
 		<>
-			<div className="landing-page" style={{ height: "20vw", position: "relative", marginBottom: "31vw" }}>
+			<div className="landing-page" style={{ height: "20vw", position: "relative", marginBottom: "31vw"}}>
 				<div
 					className="centered-text container"
 					style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", height: "70%" }}
@@ -171,8 +171,8 @@ const Graphic = ({ data }) => {
 				<div
 					className=" about-first2"
 					style={{
-						position: "absolute",
-						// bottom: "-33rem",
+						position: "relative",
+						bottom: "-33rem",
 						display: "flex",
 						alignItems: "center",
 						height: "25rem",

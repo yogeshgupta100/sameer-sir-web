@@ -29,6 +29,81 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+.content-container {
+	width: 100%;
+	margin-top: 5.55vw;
+  }
+  .content-container h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+  }
+  
+  .content-container h2 {
+	font-size: 2rem;
+	margin-bottom: 0.8rem;
+  }
+  
+  .content-container h3 {
+	font-size: 1.8rem;
+	margin-bottom: 0.6rem;
+  }
+  
+  .content-container h4 {
+	font-size: 1.5rem;
+	margin-bottom: 0.4rem;
+  }
+  
+  .content-container h5 {
+	font-size: 1.2rem;
+	margin-bottom: 0.3rem;
+  }
+  
+  .content-container h6 {
+	font-size: 1rem;
+	margin-bottom: 0.2rem;
+  }
+
+  .content-container p {
+	font-size: 1.1rem;
+	line-height: 1.6;
+	margin-bottom: 1.2rem;
+  }
+  
+.content-container ul, ol {
+	margin-bottom: 1.2rem;
+	padding-left: 1.5rem;
+  }
+  
+  .content-container li {
+	font-size: 1.1rem;
+	line-height: 1.6;
+  }
+  
+  .content-container blockquote {
+	margin: 2rem 0;
+	padding: 1rem;
+	border-left: 3px solid #b46bd1;
+  }
+
+  .content-container pre {
+	margin-bottom: 1.2rem;
+	padding: 1rem;
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	overflow-x: auto;
+  }
+  
+  .content-container code {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1rem;
+  }
+
+  .content-container a {
+	color: #007bff;
+	text-decoration: underline;
+  }
+
 .course-container {
 	max-width: 100vw;
 	display: grid;
@@ -970,7 +1045,7 @@ button {
 	position: sticky;
 }
 .article-image {
-	background: url("/assets/article-img.jpeg");
+	/* background: url("/assets/article-img.jpeg"); */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -982,7 +1057,7 @@ button {
 	border-radius: 50%;
 	max-width: 3.33vw;
 	min-height: 3.33vw;
-	background: url("https://s3-alpha-sig.figma.com/img/2327/78cf/fe933eacc50f758052621a0d808187c6?Expires=1699833600&Signature=Kyx~SP1qo-URdKtf0yOBbWst9Euhf2bk0vX6nPjiYhLXeNDg9bl2iHPFW7fOrw9RusmHnnb9oP0S5XsAPPKZcd0rIXM24mdKcX6O593O3KRdS39s0nPS7HmbUbCH~k7Sj7f1dYcsiDDck2SMPtA6nsU5lyE2pUigoxjx9fJ01ny-TQ6ElL0ruc7cP4OAONxNiYXauLupF~2t7~fXRWXehifxruzU0F7Nbq1jnwlwBti-58N54PAOSRZsBN7BOV27EOgkWqNiNinZ3Hf7b8GvRC2dUuYBI6Onj5WyM69AXfY5N1mMEwJRJrZDS7UkMI3cnLN9xIdWFn5InAqCu6-48w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+	background: url("/public/assets/man1.jpg"),
 		lightgray 50% / cover no-repeat;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1229,9 +1304,40 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+	.content-container {
+		padding: 5%;
+	  }
+	
+	  .content-container h1 {
+		font-size: 2.2rem;
+	  }
+	
+	  .content-container h2 {
+		font-size: 1.8rem;
+	  }
+	
+	  .content-container h3 {
+		font-size: 1.6rem;
+	  }
+	
+	  .content-container h4 {
+		font-size: 1.4rem;
+	  }
+	
+	  .content-container h5 {
+		font-size: 1.2rem;
+	  }
+	
+	  .content-container h6 {
+		font-size: 1rem;
+	  }
+	
+	  .content-container p {
+		font-size: 1rem;
+	  }
 	.hamburger1{
-		display: grid;	
-	}
+	display: grid;	
+}
 .university-logo img{
 	max-width: 50% !important;
 }
@@ -1521,10 +1627,4 @@ footer .right-container ul li a {
 	footer .right-container ul li {
 		margin-top: 5px !important;
 	}
-}
-
-.content-container blockquote {
-	margin: 2rem 0;
-	padding-left: 1rem;
-	border-left: 3px solid #b46bd1;
 }
