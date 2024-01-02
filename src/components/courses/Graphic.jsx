@@ -53,8 +53,8 @@ const Graphic = ({ data }) => {
             <div className="landing-page" id="home-main">
 			<div className="landing-page-content">
 			<div className="centered-text">
-				<h2>{data?.attributes?.description}</h2>
-				<p>Join us and up-skill yourself to compete with the current industry trends and the booming job markets.</p>
+				<h2>{data?.attributes?.name}</h2>
+				<p>{data?.attributes?.description}</p>
 				<div className="buttons" style={{ display: "flex" }}>
 							<button
 								type="button"
@@ -125,7 +125,7 @@ const Graphic = ({ data }) => {
 						</div>
 			</div>
 				<span className="landing-img">
-					<img src={data?.attributes?.thumbnail?.data?.attributes?.url} style={{
+					<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}`+data?.attributes?.thumbnail?.data?.attributes?.url} style={{
 						maxWidth:"40vw",
 						aspectRatio:"1/0.99",
 						marginLeft:"0.5rem"
@@ -136,36 +136,32 @@ const Graphic = ({ data }) => {
             </div>
             <div className="about" style={{maxWidth:"100vw" , display:"flex" , justifyContent:"center" }}>
             <div className=" about-first2">
-            <div className="container about-content">
-              <div className="part1">
-                <h3>Course Description</h3>
-                <p>
+            <div className="container about-content course-detail" style={{display:"grid" , gridTemplateColumns:"8fr 1fr 4fr 1fr 4fr" , textAlign:"center"}}>
+              <div className="part1" style={{display:"flex" , flexDirection:"column" , alignItems:"center"}}>
+                <h3 style={{ fontSize: "clamp(0.56rem , 2vw , 1.5rem)" }}>Course Description</h3>	
+                <span style={{ fontSize: "clamp(0.8rem , 1.3vw , 1rem)" , lineHeight:"1.3" , marginTop:"0.5rem" , color:"#3D3D3D"}}>
                   At Dxolve , we are passionate about empowering
                   creative minds to shape the digital world of tomorrow. We
                   believe in the transformative power of design, and our mission
                   is to provide an exceptional learning experience that nurtures
                   the design talents of individuals like you.
-                </p>
-                <p>
-                  We are a team of dedicated designers, educators, and industry
-                  professionals who are committed to nurturing creative talent
-                  and fostering innovation
-                </p>
-              </div>
-              
-			  <div className="v-line" style={{minWidth:"0.07vw" , minHeight:"100%"}}></div>
-              <div className="part2">
-                <h3>Course Duration</h3>
-                <p>
-                  {data?.attributes?.batches[0].duration}
-                </p>
+                </span>
               </div>
 			  <div className="v-line" style={{minWidth:"0.07vw" , minHeight:"100%"}}></div>
-              <div className="part2">
+			  <div className="h-line" style={{minWidth:"100%" , height:"0.1vw" , display:"none" , margin:"auto"}}></div>
+              <div className="part3" style={{display:"flex" , flexDirection:"column" , alignItems:"center"}}>
                 <h3>Next Batch</h3>
-                <p>
+                <span style={{ fontSize: "clamp(0.8rem , 1.3vw , 1rem)" , lineHeight:"1.3" , marginTop:"0.5rem" , color:"#3D3D3D"}}>
                   {data?.attributes?.batches[0].duration}
-                </p>
+                </span>
+              </div>
+			  <div className="v-line" style={{minWidth:"0.07vw" , minHeight:"100%"}}></div>
+			  <div className="h-line" style={{minWidth:"100%" , height:"0.1vw" , display:"none" , margin:"auto"}}></div>
+			  <div className="part2" style={{display:"flex" , flexDirection:"column" , alignItems:"center"}}>
+                <h3>Course Duration</h3>
+                <span style={{ fontSize: "clamp(0.8rem , 1.3vw , 1rem)" , lineHeight:"1.3" , marginTop:"0.5rem" , color:"#3D3D3D"}}>
+                  {data?.attributes?.batches[0].duration}
+                </span>
               </div>
             </div>
           </div>

@@ -10,7 +10,8 @@ const DesignCard = ({ currEle }) => {
           gridTemplateColumns: "repeat(2,auto)",
           gap: "1.11vw",
           justifyContent:"center",
-          marginTop:"4.44vw"
+          marginTop:"4.44vw",
+          width:"100%"
         }}
       >
         <div
@@ -46,7 +47,7 @@ const DesignCard = ({ currEle }) => {
             backgroundSize:"cover",
             width:"40%",
             aspectRatio:"3/3",
-            borderRadius: "0.694vw"
+            borderRadius: "0.694vw",
           }}>
           </div>
         </div>
