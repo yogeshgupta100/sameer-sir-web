@@ -136,6 +136,7 @@
 }
 
 .chat .bot {
+	color: #000;
 	background-color: #F7E1FF;
 }
 
@@ -150,6 +151,7 @@
 }
 
 .option {
+	color: #000;
 	display: block;
 	border: 0.069vw solid #B86CD2;
 	background-color: transparent;
