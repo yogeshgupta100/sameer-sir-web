@@ -918,24 +918,25 @@ button {
 	max-width: 135.26vw;
 	min-height: 45.51vw;
 	flex-shrink: 0;
-	background: linear-gradient(254deg, #6c0082 0.31%, #44006f 46.97%, #7a0089 114.38%);
+	background: linear-gradient(254deg, #6C0082 0.31%, #44006F 46.97%, #7A0089 114.38%);
 }
-.curr-image {
+/* .curr-image {
 	background: url("/assets/curriculum-women.png");
 	position: absolute;
-	width: 30vw;
+	width: 60%;
 	height: 70%;
 	flex-shrink: 0;
 	background-position: center;
-	background-size: cover;
-	bottom: 0;
-	right: 0rem;
-}
+	background-size: contain;
+	background-repeat: no-repeat;
+	bottom: -2rem;
+	right: -5.5rem;
+} */
 .text-grid {
 	margin-top: 5.55vw;
 	display: grid;
-	grid-template-columns: repeat(3, auto);
-	max-width: 60%;
+	grid-template-columns: repeat(3, 1fr);
+	max-width: 85%;
 	gap: 3.33vw;
 }
 .text-content {
@@ -1301,9 +1302,33 @@ button {
 .bar >li{
 	font-size: clamp(1rem , 1vw , 1.4rem) !important;
 }
+
 }
 
 @media screen and (max-width: 768px) {
+	.enrolling{
+		grid-template-columns: 1fr !important;
+		justify-content: center !important;
+		align-items: center !important;
+	}
+	.enrolling-process{
+		display: none;
+	}
+	.how-you-learn{
+		grid-template-columns: repeat(2,1fr) !important;
+	}
+	.why-cards{
+		grid-template-columns: repeat(2,1fr) !important;
+	}
+	.why-this-main{
+		min-height: 80vw;
+	}
+	.card-para{
+		font-size: clamp(0.6rem , 2vw , 1.3rem) !important;
+	}
+	.card-heading{
+		font-size: clamp(0.8rem , 2.5vw , 1.5rem) !important;
+	}
 	.content-container {
 		padding: 5%;
 	  }
