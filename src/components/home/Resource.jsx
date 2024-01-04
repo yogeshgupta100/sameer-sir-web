@@ -5,7 +5,6 @@ const Resource = () => {
   return (
     <>
       <div className="resource-page container">
-        <span><Heading content="Unlock a world of knowledge with our resource library" subContent={"Explore our resource hub—a treasure trove of knowledge, tools, and inspiration. From personal growth to professional development, find what you need to thrive. Dive in and empower your journey today."} left="20.5%"/></span>
         <div className="resource-content2">
         <div className="resource-container" style={{display:"flex" , justifyContent:"space-between" , width:"100vw"}}>
         <div className="vid1" style={{ width:"50%" }}>
@@ -43,7 +42,7 @@ const Resource = () => {
         </div>
         
         </div>
-        <div className="resource-content1">
+        <div className='resource-content1'>
         <div className="vid1"></div>
         <div className="vid2" style={{position:"relative"}}></div>
         <div className="vid-content" style={{width:"100%" , marginRight:"0"}}>
@@ -66,3 +65,4 @@ const Resource = () => {
 }
 
 export default Resource
+

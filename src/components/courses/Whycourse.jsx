@@ -107,6 +107,7 @@ const Whycourse = ({data}) => {
             </p>
             <button
               type="button"
+              onClick={() => window.scrollTo(0, 0)}
               style={{
                 borderRadius: "0.5rem",
                 border: "0.076vw solid #fff",

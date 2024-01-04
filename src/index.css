@@ -507,7 +507,7 @@ code {
 .resource-page {
 	width: 100vw;
 	padding: 0;
-	margin: 11vw 0vw 11vw 6vw;
+	margin: 0vw 0vw 11vw 6vw;
 }
 .resource-content1 {
 	width: 100%;
@@ -521,7 +521,7 @@ code {
 .resource-container {
 	display: flex;
 	width: 100%;
-	margin: 1rem 0;
+	margin: 1rem 0 0;
 	padding-right: 3rem;
 	justify-content: space-between;
 	gap: 1rem;
@@ -654,7 +654,7 @@ button {
 }
 
 #toggle1:checked ~ .menu1 {
-	height: 340px;
+	height: auto;
 }
 
 #toggleAccordion:checked + .hamburger1 .top {
@@ -675,7 +675,7 @@ button {
 }
 
 #toggleAccordion:checked ~ .menu1 {
-	height: 340px;
+	height: auto;
 }
 
 .menu1 {
@@ -1058,7 +1058,7 @@ button {
 	border-radius: 50%;
 	max-width: 3.33vw;
 	min-height: 3.33vw;
-	background: url("/public/assets/man1.jpg"),
+	background: url("/assets/man1.jpg"),
 		lightgray 50% / cover no-repeat;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1313,15 +1313,15 @@ button {
 	}
 	
 }
+.small-nav{
+	display: none !important;
+}
 
 }
 
 @media screen and (max-width: 768px) {
-	.design{
-		display: none !important;
-	}
-	.DesignCard{
-		display:none !important;
+	.design {
+		display: none;
 	}
 	.card-contain{
 		grid-template-columns: repeat(2,1fr) !important;

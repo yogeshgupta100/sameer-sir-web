@@ -3,22 +3,22 @@ import React from "react";
 const DesignCard = ({ currEle }) => {
   return (
     <>
-      <div
+      <div id="designCards"
         className="designCard container"
         style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(2,auto)",
-          gap: "1.11vw",
+          // display: "grid",
+          // gridTemplateColumns: "1fr",
+          // gap: "1.11vw",
           justifyContent:"center",
           marginTop:"4.44vw",
-          width:"100%"
+          minWidth:"100%"
         }}
       >
         <div
           className="card"
           style={{
             width: "100%",
-            height: "fit-content",
+            // height: "fit-content",
             display: "flex",
             padding: "1.11vw",
             flexDirection:"row",
@@ -26,7 +26,8 @@ const DesignCard = ({ currEle }) => {
             backgroundColor:"#F6F6F1",
           }}
         >
-          <div className="content" style={{width:"60%" , margin:"1.11vw 0.888vw"}}>
+          {/* , margin:"1.11vw 0.888vw" */}
+          <div className="content" style={{width:"100%" }}>
             <p>
               {currEle.content}
             </p>
@@ -35,7 +36,8 @@ const DesignCard = ({ currEle }) => {
               borderRadius:"0.4677vw",
               background: "#B46BD1",
               color:"#fff",
-              padding:"0.888vw 2.22vw"
+              padding:"0.888vw 2.22vw",
+              marginTop:"0.8rem"
             }}>
               View now
               </button>
@@ -45,7 +47,7 @@ const DesignCard = ({ currEle }) => {
             backgroundPosition:"center",
             backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
-            width:"40%",
+            width:"80%",
             aspectRatio:"3/3",
             borderRadius: "0.694vw",
           }}>

@@ -3,15 +3,6 @@ import Heading from "../aboutus/Heading";
 import EmpCard from "../aboutus/card";
 
 const Teachers = ({empData}) => {
-// 	const [empData, setEmpData] = useState([]);
-
-//   useEffect(() => {
-//     (async () => {
-//       const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/employees?populate=*`);
-//       const data = await res.json();
-//       setEmpData(data.data);
-//     })();
-//   }, []);
 
 	return (
 		<div className="container" style={{margin:"11vw 0 0" , paddingBottom:"0" , minWidth:"100%"}}>
@@ -78,7 +69,7 @@ const Teachers = ({empData}) => {
 								overflow:"hidden"
 							}}
 						>
-							<EmpCard currEle={currEle} />
+							<EmpCard currEle={currEle?.attributes || currEle} />
 						</div>
 					);
 				})}

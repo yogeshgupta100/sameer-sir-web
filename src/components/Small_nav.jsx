@@ -36,7 +36,7 @@ const Small_nav = () => {
             </li>
             <li>
               <NavLink
-                to={"/graphic "}
+                to={"/blogs"}
                 style={{
                   textDecoration: "none",
                 }}
@@ -57,8 +57,8 @@ const Small_nav = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to={"/ui/ux"}
+              <a
+                href='#portfolio'
                 style={{
                   textDecoration: "none",
                 }}
@@ -75,11 +75,11 @@ const Small_nav = () => {
                 >
                   Our gallery
                 </span>
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to={"/virtualReality"}
+              <a
+                href={"#designCards"}
                 style={{
                   textDecoration: "none",
                 }}
@@ -96,11 +96,11 @@ const Small_nav = () => {
                 >
                   Design challenges
                 </span>
-              </NavLink>
+              </a>
             </li>
             <li>
               <NavLink
-                to={"/all"}
+                to={"/resource"}
                 style={{
                   textDecoration: "none",
                 }}

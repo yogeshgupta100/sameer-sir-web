@@ -4,7 +4,7 @@ import Heading from "../aboutus/Heading";
 const Portfolio = () => {
 	return (
 		<>
-			<div
+			<div id="portfolio"
 				className="container"
 				style={{
 					padding: "6.66vw 0 0",

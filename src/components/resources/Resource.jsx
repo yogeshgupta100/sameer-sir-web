@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Header'
 import LandingPage from '../home/LandingPage'
 import Resources from '../home/Resource'
@@ -46,12 +46,11 @@ const Resource = ({designCardData}) => {
     <>
       <div className="banner" style={{
           boxShadow: "0 0.069vw 0.555vw 0 rgba(0, 0, 0, 0.25)",
-          position:"sticky"
         }}>
       <Header/>
         </div>
-      <div className="full-body" style={{position:"relative" , maxWidth:"100vw" , marginBottom:"3vw" , zIndex:"-100" , display:"flex" , flexDirection:"column" , alignItems:"center"}}>
-        <Small_nav/>
+      <div className="full-body" style={{position:"relative" , maxWidth:"100vw" , marginBottom:"3vw", display:"flex" , flexDirection:"column" , alignItems:"center"}}>
+        <Small_nav/>  
         <div
         className="full"
         style={{
@@ -89,10 +88,10 @@ const Resource = ({designCardData}) => {
             </div>
             <div className="about" style={{maxWidth:"100vw" , display:"flex" , justifyContent:"center"}}>
             <div className=" about-first2">
-            <div className="container about-content course-detail" style={{display:"grid" , gridTemplateColumns:"8fr 1fr 4fr 1fr 4fr" , textAlign:"center"}}>
+            <div className="container about-content course-detail" style={{display:"grid" , gridTemplateColumns:"4fr 1fr 4fr 1fr 4fr" , textAlign:"center"}}>
               <div className="part1" style={{display:"flex" , flexDirection:"column" , alignItems:"center"}}>
-                <h3 style={{ fontSize: "clamp(0.56rem , 2vw , 1.5rem)" }}>50+</h3>	
-                <p>Articles</p>
+                <span style={{ fontSize: "clamp(1.5rem , 3vw , 2.5rem)"  , fontWeight:"600" , color:"#B46BD1" , lineHeight:"1.5"}}>50+</span>	
+                <p style={{fontSize:"clamp(1rem , 2vw , 1.5rem)" , color:"#B46BD1"}}>Articles</p>
                 <span style={{ fontSize: "clamp(0.8rem , 1.3vw , 1rem)" , lineHeight:"1.3" , marginTop:"0.5rem" , color:"#3D3D3D"}}>
                 Join us on a journey into the future of digital  design and technology as we unveil the hottest trends set to shape the digital landscape in now and beyond.
                 </span>
@@ -100,8 +99,8 @@ const Resource = ({designCardData}) => {
 			  <div className="v-line" style={{minWidth:"0.07vw" , minHeight:"100%"}}></div>
 			  <div className="h-line" style={{minWidth:"100%" , height:"0.1vw" , display:"none" , margin:"auto"}}></div>
               <div className="part3" style={{display:"flex" , flexDirection:"column" , alignItems:"center"}}>
-                <h3>30+</h3>
-                <p>Tutorials</p>
+              <span style={{ fontSize: "clamp(1.5rem , 3vw , 2.5rem)"  , fontWeight:"600" , color:"#B46BD1" , lineHeight:"1.5"}}>30+</span>	
+              <p style={{fontSize:"clamp(1rem , 2vw , 1.5rem)" , color:"#B46BD1"}}>Tutorials</p>
                 <span style={{ fontSize: "clamp(0.8rem , 1.3vw , 1rem)" , lineHeight:"1.3" , marginTop:"0.5rem" , color:"#3D3D3D"}}>
                 Unlock the secrets to creating exceptional digital experiences with our in-depth tutorial on mastering user-centered approach.
                 </span>
@@ -109,8 +108,8 @@ const Resource = ({designCardData}) => {
 			  <div className="v-line" style={{minWidth:"0.07vw" , minHeight:"100%"}}></div>
 			  <div className="h-line" style={{minWidth:"100%" , height:"0.1vw" , display:"none" , margin:"auto"}}></div>
 			  <div className="part2" style={{display:"flex" , flexDirection:"column" , alignItems:"center"}}>
-                <h3>40+</h3>
-                <p>Design challenges</p>
+        <span style={{ fontSize: "clamp(1.5rem , 3vw , 2.5rem)"  , fontWeight:"600" , color:"#B46BD1" , lineHeight:"1.5"}}>40+</span>	
+        <p style={{fontSize:"clamp(1rem , 2vw , 1.5rem)" , color:"#B46BD1"}}>Design challenges</p>
                 <span style={{ fontSize: "clamp(0.8rem , 1.3vw , 1rem)" , lineHeight:"1.3" , marginTop:"0.5rem" , color:"#3D3D3D"}}>
                 Welcome to Dxolve's Design Challenges, where innovation meets practicality, and where theory becomes hands-on experience.
                 </span>
@@ -120,10 +119,9 @@ const Resource = ({designCardData}) => {
             </div>
         </div>
       </div>
+      <div className='container'><Heading content="Tutorials" subContent={"Immerse yourself in a world of guided learning, designed to empower learners of all levels. Our in-depth tutorials are crafted to simplify complex concepts, providing a seamless path from understanding to expertise."} left="20.5%"/></div>
       <Resources/>
-      <div className="flip-resources" style={{display:"flex" , flexDirection:"row-reverse"}}>
-        <Resources/>  
-      </div>
+        {/* <Resources/>   */}
       <div className="container" style={{marginTop:"16.65vw"}} id='blogs'>
         <Heading content={"Blogs"} left={"30.5%"} />
         <div className="blogs-container container" style={{width:"95%", paddingTop:"2rem"}}>
