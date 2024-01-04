@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState , useEffect} from 'react'
 import Hero from './Hero'
 import Section1 from './section1'
 import Brands from '../home/Brands'
@@ -7,12 +7,21 @@ import Header from '../Header'
 import Teachers from '../home/Teachers'
 
 const Aboutus = () => {
+  const [empData, setEmpData] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/employees?populate=*`);
+      const data = await res.json();
+      setEmpData(data.data);
+    })();
+  }, []);
   return (
     <div id='about'>
         <Header/>
         <Hero/>
         <Section1 text={"Our working at Dxolve"}/>
-        <Teachers/>
+        <Teachers empData={empData}/>
         <Brands color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="white"/>
         <Section1 text={"Our Commitment"}/>
         <div style={{

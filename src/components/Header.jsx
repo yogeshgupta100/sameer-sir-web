@@ -41,11 +41,11 @@ const Header = () => {
 						</span>
 					</label>
   
-    <nav className="menu1" style={{zIndex:"10" , position:"absolute" , top:"6.5vw" , maxWidth:"100%" , marginLeft:"-1.5rem" , marginTop:"0"}}>
-    <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} >About us</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} >Courses</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} >Resources</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff" , marginBottom:"0"}} >Career</button>
+    <nav className="menu1" style={{zIndex:"10" , position:"absolute" , top:"6.5vw" , maxWidth:"100%" , marginLeft:"-1.5rem" , marginTop:"0" , background:"#fff"}}>
+    <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} >About us</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} >Courses</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} >Resources</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1" , marginBottom:"0"}} >Career</button>
     </nav>
 					<div
 						className="collapse navbar-collapse"
@@ -118,7 +118,7 @@ const Header = () => {
 								>
 									Courses
 									<img
-										src="assets/down-arrow.png"
+										src="/assets/down-arrow.png"
 										alt="arrow"
 										style={{
 											maxWidth: "2.22vw",
@@ -150,7 +150,7 @@ const Header = () => {
 								>
 									Resources
 									<img
-										src="assets/down-arrow.png"
+										src="/assets/down-arrow.png"
 										alt="arrow"
 										style={{
 											maxWidth: "2.22vw",
@@ -180,7 +180,7 @@ const Header = () => {
 								>
 									Career
 									<img
-										src="assets/down-arrow.png"
+										src="/assets/down-arrow.png"
 										alt="arrow"
 										style={{
 											maxWidth: "2.22vw",

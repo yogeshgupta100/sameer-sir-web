@@ -3,8 +3,6 @@ import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useToken } from "../../contexts/TokenProvider";
 import { useUser } from "../../contexts/UserProvider";
-import Header from "../Header";
-import LandingPage from "../home/LandingPage";
 
 const Graphic = ({ data }) => {
 	const { courseId } = useParams();
@@ -55,7 +53,7 @@ const Graphic = ({ data }) => {
 			<div className="centered-text">
 				<h2>{data?.attributes?.name}</h2>
 				<p>{data?.attributes?.description}</p>
-				<div className="buttons" style={{ display: "flex" }}>
+				<div className="buttons" style={{ display: "flex"}}>
 							<button
 								type="button"
 								className="button"
@@ -78,17 +76,21 @@ const Graphic = ({ data }) => {
 									type="button"
 									className="btn"
 									style={{
-										borderRadius: "0.6rem",
-										border: "1.1px solid #fff",
-										marginRight: "1rem",	
-										padding: "0.625rem 3.3vw",
-										fontWeight: "500",
-										fontSize: "clamp(0.8rem , 1.2vw , 1.25rem)",
-										maxHeight: "3rem",
-										whiteSpace:"nowrap",
+									display: "inline-block",
+									borderRadius: "0.6rem",
+									border: "1.1px solid #fff",
+									marginRight: "1rem",
+									padding: "0.5rem 1rem",
+									fontWeight: "500",
+									fontSize: "clamp(0.8rem, 1.2vw, 1.25rem)",
+									whiteSpace: "nowrap",
+									width: "auto",
+									maxWidth: "100%",
+									boxSizing: "border-box",
+									height:"2.5rem"
 									}}
 								>
-									<span>Download syllabus</span>
+									Download Syllabus
 								</button>
 							</NavLink>
 						</div>

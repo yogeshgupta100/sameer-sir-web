@@ -536,7 +536,7 @@ code {
 	align-items: center;
 	flex-shrink: 0;
 	border-radius: 0.555vw;
-	background: url("/assets/resources-img1.jpeg"), 50% / cover no-repeat, #623434;
+	background: url("/assets/resource1.jpeg"), 50% / cover no-repeat, #623434;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -552,7 +552,7 @@ code {
 	align-items: center;
 	flex-shrink: 0;
 	border-radius: 0.555vw;
-	background-image: url("/assets/resources-img2.jpeg");
+	background-image: url("/assets/resource2.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -681,7 +681,7 @@ button {
 .menu1 {
 	width: 100%;
 	background: url("/assets/faq-bg.jpg"), lightgray 50% / cover no-repeat;
-	box-shadow: 0.125vw 0.125vw 0.9375vw 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0vw 0.125vw 0vw 0px rgba(0, 0, 0, 0.2);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1304,7 +1304,7 @@ button {
 }
 .course-detail{
 	grid-template-columns: 1fr !important;
-	grid-template-rows: 2fr 1fr 2fr 1fr !important;
+	grid-template-rows: 2fr 1fr 2fr 1fr 2fr !important;
 	.v-line{
 		display: none;
 	}

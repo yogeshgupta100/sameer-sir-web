@@ -121,10 +121,26 @@ const Resource = ({designCardData}) => {
       </div>
       <div className='container'><Heading content="Tutorials" subContent={"Immerse yourself in a world of guided learning, designed to empower learners of all levels. Our in-depth tutorials are crafted to simplify complex concepts, providing a seamless path from understanding to expertise."} left="20.5%"/></div>
       <Resources/>
-        {/* <Resources/>   */}
+      <div className='resource-content1' style={{paddingRight:"1rem"}}>
+        <div className="vid-content" style={{width:"100%" , marginRight:"1rem"}}>
+          <h4>Typography Mastery: Crafting Beautiful Text in Your Designs</h4>
+          <span style={{paddingRight:"3rem" , marginTop:"0.6rem"}}>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</span>
+          <button className='purple-btn' style={{
+            textDecoration:"none",
+            border:"none",
+            maxWidth:"12.1vw",
+            fontWeight:"500",  
+            marginTop:"2.1vw",
+            fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
+            whiteSpace:"nowrap",
+          }}>Explore more</button>
+        </div>
+          <div className="vid1"></div>
+          <div className="vid2" style={{position:"relative"}}></div>
+        </div>
       <div className="container" style={{marginTop:"16.65vw"}} id='blogs'>
         <Heading content={"Blogs"} left={"30.5%"} />
-        <div className="blogs-container container" style={{width:"95%", paddingTop:"2rem"}}>
+        <div className="blogs-container container">
         <div className='container' style={{width:"100%", textAlign:"end"}}>
           <NavLink to={"/blogs"} style={{textDecoration:"none" , color:"#B46BD1"}}>view all</NavLink>
         </div>

@@ -57,3 +57,4 @@ const Heading = ({ content , subContent , left}) => {
 };
 
 export default Heading;
+

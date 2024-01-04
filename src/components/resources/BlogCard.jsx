@@ -53,7 +53,7 @@ const BlogCard = ({currEle}) => {
                     fontSize: "0.888vw",
                     fontStyle: "normal",
                     fontWeight: "300",
-                    lineHeight: "135.836%",
+                    // lineHeight: "135.836%",
                     textTransform: "capitalize",
                     maxHeight:"2.331vw",
                     overflow:"hidden"
@@ -68,10 +68,11 @@ const BlogCard = ({currEle}) => {
 										className="purple-btn course-btn"
 										style={{
 											textDecoration: "none",
-											fontSize: "clamp(0.5rem , 1.5vw , 1rem)"
+                      display: "inline-block",
+                      whiteSpace:"nowrap"
 										}}
 									>
-										Learn more
+                    <p style={{display: "inline-block", fontSize:"clamp(0.7rem , 1.5vw , 1rem)"}}>Learn more</p>
 									</a>
 								</div> 
 							</div>
