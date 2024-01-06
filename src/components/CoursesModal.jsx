@@ -9,7 +9,7 @@ export default function CoursesModal() {
 		(async () => {
 			const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/courses?populate=*`);
 			const data = await res.json();
-			setCourses(data.data);
+			setCourses(data.data.slice(0, 2));
 		})();
 	}, []);
 	return (

@@ -15,7 +15,6 @@ const Banner = () => {
 			const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/blogs/${blogId}?populate=*`);
 			const data = await res.json();
 			setBlogData(data.data);
-			console.log(data.data);
 		})();
 	}, []);
 

@@ -59,7 +59,7 @@ const BlogCard = ({currEle}) => {
                   <p style={{color:"rgba(91, 91, 91, 0.80)"}}>
                     By {currEle.attributes.author}
                   </p>
-                  <NavLink to={"/article"}>
+                  <NavLink to={`/article/${currEle.id}`}>
                   <button className='button' id='button'style={{
                     border:"none",
                     borderRadius:"0.4677vw",
