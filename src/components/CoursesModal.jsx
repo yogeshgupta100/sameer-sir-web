@@ -19,7 +19,7 @@ export default function CoursesModal() {
 				borderRadius: "0.99vw",
 				display:"grid",
 				gridTemplateColumns:"3fr 1fr",
-				margin:"3.77vw 4.77vw",
+				margin:"2rem"
 			}}
 		>
 			<div
@@ -42,12 +42,12 @@ export default function CoursesModal() {
 						<div className="card" style={{
 								border:"0.714px solid #B46BD1",
 								borderRadius: "0.89238rem",
-								height:"100%",
+								height:"auto",
 								overflow:"hidden",
 							}}>
 								<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${course?.attributes?.thumbnail?.data?.attributes?.url}`} className="card-img-top" alt="course1" style={{width:"100%" , aspectRatio:"2/1.3" , borderRadius: "0.89238rem 0.89238rem 0 0"}} />
 								<div
-									className="card-body container">
+									className="card-body">
 									<div>
 									<span className="course-subtitle"
 										style={{
@@ -72,7 +72,8 @@ export default function CoursesModal() {
 											fontStyle: "normal",
 											fontWeight: "700",
 											lineHeight: "140.5%",
-											height:"5rem",
+											height:"4vw",
+											marginBottom:"1rem",
 											overflow:"hidden",
 										}}
 									>
@@ -83,8 +84,8 @@ export default function CoursesModal() {
 										className="content-course"
 										style={{
 											display: "grid",
-											gridTemplateColumns:"1fr 1fr 1fr",
-											fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
+											gridTemplateColumns:"repeat(3,33%)",
+											fontSize: "clamp(0.3rem , 1vw , 1rem)",
 											lineHeight: "1",
 											gap:"0.3rem",
 											whiteSpace:"nowrap",
@@ -103,7 +104,7 @@ export default function CoursesModal() {
 											>
 												Starting Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].startDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.4rem , 1vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].startDate}</span>
 										</div>
 										<div className="content" style={{textAlign:"center"}}>
 											<div
@@ -117,7 +118,7 @@ export default function CoursesModal() {
 											>
 												End Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.4rem , 1vw , 1rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
 										</div>
 										<div className="content" style={{textAlign:"center"}}>
 											<div
@@ -131,7 +132,7 @@ export default function CoursesModal() {
 											>
 												Duration
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.4rem , 1vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
 										</div>
 									</div>
 									<NavLink
@@ -140,7 +141,7 @@ export default function CoursesModal() {
 										style={{
 											textDecoration: "none",
 											fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
-											marginTop:"0"
+											margin:"0"
 										}}
 									>
 										Learn more
@@ -156,7 +157,7 @@ export default function CoursesModal() {
 				style={{
 					display: "flex",
 					backgroundColor: "transparent",
-					width: "120%",
+					width: "100%",
 					aspectRatio: "1/1.3",
 					alignItems: "start",
 					fontWeight: "bold",
@@ -168,16 +169,15 @@ export default function CoursesModal() {
 				style={{
 					margin: "0 0 0 2rem",
 					borderLeft:"1.7px solid #C4C4C4",
-					height:"95%",
+					height:"110%",
 					width:"100%",
 					color:"#9844C5",
-					// paddingTop:"2rem"
 				}}
 			>
-				<div style={{ fontWeight: "700", marginBottom: "0.555vw" , paddingLeft:"2rem", fontSize:"clamp(16px , 2vw , 20px)"}}>Lorem ipsum dolor sit amet consectetur.</div>
-				<div style={{ fontWeight: "600" , paddingLeft:"2rem" , fontSize:"clamp(12px , 2vw , 16px)"}}>Lorem ipsum dolor sit amet consectetur.</div>
-				<div style={{height:"80%", width:"auto" , display:"flex" , flexDirection:"column" , justifyContent:"flex-end" , fontWeight: "600" , fontSize:"clamp(12px , 2vw , 16px)"}}>
-					<ul style={{display:"flex" , flexDirection:"column"  , gap:"2rem" , alignItems:"center" , justifyContent:"center"}}>
+				<div style={{ fontWeight: "700", marginBottom: "0.555vw" , paddingLeft:"2rem", fontSize:"clamp(16px , 2vw , 20px)" , lineHeight:"1.3"}}>Lorem ipsum dolor sit amet consectetur.</div>
+				<div style={{ fontWeight: "600" , paddingLeft:"2rem" , fontSize:"clamp(10px , 1.5vw , 17px)" , lineHeight:"1.1"}}>Lorem ipsum dolor sit amet consectetur.</div>
+				<div style={{height:"80%", width:"100%" , display:"flex" , flexDirection:"column" , justifyContent:"flex-end" , fontWeight: "600" , fontSize:"clamp(10px , 1.5vw , 18px)" , margin:"1rem 0"}}>
+					<ul style={{display:"flex" , flexDirection:"column"  , gap:"1vw" , alignItems:"center" , justifyContent:"center"}}>
 						<li className="course-modal-items">Lorem ipsum dolor sit amet consectetur.</li>
 						<li className="course-modal-items">Lorem ipsum dolor sit amet consectetur.</li>
 						<li className="course-modal-items">Lorem ipsum dolor sit amet consectetur.</li>

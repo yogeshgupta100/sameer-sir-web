@@ -128,10 +128,12 @@ code {
 	background: #f0f0f1;
 }
 .card-body {
-	padding: 2.22vw 2.77vw;
+	/* padding: 2.22vw 2.77vw; */
+	padding: 2vw;
 	line-height: 1;
 	aspect-ratio: 6/3;
 }
+
 .course-content {
 	color: #b46bd1;
 	font-family: Open Sans;
@@ -158,6 +160,9 @@ code {
 }
 .purple-btn:hover {
 	cursor: pointer;
+	background-color: white;
+	color: #b46bd1;
+	border: 1px solid #b46bd1;
 }
 
 .about-first2 {
