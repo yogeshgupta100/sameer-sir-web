@@ -1,13 +1,13 @@
 import React from "react";
 
-const LandingPage = ({ imageurl }) => {
+const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 	return (
 		<div className="landing-page" id="home-main">
 			<div className="landing-page-content container">
 			<div className="centered-text">
-				<h2>Immerse yourself into the world of Design, Technology and Innovation.</h2>
-				<p>Join us and up-skill yourself to compete with the current industry trends and the booming job markets.</p>
-				<a href={"#courses"} style={{textDecoration:"none"}}>
+				<h2>{title}</h2>
+				<p>{subTitle}</p>
+				<a href={Link} style={{textDecoration:"none"}}>
 				<button type="button" className="button btn" style={{
 					borderRadius: "12.32px",
 					border: "0.104vw solid #FFF",
@@ -20,7 +20,7 @@ const LandingPage = ({ imageurl }) => {
 					whiteSpace:"nowrap"
 				}}>
 				<span>
-              Explore Now
+              {buttonText}
         </span>
 				</button>
 				</a>

@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import EnrollingProcess from './EnrollingProcess'
 import Header from '../Header'
+import EmpCard from '../aboutus/card'
 
 const Course = () => {
     const { courseId } = useParams();
@@ -25,8 +26,6 @@ const Course = () => {
                 const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/courses/${courseId}?populate=*`)
                 const data = await res.json();
 
-                console.log(data);
-
                 if (data.data === null) {
                     navigate("/");
                 } else {
@@ -37,6 +36,7 @@ const Course = () => {
             }
         })();
     }, [])
+    console.log(courseData);
 
     const [menuData , setMenuData] = useState(AccordionApi);
     const filterItem = (category) =>{
@@ -52,7 +52,7 @@ const Course = () => {
         <Whycourse data={courseData} />
         <Howyoulearn data={courseData} />
         <Curriculum data={courseData} />
-        <Teachers data={courseData} />
+        <Teachers empData={courseData?.attributes?.mentors} />
         <EnrollingProcess/>
         <Testimonies data={courseData} />
         <AllCollapseExample menuData={menuData} data={courseData} />

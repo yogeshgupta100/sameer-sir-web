@@ -17,12 +17,9 @@ const Small_nav = () => {
               fontSize:"clamp(0.8rem , 1vw , 1.2rem)",
             }}
           >
-            <li style={{ textDecoration: "none" }}>
-              <NavLink
-                to={"/all"}
-                style={{
-                  textDecoration: "none",
-                }}
+                <li>
+              <NavLink  
+                to='/tutorial'
               >
                 <span
                   style={{
@@ -33,13 +30,13 @@ const Small_nav = () => {
                     fontStyle: "normal",
                     textAlign: "center",
                   }}>
-                  All
+                  Tutorials
                 </span>
               </NavLink>
             </li>
             <li>
               <NavLink
-                to={"/graphic "}
+                to={"/blogs"}
                 style={{
                   textDecoration: "none",
                 }}
@@ -55,13 +52,13 @@ const Small_nav = () => {
                     textAlign: "center",
                   }}
                 >
-                  Graphic Design 
+                  Blogs 
                 </span>
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to={"/ui/ux"}
+              <a
+                href='#portfolio'
                 style={{
                   textDecoration: "none",
                 }}
@@ -76,13 +73,13 @@ const Small_nav = () => {
                     textAlign: "center",
                   }}
                 >
-                  Ui/UX Design
+                  Our gallery
                 </span>
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to={"/virtualReality"}
+              <a
+                href={"#designCards"}
                 style={{
                   textDecoration: "none",
                 }}
@@ -97,13 +94,13 @@ const Small_nav = () => {
                     textAlign: "center",
                   }}
                 >
-                  Virtual Reality
+                  Design challenges
                 </span>
-              </NavLink>
+              </a>
             </li>
             <li>
               <NavLink
-                to={"/all"}
+                to={"/resource"}
                 style={{
                   textDecoration: "none",
                 }}
@@ -118,7 +115,7 @@ const Small_nav = () => {
                     textAlign: "center",
                   }}
                 >
-                  Art
+                  Design community
                 </span>
               </NavLink>
             </li>

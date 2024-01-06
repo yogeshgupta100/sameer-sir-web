@@ -135,7 +135,7 @@ export default function CoursesModal() {
 										</div>
 									</div>
 									<NavLink
-										to={`../courses/:courseId`}
+										to={`/courses/${course.id}`}
 										className="purple-btn course-btn"
 										style={{
 											textDecoration: "none",

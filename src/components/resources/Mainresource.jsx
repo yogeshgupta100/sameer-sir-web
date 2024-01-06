@@ -4,13 +4,13 @@ import DesignCardApi from './DesignCardApi';
 import Subscribe from '../aboutus/Subscribe'
 
 const Mainresource = () => {
-    const [designCardData ,setDesignCardData] = useState(DesignCardApi);
-    const filterItem = (position) =>{
+    const [designCardData , setDesignCardData] = useState(DesignCardApi);
+    const filterItem = (id) =>{
         const updatedList = DesignCardApi.filter((currEle) => {
-            return currEle.position === position;
+            return currEle.id === id;
         });
         setDesignCardData(updatedList);
-    };
+      };
   return (
     <>
     <Resource designCardData={designCardData}/>

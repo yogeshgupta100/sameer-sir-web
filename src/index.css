@@ -507,7 +507,7 @@ code {
 .resource-page {
 	width: 100vw;
 	padding: 0;
-	margin: 11vw 0vw 11vw 6vw;
+	margin: 0vw 0vw 11vw 6vw;
 }
 .resource-content1 {
 	width: 100%;
@@ -521,7 +521,7 @@ code {
 .resource-container {
 	display: flex;
 	width: 100%;
-	margin: 1rem 0;
+	margin: 1rem 0 0;
 	padding-right: 3rem;
 	justify-content: space-between;
 	gap: 1rem;
@@ -536,7 +536,7 @@ code {
 	align-items: center;
 	flex-shrink: 0;
 	border-radius: 0.555vw;
-	background: url("/assets/resources-img1.jpeg"), 50% / cover no-repeat, #623434;
+	background: url("/assets/resource1.jpeg"), 50% / cover no-repeat, #623434;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -552,7 +552,7 @@ code {
 	align-items: center;
 	flex-shrink: 0;
 	border-radius: 0.555vw;
-	background-image: url("/assets/resources-img2.jpeg");
+	background-image: url("/assets/resource2.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -654,7 +654,7 @@ button {
 }
 
 #toggle1:checked ~ .menu1 {
-	height: 340px;
+	height: auto;
 }
 
 #toggleAccordion:checked + .hamburger1 .top {
@@ -675,13 +675,13 @@ button {
 }
 
 #toggleAccordion:checked ~ .menu1 {
-	height: 340px;
+	height: auto;
 }
 
 .menu1 {
 	width: 100%;
 	background: url("/assets/faq-bg.jpg"), lightgray 50% / cover no-repeat;
-	box-shadow: 0.125vw 0.125vw 0.9375vw 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0vw 0.125vw 0vw 0px rgba(0, 0, 0, 0.2);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -918,24 +918,25 @@ button {
 	max-width: 135.26vw;
 	min-height: 45.51vw;
 	flex-shrink: 0;
-	background: linear-gradient(254deg, #6c0082 0.31%, #44006f 46.97%, #7a0089 114.38%);
+	background: linear-gradient(254deg, #6C0082 0.31%, #44006F 46.97%, #7A0089 114.38%);
 }
-.curr-image {
+/* .curr-image {
 	background: url("/assets/curriculum-women.png");
 	position: absolute;
-	width: 30vw;
+	width: 60%;
 	height: 70%;
 	flex-shrink: 0;
 	background-position: center;
-	background-size: cover;
-	bottom: 0;
-	right: 0rem;
-}
+	background-size: contain;
+	background-repeat: no-repeat;
+	bottom: -2rem;
+	right: -5.5rem;
+} */
 .text-grid {
 	margin-top: 5.55vw;
 	display: grid;
-	grid-template-columns: repeat(3, auto);
-	max-width: 60%;
+	grid-template-columns: repeat(3, 1fr);
+	max-width: 85%;
 	gap: 3.33vw;
 }
 .text-content {
@@ -1057,7 +1058,7 @@ button {
 	border-radius: 50%;
 	max-width: 3.33vw;
 	min-height: 3.33vw;
-	background: url("/public/assets/man1.jpg"),
+	background: url("/assets/man1.jpg"),
 		lightgray 50% / cover no-repeat;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1301,9 +1302,58 @@ button {
 .bar >li{
 	font-size: clamp(1rem , 1vw , 1.4rem) !important;
 }
+.course-detail{
+	grid-template-columns: 1fr !important;
+	grid-template-rows: 2fr 1fr 2fr 1fr 2fr !important;
+	.v-line{
+		display: none;
+	}
+	.h-line{
+		display: block !important;
+	}
+	
+}
+.small-nav{
+	display: none !important;
+}
+
 }
 
 @media screen and (max-width: 768px) {
+	.design {
+		display: none;
+	}
+	.card-contain{
+		grid-template-columns: repeat(2,1fr) !important;
+		width: 100% !important;
+		gap: 1rem !important;
+		row-gap: 2rem !important;
+		margin-top: 2rem !important;
+	}
+	
+	.enrolling{
+		grid-template-columns: 1fr !important;
+		justify-content: center !important;
+		align-items: center !important;
+	}
+	.enrolling-process{
+		display: none;
+	}
+	.how-you-learn{
+		grid-template-columns: repeat(2,1fr) !important;
+	}
+	.why-cards{
+		grid-template-columns: repeat(2,1fr) !important;
+	}
+	.why-this-main{
+		min-height: 80vw;
+	}
+	.card-para{
+		font-size: clamp(0.6rem , 2vw , 1.3rem) !important;
+	}
+	.card-heading{
+		font-size: clamp(0.8rem , 2.5vw , 1.5rem) !important;
+	}
 	.content-container {
 		padding: 5%;
 	  }

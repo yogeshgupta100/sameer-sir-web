@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function ResourcesModal() {
 	return (
 		<div
@@ -58,6 +60,7 @@ export default function ResourcesModal() {
 				<div style={{ color: "#B46BD1", fontWeight: "700", marginBottom: "0.555vw" }}>Hire from Us</div>
 				<div style={{ whiteSpace: "pre-wrap", fontWeight: "600" }}>Lorem ipsum dolor sit amet consectetur.</div>
 				<div style={{ fontSize: "0.8325vw", marginBottom: "1.332vw" }}>Lorem ipsum dolor sit amet consectetur.</div>
+				<NavLink to={'/resource'}>
 				<button
 					style={{
 						color: "white",
@@ -72,6 +75,7 @@ export default function ResourcesModal() {
 				>
 					Explore more
 				</button>
+				</NavLink>
 			</div>
 		</div>
 	);
