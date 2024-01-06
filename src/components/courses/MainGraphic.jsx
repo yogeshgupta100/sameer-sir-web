@@ -23,7 +23,7 @@ const Course = () => {
     useEffect(() => {
         (async () => {
             try {
-                const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/courses/${courseId}?populate=*`)
+                const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/courses/${courseId}?populate[mentors][populate]=*&populate[thumbnail]=*&populate[toolsCovered]=*&populate[batches]=*&populate[whyToTakeThisCourse]=*&populate[curriculum]=*`)
                 const data = await res.json();
 
                 if (data.data === null) {
@@ -36,7 +36,6 @@ const Course = () => {
             }
         })();
     }, [])
-    console.log(courseData);
 
     const [menuData , setMenuData] = useState(AccordionApi);
     const filterItem = (category) =>{

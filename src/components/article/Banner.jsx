@@ -1,8 +1,8 @@
 import Header from "../Header";
 import { NavLink } from "react-router-dom";
-import {useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Markdown from 'react-markdown';
+import Markdown from "react-markdown";
 import { FaYoutube, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 
@@ -157,80 +157,88 @@ const Banner = () => {
 						</div>
 						<div
 							style={{
-								width:"100%",
+								width: "100%",
 								display: "flex",
 								gap: "15px",
 								marginTop: "40px",
-								justifyContent:"flex-end"
+								justifyContent: "flex-end",
 							}}
 						>
 							<NavLink to={"https://www.instagram.com/dxolve_official?igsh=OGQ5ZDc2ODk2ZA=="}>
-							<span style={{
-								display: "flex",
-								alignItems: "center",
-								justifyContent: "center",
-								padding: "2px",
-								fontSize: "1.2rem",
-								background: "#B86CD2",
-								color: "white",
-								borderRadius: "50%",
-								height: "30px",
-								width: "30px",
-								cursor: "pointer"
-							}}>
-								<AiFillInstagram />
-							</span>
+								<span
+									style={{
+										display: "flex",
+										alignItems: "center",
+										justifyContent: "center",
+										padding: "2px",
+										fontSize: "1.2rem",
+										background: "#B86CD2",
+										color: "white",
+										borderRadius: "50%",
+										height: "30px",
+										width: "30px",
+										cursor: "pointer",
+									}}
+								>
+									<AiFillInstagram />
+								</span>
 							</NavLink>
 							<NavLink to={"https://youtube.com/@dxolve_official?si=C4s_wlnZZJdeNqHe"}>
-							<span style={{
-								display: "flex",
-								alignItems: "center",
-								justifyContent: "center",
-								padding: "2px",
-								fontSize: "1.2rem",
-								background: "#B86CD2",
-								color: "white",
-								borderRadius: "50%",
-								height: "30px",
-								width: "30px",
-								cursor: "pointer"
-							}}>
-								<FaYoutube />
-							</span>
+								<span
+									style={{
+										display: "flex",
+										alignItems: "center",
+										justifyContent: "center",
+										padding: "2px",
+										fontSize: "1.2rem",
+										background: "#B86CD2",
+										color: "white",
+										borderRadius: "50%",
+										height: "30px",
+										width: "30px",
+										cursor: "pointer",
+									}}
+								>
+									<FaYoutube />
+								</span>
 							</NavLink>
 							<NavLink to={""}>
-							<span style={{
-								display: "flex",
-								alignItems: "center",
-								justifyContent: "center",
-								padding: "2px",
-								fontSize: "1rem",
-								background: "#B86CD2",
-								color: "white",
-								borderRadius: "50%",
-								height: "30px",
-								width: "30px",
-								cursor: "pointer"
-							}}>
-								<FaLinkedinIn />
-							</span>
+								<span
+									style={{
+										display: "flex",
+										alignItems: "center",
+										justifyContent: "center",
+										padding: "2px",
+										fontSize: "1rem",
+										background: "#B86CD2",
+										color: "white",
+										borderRadius: "50%",
+										height: "30px",
+										width: "30px",
+										cursor: "pointer",
+									}}
+								>
+									<FaLinkedinIn />
+								</span>
 							</NavLink>
-							<NavLink  to={""}>
-							<span style={{
-								display: "flex",
-								alignItems: "center",
-								justifyContent: "center",
-								padding: "2px",
-								fontSize: "1rem",
-								background: "#B86CD2",
-								color: "white",
-								borderRadius: "50%",
-								height: "30px",
-								width: "30px",
-								cursor: "pointer"
-							}}>
-								<FaFacebookF />
-							</span>
+							<NavLink to={""}>
+								<span
+									style={{
+										display: "flex",
+										alignItems: "center",
+										justifyContent: "center",
+										padding: "2px",
+										fontSize: "1rem",
+										background: "#B86CD2",
+										color: "white",
+										borderRadius: "50%",
+										height: "30px",
+										width: "30px",
+										cursor: "pointer",
+									}}
+								>
+									<FaFacebookF />
+								</span>
 							</NavLink>
 						</div>
 						<div
@@ -269,23 +277,31 @@ const Banner = () => {
 										lineHeight: "normal",
 									}}
 								>
-									By {blogData.attributes.author} April 10, 2023 | 6 min read
+									By {blogData.attributes.author} {blogData.attributes.publishDate} |{" "}
+									{blogData.attributes.timeRequired}
 								</span>
 							</div>
 						</div>
-						<div className="article-image" style={{backgroundImage: `url(${blogData.attributes.thumbnail?.data?.attributes?.url})`}}></div>
+						<div
+							className="article-image"
+							style={{
+								backgroundImage: `url(${import.meta.env.VITE_STRAPI_SERVER_URL}${
+									blogData.attributes.thumbnail?.data?.attributes?.url
+								})`,
+							}}
+						></div>
 					</div>
 
-          {/* Yogesh ye element */}
-          {/* ye ,.... ye he */}
-          {/* koi aur nhi he */}
-          {/* sirf ye he */}
+					{/* Yogesh ye element */}
+					{/* ye ,.... ye he */}
+					{/* koi aur nhi he */}
+					{/* sirf ye he */}
 					<div
 						className="container content-container"
 						style={{ padding: "2.22vw 16.65vw 0", width: "100%", marginTop: "5.55vw" }}
 					>
-            <Markdown>{blogData.attributes.content}</Markdown>
-          </div>
+						<Markdown>{blogData.attributes.content}</Markdown>
+					</div>
 				</>
 			) : (
 				<div

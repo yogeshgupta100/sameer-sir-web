@@ -25,6 +25,7 @@ const Home = () => {
       setEmpData(data.data);
     })();
   }, []);
+  
   const filterItem = ({category}) =>{
     const updatedList = AccordionApi.filter((currEle) => {
         return currEle.category === category;
