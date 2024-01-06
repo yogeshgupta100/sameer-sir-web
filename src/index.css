@@ -1321,6 +1321,10 @@ button {
 .small-nav{
 	display: none !important;
 }
+.content-details{
+	width: 100% !important;
+	margin: 1rem 0 0 !important;
+}
 
 }
 
@@ -1572,6 +1576,9 @@ button {
 @media screen and (min-width: 768px) {
 	.home-banner {
 		display: none;
+	}
+	.tutorials{
+		flex-direction: row !important;
 	}
 
 	.first {

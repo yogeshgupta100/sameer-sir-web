@@ -9,7 +9,7 @@ export default function CoursesModal() {
 		(async () => {
 			const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/courses?populate=*`);
 			const data = await res.json();
-			setCourses(data.data.slice(0, 2));
+			setCourses(data.data.slice(0, 3));
 		})();
 	}, []);
 	return (
@@ -72,7 +72,7 @@ export default function CoursesModal() {
 											fontStyle: "normal",
 											fontWeight: "700",
 											lineHeight: "140.5%",
-											height:"4vw",
+											height:"3.8vw",
 											marginBottom:"1rem",
 											overflow:"hidden",
 										}}

@@ -12,6 +12,7 @@ const MainTutorial = () => {
 			const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/tutorials?populate=*`);
 			const data = await res.json();
 			setTutorials(data.data);
+			console.log(data.data);
 		})();
 	}, []);
 
@@ -19,7 +20,7 @@ const MainTutorial = () => {
 		<>
 			<Header />
 			<HeaderTutorial />
-			{tutorials.map((tutorial, index) => {
+			{tutorials?tutorials.map((tutorial, index) => {
 				return (
 					<TutorialCard
 						key={index}
@@ -33,7 +34,8 @@ const MainTutorial = () => {
 						author={tutorial.attributes.author}
 					/>
 				);
-			})}
+			}):("404 Not Found!")
+			}
 			<Subscribe />
 		</>
 	);
