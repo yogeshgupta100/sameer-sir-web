@@ -14,7 +14,7 @@ const EmpCard = ({ currEle }) => {
 				aspectRatio: "2/3",
 				borderRadius: "0.8325vw",
 				border: "0.069vw solid #B86CD2",
-				backgroundImage: `url(${import.meta.env.VITE_STRAPI_SERVER_URL}${
+				backgroundImage: `url(${
 					currEle?.picture?.data?.attributes?.url || currEle?.image?.data?.attributes?.url
 				})`,
 			}}

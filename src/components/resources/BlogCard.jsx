@@ -10,7 +10,7 @@ const BlogCard = ({currEle}) => {
 								<div className="blog-img" style={{
                   aspectRatio:"3/2" ,
                   overflow:"hidden",
-                  backgroundImage:`url(${import.meta.env.VITE_STRAPI_SERVER_URL}${currEle?.attributes?.thumbnail?.data?.attributes?.url})`,
+                  backgroundImage:`url(${currEle?.attributes?.thumbnail?.data?.attributes?.url})`,
                   backgroundPosition:"center",
                   backgroundSize:"cover",
                   backgroundRepeat:"no-repeat",

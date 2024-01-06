@@ -127,7 +127,7 @@ const Graphic = ({ data }) => {
 						</div>
 			</div>
 				<span className="landing-img">
-					<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}`+data?.attributes?.thumbnail?.data?.attributes?.url} style={{
+					<img src={data?.attributes?.thumbnail?.data?.attributes?.url} style={{
 						maxWidth:"40vw",
 						aspectRatio:"1/0.99",
 						marginLeft:"0.5rem"

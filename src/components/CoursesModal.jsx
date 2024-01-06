@@ -45,7 +45,7 @@ export default function CoursesModal() {
 								height:"auto",
 								overflow:"hidden",
 							}}>
-								<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${course?.attributes?.thumbnail?.data?.attributes?.url}`} className="card-img-top" alt="course1" style={{width:"100%" , aspectRatio:"2/1.3" , borderRadius: "0.89238rem 0.89238rem 0 0"}} />
+								<img src={course?.attributes?.thumbnail?.data?.attributes?.url} className="card-img-top" alt="course1" style={{width:"100%" , aspectRatio:"2/1.3" , borderRadius: "0.89238rem 0.89238rem 0 0"}} />
 								<div
 									className="card-body">
 									<div>

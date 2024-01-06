@@ -71,7 +71,7 @@ const University = ({color , textCol}) => {
                         fontFamily:"bebasneue",
                         fontStyle:"normal"
                     }}>
-                        <img style={{maxWidth:"80%"}} src={import.meta.env.VITE_STRAPI_SERVER_URL + uniEle.attributes?.logo?.data?.attributes.url} alt={uniEle.name} />
+                        <img style={{maxWidth:"80%"}} src={uniEle?.attributes?.logo?.data?.attributes?.url} alt={uniEle.name} />
                     </span>
                 ))
             }

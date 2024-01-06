@@ -18,7 +18,7 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 					alignItems: "flex-end",
 					padding: "1.665vw 1.11vw",
 					aspectRatio: "1.3/2",
-					backgroundImage: `url(${import.meta.env.VITE_STRAPI_SERVER_URL}${authorImage.data.attributes.url})`,
+					backgroundImage: `url(${authorImage.data.attributes.url})`,
 					backgroundSize: "cover",
 					backgroundPosition: "center",
 					backgroundRepeat: "no-repeat",
