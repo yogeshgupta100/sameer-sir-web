@@ -2,7 +2,6 @@
 	display: grid;
 	grid-auto-flow: column;
 	grid-auto-columns: 100%;
-	width: 100%;
 	gap: 5%;
 	padding: 0 10%;
 	margin: 2rem 0;
@@ -73,4 +72,17 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+	.imgContainer {
+		margin: 2rem 0 4rem !important;
+		width: 100% !important;
+	}
+	.contentContainer {
+		width: auto !important;
+		height: fit-content !important;
+		padding: 2rem 2rem !important;
+		border-top: 1px solid white !important;
+	}
 }
