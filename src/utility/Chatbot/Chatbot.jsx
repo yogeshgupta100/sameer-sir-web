@@ -139,6 +139,20 @@ export default function Chatbot() {
 
 		const message = inputRef.current.value;
 
+		// check if message is email or not
+		if (index === 9 && !message.includes("@")) {
+			inputRef.current.value = "";
+			alert("Enter a valid email address");
+			return;
+		}
+
+		// Check if message is contact number with or without country code or not
+		if (index === 10 && !message.slice(1).match(/^[0-9]{10,13}$/)) {
+			inputRef.current.value = "";
+			alert("Enter a valid contact number");
+			return;
+		}
+
 		setData((prev) => [...prev, message]);
 
 		setMessages((prev) => [...prev, { type: "user", message, options: [] }, chatFlow[index]]);
@@ -160,7 +174,7 @@ export default function Chatbot() {
 				<div className={styles.chatbox}>
 					<div className={styles.heading}>
 						<span></span>
-						<span>Mrinali</span>
+						<span style={{ fontWeight: "600" }}>Mrinali</span>
 					</div>
 
 					<div className={styles.chat} ref={chatRef}>
