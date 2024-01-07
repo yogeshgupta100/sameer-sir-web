@@ -20,7 +20,7 @@ const Courses_container = () => {
 				{courses.map((course) => {
 					return (
 							<div className="card">
-								<img src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${course?.attributes?.thumbnail?.data?.attributes?.url}`} className="card-img-top" alt="course1" />
+								<img src={course?.attributes?.thumbnail?.data?.attributes?.url} className="card-img-top" alt="course1" />
 								<div
 									className="card-body container"
 								>

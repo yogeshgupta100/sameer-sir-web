@@ -5,7 +5,7 @@ const StudentCourses = ({ course }) => {
 	return (
 		<div className="card my-3 px-0" style={{ border: "1px solid #B46BD1" }}>
 			<img
-				src={`${import.meta.env.VITE_STRAPI_SERVER_URL}${course.thumbnail.url}`}
+				src={course?.thumbnail?.url}
 				className="card-img-top"
 				alt="course1"
 			/>

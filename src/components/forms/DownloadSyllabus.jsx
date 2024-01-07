@@ -27,7 +27,7 @@ export default function DownloadSyllabus() {
         const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/courses/${courseId}?populate=*`);
         const data = await res.json();
 
-        window.open(`${import.meta.env.VITE_STRAPI_SERVER_URL}${data.data.attributes.syllabus.data.attributes.url}`);
+        window.open(data.data.attributes.syllabus.data.attributes.url);
     };
 
 	return (

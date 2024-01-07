@@ -285,7 +285,7 @@ const Banner = () => {
 						<div
 							className="article-image"
 							style={{
-								backgroundImage: `url(${import.meta.env.VITE_STRAPI_SERVER_URL}${
+								backgroundImage: `url(${
 									blogData.attributes.thumbnail?.data?.attributes?.url
 								})`,
 							}}

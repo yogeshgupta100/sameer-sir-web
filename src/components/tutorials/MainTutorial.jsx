@@ -24,14 +24,14 @@ const MainTutorial = () => {
 				return (
 					<TutorialCard
 						key={index}
-						title={tutorial.attributes.title}
-						description={tutorial.attributes.description}
-						youtubePublishDate={tutorial.attributes.youtubePublishDate}
-						instaPublishDate={tutorial.attributes.instaPublishDate}
-						youtubeUrl={tutorial.attributes.youtubeUrl}
-						youtubeEmbedUrl={tutorial.attributes.youtubeEmbedUrl}
-						instaUrl={tutorial.attributes.instaUrl}
-						author={tutorial.attributes.author}
+						title={tutorial?.attributes?.title}
+						description={tutorial?.attributes?.description}
+						youtubePublishDate={tutorial?.attributes?.youtubePublishDate}
+						instaPublishDate={tutorial?.attributes?.instaPublishDate}
+						youtubeUrl={tutorial?.attributes?.youtubeUrl}
+						youtubeEmbedUrl={tutorial?.attributes?.youtubeEmbedUrl}
+						instaUrl={tutorial?.attributes?.instaUrl}
+						author={tutorial?.attributes?.author}
 					/>
 				);
 			}):("404 Not Found!")
