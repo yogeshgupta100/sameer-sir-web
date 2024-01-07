@@ -984,7 +984,7 @@ button {
 
 /* download syllabus form  */
 .download-syll {
-	max-width: 100vw;
+	width: 100vw;
 	min-height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -1169,6 +1169,33 @@ button {
 }
 
 @media screen and (max-width: 500px) {
+	.download-syll {
+		display: grid;
+		grid-template-rows: 0.7fr 1fr !important;
+		grid-template-columns: 1fr;
+		height: 100% !important;
+	  }
+	
+	  .logo-section,
+	  .form-section {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.logo-img{
+			width: 50% !important;
+			aspect-ratio: 1/1;
+		}
+	  }
+	
+	  .form-section {
+		height: 110%;
+	  }
+	
+	  .form-head {
+		text-align: center;
+	  }
 	.faq-nav {
 		display: none;
 	}

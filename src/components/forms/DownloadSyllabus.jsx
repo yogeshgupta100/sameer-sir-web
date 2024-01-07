@@ -34,7 +34,7 @@ export default function DownloadSyllabus() {
 		<>
 			<div className="download-syll">
 				<div className="logo-section">
-					<span className="subscribe-logo" style={{ margin: "2.6rem 0 2rem 1rem" }}>
+					<span className="subscribe-logo" style={{ margin: "2.6rem 0 2rem 1rem"}}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="12vw"
@@ -70,7 +70,7 @@ export default function DownloadSyllabus() {
 				<div className="form-section">
 					<div className="container" style={{ width: "80%", height: "80%" }}>
 						<div className="top" style={{ display: "flex", width: "100%", position: "relative" }}>
-							<div className="form-head">
+							<div className="form-head" style={{lineHeight:"3"}}>
 								<p
 									style={{
 										color: "#9844C5",
@@ -144,17 +144,17 @@ export default function DownloadSyllabus() {
 									style={{
 										color: "#B86CD2",
 										fontFamily: "Open Sans",
-										fontSize: "1.445vw",
-										padding: "0 0 1rem 0",
+										fontSize: "clamp(1rem , 1.11vw , 3rem)",
+										// padding: "0 0 1rem 0",
 									}}
                                     name="select"
 								>
-									<option value={null} style={{ lineHeight: "1.66vw" }}>
+									<option value={null} style={{ lineHeight: "1.66vw" , fontSize:"clamp(1rem , 1.11vw , 3rem)"}}>
 										Select Courses
 									</option>
 									{courses &&
 										courses.map((course) => (
-											<option key={course.id} value={course.id}>
+											<option key={course.id} value={course.id} style={{fontSize:"clamp(1rem , 1.11vw , 3rem"}}>
 												{course.attributes.name}
 											</option>
 										))}
