@@ -1,45 +1,49 @@
 import { BsPlay } from "react-icons/bs";
+import styles from "./carousal.module.css";
 
 export default function CarousalSlide({ authorImage, testimony, author, authorRole }) {
 	return (
-		<div className="carousel-body"
+		<div
+			className="carousel-body"
 			style={{
 				display: "inline-flex",
 				padding: "3.33vw 3.55vw",
 				background: "linear-gradient(263deg, #720186 0%, #58017A 47.51%, #4B0173 127.7%)",
 				maxWidth: "82vw",
-				aspectRatio:"3/1.5",
 				color: "white",
+				alignItems: "center",
 			}}
 		>
-			<div id="carousel-image"
+			<div
+				className={styles.imgContainer}
 				style={{
-					display: "flex",
-					alignItems: "flex-end",
-					padding: "1.665vw 1.11vw",
-					aspectRatio: "1.3/2",
-					backgroundImage: `url(${authorImage.data.attributes.url})`,
-					backgroundSize: "cover",
-					backgroundPosition: "center",
-					backgroundRepeat: "no-repeat",
+					position: "relative",
+					width: "40%",
 				}}
 			>
+				<img id="carousel-image" src={authorImage?.data?.attributes?.url} alt="" />
 				<BsPlay
 					style={{
+						position: "absolute",
+						bottom: "1rem",
+						left: "1rem",
 						color: "white",
-						minHeight: "3vw",
-						maxWidth: "30vw",
+						fontSize: "clamp(1rem , 3vw , 2rem)",
 					}}
 				/>
 			</div>
-			<div id="carousel-content"
+
+			<div
+				className={styles.contentContainer}
+				id="carousel-content"
 				style={{
+					width: "60%",
+					margin: "0 0 0 2.77vw",
+					height: "100%",
 					display: "flex",
 					flexDirection: "column",
 					justifyContent: "space-evenly",
-					maxWidth: "100vw",
-					minHeight: "100%",
-					margin: "0 2.77vw",
+					gap: "1.5rem",
 				}}
 			>
 				<div
@@ -62,9 +66,10 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 					</span>
 					<span
 						style={{
-							fontSize:"clamp(0.66rem , 1.5vw , 1.5rem)",
-							fontStyle:"normal",
-							fontFamily:"Open Sans"
+							fontSize: "clamp(0.66rem , 1vw , 1.5rem)",
+							fontStyle: "normal",
+							fontFamily: "Open Sans",
+							fontWeight: "300",
 						}}
 					>
 						{testimony} &nbsp;
@@ -80,6 +85,7 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 						”
 					</span>
 				</div>
+
 				<div
 					style={{
 						alignSelf: "flex-end",
@@ -87,15 +93,15 @@ export default function CarousalSlide({ authorImage, testimony, author, authorRo
 				>
 					<div
 						style={{
-							fontWeight: "700",
-							fontSize: "clamp(0.55rem , 1.5vw , 1.5rem)",
+							fontWeight: "600",
+							fontSize: "clamp(0.55rem , 1.3vw , 1.5rem)",
 						}}
 					>
 						{author}
 					</div>
 					<div
 						style={{
-							fontSize: "clamp(0.4rem , 1.5vw , 1rem)",
+							fontSize: "clamp(0.4rem , 1vw , 1rem)",
 							fontWeight: "300",
 						}}
 					>

@@ -142,13 +142,14 @@
 
 .chat select {
 	display: block;
-	width: 70%;
+	width: 100%;
 	margin: 0.5vw auto;
 	font-size: clamp(0.66rem , 1.11vw , 1.66rem);
 	background-color: #fbedff;
 	padding: 0.45rem 0.63rem;
 	border-radius: 5px;
 }
+
 
 .option {
 	color: #000;
