@@ -27,7 +27,7 @@ const Curriculum = ({data}) => {
               <span className="text-content">
                 <h5 style={{fontSize: "clamp(0.7rem , 1.2vw , 1.5rem)" , lineHeight:"1.1"}}>
                 {data?.attributes?.curriculum[0]?.heading}</h5>
-                <p style={{fontSize: "clamp(0.56rem , 1.5vw , 1rem)" , lineHeight:"1.4" , marginTop:"0.3rem" }}>{data?.attributes?.curriculum[0]?.description}</p>
+                <p style={{fontSize: "clamp(0.56rem , 1.5vw , 1rem)" , lineHeight:"1.4" , marginTop:"0.3rem" , flexWrap:"wrap"}}>{data?.attributes?.curriculum[0]?.description}</p>
               </span>
               <span className="text-content">
               <h5 style={{fontSize: "clamp(0.7rem , 1.2vw , 1.5rem)" , lineHeight:"1.1"}}>
