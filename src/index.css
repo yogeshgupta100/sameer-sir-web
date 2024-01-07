@@ -1268,8 +1268,13 @@ button {
 		display: none;
 	}
 	.landing-page-content {
+		justify-content: flex-end !important;
+		padding-left: 0 !important;
+	}
+	.centered-text{
+		max-width: 80vw !important;
+		margin-left: 0 !important;
 		justify-content: flex-start !important;
-		margin-left: clamp(2rem, 10vw, 7rem);
 	}
 	.buttons > .button {
 		border-radius: 0.3125rem !important;

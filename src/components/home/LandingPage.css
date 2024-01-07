@@ -14,7 +14,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
 }
   
   .navbar {
@@ -22,9 +21,11 @@
   }
   
   .centered-text {
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     max-width:49vw;
     letter-spacing: 0.11rem;
+    justify-content: center;
+    margin-left: 2rem;
   }
 .centered-text h2{
   font-family: Raleway;
