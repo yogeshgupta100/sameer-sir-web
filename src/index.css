@@ -1169,6 +1169,9 @@ button {
 }
 
 @media screen and (max-width: 500px) {
+	.counter-line{
+		min-height: 80px !important;
+	}
 	.download-syll {
 		display: grid;
 		grid-template-rows: 0.7fr 1fr !important;

@@ -54,7 +54,7 @@ function Section1() {
 					// minHeight: "80%",
 					flexWrap:"nowrap",
 					overflowX:"hidden",
-					padding:"8vw 0"
+					padding:"7vw 0"
 				}}
 				>
 				<div className="col">
@@ -63,12 +63,12 @@ function Section1() {
 						style={{
 							textAlign: "center",
 							display:"flex",
-							flexDirection:"column"
+							flexDirection:"column",
 						}}
 						>
 						<span className="counter-number"
 							style={{
-								color: "#B46BD1",
+								color: "#AD60C8",
 								fontSize: "5.5vw",
 								fontWeight: "900",
 								fontFamily: "Open Sans",
@@ -78,7 +78,7 @@ function Section1() {
 						</span>
 						<span
 							style={{
-								color: "#B46BD1",
+								color: "#AD60C8",
 								textAlign: "center",
 								fontFamily: "Open Sans",
 								fontSize: "clamp(0.33rem , 2.8vw , 1.2rem)",
@@ -90,6 +90,7 @@ function Section1() {
 						</span>
 					</div>
 				</div>
+				<div className="v-line counter-line" style={{minWidth:"0.0625rem" , minHeight:"180px" , backgroundColor:"#CDCDCD"}}></div>
 				<div className="col">
 					<div
 						className="awesome-counter"
@@ -101,7 +102,7 @@ function Section1() {
 					>
 						<span className="counter-number"
 							style={{
-								color: "#B46BD1",
+								color: "#AD60C8",
 								fontSize: "5.5vw",
 								fontWeight: "900",
 								fontFamily: "Open Sans",
@@ -111,7 +112,7 @@ function Section1() {
 						</span>
 						<span
 							style={{
-								color: "#B46BD1",
+								color: "#AD60C8",
 								textAlign: "center",
 								fontFamily: "Open Sans",
 								fontSize: "clamp(0.33rem , 2.8vw , 1.2rem)",
@@ -122,8 +123,8 @@ function Section1() {
 							Industry orientated modules
 						</span>
 					</div>
-					<div className="v-line" style={{minWidth:"0.07vw" , minHeight:"100%"}}></div>
 				</div>
+				<div className="v-line counter-line" style={{minWidth:"0.0625rem" , minHeight:"180px" , backgroundColor:"#CDCDCD"}}></div>
 				<div className="col">
 					<div
 						className="awesome-counter"
@@ -135,7 +136,7 @@ function Section1() {
 					>
 						<span className="counter-number"
 							style={{
-								color: "#B46BD1",
+								color: "#AD60C8",
 								fontSize: "5.5vw",
 								fontWeight: "900",
 								fontFamily: "Open Sans",
@@ -145,7 +146,7 @@ function Section1() {
 						</span>
 						<span
 							style={{
-								color: "#B46BD1",
+								color: "#AD60C8",
 								textAlign: "center",
 								fontFamily: "Open Sans",
 								fontSize: "clamp(0.33rem , 2.8vw , 1.2rem)",

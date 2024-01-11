@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 .landing-page {
-    background: linear-gradient(261deg, #8663CB 0%, #A665D9 49.31%, #9840A4 91.94%);
+    /* background: linear-gradient(261deg, #8663CB 0%, #A665D9 49.31%, #9840A4 91.94%); */
     max-width: 100vw;
     min-height: 50vw;
     display: flex;
     align-items: center;
+    background: linear-gradient(142deg, #5A0992 21.32%, #AA3293 128.23%);
+    mix-blend-mode: plus-darker;
   }
 .landing-page-content{
   min-width: 100vw;
@@ -21,8 +23,8 @@
   }
   
   .centered-text {
-    /* margin-right: 1rem; */
-    max-width:49vw;
+    margin-right: 1rem;
+    max-width:48vw;
     letter-spacing: 0.11rem;
     justify-content: center;
     margin-left: 2rem;

@@ -30,8 +30,8 @@ const Heading = ({ content , subContent , left}) => {
       >
         <h4
           style={{
-            color: "rgba(173, 96, 200, 0.90)",
-            fontSize: "clamp(1.2rem , 4vw , 2rem)",
+            color: "#B570CD",
+            fontSize: "clamp(1.2rem , 4vw , 2.3rem)",
             fontWeight: "750",
             // letterSpacing:"0.11vw",
             fontStyle:"normal",
@@ -42,12 +42,13 @@ const Heading = ({ content , subContent , left}) => {
         </h4>
         <p style={{
           fontFamily:"Open Sans",
-          fontSize:"clamp(0.66rem , 1.33vw , 1rem)",
+          fontSize:"clamp(0.66rem , 1vw , 1rem)",
           fontWeight:"400",
           color: "rgba(0, 0, 0, 0.65)",
           lineHeight:"1.3",
           opacity:"0.9",
-          marginTop:"0.6rem"
+          marginTop:"0.6rem",
+          width:"70%"
         }}>
           {subContent}
         </p>
