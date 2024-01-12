@@ -6,8 +6,8 @@ const Courses = () => {
 
 	return (
 		<>
-			<div className="row" style={{margin:"5.55vw 0 3.33vw 5.55vw"}}>
-				<div className="col-12 container">
+			<div className="row" style={{margin:"10.38vw 0 4.81vw 3.55vw"}}>
+				<div className="col-12">
 					<Heading content={"Explore our well knitted courses"} subContent={"A collaborative approach with industry experts and academic geniuses has led us to our curriculum that will ensure your readiness/potential for the booming-job market."} left={"27.5%"} />
 				</div>
 			</div>

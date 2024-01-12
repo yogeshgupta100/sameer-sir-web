@@ -16,7 +16,7 @@ const Courses_container = () => {
     <div
 				className="course-container"
 				id="courses"
-			style={{marginBottom:"8vw" , padding:""}}>
+			style={{marginBottom:"18vw"}}>
 				{courses.map((course) => {
 					return (
 							<div className="card">
@@ -27,13 +27,12 @@ const Courses_container = () => {
 									<div>
 									<span className="course-subtitle"
 										style={{
-											textAlign: "start",
 											color: "#878787",
 											fontFamily: "Open Sans",
-											fontSize: "clamp(0.7rem , 2vw , 1.4rem)",
+											fontSize: "clamp(0.7rem , 1vw , 0.9rem)",
 											fontStyle: "normal",
 											fontWeight: "700",
-											lineHeight:"1"
+											lineHeight:"125%"
 										}}
 									>
 										{course.attributes.category}
@@ -43,12 +42,12 @@ const Courses_container = () => {
 										style={{
 											color: "#B46BD1",
 											fontFamily: "Open Sans",
-											fontSize: "clamp(0.8rem , 2vw , 1.5rem)",
+											fontSize: "clamp(1rem , 1.5vw , 1.5rem)",
 											fontStyle: "normal",
 											fontWeight: "700",
-											lineHeight: "140.5%",
-											marginBottom: "2.22vw",
-											height:"4.8vw",
+											lineHeight: "121.5%",
+											// marginBottom: "2.22vw",
+											height:"4rem",
 											overflow:"hidden",
 										}}
 									>
@@ -58,12 +57,11 @@ const Courses_container = () => {
 									<div
 										className="content-course"
 										style={{
-											display: "grid",
-											gridTemplateColumns:"1fr 1fr 1fr",
-											fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
-											lineHeight: "1",
-											gap:"0.3rem",
-											whiteSpace:"nowrap"
+											width:"100%",
+											display:"flex",
+											fontSize: "clamp(0.5rem , 1.2vw , 1rem)",
+											lineHeight: "130%",
+											justifyContent:"space-between"
 										}}
 									>
 										<div className="content" style={{textAlign:"start"}}>
@@ -74,13 +72,15 @@ const Courses_container = () => {
 													fontStyle: "normal",
 													fontWeight: "700",
 													marginBottom:"0.88vw",
+													whiteSpace:"nowrap",
 												}}
 											>
 												Starting Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].startDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 1rem)" , color: "#B46BD1" , fontWeight:"500" , whiteSpace:"nowrap"}}>{course.attributes.batches[0].startDate}</span>
 										</div>
-										<div className="content" style={{textAlign:"center"}}>
+										<div className="v-line" style={{minWidth:"0.0525rem" , backgroundColor:"#CDCDCD" , height:"100%" , margin:"0" , alignSelf:"center"}}></div>
+										<div className="content" style={{textAlign:"center" , whiteSpace:"nowrap"}}>
 											<div
 												style={{
 													color: "rgba(117, 117, 117, 0.90)",
@@ -92,9 +92,10 @@ const Courses_container = () => {
 											>
 												End Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 1rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
 										</div>
-										<div className="content" style={{textAlign:"center"}}>
+										<div className="v-line" style={{minWidth:"0.0525rem" , backgroundColor:"#CDCDCD" , height:"100%" , margin:"0", alignSelf:"center"}}></div>
+										<div className="content" style={{textAlign:"center" , whiteSpace:"nowrap"}}>
 											<div
 												style={{
 													color: "rgba(117, 117, 117, 0.90)",
@@ -106,7 +107,7 @@ const Courses_container = () => {
 											>
 												Duration
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.5vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
 										</div>
 									</div>
 									<NavLink

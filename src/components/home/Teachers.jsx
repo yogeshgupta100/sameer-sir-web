@@ -5,7 +5,7 @@ import EmpCard from "../aboutus/card";
 const Teachers = ({empData}) => {
 
 	return (
-		<div className="container" style={{margin:"11vw 0 0" , paddingBottom:"0" , minWidth:"100%"}}>
+		<div className="container" style={{margin:"14vw 0 11.25vw" , paddingBottom:"0" , minWidth:"100%"}}>
 				<div className="view-all-heading">
 				<Heading content={"Mentors empowering your journey"} subContent={"Get groomed by elite professionals and academic gurus of the industry to accelerate your professional journey."} left={"20.5%"}></Heading>
 				</div>
@@ -13,7 +13,8 @@ const Teachers = ({empData}) => {
 				style={{
 					display:"flex",
 					width:"30vw",
-					justifyContent:"flex-end",
+					justifyContent:"start",
+					marginLeft:"23.8%"
 				}}
 			>
 				<button

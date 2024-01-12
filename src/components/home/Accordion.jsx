@@ -12,7 +12,7 @@ function AllCollapseExample() {
     };  
   return (
     <div id='faq'>
-      <div className="faq-heading"><h4>FAQS</h4>
+      <div className="faq-heading"><p>FAQS</p>
       </div>
       <section className="p-menu1 container">
           <nav id="navbar" className="navigation" role="navigation">

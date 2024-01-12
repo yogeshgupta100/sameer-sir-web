@@ -1,5 +1,4 @@
 import React from 'react'
-import Heading from '../aboutus/Heading'
 
 const Resource = () => {
   return (
@@ -9,7 +8,7 @@ const Resource = () => {
         <div className="resource-container" style={{display:"flex" , justifyContent:"space-between" , width:"100vw"}}>
         <div className="vid1" style={{ width:"50%" }}>
           </div>
-        <div className="vid-content" style={{textAlign:"start" , width:"100%" , margin:"auto 0.4rem"}}>
+        <div className="vid-content" style={{textAlign:"start" , width:"100%" , margin:"auto" }}>
           <h4 style={{fontSize:"clamp(1.2rem , 2vw , 1.8rem)"}}>Typography Mastery: Crafting Beautiful Text in Your Designs</h4>
           <span>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</span>
           <button className='purple-btn' style={{
@@ -25,7 +24,8 @@ const Resource = () => {
         </div>
         <div className="resource-container" style={{display:"flex" , justifyContent:"space-between"}}>
         <div className="vid-content" style={{margin:"0" , textAlign:"start" , marginRight:"auto 0"}}>
-          <h4 style={{fontSize:"clamp(1.2rem , 2vw , 1.8rem)"}}>Typography Mastery: Crafting Beautiful Text in Your Designs</h4>
+          <h4 style={{fontSize:"clamp(1.2rem , 2vw , 1.8rem)"}}>Typography Mastery: Crafting Beautiful</h4>
+          <h4> Text in Your Designs</h4>
           <span>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</span>
           <button className='purple-btn' style={{
             textDecoration:"none",
