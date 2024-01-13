@@ -48,9 +48,9 @@ const Graphic = ({ data }) => {
         }}
       >
             <div className="image-hero">
-            <div className="landing-page" id="home-main">
-			<div className="landing-page-content">
-			<div className="centered-text">
+            <div className="landing-page container" id="home-main">
+			<div className="landing-page-content container">
+			<div className="centered-text container">
 				<h2>{data?.attributes?.name}</h2>
 				<p>{data?.attributes?.description}</p>
 				<div className="buttons" style={{ display: "flex"}}>
@@ -126,10 +126,9 @@ const Graphic = ({ data }) => {
 							</div>
 						</div>
 			</div>
-				<span className="landing-img">
+				<span className="landing-img" style={{width:"38vw"}}>
 					<img src={data?.attributes?.thumbnail?.data?.attributes?.url} style={{
-						maxWidth:"40vw",
-						aspectRatio:"1/0.99",
+						aspectRatio:"1/0.95",
 						marginLeft:"0.5rem"
 					}}/>
 				</span>

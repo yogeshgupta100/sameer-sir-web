@@ -8,7 +8,7 @@ const Hero = () => {
        <div
         className="full"
         style={{
-          background: "transparent",
+          // background: "transparent",
           marginBottom:"2.22vw",
           minHeight:"80vw",
           position:"relative",
