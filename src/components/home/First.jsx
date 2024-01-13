@@ -63,7 +63,7 @@ const First = () => {
           gridTemplateColumns:"repeat(3,1fr)",
           alignItems:"flex-end",
         }}>
-          <div className="content">
+          <div className="content" style={{minHeight:"100%"}}>
               <h3 style={{
               fontSize:"3.33vw",
               fontWeight:"700",
@@ -75,7 +75,7 @@ const First = () => {
                 fontWeight:"400",
               }}>Experts working across the globe!</p>
           </div>
-          <div className="content">
+          <div className="content" style={{minHeight:"100%"}}>
             <h3 style={{
               fontSize:"3.33vw",
               fontWeight:"700",
@@ -83,11 +83,11 @@ const First = () => {
             }}>2000+</h3>
               <p style={{
                 width:"12vw",
-                fontSize:"clamp(0.6rem , 1.1vw , 1rem)",
+                fontSize:"clamp(0.7rem , 1.1vw , 1rem)",
                 fontWeight:"400"
               }}>Community members, growing as you read!</p>
           </div>
-          <div className="content">
+          <div className="content" style={{minHeight:"100%"}}>
             <h3 style={{
               fontSize:"3.33vw",
               fontWeight:"700",
@@ -95,7 +95,7 @@ const First = () => {
             }}>2000+</h3>
               <p style={{
                 width:"12vw", 
-                fontSize:"clamp(0.6rem , 1.1vw , 1rem)",
+                fontSize:"clamp(0.7rem , 1.1vw , 1rem)",
                 fontWeight:"400"
               }}>Community members, growing as you read!</p>
           </div>

@@ -418,7 +418,7 @@ code {
 
 .Subscribe-main {
 	max-width: 100vw;
-	margin: 9.5vw 0 0 0;
+	margin: 7.54rem 0 0 0;
 	min-height: 30vw;
 	flex-shrink: 0;
 	background: url("/assets/subscribe-bg.jpg"), lightgray 50% / cover no-repeat;
@@ -428,7 +428,7 @@ code {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 18vw 0 11vw;
+	padding: 0 18vw 0 8vw;
 }
 .subscribe-logo {
 	display: flex;
@@ -436,12 +436,17 @@ code {
 }
 .subscribe-content {
 	min-height: 100%;
+	margin-bottom: 2rem;
 }
 
-.subscribe-content p {
+.subscribe-content p{
 	color: #fff;
-	font-size: 2.22vw;
-	line-height: 5.55vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	margin-bottom: 1.18rem;
 }
 .subscribe {
 	display: flex;
@@ -512,13 +517,12 @@ code {
 .resource-page {
 	width: 100vw;
 	padding: 0;
-	margin: 0vw 0vw 11vw 6vw;
+	margin: 0vw 0vw 14rem 5vw;
 }
 .resource-content1 {
 	width: 100%;
 	margin-top: 8vw;
 	display: flex;
-	margin-right: 3vw;
 }
 .resource-content2 {
 	display: none;
@@ -527,7 +531,6 @@ code {
 	display: flex;
 	width: 100%;
 	margin: 1rem 0 0;
-	padding-right: 3rem;
 	justify-content: space-between;
 	gap: 1rem;
 }
@@ -568,25 +571,26 @@ code {
 	justify-content: center;
 	max-width: 100%;
 	min-height: 100%;
-	margin: 0 10.11vw 0 5.55vw;
+	margin: 0 1rem 0 4.55vw;
 }
-.vid-content h4 {
+.vid-content p {
 	color: rgba(61, 61, 61, 0.95);
-	font-family: Open Sans;
-	font-size: clamp(1.5rem, 1.5vw, 2rem);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: clamp(1rem, 2vw, 2rem);
 	font-style: normal;
 	font-weight: 600;
-	line-height: 1.2;
+	line-height: 2.4rem;
 	max-width: 100%;
+	white-space: nowrap;
 }
 .vid-content span {
 	max-width: 100%;
 	color: #3d3d3d;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: clamp(0.8rem, 1vw, 1rem);
 	font-style: normal;
 	font-weight: 400;
-	line-height: 1.3;
+	line-height: 1.5rem;
 }
 
 /* Accordion Section */
@@ -740,10 +744,10 @@ button {
 	align-items: center;
 	margin: 8.88vw 5.55vw 0;
 }
-.faq-heading p{
+.faq-heading span{
   color: #AD60C8;
   font-family: Open Sans;
-  font-size: clamp(2rem , 1.5vw , 3.125rem);
+  font-size: clamp(2rem , 2.5vw , 30.125rem) !important;
   font-style: normal;
   font-weight: 700;
   line-height: 2vw; 
@@ -753,7 +757,7 @@ button {
 .faq-nav{
   display: flex;
   margin: 0 5vw 0;
-  padding: 0.88vw 6.66vw;
+  padding: 0.3vw 6.66vw;
   justify-content: space-around;
   color: #fff;
   align-items: center;

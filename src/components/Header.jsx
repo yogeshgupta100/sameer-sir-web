@@ -62,10 +62,7 @@ const Header = () => {
 							className="navbar-nav"
 							style={{
 								display: "flex",
-								justifyContent: "space-between",
 								alignItems: "center",
-								marginLeft: "2.22vw",
-								flexDirection:"row"
 							}}
 						>
 							<li className="nav-item ms-3 dropdown">
@@ -83,11 +80,10 @@ const Header = () => {
 											textUnderlinePosition: "none",
 											fontFamily: "Raleway",
 											color: " rgba(0, 0, 0, 0.80)",
-											fontSize: "1.11vw",
+											fontSize: "clamp(0.8rem , 1vw , 1.25rem)",
 											fontWeight: "medium",
 											fontStyle: "normal",
 											textAlign: "center",
-											marginRight: "0.66vw",
 										}}
 									>
 										About
@@ -96,7 +92,7 @@ const Header = () => {
 							</li>
 							<li
 								ref={addNavLink}
-								className={`nav-item ms-3 ${
+								className={`nav-item ${
 									navModalActive && modalState === "courses" ? "active" : ""
 								}`}
 								onClick={() => {
@@ -111,7 +107,7 @@ const Header = () => {
 										textAlign: "center",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "1.11vw",
+										fontSize: "clamp(0.8rem , 1vw , 1.25rem)",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
@@ -129,7 +125,7 @@ const Header = () => {
 							</li>
 							<li
 								ref={addNavLink}
-								className={`nav-item ms-3 ${
+								className={`nav-item ${
 									navModalActive && modalState === "resources" ? "active" : ""
 								}`}
 								onClick={() => {
@@ -143,7 +139,7 @@ const Header = () => {
 										cursor: "pointer",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "1.11vw",
+										fontSize: "clamp(0.8rem , 1vw , 1.25rem)",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
@@ -161,7 +157,7 @@ const Header = () => {
 							</li>
 							<li
 								ref={addNavLink}
-								className={`nav-item ms-3 ${navModalActive && modalState === "career" ? "active" : ""}`}
+								className={`nav-item ${navModalActive && modalState === "career" ? "active" : ""}`}
 								onClick={() => {
 									setNavModalActive((prev) => modalState !== "career" || !prev);
 									setModalState("career");
@@ -173,7 +169,7 @@ const Header = () => {
 										cursor: "pointer",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "1.11vw",
+										fontSize: "clamp(0.8rem , 1vw , 1.25rem)",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
@@ -201,10 +197,9 @@ const Header = () => {
 									fontFamily: "Raleway",
 									fontStyle: "normal",
 									fontWeight: "700",
-									// marginLeft:"1rem",
 								}}
 							>
-								<img src="/assets/final_logo.jpg" style={{width:"100%" , aspectRatio:"4/1"}}/>
+								<img src="/assets/final_logo.jpg" style={{width:"100%" , aspectRatio:"6.5/2.5" , objectFit:"contain"}}/>
 							</span>
 						</NavLink>
 						<div
@@ -212,7 +207,7 @@ const Header = () => {
 								display: "flex",
 								width: "fit-content",
 								justifyContent:"space-around",
-								gap:"0.7rem",
+								gap:"0.5rem",
 								marginRight:"1rem",
 							}}
 						>

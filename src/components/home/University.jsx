@@ -38,19 +38,19 @@ const University = ({color , textCol}) => {
                 In the footsteps of giants
                 </div>
                 <div style={{
-                    fontSize:"clamp(1.2rem , 3vw , 2.4rem)",
+                    fontSize:"clamp(1.2rem , 2.2vw , 2.4rem)",
                     fontWeight:"600",
                     color:"#fff"
                 }}>Top Universities where our mentors teach </div>
                 <div className="para" style={{
                     fontWeight:"100",
-                    opacity:"0.8",
-                    fontSize:"clamp(0.65rem , 2vw , 1rem)",
+                    opacity:"0.6",
+                    fontSize:"clamp(0.65rem , 1vw , 1.25rem)",
                     width:"100%",
                     display:"flex",
                     justifyContent:"center"
                 }}>
-                <div style={{width:"75%"}}>Our Mentors are the guardians of knowledge, passing down valuable insights and life lessons to the next generation. Their role goes beyond imparting information; they cultivate talent and nurture ambition.  </div>
+                <div style={{width:"80%"}}><p>Our Mentors are the guardians of knowledge, passing down valuable insights and life lessons to the next</p> <p>generation. Their role goes beyond imparting information; they cultivate talent and nurture ambition.</p>  </div>
                 </div>
             </div>
         </div>

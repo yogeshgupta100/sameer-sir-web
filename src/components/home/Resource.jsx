@@ -45,15 +45,15 @@ const Resource = () => {
         <div className='resource-content1'>
         <div className="vid1"></div>
         <div className="vid2" style={{position:"relative"}}></div>
-        <div className="vid-content" style={{width:"100%" , marginRight:"0"}}>
-          <h4>Typography Mastery: Crafting Beautiful Text in Your Designs</h4>
-          <span style={{paddingRight:"3rem" , marginTop:"0.6rem"}}>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</span>
+        <div className="vid-content" style={{width:"100%" , marginRight:"0" , marginTop:"6rem"}}>
+          <p>Typography Mastery: Crafting Beautiful</p><p> Text in Your Designs</p>
+          <span style={{paddingRight:"1rem" , marginTop:"1vw"}}>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</span>
           <button className='purple-btn' style={{
         textDecoration:"none",
         border:"none",
         maxWidth:"12.1vw",
         fontWeight:"500",  
-        marginTop:"2.1vw",
+        marginTop:"3vw",
         fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
         whiteSpace:"nowrap",
       }}>Explore more</button>

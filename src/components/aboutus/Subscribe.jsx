@@ -35,8 +35,8 @@ const Subscribe = () => {
 	return (
 		<>
 			<div className="Subscribe-main">
-				<span className="subscribe-logo" style={{width:"20%"}}>
-					<img src="/assets/logo_white.png" style={{width:"100%" , aspectRatio:"3/1"}}/>
+				<span className="subscribe-logo" style={{width:"30%"}}>
+					<img src="/assets/logo_white.png" style={{width:"100%" , aspectRatio:"5.5/1.5" , objectFit:"cover"}}/>
 				</span>
 				<span className="subscribe-content">
 					<p>Subscribe to our news letter</p>
