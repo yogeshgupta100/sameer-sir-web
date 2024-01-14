@@ -65,7 +65,7 @@ const Header = () => {
 								alignItems: "center",
 							}}
 						>
-							<li className="nav-item ms-3 dropdown">
+							<li className="nav-item ms-3 me-3 dropdown">
 								<NavLink
 									to="/about"
 									aria-current="page"
