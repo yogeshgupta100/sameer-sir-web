@@ -11,7 +11,9 @@ const Courses = () => {
 					<Heading content={"Explore our well knitted courses"} subContent={"A collaborative approach with industry experts and academic geniuses has led us to our curriculum that will ensure your readiness/potential for the booming-job market."} left={"27.5%"} />
 				</div>
 			</div>
-		<div className="course_section container" style={{width:"100vw" , minHeight:"60vh"}}>
+		<div className="course_section container" style={{width:"100vw" ,
+		 minHeight:"60vh",
+		 }}>
             
 			<Courses_container/>
 			</div>

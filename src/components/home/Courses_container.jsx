@@ -46,8 +46,7 @@ const Courses_container = () => {
 											fontStyle: "normal",
 											fontWeight: "700",
 											lineHeight: "121.5%",
-											// marginBottom: "2.22vw",
-											height:"4rem",
+											height:"clamp(3.5rem , 1.5vw , 5rem)",
 											overflow:"hidden",
 										}}
 									>
