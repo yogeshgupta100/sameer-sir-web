@@ -87,6 +87,14 @@ const Header = () => {
 										}}
 									>
 										About
+										<span
+										src=""
+										alt="arrow"
+										style={{
+											maxWidth: "2.22vw",
+											background: "transparent",
+										}}
+									></span>
 									</span>
 								</NavLink>
 							</li>
