@@ -13,13 +13,17 @@ const MainBlog = () => {
 	  (async () => {
 		  const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/blogs?populate=*`);
 		  const data = await res.json();
-		  // console.log(data.data);
-		  setBlogs(data.data);
+		  // setBlogs(data.data);
+      const fetchedBlogs = data.data;
+    setBlogs(fetchedBlogs);
+    setFilteredBlogs(fetchedBlogs);
 		})();
 	}, []);
 	const filterItem = (category) =>{
-		if(category === "All"){
-			setFilteredBlogs(blogs);
+		if(category === "All" || category === null){
+      if (blogs.length > 0) {
+        setFilteredBlogs(blogs);
+      }
 		}
 		else{
 			const updatedList = blogs.filter((currEle) => {
@@ -42,17 +46,18 @@ const MainBlog = () => {
     </label>
   
     <nav className="menu1" style={{background:"#fff"}}>
-    <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("All")}>All</button>
-    <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("UX design")}>UX design</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("UI design")}>UI design</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("Design thinking")}>Design thinking</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("Tools and Techniques")}>Tools and Techniques</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("Front end development")}>Front end development</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("Back end development")}>Back end development</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("Full stack development")}>Full stack development</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("Mixed reality(XR)")}>Mixed reality(XR)</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("Augmented reality")}>Augmented reality</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> filterItem("Virtual reality")}>Virtual reality</button>
+    <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("All");
+    document.getElementById("toggleAccordion").checked = false;}}>All</button>
+    <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("UX design"); document.getElementById("toggleAccordion").checked = false;}}>UX design</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("UI design"); document.getElementById("toggleAccordion").checked = false;}}>UI design</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Design thinking"); document.getElementById("toggleAccordion").checked = false;}}>Design thinking</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Tools and Techniques"); document.getElementById("toggleAccordion").checked = false;}}>Tools and Techniques</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Front end development"); document.getElementById("toggleAccordion").checked = false;}}>Front end development</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Back end development"); document.getElementById("toggleAccordion").checked = false;}}>Back end development</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Full stack development"); document.getElementById("toggleAccordion").checked = false;}}>Full stack development</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Mixed reality(XR)"); document.getElementById("toggleAccordion").checked = false;}}>Mixed reality(XR)</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Augmented reality"); document.getElementById("toggleAccordion").checked = false;}}>Augmented reality</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Virtual reality"); document.getElementById("toggleAccordion").checked = false;}}>Virtual reality</button>
     </nav>
 </nav>
 </section>

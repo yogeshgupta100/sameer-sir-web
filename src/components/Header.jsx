@@ -42,10 +42,10 @@ const Header = () => {
 					</label>
   
     <nav className="menu1" style={{zIndex:"10" , position:"absolute" , top:"6.5vw" , maxWidth:"100%" , marginLeft:"-1.5rem" , marginTop:"0" , background:"#fff"}}>
-    <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} >About us</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} >Courses</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} >Resources</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1" , marginBottom:"0"}} >Career</button>
+    <a href="/about" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> document.getElementById("toggleAccordion").checked = false}>About us</a>
+                <a href="/courses/1" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> document.getElementById("toggleAccordion").checked = false}>Courses</a>
+                <a href="/resource" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> document.getElementById("toggleAccordion").checked = false}>Resources</a>
+                <a href="/" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1" , marginBottom:"0"}} onClick={()=> document.getElementById("toggleAccordion").checked = false}>Career</a>
     </nav>
 					<div
 						className="collapse navbar-collapse"
@@ -199,16 +199,26 @@ const Header = () => {
 							aria-current="page"
 							to="/"
 						>
-							<span
+							<div
 								className="navbar-logo"
 								style={{
 									fontFamily: "Raleway",
 									fontStyle: "normal",
 									fontWeight: "700",
+									maxHeight:"80%",
+									aspectRatio:"11/3.5",
+									objectFit:"cover",
+									marginRight:"1rem"
+
 								}}
 							>
-								<img src="/assets/final_logo.jpg" style={{width:"100%" , aspectRatio:"6.5/2.5" , objectFit:"contain"}}/>
-							</span>
+								<img src="/assets/final_logo.jpg" style={{
+									width:"100%" , 
+								// aspectRatio:"6.5/2.5" , 
+								// objectFit:"contain",
+								height:"100%"
+								}}/>
+							</div>
 						</NavLink>
 						<div
 							style={{

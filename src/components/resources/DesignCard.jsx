@@ -6,9 +6,6 @@ const DesignCard = ({ currEle }) => {
       <div id="designCards"
         className="designCard container"
         style={{
-          // display: "grid",
-          // gridTemplateColumns: "1fr",
-          // gap: "1.11vw",
           justifyContent:"center",
           marginTop:"4.44vw",
           minWidth:"100%"
@@ -18,7 +15,6 @@ const DesignCard = ({ currEle }) => {
           className="card"
           style={{
             width: "100%",
-            // height: "fit-content",
             display: "flex",
             padding: "1.11vw",
             flexDirection:"row",
@@ -26,8 +22,7 @@ const DesignCard = ({ currEle }) => {
             backgroundColor:"#F6F6F1",
           }}
         >
-          {/* , margin:"1.11vw 0.888vw" */}
-          <div className="content" style={{width:"100%" }}>
+          <div className="content" style={{width:"100%" , fontSize:"clamp(1rem , 1vw , 1.5rem)"}}>
             <p>
               {currEle.content}
             </p>

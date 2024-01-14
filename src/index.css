@@ -168,7 +168,7 @@ code {
 	box-shadow: 0.069vw 0.069vw 1.04vw 0.104vw rgba(0, 0, 0, 0.15);
 	display: flex;
 	max-width: 90%;
-	margin-top: -3.5vw;
+	margin-top: -5.5vw;
 	justify-content: center;
 	padding: 1rem 0;
 }
@@ -542,7 +542,6 @@ code {
 	align-items: center;
 	flex-shrink: 0;
 	border-radius: 0.555vw;
-	background: url("/assets/resources-img1.jpeg"), 50% / cover no-repeat, #623434;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -558,7 +557,6 @@ code {
 	align-items: center;
 	flex-shrink: 0;
 	border-radius: 0.555vw;
-	background-image: url("/assets/resources-img2.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -577,7 +575,7 @@ code {
 	font-size: clamp(1rem, 2vw, 2rem);
 	font-style: normal;
 	font-weight: 600;
-	line-height: 2.4rem;
+	line-height: 118%;
 	max-width: 100%;
 	white-space: nowrap;
 }
@@ -588,7 +586,7 @@ code {
 	font-size: clamp(0.8rem, 1vw, 1rem);
 	font-style: normal;
 	font-weight: 400;
-	line-height: 1.5rem;
+	line-height: 160%;
 }
 
 /* Accordion Section */
@@ -1115,7 +1113,7 @@ button {
 	line-height: 1.66vw;
 }
 .banner-section {
-	background: url("/assets/resource-banner-bg.jpeg");
+	background: linear-gradient(95deg, #9844C5 -2.26%, #6B288F 38.81%, #9740C6 162.14%);
 	max-width: 100%;
 	min-height: 33.3vw;
 	background-position: center;

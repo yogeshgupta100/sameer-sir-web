@@ -18,8 +18,8 @@ const Small_nav = () => {
             }}
           >
                 <li>
-              <NavLink  
-                to='/tutorial'
+              <a  
+                href='/tutorials'
               >
                 <span
                   style={{
@@ -32,11 +32,11 @@ const Small_nav = () => {
                   }}>
                   Tutorials
                 </span>
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to={"/blogs"}
+              <a
+                href={"/blogs"}
                 style={{
                   textDecoration: "none",
                 }}
@@ -54,11 +54,11 @@ const Small_nav = () => {
                 >
                   Blogs 
                 </span>
-              </NavLink>
+              </a>
             </li>
             <li>
-              <a
-                href='#portfolio'
+            <a
+                href={"#portfolio"}
                 style={{
                   textDecoration: "none",
                 }}

@@ -55,17 +55,18 @@ const Resource = ({designCardData}) => {
         className="full"
         style={{
           background: "transparent",
-          marginBottom:"2.22vw",
-          minHeight:"80vw",
+          // marginBottom:"2.22vw",
+          // minHeight:"80vw",
           position:"relative",
+          marginBottom:"11.25vw"
         }}
       >
             <div className="image-hero">
-            <div className="landing-page" id="home-main">
-			<div className="landing-page-content" style={{justifyContent:"flex-start" , paddingLeft:"6vw"}}>
+            <div className="landing-page">
+			<div className="landing-page-content" style={{justifyContent:"flex-start" , paddingLeft:"6vw" , zIndex:"0"}}>
 			<div className="centered-text">
-				<h2>Fuel Your Curiosity: Find a Plethora of Resources Tailored for Your Learning Journey.</h2>
-				<p>Dive into a vast array of tools, insights, and support materials meticulously assembled to enrich your learning experience. </p>
+				<h2 style={{whiteSpace:"nowrap" , marginBottom:"0.2rem"}}>Fuel Your Curiosity: Find a Plethora of</h2><h2 style={{whiteSpace:"nowrap"}}> Resources Tailored for Your Learning Journey.</h2>
+				<p style={{whiteSpace:"nowrap" , paddingBottom:"0"}}>Dive into a vast array of tools, insights, and support materials meticulously</p><p> assembled to enrich your learning experience. </p>
 				<button
 								type="button"
 								className="button"
@@ -78,7 +79,6 @@ const Resource = ({designCardData}) => {
 									padding: "0.625rem 3.3vw",
 									fontWeight: "500",
 									fontSize: "clamp(0.8rem , 1.2vw , 1.25rem)",
-									maxHeight: "3rem",
 								}}
 							>
 								Apply now
@@ -120,28 +120,32 @@ const Resource = ({designCardData}) => {
         </div>
       </div>
       <div className='container'><Heading content="Tutorials" subContent={"Immerse yourself in a world of guided learning, designed to empower learners of all levels. Our in-depth tutorials are crafted to simplify complex concepts, providing a seamless path from understanding to expertise."} left="20.5%"/></div>
-      <Resources/>
-      <div className='resource-content1' style={{paddingRight:"1rem"}}>
-        <div className="vid-content" style={{width:"100%" , marginRight:"1rem"}}>
-          <h4>Typography Mastery: Crafting Beautiful Text in Your Designs</h4>
-          <span style={{paddingRight:"3rem" , marginTop:"0.6rem"}}>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</span>
-          <button className='purple-btn' style={{
-            textDecoration:"none",
-            border:"none",
-            maxWidth:"12.1vw",
-            fontWeight:"500",  
-            marginTop:"2.1vw",
-            fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
-            whiteSpace:"nowrap",
-          }}>Explore more</button>
+      <Resources imageUrl1={"/assets/resource1.jpeg"} imageUrl2={"/assets/resource2.jpeg"} link={'/tutorials'}/>
+      <div className="resource-page" style={{display:"flex" , justifyContent:"center" , width:"100%" , margin:"0"}}>
+      <div className='resource-content1' style={{width:"90%"}}>
+      <div className="vid-content" style={{width:"45%" , margin:"3rem 0 0 0rem"}}>
+          <p>Typography Mastery: Crafting Beautiful</p><p> Text in Your Designs</p>
+          <span style={{paddingRight:"1rem" , marginTop:"1vw"}}>Dive deep into the world of typography and elevate your design</span><span>projects with expert tips and techniques.</span>
+          <a href='/tutorials' className='purple-btn' style={{
+        textDecoration:"none",
+        border:"none",
+        maxWidth:"12.1vw",
+        fontWeight:"500",  
+        marginTop:"3vw",
+        fontSize:"clamp(0.8rem , 1.5vw , 1rem)",
+        whiteSpace:"nowrap",
+      }}>Explore more</a>
         </div>
-          <div className="vid1"></div>
-          <div className="vid2" style={{position:"relative"}}></div>
+        <div className="vid1" style={{backgroundImage:`url(${"/assets/resource1.jpeg"})`}}></div>
+        <div className="vid2" style={{position:"relative" , backgroundImage:`url(${"/assets/resource2.jpeg"})`}}></div>
         </div>
-      <div className="container" style={{marginTop:"16.65vw"}} id='blogs'>
-        <Heading content={"Blogs"} left={"30.5%"} />
-        <div className="blogs-container container">
-        <div className='container' style={{width:"100%", textAlign:"end"}}>
+        </div>
+        <div className="container" style={{marginTop:"16.65vw" }}>
+        <Heading content={"Blogs"} subContent={" Engage in thought-provoking articles, expert opinions, and in-depth analyses that transcend boundaries. Our blog is a treasure trove of diverse topics, offering a rich tapestry of ideas for curious minds."} left={"30.5%"} />
+        </div>
+      <div style={{ justifyContent:"center" , width:"100%" , display:"flex" , marginBottom:"7vw"}} id='blogs'>
+        <div className="blogs-container" style={{marginTop:"5vw" , width:"73%"}}>
+        <div style={{width:"100%", textAlign:"end" , margin:"0 0 0.3rem 0"}}>
           <NavLink to={"/blogs"} style={{textDecoration:"none" , color:"#B46BD1"}}>view all</NavLink>
         </div>
           <Blog/>
@@ -150,13 +154,14 @@ const Resource = ({designCardData}) => {
       <Upload/>
       <Portfolio/>
       <Upload/>
-        <div className="container design" style={{marginTop:"9.99vw"}}>
-        <Heading content={"Design Challenges"} left={"30.5%"} />
+        <div className="container design">
+        <Heading content={"Design Challenges"} subContent={"Immerse yourself in our curated collection of design challenges, showcasing the ingenious solutions crafted by our creative community. "} left={"30.5%"} />
         <div className="DesignCard container" style={{
           display:"grid",
           gridTemplateColumns:"1fr 1fr",
           justifyContent:"center",
-          gap:"2.22vw"
+          gap:"2.22vw",
+          paddingTop:"4vw"
         }}>
           {designCardData.map((currEle) => {
       return(
