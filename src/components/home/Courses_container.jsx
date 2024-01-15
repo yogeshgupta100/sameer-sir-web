@@ -24,8 +24,8 @@ const Courses_container = () => {
 								<div
 									className="card-body container"
 								>
-									<div style={{marginBottom:"3vw"}}>
-									<span className="course-subtitle"
+									<div style={{marginBottom:"3vw" }}>
+									<span className="course-subtitle container"
 										style={{
 											color: "#878787",
 											fontFamily: "Open Sans",
@@ -39,7 +39,7 @@ const Courses_container = () => {
 										{course.attributes.category}
 									</span>
 									<p
-										className="card-title"
+										className="card-title container"
 										style={{
 											color: "#B46BD1",
 											fontFamily: "Open Sans",
@@ -49,14 +49,14 @@ const Courses_container = () => {
 											lineHeight: "121.5%",
 											height:"clamp(3.3rem , 1.5vw , 5rem)",
 											overflow:"hidden",
-											width:"95%"
+											// width:"95%"
 										}}
 									>
 										{course.attributes.name}
 									</p>
 									</div>
 									<div
-										className="content-course"
+										className="content-course container"
 										style={{
 											width:"100%",
 											display:"flex",
@@ -66,7 +66,7 @@ const Courses_container = () => {
 											marginBottom:"3vw"
 										}}
 									>
-										<div className="content" style={{textAlign:"start"}}>
+										<div className="content " style={{textAlign:"start"}}>
 											<div
 												style={{
 													color: "rgba(117, 117, 117, 0.90)",
@@ -112,16 +112,18 @@ const Courses_container = () => {
 											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
 										</div>
 									</div>
+									<div className='container'>
 									<NavLink
 										to={`/courses/${course.id}`}
 										className="purple-btn course-btn"
 										style={{
 											textDecoration: "none",
-											fontSize: "clamp(0.5rem , 1.5vw , 1rem)"
+											fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
 										}}
 									>
 										Learn more
 									</NavLink>
+									</div>
 								</div>
 							</div>
 					);
