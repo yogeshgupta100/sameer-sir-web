@@ -5,7 +5,7 @@ import EmpCard from "../aboutus/card";
 const Teachers = ({empData}) => {
 
 	return (
-		<div className="container" style={{margin:"14vw 0 11.25vw" , paddingBottom:"0" , minWidth:"100%"}}>
+		<div className="content" style={{margin:"14vw 2.22vw 11.25vw" , width:"95vw"}}>
 				<div className="view-all-heading">
 				<Heading content={"Mentors empowering your journey"} subContent={"Get groomed by elite professionals and academic gurus of the industry to accelerate your professional journey."} left={"20.5%"}></Heading>
 				</div>
@@ -14,7 +14,8 @@ const Teachers = ({empData}) => {
 					display:"flex",
 					width:"30vw",
 					justifyContent:"start",
-					marginLeft:"24%"
+					marginLeft:"clamp(23% , 2vw , 24%)",
+					marginBottom:"8vw"
 				}}
 			>
 				<button
@@ -55,11 +56,12 @@ const Teachers = ({empData}) => {
 				</button>
 			</div>
 			<div
-				className="main-card--container container"
+				className="main-card--container"
 				style={{
 					width:"100%",	
 					display:"flex",	
 					gap:"1.3rem",
+					justifyContent:"center"
 				}}
 			>
 				{empData && empData.map((currEle) => {

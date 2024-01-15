@@ -35,7 +35,7 @@ const Subscribe = () => {
 	return (
 		<>
 			<div className="Subscribe-main">
-				<span className="subscribe-logo" style={{width:"30%"}}>
+				<span className="subscribe-logo" style={{width:"25%"}}>
 					<img src="/assets/logo_white.png" style={{width:"100%" , aspectRatio:"5.5/1.5" , objectFit:"cover"}}/>
 				</span>
 				<span className="subscribe-content">
@@ -56,13 +56,13 @@ const Subscribe = () => {
 									width: "100%",
 									border: "none",
 									height: "100%",
-									padding: "0 2.22vw",
-									fontSize: "2vw",
-									color: "#B86CD2",
+									padding: "0 8vw 0 2.22vw",
+									fontSize: "1.5vw",
+									color: "rgba(26, 26, 26, 0.85)",
 									fontWeight: "600",
 									alignSelf: "center",
 								}}
-								placeholder="Enter your Email Address"
+								placeholder="Enter your e-mail address"
 								ref={inputRef}
 							/>
 						</div>

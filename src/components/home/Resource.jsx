@@ -3,7 +3,7 @@ import React from 'react'
 const Resource = ({imageUrl1 , imageUrl2 , link}) => {
   return (
     <>
-      <div className="resource-page" style={{display:"flex" , justifyContent:"center" , width:"100%" , marginBottom:"8vw", marginLeft:"0"}}>
+      <div className="resource-page" style={{display:"flex" , justifyContent:"center" , width:"100%" , marginBottom:"10vw", marginLeft:"0"}}>
         <div className="resource-content2">
         <div className="resource-container" style={{display:"flex" , justifyContent:"space-between" , width:"100vw" , marginBottom:"2rem"}}>
         <div className="vid1" style={{ width:"50%" , backgroundImage:`url(${imageUrl1})` , marginLeft:"1rem"}}>
