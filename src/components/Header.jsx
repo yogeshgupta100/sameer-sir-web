@@ -80,7 +80,7 @@ const Header = () => {
 											textUnderlinePosition: "none",
 											fontFamily: "Raleway",
 											color: " rgba(0, 0, 0, 0.80)",
-											fontSize: "clamp(0.8rem , 1vw , 1.25rem)",
+											fontSize: "clamp(0.8rem , 1.1vw , 1.25rem)",
 											fontWeight: "medium",
 											fontStyle: "normal",
 											textAlign: "center",
@@ -115,7 +115,7 @@ const Header = () => {
 										textAlign: "center",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "clamp(0.8rem , 1vw , 1.25rem)",
+										fontSize: "clamp(0.8rem , 1.1vw , 1.25rem)",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
@@ -147,7 +147,7 @@ const Header = () => {
 										cursor: "pointer",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "clamp(0.8rem , 1vw , 1.25rem)",
+										fontSize: "clamp(0.8rem , 1.1vw , 1.25rem)",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
@@ -177,7 +177,7 @@ const Header = () => {
 										cursor: "pointer",
 										fontFamily: "raleway",
 										color: " rgba(0, 0, 0, 0.80)",
-										fontSize: "clamp(0.8rem , 1vw , 1.25rem)",
+										fontSize: "clamp(0.8rem , 1.1vw , 1.25rem)",
 										fontWeight: "medium",
 										fontStyle: "normal",
 									}}
@@ -208,7 +208,7 @@ const Header = () => {
 									maxHeight:"80%",
 									aspectRatio:"11/3.5",
 									objectFit:"cover",
-									marginRight:"1rem",
+									// marginRight:"1rem",
 									width:"100%",
 									paddingRight:"3rem"
 								}}
