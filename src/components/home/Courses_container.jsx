@@ -43,12 +43,12 @@ const Courses_container = () => {
 										className="card-title container"
 										style={{
 											color: "#B46BD1",
-											fontFamily: "Open Sans",
+											// fontFamily: "Open Sans",
 											fontSize: "clamp(1rem , 1.5vw , 1.3rem)",
 											fontStyle: "normal",
-											fontWeight: "800",
+											fontWeight: "700",
 											lineHeight: "121.5%",
-											height:"clamp(3.3rem , 1.5vw , 5rem)",
+											height:"clamp(3.2rem , 1.3vw , 4rem)",
 											overflow:"hidden",
 											// width:"95%",
 										}}
