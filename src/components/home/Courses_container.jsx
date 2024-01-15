@@ -24,34 +24,36 @@ const Courses_container = () => {
 								<div
 									className="card-body container"
 								>
-									<div>
+									<div style={{marginBottom:"3vw"}}>
 									<span className="course-subtitle"
 										style={{
 											color: "#878787",
 											fontFamily: "Open Sans",
-											fontSize: "clamp(0.7rem , 1vw , 0.9rem)",
+											fontSize: "clamp(0.5rem , 1vw , 0.8rem)",
 											fontStyle: "normal",
 											fontWeight: "700",
-											lineHeight:"125%"
+											lineHeight:"125%",
+											marginBottom:"1vw"
 										}}
 									>
 										{course.attributes.category}
 									</span>
-									<h5
+									<p
 										className="card-title"
 										style={{
 											color: "#B46BD1",
 											fontFamily: "Open Sans",
-											fontSize: "clamp(1rem , 1.5vw , 1.5rem)",
+											fontSize: "clamp(1rem , 1.5vw , 1.3rem)",
 											fontStyle: "normal",
-											fontWeight: "700",
+											fontWeight: "900",
 											lineHeight: "121.5%",
-											height:"clamp(3.5rem , 1.5vw , 5rem)",
+											height:"clamp(3.3rem , 1.5vw , 5rem)",
 											overflow:"hidden",
+											width:"95%"
 										}}
 									>
 										{course.attributes.name}
-									</h5>
+									</p>
 									</div>
 									<div
 										className="content-course"
@@ -60,7 +62,8 @@ const Courses_container = () => {
 											display:"flex",
 											fontSize: "clamp(0.5rem , 1.2vw , 1rem)",
 											lineHeight: "130%",
-											justifyContent:"space-between"
+											justifyContent:"space-between",
+											marginBottom:"3vw"
 										}}
 									>
 										<div className="content" style={{textAlign:"start"}}>

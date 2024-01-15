@@ -14,7 +14,7 @@ const Teachers = ({empData}) => {
 					display:"flex",
 					width:"30vw",
 					justifyContent:"start",
-					marginLeft:"23.8%"
+					marginLeft:"24%"
 				}}
 			>
 				<button

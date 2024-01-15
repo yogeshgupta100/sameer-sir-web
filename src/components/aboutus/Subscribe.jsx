@@ -215,6 +215,9 @@ const Subscribe = () => {
 								<li>
 									<NavLink to="/resource" onClick={componentDidMount}>Resources</NavLink>
 								</li>
+								<li>
+									<NavLink to="/tutorials" onClick={componentDidMount}>Tutorials</NavLink>
+								</li>
 							</ul>
 						</div>
 
