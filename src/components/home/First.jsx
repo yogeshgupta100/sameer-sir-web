@@ -40,9 +40,9 @@ const First = () => {
           margin:"6.66vw 4.44vw ",
           color:"#fff",
           fontStyle:"normal",
-          fontFamily:"Open Sans" 
+          // fontFamily:"Open Sans" 
         }}>
-          <p style={{ fontSize:"clamp(0.6rem , 2vw , 1.1rem)" , marginBottom:"0"}}>Join the Creative Revolution</p>
+          <p style={{ fontSize:"clamp(0.6rem , 2vw , 1.1rem)" , marginBottom:"0" , fontWeight:"600"}}>Join the Creative Revolution</p>
           <h4 style={{fontSize:"2.33vw" , lineHeight:"130%" , width:"90%" , fontWeight:"700" , color:"#fff"}}>Your lifetime Access to our Design Community Membership Starts Here!</h4>
           <a href='#courses' style={{textDecoration:"none"}}>
           <button type="button" className="btn" style={{borderRadius: "0.72vw",
@@ -57,7 +57,7 @@ const First = () => {
         </button>
           </a>
         <div className="first-count" style={{
-          maxWidth:"100vw",
+          maxWidth:"100%",
           minHeight:"3vw",
           display:"grid",
           gridTemplateColumns:"repeat(3,1fr)",
@@ -67,15 +67,16 @@ const First = () => {
               <h3 style={{
               fontSize:"3.33vw",
               fontWeight:"700",
-              color:"#fff"
+              color:"#fff",
+              margin:"0.2rem 0rem 0 0"
             }}>500+ </h3>
               <p style={{
-                width:"11vw",
+                width:"10vw",
                 fontSize:"clamp(0.7rem , 1.1vw , 1rem)",
                 fontWeight:"400",
               }}>Experts working across the globe!</p>
           </div>
-          <div className="content" style={{minHeight:"100%"}}>
+          <div className="content" style={{minHeight:"100%", marginLeft:"-0.85rem"}}>
             <h3 style={{
               fontSize:"3.33vw",
               fontWeight:"700",

@@ -27,7 +27,7 @@ const Brands = ({ color, textCol }) => {
         }}>
             <div className="heading" style={{
                 paddingTop:"5.55vw",
-                fontFamily:"Open Sans",
+                // fontFamily:"Open Sans",
                 fontStyle:"normal"
             }}>
                 <div className="para" style={{

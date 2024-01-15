@@ -135,7 +135,7 @@ code {
 
 .course-content {
 	color: #b46bd1;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif', 'Helvetica Neue', sans-serif;
 	font-size: 0.99vw;
 	font-style: normal;
 	font-weight: 600;
@@ -226,7 +226,7 @@ code {
 .about-content p {
 	max-width: 100%;
 	color: #2e2e2e;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: clamp(1rem, 1.5vw, 1.2rem) !important;
 	font-style: normal;
 	font-weight: 400;
@@ -257,7 +257,7 @@ code {
 /* .part2 {
 	max-width: 100%;
 	color: #2e2e2e;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.25vw;
 	font-style: normal;
 	font-weight: 400;
@@ -332,7 +332,7 @@ code {
 	font-weight: 600;
 	letter-spacing: 0.03312vw;
 	line-height: 0.8;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-style: normal;
 	color: #ad60c8;
 }
@@ -341,7 +341,7 @@ code {
 	font-size: 1.4vw;
 	font-style: normal;
 	font-weight: 400;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	letter-spacing: 0.03vw;
 }
 
@@ -439,7 +439,7 @@ code {
 
 .subscribe-content p{
 	color: #fff;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif', 'Helvetica Neue', sans-serif;
 	font-size: 2rem;
 	font-style: normal;
 	font-weight: 400;
@@ -571,7 +571,7 @@ code {
 }
 .vid-content p {
 	color: rgba(61, 61, 61, 0.95);
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif', 'Helvetica Neue', sans-serif;
 	font-size: clamp(1rem, 2vw, 2rem);
 	font-style: normal;
 	font-weight: 600;
@@ -582,7 +582,7 @@ code {
 .vid-content span {
 	max-width: 100%;
 	color: #3d3d3d;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif', 'Helvetica Neue', sans-serif;
 	font-size: clamp(0.8rem, 1vw, 1rem);
 	font-style: normal;
 	font-weight: 400;
@@ -742,7 +742,7 @@ button {
 }
 .faq-heading span{
   color: #AD60C8;
-  font-family: Open Sans;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: clamp(2rem , 2.5vw , 30.125rem) !important;
   font-style: normal;
   font-weight: 700;
@@ -849,7 +849,7 @@ button {
 .why-text {
 	margin-left: 1.554vw;
 	color: #faedff;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 2.886vw;
 	font-style: normal;
 	font-weight: 600;
@@ -876,7 +876,7 @@ button {
 }
 .card-heading {
 	color: #8833b6;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.332vw;
 	font-style: normal;
 	font-weight: 600;
@@ -886,7 +886,7 @@ button {
 }
 .card-para {
 	color: rgba(40, 0, 52, 0.75);
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.0545vw;
 	font-style: normal;
 	font-weight: 400;
@@ -946,14 +946,14 @@ button {
 }
 .text-content {
 	color: rgba(255, 255, 255, 0.8);
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 0.999vw;
 	font-weight: 300;
 	line-height: 1.665vw; /* 166.667% */
 }
 .text-content h5 {
 	color: rgba(255, 255, 255, 0.85);
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.332vw;
 	font-style: normal;
 	font-weight: 600;
@@ -961,14 +961,14 @@ button {
 }
 .howtolearn-id {
 	color: rgba(180, 107, 209, 0.5);
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.887vw;
 	font-weight: 800;
 	font-style: normal;
 }
 .howtolearn-content h6 {
 	color: #b46bd1;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.11vw;
 	font-style: normal;
 	font-weight: 600;
@@ -976,7 +976,7 @@ button {
 
 .howtolearn-content p {
 	color: #b46bd1;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.04vw;
 	font-style: normal;
 	font-weight: 400;
@@ -1017,7 +1017,7 @@ button {
 }
 .form-section .form-text {
 	max-width: 100%;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: clamp(1rem, 2vw, 1.25rem);
 	font-style: normal;
 	font-weight: 600;
@@ -1029,7 +1029,7 @@ button {
 }
 ::placeholder {
 	color: #b86cd2;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: clamp(0.8rem, 2vw, 1.25rem);
 	font-style: normal;
 	font-weight: 600;
@@ -1080,7 +1080,7 @@ button {
 .article p {
 	color: #666;
 	text-align: justify;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.11vw;
 	font-style: normal;
 	font-weight: 400;
@@ -1091,7 +1091,7 @@ button {
 	background-color: transparent !important;
 	border: none !important;
 	color: #b86cd2 !important;
-	font-family: Open Sans !important;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	font-size: 1.332vw !important;
 	font-style: normal !important;
 	font-weight: 600 !important;
@@ -1106,7 +1106,7 @@ button {
 }
 .form-text option {
 	color: #b86cd2;
-	font-family: Open Sans;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.332vw;
 	font-style: normal;
 	font-weight: 600;
@@ -1254,7 +1254,7 @@ button {
 	.course-data {
 		font-size: clamp(0.11rem, 3vw, 1rem) !important;
 		color: #b46bd1;
-		font-family: Open Sans;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif', 'Helvetica Neue', sans-serif;
 		font-style: normal;
 		font-weight: 600;
 	}

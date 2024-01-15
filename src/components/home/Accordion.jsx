@@ -26,20 +26,20 @@ function AllCollapseExample() {
     <nav className="menu1">
     <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> {filterItem("Institute"); document.getElementById("toggleAccordion").checked = false;}}>Institute</button>
                 <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> {filterItem("Admissions"); document.getElementById("toggleAccordion").checked = false;}}>Admissions</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> {filterItem("Course content"); document.getElementById("toggleAccordion").checked = false;}}>Course content</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> {filterItem("Course content"); document.getElementById("toggleAccordion").checked = false;}}>Instructors</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> {filterItem("Course content"); document.getElementById("toggleAccordion").checked = false;}}>Cards & payments</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> {filterItem("Placements"); document.getElementById("toggleAccordion").checked = false;}}>Placements</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> {filterItem("Course format"); document.getElementById("toggleAccordion").checked = false;}}>Course Format</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> {filterItem("Course content"); document.getElementById("toggleAccordion").checked = false;}}>Course Content</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> {filterItem("Instructors"); document.getElementById("toggleAccordion").checked = false;}}>Instructors</button>
+                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> {filterItem("Cost and payment"); document.getElementById("toggleAccordion").checked = false;}}>Cost and Payment</button>
     </nav>
 </nav>
 </section>
         <nav className="faq-nav">
                 <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Institute")}>Institute</button>
                 <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Admissions")}>Admissions</button>
-                <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Course content")}>Course content</button>
-                <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Course content")}>Instructors</button>
-                <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Course content")}>Cards & payments</button>
-                <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Placements")}>Placements</button>
+                <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Course format")}>Course Format</button>
+                <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Course content")}>Course Content</button>
+                <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Instructors")}>Instructors</button>
+                <button className="btn-group__item" style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#fff"}} onClick={()=> filterItem("Cost and payment")}>Cost and Payment</button>
         </nav>
         <div className="accordion">
           <Accordion className='accordion-content'>
