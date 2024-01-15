@@ -39,7 +39,7 @@ const Courses_container = () => {
 									>
 										{course.attributes.category}
 									</div>
-									<p
+									<div
 										className="card-title container"
 										style={{
 											color: "#B46BD1",
@@ -54,7 +54,7 @@ const Courses_container = () => {
 										}}
 									>
 										{course.attributes.name}
-									</p>
+									</div>
 									</div>
 									<div
 										className="content-course container"
