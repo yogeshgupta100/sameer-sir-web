@@ -1365,6 +1365,10 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+	.navbar-logo{
+		margin-right: 0 !important;
+		padding-right: 0 !important;
+	}
 	.design {
 		display: none;
 	}

@@ -194,10 +194,10 @@ const Header = () => {
 								</span>
 							</li>
 						</ul>
-						<NavLink
+						<a
 							className="nav-link"
 							aria-current="page"
-							to="/"
+							href="/"
 						>
 							<div
 								className="navbar-logo"
@@ -208,18 +208,17 @@ const Header = () => {
 									maxHeight:"80%",
 									aspectRatio:"11/3.5",
 									objectFit:"cover",
-									marginRight:"1rem"
-
+									marginRight:"1rem",
+									width:"100%",
+									paddingRight:"3rem"
 								}}
 							>
-								<img src="/assets/final_logo.jpg" style={{
+								<img src="/assets/logo_dxolve.svg" style={{
 									width:"100%" , 
-								// aspectRatio:"6.5/2.5" , 
-								// objectFit:"contain",
 								height:"100%"
 								}}/>
 							</div>
-						</NavLink>
+						</a>
 						<div
 							style={{
 								display: "flex",
