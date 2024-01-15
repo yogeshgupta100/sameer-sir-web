@@ -32,10 +32,11 @@
 .centered-text h2{
   font-family: Raleway;
   font-style: normal;
-  font-size: clamp(1rem , 3vw , 2.2rem);
-  font-weight: 700;
+  font-size: clamp(1rem , 3vw , 2rem);
+  font-weight: 800;
   color: #fff;
   margin-bottom: 1rem;
+  line-height: 137.778% ;
 }
   .centered-text p{
   color: #fff;
@@ -46,4 +47,5 @@
   padding-bottom: 2.22vw;
   opacity: 0.9;
   letter-spacing: 0.11vw;
+  width: 80%;
 }

@@ -109,7 +109,7 @@ const Subscribe = () => {
 							height: "fit-content",
 						}}
 					>
-						<h2 style={{ marginBottom: "15px", fontSize: "clamp(1.2rem, 2.5vw, 2rem)" }}>crafting visions</h2>
+						<h2 style={{ marginBottom: "15px", fontSize: "clamp(1.2rem, 2.5vw, 2rem)" }}>CRAFTING VISIONS</h2>
 						<p style={{color:"#000"}}>
 						Make us a part of your design journey and elevate your career!
 						</p>
