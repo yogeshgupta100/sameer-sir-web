@@ -25,7 +25,7 @@ const Courses_container = () => {
 									className="card-body container"
 								>
 									<div style={{marginBottom:"3vw" }}>
-									<span className="course-subtitle container"
+									<div className="course-subtitle container"
 										style={{
 											color: "#878787",
 											fontFamily: "Open Sans",
@@ -33,11 +33,12 @@ const Courses_container = () => {
 											fontStyle: "normal",
 											fontWeight: "700",
 											lineHeight:"125%",
-											marginBottom:"1vw"
+											whiteSpace:"nowrap",
+											marginBottom:"0.3rem"
 										}}
 									>
 										{course.attributes.category}
-									</span>
+									</div>
 									<p
 										className="card-title container"
 										style={{
@@ -45,11 +46,11 @@ const Courses_container = () => {
 											fontFamily: "Open Sans",
 											fontSize: "clamp(1rem , 1.5vw , 1.3rem)",
 											fontStyle: "normal",
-											fontWeight: "900",
+											fontWeight: "800",
 											lineHeight: "121.5%",
 											height:"clamp(3.3rem , 1.5vw , 5rem)",
 											overflow:"hidden",
-											// width:"95%"
+											// width:"95%",
 										}}
 									>
 										{course.attributes.name}
@@ -60,7 +61,7 @@ const Courses_container = () => {
 										style={{
 											width:"100%",
 											display:"flex",
-											fontSize: "clamp(0.5rem , 1.2vw , 1rem)",
+											fontSize: "clamp(0.5rem , 1.2vw , 0.9rem)",
 											lineHeight: "130%",
 											justifyContent:"space-between",
 											marginBottom:"3vw"
@@ -79,7 +80,7 @@ const Courses_container = () => {
 											>
 												Starting Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 1rem)" , color: "#B46BD1" , fontWeight:"500" , whiteSpace:"nowrap"}}>{course.attributes.batches[0].startDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.9rem)" , color: "#B46BD1" , fontWeight:"500" , whiteSpace:"nowrap"}}>{course.attributes.batches[0].startDate}</span>
 										</div>
 										<div className="v-line" style={{minWidth:"0.0525rem" , backgroundColor:"#CDCDCD" , height:"100%" , margin:"0" , alignSelf:"center"}}></div>
 										<div className="content" style={{textAlign:"center" , whiteSpace:"nowrap"}}>
@@ -92,9 +93,9 @@ const Courses_container = () => {
 													marginBottom:"0.88vw"
 												}}
 											>
-												End Date
+												Cohort size
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 1rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.9rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
 										</div>
 										<div className="v-line" style={{minWidth:"0.0525rem" , backgroundColor:"#CDCDCD" , height:"100%" , margin:"0", alignSelf:"center"}}></div>
 										<div className="content" style={{textAlign:"center" , whiteSpace:"nowrap"}}>
@@ -109,7 +110,7 @@ const Courses_container = () => {
 											>
 												Duration
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.9rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
 										</div>
 									</div>
 									<div className='container'>
