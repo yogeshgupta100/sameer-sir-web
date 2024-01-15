@@ -116,7 +116,7 @@ code {
 .course-container .card {
 	max-width: 90%;
 	border-radius: 1.25rem;
-	border: 0.12vw solid #b46bd1;
+	border: 0.10vw solid #b46bd1;
 	background: #fff;
 	box-shadow: 0.2775vw 0.2775vw 1.388vw 0.2775vw rgba(0, 0, 0, 0.1);
 	overflow: hidden;
