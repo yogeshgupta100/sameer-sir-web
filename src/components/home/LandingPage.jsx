@@ -2,9 +2,9 @@ import React from "react";
 
 const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 	return (
-		<div className="landing-page container" id="home-main">
-			<div className="landing-page-content container">
-			<div className="centered-text container">
+		<div className="landing-page" id="home-main">
+			<div className="landing-page-content">
+			<div className="centered-text">
 				<h2>{title}</h2>
 				<p>{subTitle}</p> 
 				<div style={{display:"flex" , width:"70%" , justifyContent:"flex-start" , gap:"1rem"}}>
@@ -42,11 +42,11 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 				</button>
 				</div>
 			</div>
-				<span className="landing-img" style={{width:"75%" }}>
+				<span className="landing-img" style={{width:"75%"}}>
 					<img src={imageurl} style={{
 						aspectRatio:"2/2",
-						// marginLeft:"0.5rem",
-						objectFit:"contain"
+						objectFit:"contain",
+						display:"inline-block"
 					}}/>
 				</span>
 			</div>

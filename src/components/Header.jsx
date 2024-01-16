@@ -55,7 +55,7 @@ const Header = () => {
 							left: "0",
 							display: "flex",
 							justifyContent: "space-between",
-							minWidth: "95vw",
+							width: "93%",
 							margin:"0 2rem"
 						}}
 					>
@@ -226,7 +226,7 @@ const Header = () => {
 								width: "fit-content",
 								justifyContent:"space-around",
 								gap:"0.5rem",
-								marginRight:"1rem",
+								// marginRight:"1rem",
 							}}
 						>
 							<Contact />
