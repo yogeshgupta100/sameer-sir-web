@@ -22,8 +22,8 @@ const Header = () => {
 				style={{ padding: "0", maxWidth: "100vw", boxShadow: "0 0.069vw 0.555vw 0 rgba(0, 0, 0, 0.25)" }}
 			>
 				<div
-					className="container-fluid header py-2"
-					style={{ backgroundColor: "#fff", margin: "0", minHeight: "6.66vw", display: "flex"}}
+					className="header"
+					style={{ backgroundColor: "#fff", margin: "auto", minHeight: "6.66vw", display: "flex" , width:"93%"}}
 				>
     <input id="toggle1" type="checkbox" style={{position:"relative" , zIndex:"120" }}/>
     <label style={{border:"none"}}
@@ -51,12 +51,11 @@ const Header = () => {
 						className="collapse navbar-collapse"
 						id="navbarSupportedContent"
 						style={{
-							position: "absolute",
-							left: "0",
+							// position: "absolute",
 							display: "flex",
 							justifyContent: "space-between",
-							width: "93%",
-							margin:"0 2rem"
+							// width: "93%",
+							// margin:"0 2rem",
 						}}
 					>
 						<ul

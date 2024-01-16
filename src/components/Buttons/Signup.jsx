@@ -28,7 +28,7 @@ const Signup = () => {
           width:"100%",
           borderRadius: "0.66vw",
           border: "0.076vw solid #B86CD2",
-          margin:"0 1.11vw 0 0",
+          // margin:"0 1.11vw 0 0",
           fontWeight:"500",
           fontSize:"1.1544vw",
           aspectRatio:"4/1.9",
