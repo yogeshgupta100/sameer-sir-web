@@ -224,7 +224,7 @@ const Header = () => {
 								display: "flex",
 								width: "fit-content",
 								justifyContent:"space-around",
-								gap:"0.5rem",
+								gap:"0.8rem",
 								// marginRight:"1rem",
 							}}
 						>

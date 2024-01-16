@@ -18,6 +18,7 @@
   align-items: center;
   justify-content: space-between;
   margin: auto;
+  gap: 2rem;
 }
   
   .navbar {
@@ -26,7 +27,7 @@
   
   .centered-text {
     /* margin: 0 1rem; */
-    max-width: 51%;
+    max-width: 50%;
     letter-spacing: 0.11rem;
     justify-content: center;
   }
