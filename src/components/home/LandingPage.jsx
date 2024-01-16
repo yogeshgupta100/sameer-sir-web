@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "../Buttons/Contact";
 
 const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 	return (
@@ -15,9 +14,9 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 					border: "0.104vw solid #FFF",
 					fontSize:"clamp(0.44rem , 2vw , 1.25rem)",
 					fontWeight:"500",
-					minWidth: "50%",
+					minWidth: "40%",
 					aspectRatio: "10/2.8",
-					padding:"0 1.6vw",
+					padding:"0 1vw",
 					margin:"2.22vw 0",
 					whiteSpace:"nowrap",
 				}}>
@@ -31,9 +30,9 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 					border: "0.104vw solid #FFF",
 					fontSize:"clamp(0.44rem , 2vw , 1.25rem)",
 					fontWeight:"500",
-					minWidth: "50%",
+					minWidth: "40%",
 					aspectRatio: "11/2.7",
-					padding:"0 1.6vw",
+					padding:"1vw 1vw",
 					margin:"2.22vw 0",
 					whiteSpace:"nowrap"
 				}}>
@@ -43,7 +42,7 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 				</button>
 				</div>
 			</div>
-				<span className="landing-img" style={{width:"100%" }}>
+				<span className="landing-img" style={{width:"75%" }}>
 					<img src={imageurl} style={{
 						aspectRatio:"2/2",
 						// marginLeft:"0.5rem",

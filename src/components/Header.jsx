@@ -54,8 +54,9 @@ const Header = () => {
 							position: "absolute",
 							left: "0",
 							display: "flex",
-							justifyContent: "space-around",
-							minWidth: "100vw",
+							justifyContent: "space-between",
+							minWidth: "95vw",
+							margin:"0 2rem"
 						}}
 					>
 						<ul
