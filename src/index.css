@@ -417,7 +417,6 @@ code {
 .Subscribe-main {
 	max-width: 100vw;
 	margin: 7.54rem 0 0 0;
-	min-height: 30vw;
 	flex-shrink: 0;
 	background: url("/assets/subscribe-bg.jpg"), lightgray 50% / cover no-repeat;
 	background-position: center;
@@ -426,7 +425,7 @@ code {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 3vw 0 9vw;
+	padding: 7vw 9vw;
 }
 .subscribe-logo {
 	display: flex;
@@ -469,9 +468,26 @@ code {
 	font-size: 1.22vw;
 	font-weight: 500;
 }
+
+.subscribe {
+	border-radius: 0.5rem !important;
+	overflow: hidden;
+}
+
+.email {
+	width: 100%;
+}
+
+.input-email {
+	font-size: 1vw !important;
+	padding: 0 1.5rem;
+	width: 100%;
+}
+
+.input-email::placeholder,
 .input-email::-webkit-input-placeholder {
-	font-size: 1.2vw !important;
-	color: rgba(26, 26, 26, 0.85);
+	font-size: 1vw !important;
+	color: rgba(26, 26, 26, 0.85) !important;
 }
 
 .card-emp {

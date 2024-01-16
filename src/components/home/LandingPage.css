@@ -34,7 +34,7 @@
 .centered-text h2{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
-  font-size: clamp(1rem , 3vw , 2rem);
+  font-size: clamp(1rem , 3vw , 2.1rem);
   font-weight: 700;
   color: #fff;
   margin-bottom: 1rem;
@@ -43,11 +43,12 @@
   .centered-text p{
   color: #fff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: clamp(0.6rem , 1.5vw , 1rem);
+  font-size: clamp(0.6rem , 1.5vw , 1.2rem);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   padding-bottom: 2.22vw;
   opacity: 0.9;
   letter-spacing: 0.11vw;
   width: 80%;
+  line-height: clamp(0.9rem , 1.7vw , 1.6rem);
 }

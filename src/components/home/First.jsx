@@ -33,6 +33,7 @@ const First = () => {
         display:"flex",
         overflow:"hidden",
         padding:"0",
+        justifyContent: "space-between"
       }}>
         <div className="first-content" style={{
           maxWidth:"44vw",
@@ -43,7 +44,7 @@ const First = () => {
           // fontFamily:"Open Sans" 
         }}>
           <p style={{ fontSize:"clamp(0.6rem , 1.12vw , 1.25rem)" , marginBottom:"0" , fontWeight:"400" , lineHeight:"200%"}}>Join the Creative Revolution</p>
-          <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , lineHeight:"130%" , width:"100%" , fontWeight:"600" , color:"#fff"}}>Your lifetime Access to our Design</h4>
+          <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , lineHeight:"110%" , width:"100%" , fontWeight:"600" , color:"#fff"}}>Your lifetime Access to our Design</h4>
           <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , lineHeight:"130%" , width:"100%" , fontWeight:"600" , color:"#fff"}}>Community Membership Starts</h4>
           <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , lineHeight:"130%" , width:"100%" , fontWeight:"600" , color:"#fff"}}> Here!</h4>
           <a href='#courses' style={{textDecoration:"none"}}>
@@ -53,7 +54,7 @@ const First = () => {
             width:"fit-content",
             minHeight:"4vw",
             padding:"0 1.44vw",
-            margin:"3.6vw 0 6.7vw 0"
+            margin:"3vw 0 6.7vw 0"
             }}>
               <span>Explore Courses</span>
         </button>
@@ -70,7 +71,7 @@ const First = () => {
               fontSize:"clamp(3rem , 2vw , 3.7rem)",
               fontWeight:"700",
               color:"#fff",
-              margin:"0.1rem 0rem 0 0",
+              // margin:"0.1rem 0rem 0 0",
             }}>500+ </h3>
               <p style={{
                 width:"10vw",

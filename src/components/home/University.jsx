@@ -20,7 +20,7 @@ const University = ({color , textCol}) => {
         background: color,
         color:textCol,
         maxWidth:"100vw",
-        minHeight:"38vw",
+        minHeight:"30vw",
     }}>
         <div className="container1" style={{
             textAlign:"center"
@@ -33,12 +33,13 @@ const University = ({color , textCol}) => {
                 <div className="para" style={{
                     fontWeight:"100",
                     opacity:"0.8",
-                    fontSize:"clamp(0.6rem , 1.5vw , 1rem)",
+                    fontSize:"clamp(0.6rem , 1.5vw , 1.2rem)",
+                    lineHeight:"1.2rem"
                 }}>
                 In the footsteps of giants
                 </div>
                 <div style={{
-                    fontSize:"clamp(1.2rem , 2.2vw , 2.4rem)",
+                    fontSize:"clamp(1.2rem , 2.8vw , 3rem)",
                     fontWeight:"600",
                     color:"#fff"
                 }}>Top Universities where our mentors teach </div>
@@ -48,7 +49,8 @@ const University = ({color , textCol}) => {
                     fontSize:"clamp(0.65rem , 1vw , 1.25rem)",
                     width:"100%",
                     display:"flex",
-                    justifyContent:"center"
+                    justifyContent:"center",
+                    lineHeight:"1.3rem"
                 }}>
                 <div style={{width:"80%"}}><p>Our Mentors are the guardians of knowledge, passing down valuable insights and life lessons to the next</p> <p>generation. Their role goes beyond imparting information; they cultivate talent and nurture ambition.</p>  </div>
                 </div>

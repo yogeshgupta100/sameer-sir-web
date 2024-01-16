@@ -20,7 +20,7 @@ const Brands = ({ color, textCol }) => {
         background: color,
         color:textCol,
         maxWidth:"100vw",
-        minHeight:"33vw",
+        height:"30vw",
     }}>
         <div className="container1" style={{
             textAlign:"center"
@@ -33,19 +33,21 @@ const Brands = ({ color, textCol }) => {
                 <div className="para" style={{
                     fontWeight:"100",
                     opacity:"0.8",
-                    fontSize:"clamp(0.6rem , 1.5vw , 1rem)",
+                    fontSize:"clamp(0.6rem , 1.5vw , 1.2rem)",
+                    lineHeight:"1.2rem"
                 }}>
                 Our partners
                 </div>
                 <div style={{
-                    fontSize:"clamp(1.2rem , 3vw , 2.4rem)",
+                    fontSize:"clamp(1.2rem , 2.8vw , 3rem)",
                     fontWeight:"600",
                     color:"#fff"
                 }}>Our Collaborative Network</div>
                 <div className="para" style={{
                     fontWeight:"100",
                     opacity:"0.8",
-                    fontSize:"clamp(0.65rem , 1.5vw , 1rem)",
+                    fontSize:"clamp(0.65rem , 1vw , 1.25rem)",
+                    lineHeight:"1.2rem"
                 }}>
                 Top companies where our collaborators work  
                 </div>

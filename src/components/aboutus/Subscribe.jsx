@@ -52,16 +52,6 @@ const Subscribe = () => {
 							<input
 								className="input-email"
 								type="email"
-								style={{
-									width: "100%",
-									border: "none",
-									height: "100%",
-									padding: "0 8vw 0 2.22vw",
-									fontSize: "1.5vw",
-									color: "rgba(26, 26, 26, 0.85)",
-									fontWeight: "600",
-									alignSelf: "center",
-								}}
 								placeholder="Enter your e-mail address"
 								ref={inputRef}
 							/>
@@ -70,7 +60,6 @@ const Subscribe = () => {
 							type="button"
 							onClick={subscribe}
 							style={{
-								borderRadius: "0 0.69vw 0.69vw 0",
 								width: "35%",
 								padding: "0",
 								margin: "0",
