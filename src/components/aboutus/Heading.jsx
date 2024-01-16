@@ -1,6 +1,6 @@
 import React from "react";
 
-const Heading = ({ content , subContent , left}) => {
+const Heading = ({ content , subContent , left , btnVisible = false}) => {
   return (
     <div
       className="container heading"
@@ -49,10 +49,56 @@ const Heading = ({ content , subContent , left}) => {
           lineHeight:"1.8rem",
           opacity:"0.9",
           marginTop:"0.6rem",
-          width:"85%"
+          width:"85%",
+          marginBottom:"1.443vw"
         }}>
           {subContent}
         </p>
+        <div className="teacher-btn"
+				style={{
+					display: (btnVisible?"flex":"none") ,
+					width:"30vw",
+					justifyContent:"start",
+					marginBottom:"8vw"
+				}}
+			>
+				<button
+					className="purple-btn"
+					style={{
+						textDecoration: "none",
+						border: "none",
+						minWidth: "fit-content",	
+						margin: " 0 0 2rem",	
+						display: "flex",
+						padding: "0 0.88vw",
+						alignItems: "center",
+						borderRadius: "0.44vw",
+						whiteSpace:"nowrap",
+						aspectRatio:"4/1.5"
+					}}
+				>
+					<span
+						style={{
+							display: "flex",
+							textDecoration: "none",
+							fontWeight: "500",
+							fontSize:"clamp(0.8rem , 2vw , 1rem)",
+							paddingRight:"0.6rem",
+						}}
+					>
+						View all
+					</span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 15" fill="none">
+						<path
+							d="M1 7.5L17 7.5M17 7.5L11 13.5M17 7.5L11 1.5"
+							stroke="white"
+							strokeWidth="1.5"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+						/>
+					</svg>
+				</button>
+			</div>
       </div>
     </div>
   );

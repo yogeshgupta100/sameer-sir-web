@@ -45,7 +45,7 @@ const First = () => {
           // fontFamily:"Open Sans" 
         }}>
           <p style={{ fontSize:"clamp(0.6rem , 1.12vw , 1.25rem)" , marginBottom:"0" , fontWeight:"400" , lineHeight:"200%"}}>Join the Creative Revolution</p>
-          <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , lineHeight:"105%" , width:"100%" , fontWeight:"600" , color:"#fff"}}>Your lifetime Access to our Design</h4>
+          <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , lineHeight:"100%" , width:"100%" , fontWeight:"600" , color:"#fff"}}>Your lifetime Access to our Design</h4>
           <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , width:"100%" , fontWeight:"600" , color:"#fff"}}>Community Membership Starts</h4>
           <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , lineHeight:"130%" , width:"100%" , fontWeight:"600" , color:"#fff"}}> Here!</h4>
           <a href='#courses' style={{textDecoration:"none"}}>

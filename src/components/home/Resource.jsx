@@ -47,7 +47,7 @@ const Resource = ({imageUrl1 , imageUrl2 , link}) => {
         <div className="vid2" style={{position:"relative" , backgroundImage:`url(${imageUrl2})`}}></div>
         <div className="vid-content" style={{width:"45%" , margin:"3rem 0 0 4vw"}}>
           <p style={{lineHeight:"1rem" , marginBottom:"1rem"}}>Typography Mastery: Crafting Beautiful</p><p> Text in Your Designs</p>
-          <span style={{paddingRight:"1rem"}}>Dive deep into the world of typography and elevate your design</span><span>projects with expert tips and techniques.</span>
+          <span style={{paddingRight:"1rem" , lineHeight:"1.3rem"}}>Dive deep into the world of typography and elevate your design</span><span>projects with expert tips and techniques.</span>
           <a href={link} className='purple-btn' style={{
         textDecoration:"none",
         border:"none",

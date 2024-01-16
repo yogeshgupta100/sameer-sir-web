@@ -7,14 +7,13 @@ const Teachers = ({empData}) => {
 	return (
 		<div className="content" style={{margin:"14vw 2.22vw 11.25vw" , width:"95vw"}}>
 				<div className="view-all-heading">
-				<Heading content={"Mentors empowering your journey"} subContent={"Get groomed by elite professionals and academic gurus of the industry to accelerate your professional journey."} left={"20.5%"}></Heading>
+				<Heading content={"Mentors empowering your journey"} subContent={"Get groomed by elite professionals and academic gurus of the industry to accelerate your professional journey."} left={"20.5%"} btnVisible={true}></Heading>
 				</div>
-			<div className="teacher-btn"
+			{/* <div className="teacher-btn"
 				style={{
 					display:"flex",
 					width:"30vw",
 					justifyContent:"start",
-					marginLeft:"clamp(23% , 2vw , 24%)",
 					marginBottom:"8vw"
 				}}
 			>
@@ -54,7 +53,7 @@ const Teachers = ({empData}) => {
 						/>
 					</svg>
 				</button>
-			</div>
+			</div> */}
 			<div
 				className="main-card--container"
 				style={{

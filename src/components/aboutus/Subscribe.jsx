@@ -285,10 +285,10 @@ const Subscribe = () => {
 						fontFamily: "Raleway",
 						fontSize: "clamp(12px , 1.5vw , 16px)",
 						fontStyle: "normal",
-						fontWeight: "600",
+						fontWeight: "400",
 					}}
 				>
-					Copyright @ Dxolve.com
+					All rights reserved @2023 Dxolve India Pvt. Ltd.
 				</span>
 			</div>
 		</>
