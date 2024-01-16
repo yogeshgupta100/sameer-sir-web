@@ -50,7 +50,7 @@ const University = ({color , textCol}) => {
                     width:"100%",
                     display:"flex",
                     justifyContent:"center",
-                    lineHeight:"1.3rem"
+                    lineHeight:"1rem"
                 }}>
                 <div style={{width:"80%"}}><p>Our Mentors are the guardians of knowledge, passing down valuable insights and life lessons to the next</p> <p>generation. Their role goes beyond imparting information; they cultivate talent and nurture ambition.</p>  </div>
                 </div>
