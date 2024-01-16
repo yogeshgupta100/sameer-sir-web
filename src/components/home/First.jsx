@@ -28,12 +28,13 @@ const First = () => {
         backgroundPosition:"center",
         backgroundRepeat:"no-repeat",
         backgroundSize:"cover",
-        position:"relative",
+        // position:"relative",
         top:"0vw",
         display:"flex",
         overflow:"hidden",
         padding:"0",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        zIndex:"10"
       }}>
         <div className="first-content" style={{
           maxWidth:"44vw",
@@ -114,8 +115,9 @@ const First = () => {
             flexShrink: "0",
             display:"flex",
             alignItems:"flex-end",
+            // width:"100%"
           }}>
-            <img src='/assets/home-banner.png' style={{width:"35vw" , height:"60%"}}/>
+            <img src='/assets/home-banner.png' style={{width:"100%" , height:"60%"}}/>
           </div>
         </div>
       </div>

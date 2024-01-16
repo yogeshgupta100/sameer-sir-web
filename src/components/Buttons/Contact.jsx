@@ -14,7 +14,7 @@ const Contact = () => {
 								background: "#fff",
 								color: "white",
 								borderRadius: "50%",
-								height: "30px",
+								// height: "30px",
 								width: "30px",
 								cursor: "pointer",
                 height:"90%"

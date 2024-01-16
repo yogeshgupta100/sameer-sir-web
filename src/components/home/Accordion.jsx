@@ -1,9 +1,12 @@
 import Accordion from 'react-bootstrap/Accordion';
 import AccordionApi from './AccordionApi';
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 
 function AllCollapseExample() {
   const [menuData , setMenuData] = useState(AccordionApi);
+  useEffect(() => {
+    filterItem("Institute");
+  }, []);
     const filterItem = (category) =>{
         const updatedList = AccordionApi.filter((currEle) => {
             return currEle.category === category;
