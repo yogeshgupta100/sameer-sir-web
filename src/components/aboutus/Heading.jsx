@@ -35,20 +35,21 @@ const Heading = ({ content , subContent , left}) => {
             fontWeight: "750",
             // letterSpacing:"0.11vw",
             fontStyle:"normal",
-            lineHeight:"1.1"
+            lineHeight:"1.1",
+            marginBottom:"1.443vw"
           }}
         >
           {content}
         </h4>
         <p style={{
           fontFamily:"Open Sans",
-          fontSize:"clamp(0.66rem , 1vw , 1rem)",
+          fontSize:"clamp(0.66rem , 1.2vw , 1.2rem)",
           fontWeight:"400",
           color: "rgba(0, 0, 0, 0.65)",
-          lineHeight:"1.3",
+          lineHeight:"1.8rem",
           opacity:"0.9",
           marginTop:"0.6rem",
-          width:"70%"
+          width:"85%"
         }}>
           {subContent}
         </p>
