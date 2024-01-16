@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Signup = () => {
   return (
     <div className='signup-main'>
-      <NavLink to={"/signup"} style={{textDecoration:"none"}}>
+      <a href={"/signup"} style={{textDecoration:"none"}}>
       <div className='signup-vector' style={{
 								display: "flex",
 								alignItems: "center",
@@ -25,19 +25,20 @@ const Signup = () => {
         className="button"
         id='button'
         style={{
-          maxWidth:"100vw",
+          width:"100%",
           borderRadius: "0.66vw",
           border: "0.076vw solid #B86CD2",
           margin:"0 1.11vw 0 0",
           fontWeight:"500",
           fontSize:"1.1544vw",
-          aspectRatio:"3/1.9",
-          padding:"0.4vw 1vw"
+          aspectRatio:"4/1.9",
+          padding:"0.4vw 1vw",
+          height:"100%"
         }}
       >
         <p style={{fontSize:"1.154rem", margin:"0"}}>Sign in</p>
       </button>
-      </NavLink>
+      </a>
     </div>
   )
 }

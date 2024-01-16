@@ -43,10 +43,11 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 				</button>
 				</div>
 			</div>
-				<span className="landing-img" style={{maxWidth:"40vw" , marginBottom:"1rem"}}>
+				<span className="landing-img" style={{width:"100%" }}>
 					<img src={imageurl} style={{
-						aspectRatio:"2.2/2.2",
-						marginLeft:"0.5rem",
+						aspectRatio:"2/2",
+						// marginLeft:"0.5rem",
+						objectFit:"contain"
 					}}/>
 				</span>
 			</div>

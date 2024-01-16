@@ -16,7 +16,8 @@ const Contact = () => {
 								borderRadius: "50%",
 								height: "30px",
 								width: "30px",
-								cursor: "pointer"
+								cursor: "pointer",
+                height:"90%"
 							}}>
                 <a href="tel:+91-9873287387"><img src='/assets/Vector.png' /></a>
 							</div>
@@ -26,10 +27,10 @@ const Contact = () => {
         className="button"
         id='button'
         style={{
-          maxWidth:"100vw",
+          width:"100%",
           borderRadius: "0.66vw",
           border: "0.076vw solid #B86CD2",
-          margin:"0 1.11vw 0 0",
+          // margin:"0 1.11vw 0 0",
           fontWeight:"500",
           fontSize:"1.1544vw",
           aspectRatio:"4/1.9",

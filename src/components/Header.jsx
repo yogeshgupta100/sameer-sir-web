@@ -54,7 +54,7 @@ const Header = () => {
 							position: "absolute",
 							left: "0",
 							display: "flex",
-							justifyContent: "space-between",
+							justifyContent: "space-around",
 							minWidth: "100vw",
 						}}
 					>
@@ -65,7 +65,7 @@ const Header = () => {
 								alignItems: "center",
 							}}
 						>
-							<li className="nav-item ms-3 me-3 dropdown">
+							<li className="nav-item me-3 dropdown">
 								<NavLink
 									to="/about"
 									aria-current="page"
