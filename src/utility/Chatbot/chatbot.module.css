@@ -52,7 +52,6 @@
 	right: 2vw;
 	opacity: 0;
 	z-index: 998;
-	/* box-shadow: 0 0 0.69vw rgba(0, 0, 0, 0.2); */
 	width: 0;
 	aspect-ratio: 3 / 4;
 	overflow: hidden;
@@ -66,7 +65,7 @@
 
 .active .collapsableContainer {
 	opacity: 1;
-	width: clamp(250px, 40vw, 378px);
+	width: clamp(250px, 50vw, 378px);
 	-webkit-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
 	-o-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
 	transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -135,7 +134,7 @@
 .chat {
 	height: 100%;
 	width: 100%;
-	padding: 1.5vw 2vw;
+	padding: min(1.5vw, 1.2rem) min(2vw, 1rem);
 	overflow-y: auto;
 }
 
@@ -168,7 +167,7 @@
 	display: block;
 	width: 100%;
 	margin: 0.5vw auto;
-	font-size: clamp(0.66rem, 1.11vw, 1.66rem);
+	font-size: clamp(0.66rem, 1vw, 1.3rem);
 	background-color: #fbedff;
 	padding: 0.45rem 0.63rem;
 	border-radius: 5px;
@@ -216,42 +215,35 @@
 	color: #000;
 	font-weight: 500;
 	font-family: Raleway;
-	font-size: clamp(0.66rem, 1.11vw, 1.66rem);
+	font-size: clamp(0.66rem, 1vw, 1.3rem);
 }
 
 .inputBox input::-webkit-input-placeholder {
 	color: #000;
 	font-weight: 500;
 	font-family: Raleway;
-	font-size: clamp(0.66rem, 1.11vw, 1.66rem);
+	font-size: clamp(0.66rem, 1vw, 1.3rem);
 }
 
 .inputBox input::-moz-placeholder {
 	color: #000;
 	font-weight: 500;
 	font-family: Raleway;
-	font-size: clamp(0.66rem, 1.11vw, 1.66rem);
+	font-size: clamp(0.66rem, 1vw, 1.3rem);
 }
 
 .inputBox input:-ms-input-placeholder {
 	color: #000;
 	font-weight: 500;
 	font-family: Raleway;
-	font-size: clamp(0.66rem, 1.11vw, 1.66rem);
-}
-
-.inputBox input::-ms-input-placeholder {
-	color: #000;
-	font-weight: 500;
-	font-family: Raleway;
-	font-size: clamp(0.66rem, 1.11vw, 1.66rem);
+	font-size: clamp(0.66rem, 1vw, 1.3rem);
 }
 
 .inputBox input::placeholder {
 	color: #000;
 	font-weight: 500;
 	font-family: Raleway;
-	font-size: clamp(0.66rem, 1.11vw, 1.66rem);
+	font-size: clamp(0.66rem, 1vw, 1.3rem);
 }
 
 .inputBox input:focus {
