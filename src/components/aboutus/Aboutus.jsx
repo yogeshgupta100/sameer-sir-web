@@ -20,10 +20,10 @@ const Aboutus = () => {
     <div id='about'>
         <Header/>
         <Hero/>
-        <Section1 text={"Our working at Dxolve"}/>
-        <Teachers empData={empData}/>
+        <Section1 text={"Dedicated to Elevating Learning Experiences"} subContent={"Through innovative technology, we empower educators and inspire students to thrive in a dynamic educational landscape. Join us on the journey to redefine education for a brighter future."} imageUrl1={"/assets/mam.png"} imageUrl2={"/assets/sir.png"} director={true}/>
+        <Teachers empData={empData} content={"Our team"} subContent={"Unveiling the Heartbeat of Dxolve: Our Dedicated Team of Educators, Designers, and Innovators. Together, We Redefine the Landscape of Learning."} btnVisible={false}/>
         <Brands color="linear-gradient(115deg, #35174E 2.06%, #724191 68.61%, #885EB2 110.31%, #6A3F8F 156.01%)" textCol="white"/>
-        <Section1 text={"Our Commitment"}/>
+        <Section1 text={"The Vision Behind Dxolve"} subContent={"Empowering Excellence, Inspiring Innovation, and Transforming Futures."} imageUrl1={"/assets/about-resource1.png"} imageUrl2={"/assets/about-resource2.png"}/>
         <div style={{
           maxWidth:"100vw",
           display:"flex",

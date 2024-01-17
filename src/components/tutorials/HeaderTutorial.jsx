@@ -20,7 +20,7 @@ const HeaderTutorial = () => {
 						style={{
 							display: "block",
 							width: "70%",
-							marginLeft: "4rem",
+							marginLeft: "1.2rem",
 							marginTop:"10vw"
 						}}
 					>

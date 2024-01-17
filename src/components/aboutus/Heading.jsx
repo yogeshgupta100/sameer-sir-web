@@ -6,7 +6,7 @@ const Heading = ({ content , subContent , left , btnVisible = false}) => {
       className="container heading"
       style={{
         padding:"0",
-        margin:"4.44vw 0 0",
+        margin:"4.44vw 0",
         position: "relative",
         display: "flex",
       }}
@@ -25,7 +25,7 @@ const Heading = ({ content , subContent , left , btnVisible = false}) => {
           top: "-1.332vw",
           backgroundColor:"#fff",
           // flexShrink:"0",
-          maxWidth:"50vw",
+          maxWidth:"40vw",
         }}
       >
         <h4
@@ -49,7 +49,7 @@ const Heading = ({ content , subContent , left , btnVisible = false}) => {
           lineHeight:"1.8rem",
           opacity:"0.9",
           marginTop:"0.6rem",
-          width:"85%",
+          width:"100%",
           marginBottom:"1.443vw"
         }}>
           {subContent}
@@ -59,7 +59,7 @@ const Heading = ({ content , subContent , left , btnVisible = false}) => {
 					display: (btnVisible?"flex":"none") ,
 					width:"30vw",
 					justifyContent:"start",
-					marginBottom:"8vw"
+					// marginBottom:"8vw"
 				}}
 			>
 				<button

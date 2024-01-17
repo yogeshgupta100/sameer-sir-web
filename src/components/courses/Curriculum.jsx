@@ -22,7 +22,7 @@ const Curriculum = ({data}) => {
               marginLeft:"1.11vw"
             }}></span>
         </div>
-            <p style={{fontSize: "clamp(0.57rem , 1.5vw , 1.5rem)" , color:"rgba(255, 255, 255, 0.80)" , lineHeight:"1.3"}}>Below is a  curriculum that covers the fundamentals of graphic design</p>
+            <p style={{fontSize: "clamp(0.57rem , 1.5vw , 1.5rem)" , color:"rgba(255, 255, 255, 0.80)" , lineHeight:"3vw"}}>Below is a  curriculum that covers the fundamentals of graphic design</p>
             <div className="text-grid" style={{width:"100%"}}>
               <span className="text-content">
                 <h5 style={{fontSize: "clamp(0.7rem , 1.2vw , 1.5rem)" , lineHeight:"1.1"}}>

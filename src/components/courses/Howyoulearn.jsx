@@ -48,9 +48,9 @@ const Howyoulearn = () => {
   return (
     <div
       className="container"
-      style={{ marginTop: "11.1vw", width: "100%", overflow: "hidden" }}
+      style={{ marginTop: "6vw", width: "100%", overflow: "hidden" }}
     >
-      <Heading content={"How you learn"} left={"35%"} />
+      <Heading content={"How you learn"} subContent={"Learning graphic design can be a rewarding and creative journey. Here's a step-by-step guide to help you get started."} left={"35%"} />
       <div
         className="mt-3 how-you-learn"
         style={{

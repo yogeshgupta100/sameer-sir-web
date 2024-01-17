@@ -36,28 +36,28 @@ const MainBlog = () => {
     <>
       <Header/>
       <HeroSection/>
-      <section className="p-menu1 container" style={{marginBottom:"2rem"}}>
+      <section className="p-menu1 container" style={{marginBottom:"4rem"}}>
           <nav id="navbar" className="navigation" role="navigation">
     <input id="toggleAccordion" type="checkbox" />
-    <label className="hamburger1" for="toggleAccordion" style={{display:"grid" , cursor:"pointer"}}>
+    <label className="hamburger1 " for="toggleAccordion" style={{display:"grid" , cursor:"pointer" , justifyContent:"flex-start" , marginBottom:"3.5vw" , marginLeft:"-0.5rem"}}>
       <div className="top"></div>
       <div className="meat"></div>
       <div className="bottom"></div>
     </label>
   
-    <nav className="menu1" style={{background:"#fff"}}>
-    <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("All");
+    <nav className="menu1" style={{background:"transparent", width:"100%" , display:"flex" , flexDirection:"column" , alignItems:"center" , lineHeight:"2rem"}}>
+    <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1.5rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("All");
     document.getElementById("toggleAccordion").checked = false;}}>All</button>
-    <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("UX design"); document.getElementById("toggleAccordion").checked = false;}}>UX design</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("UI design"); document.getElementById("toggleAccordion").checked = false;}}>UI design</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Design thinking"); document.getElementById("toggleAccordion").checked = false;}}>Design thinking</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Tools and Techniques"); document.getElementById("toggleAccordion").checked = false;}}>Tools and Techniques</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Front end development"); document.getElementById("toggleAccordion").checked = false;}}>Front end development</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Back end development"); document.getElementById("toggleAccordion").checked = false;}}>Back end development</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Full stack development"); document.getElementById("toggleAccordion").checked = false;}}>Full stack development</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Mixed reality(XR)"); document.getElementById("toggleAccordion").checked = false;}}>Mixed reality(XR)</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Augmented reality"); document.getElementById("toggleAccordion").checked = false;}}>Augmented reality</button>
-                <button style={{textDecoration:"none" , border:"none" , background:"transparent" , color:"#B46BD1"}} onClick={()=> {filterItem("Virtual reality"); document.getElementById("toggleAccordion").checked = false;}}>Virtual reality</button>
+    <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("UX design"); document.getElementById("toggleAccordion").checked = false;}}>UX design</button>
+                <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("UI design"); document.getElementById("toggleAccordion").checked = false;}}>UI design</button>
+                <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("Design thinking"); document.getElementById("toggleAccordion").checked = false;}}>Design thinking</button>
+                <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("Tools and Techniques"); document.getElementById("toggleAccordion").checked = false;}}>Tools and Techniques</button>
+                <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("Front end development"); document.getElementById("toggleAccordion").checked = false;}}>Front end development</button>
+                <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("Back end development"); document.getElementById("toggleAccordion").checked = false;}}>Back end development</button>
+                <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("Full stack development"); document.getElementById("toggleAccordion").checked = false;}}>Full stack development</button>
+                <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("Mixed reality(XR)"); document.getElementById("toggleAccordion").checked = false;}}>Mixed reality(XR)</button>
+                <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("Augmented reality"); document.getElementById("toggleAccordion").checked = false;}}>Augmented reality</button>
+                <button style={{textDecoration:"none" , border:"none" , backgroundColor:"transparent" , color:"#B46BD1" , width:"100%" , fontSize:"clamp(1rem , 2vw , 2rem)" , textAlign:"start"}} onClick={()=> {filterItem("Virtual reality"); document.getElementById("toggleAccordion").checked = false;}}>Virtual reality</button>
     </nav>
 </nav>
 </section>

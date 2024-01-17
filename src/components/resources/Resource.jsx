@@ -125,7 +125,7 @@ const Resource = ({designCardData}) => {
       <div className='resource-content1' style={{width:"90%"}}>
       <div className="vid-content" style={{width:"45%" , margin:"3rem 0 0 0rem"}}>
           <p>Typography Mastery: Crafting Beautiful</p><p> Text in Your Designs</p>
-          <span style={{paddingRight:"1rem" , marginTop:"1vw"}}>Dive deep into the world of typography and elevate your design</span><span>projects with expert tips and techniques.</span>
+          <span style={{paddingRight:"1rem" , marginTop:"1vw"}}>Dive deep into the world of typography and elevate your design projects with expert tips and techniques.</span>
           <a href='/tutorials' className='purple-btn' style={{
         textDecoration:"none",
         border:"none",
@@ -143,10 +143,10 @@ const Resource = ({designCardData}) => {
         <div className="container" style={{marginTop:"16.65vw" }}>
         <Heading content={"Blogs"} subContent={" Engage in thought-provoking articles, expert opinions, and in-depth analyses that transcend boundaries. Our blog is a treasure trove of diverse topics, offering a rich tapestry of ideas for curious minds."} left={"30.5%"} />
         </div>
-      <div style={{ justifyContent:"center" , width:"100%" , display:"flex" , marginBottom:"7vw"}} id='blogs'>
-        <div className="blogs-container" style={{marginTop:"5vw" , width:"73%"}}>
-        <div style={{width:"100%", textAlign:"end" , margin:"0 0 0.3rem 0"}}>
-          <NavLink to={"/blogs"} style={{textDecoration:"none" , color:"#B46BD1"}}>view all</NavLink>
+      <div style={{ justifyContent:"center" , width:"100%" , display:"flex" , marginBottom:"5vw"}} id='blogs'>
+        <div className="blogs-container" style={{marginTop:"0.5vw" , width:"73%"}}>
+        <div style={{width:"100%", textAlign:"end" , margin:"0 0 1rem 0"}}>
+          <NavLink to={"/blogs"} style={{textDecoration:"none" , color:"#B46BD1" , fontSize:"1.5vw"}}>View all</NavLink>
         </div>
           <Blog/>
           </div>
@@ -161,7 +161,7 @@ const Resource = ({designCardData}) => {
           gridTemplateColumns:"1fr 1fr",
           justifyContent:"center",
           gap:"2.22vw",
-          paddingTop:"4vw"
+          // paddingTop:"4vw"
         }}>
           {designCardData.map((currEle) => {
       return(

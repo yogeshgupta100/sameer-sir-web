@@ -53,7 +53,7 @@ const Whycourse = ({data}) => {
           >
             <p
               className="card-heading"
-              style={{ fontSize: "clamp(0.56rem , 2vw , 1.5rem)" }}
+              style={{ fontSize: "clamp(0.56rem , 2vw , 1.5rem)"}}
             >
               {data?.attributes?.whyToTakeThisCourse[0]?.heading}: 
             </p>
@@ -113,7 +113,7 @@ const Whycourse = ({data}) => {
                 border: "0.076vw solid #fff",
                 fontSize: "0.99vw",
                 backgroundColor: " #8833B6",
-                width: "clamp(4rem , 50% , 6rem)",
+                width: "clamp(4rem , 50% , 8rem)",
                 color: "#fff",
                 display: "flex",
                 alignItems: "center",
@@ -122,6 +122,7 @@ const Whycourse = ({data}) => {
                 fontWeight: "600",
                 aspectRatio: "3/1.2",
                 marginTop: "1rem",
+                justifyContent:"center"
               }}
             >
               <p
@@ -130,7 +131,7 @@ const Whycourse = ({data}) => {
                   marginRight: "0.2rem",
                   whiteSpace: "nowrap",
                   fontSize: "clamp(0.5rem , 1.5vw , 0.8rem)",
-                  width: "auto",
+                  // width: "auto",
                 }}
               >
                 Join Today

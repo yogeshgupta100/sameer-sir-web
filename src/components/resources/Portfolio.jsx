@@ -7,9 +7,6 @@ const Portfolio = () => {
       <div
         id="portfolio"
         className="container"
-        style={{
-          padding: "6.66vw 0 0",
-        }}
       >
         <Heading
           content={"Student’s Work"}
@@ -25,7 +22,7 @@ const Portfolio = () => {
         style={{
           background: `linear-gradient(180deg, #3e213d 0%, #2f3e69 100%)`,
           width: "100%",
-          margin: "6vw 0 11.25vw",
+          margin: "1vw 0 11.25vw",
           display: "flex",
           flexDirection: "column",
           gap: "1vw",

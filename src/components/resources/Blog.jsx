@@ -25,7 +25,7 @@ const Blog = () => {
 				maxWidth: "100vw",
 				display: "grid",
 				gridTemplateColumns: "repeat(3,1fr)",
-				margin: "0 0 13.32vw",
+				margin: "0 0 8vw",
 				gap: "2rem",
 				rowGap: "4rem",
 			}}
