@@ -17,36 +17,30 @@ const Graphic = ({ data }) => {
       return;
     }
 
-    fetch(
-      `${import.meta.env.VITE_EXPRESS_SERVER_URL}/create-checkout-session`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email: user.email,
-          token,
-          courseId,
-        }),
-      }
-    )
-      .then((res) => {
-        if (res.ok) return res.json();
-        return res.json().then((json) => Promise.reject(json));
-      })
-      .then(({ url }) => {
-        window.location = url;
-      })
-      .catch((e) => {
-        console.error(e.error);
-      });
-    };
-    const openSyllabusModal = () => {
-      setShowModal(true);
-    };
-  
-    const closeSyllabusModal = () => {
-      setShowModal(false);
-    };
+		const headers = new Headers();
+		headers.append("Content-Type", "application/json");
+		headers.append("Authorization", `Bearer ${token}`);
+
+		fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/sessions`, {
+			method: "POST",
+			headers,
+			body: JSON.stringify({
+				email: user.email,
+				token,
+				courseId,
+			}),
+		})
+			.then((res) => {
+				if (res.ok) return res.json();
+				return res.json().then((json) => Promise.reject(json));
+			})
+			.then(({ url }) => {
+				window.location = url;
+			})
+			.catch((e) => {
+				console.error(e.error);
+			});
+	};
 
   return (
     <>
