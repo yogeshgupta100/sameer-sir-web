@@ -1,4 +1,4 @@
-import React, { useEffect , useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useToken } from "../../contexts/TokenProvider";
@@ -6,16 +6,16 @@ import { useUser } from "../../contexts/UserProvider";
 import DownloadSyllabusFormModal from "../forms/DownloadSyllabusFormModal";
 
 const Graphic = ({ data }) => {
-  const { courseId } = useParams();
-  const [token, setToken] = useToken();
-  const [user, setUser] = useUser();
-  const [showModal, setShowModal] = useState(false);
+	const { courseId } = useParams();
+	const [token, setToken] = useToken();
+	const [user, setUser] = useUser();
+	const [showModal, setShowModal] = useState(false);
 
-  const applyNow = () => {
-    if (!token) {
-      alert("Please login to continue");
-      return;
-    }
+	const applyNow = () => {
+		if (!token) {
+			alert("Please login to continue");
+			return;
+		}
 
 		const headers = new Headers();
 		headers.append("Content-Type", "application/json");
