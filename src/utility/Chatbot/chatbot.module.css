@@ -98,7 +98,7 @@
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 1vw 2vw;
+	padding: min(1vw, 1rem) min(1.3rem, 2vw);
 	gap: 1rem;
 	font-family: Raleway;
 	font-weight: 500;
@@ -134,7 +134,7 @@
 .chat {
 	height: 100%;
 	width: 100%;
-	padding: min(1.5vw, 1.2rem) min(2vw, 1rem);
+	padding: min(1vw, 1rem) min(1.3rem, 2vw);
 	overflow-y: auto;
 }
 
@@ -145,7 +145,7 @@
 	height: -moz-max-content;
 	height: max-content;
 	margin: 1vw 0;
-	font-size: clamp(0.66rem, 1.11vw, 1.66rem);
+	font-size: clamp(0.66rem, 1.11vw, 1rem);
 	padding: 0.54rem 0.63rem;
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
@@ -197,7 +197,7 @@
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 1vw 2vw;
+	padding: min(1vw, 1rem) min(1.5rem, 2vw);
 	-webkit-box-shadow: 0.873px 0.873px 6.547px 0px rgba(0, 0, 0, 0.15);
 	box-shadow: 0.873px 0.873px 6.547px 0px rgba(0, 0, 0, 0.15);
 }
@@ -254,6 +254,6 @@
 	background: none;
 	border: none;
 	border-radius: 0.555vw;
-	padding: 0.55vw 1.11vw;
+	padding: min(0.5rem, 0.55vw) min(0.6rem, 1.11vw);
 	margin-left: 1.11vw;
 }
