@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
-export default function DownloadSyllabus() {
+export default function DownloadSyllabus({closeModal}) {
     const [phone, setPhone] = useState(null);
     const [courses, setCourses] = useState([]);
 
@@ -29,7 +29,7 @@ export default function DownloadSyllabus() {
         <>
             <div className="form-section" style={{ position: "fixed", top: "55%", left: "50%", transform: "translate(-50%, -50%)", width: "30%", aspectRatio: "2/2" , minHeight:"70%" , borderRadius:"0.9375rem"}}>
                 <div className="container" style={{ width: "100%", height: "90%" }}>
-                    <a href="/" className="top" style={{ display: "flex", width: "100%", position: "relative" }}>
+                    <div className="top" style={{ display: "flex", width: "100%", position: "relative" }}>
                         <div className="form-head" style={{ lineHeight: "3" }}>
                             <p
                                 style={{
@@ -56,6 +56,7 @@ export default function DownloadSyllabus() {
                             </p>
                         </div>
                         <svg
+                        onClick={closeModal}
                             xmlns="http://www.w3.org/2000/svg"
                             width="37"
                             height="37"
@@ -68,7 +69,7 @@ export default function DownloadSyllabus() {
                             <path d="M11.6484 11.6479L24.5907 24.5902" stroke="#9844C5" />
                             <path d="M24.5898 11.6479L11.6476 24.5902" stroke="#9844C5" />
                         </svg>
-                    </a>
+                    </div>
                     <div style={{ margin: "3.33vw 0" }}>
                         <form
                             onSubmit={downloadSyllabus}
