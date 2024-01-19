@@ -17,138 +17,145 @@ export default function CoursesModal() {
 			style={{
 				alignItems: "start",
 				borderRadius: "0.99vw",
-				display:"grid",
-				gridTemplateColumns:"3fr 1fr",
-				margin:"2rem"
+				display:"flex",
+				height:"70vh",
+				margin:"2.44vw 2.77vw 2.44vw 5.77vw",
 			}}
 		>
 			<div
-				className="inner-card"
-				style={{
-					borderRadius: "0.99vw",
-					backgroundColor: "transparent",
-					width: "100%",
-					aspectRatio: "8/4",
-					alignItems: "start",
-					fontWeight: "bold",
-					fontSize: "1.332vw",
-					display:"grid",
-					gridTemplateColumns:"1fr 1fr 1fr",
-					gap:"1rem",
-				}}
-				>
+				className="course-container"
+				id="courses"
+			style={{width: "100vw",
+				display: "grid",
+				gridTemplateColumns: "1fr 1fr 1fr",
+				justifyItems: "center",
+				flexWrap: "wrap",
+				gap: "1.11vw",
+				height:"100%"
+				}}>
 				{courses.map((course) => {
 					return (
-						<div className="card" style={{
-								border:"0.714px solid #B46BD1",
-								borderRadius: "0.89238rem",
-								height:"auto",
-								overflow:"hidden",
-							}}>
-								<img src={course?.attributes?.thumbnail?.data?.attributes?.url} className="card-img-top" alt="course1" style={{width:"100%" , aspectRatio:"2/1.3" , borderRadius: "0.89238rem 0.89238rem 0 0"}} />
+						<div className="card">
+							<img src={course?.attributes?.thumbnail?.data?.attributes?.url} className="card-img-top" alt="course1" style={{
+								width: "100%",
+								aspectRatio: "1/1"
+							}} />
+							<div
+								className="card-body"
+								style={{
+									width:"100%",
+									// aspectRatio:"3/1",
+									// height:"60%"
+								}}
+							>
+								<div style={{aspectRatio:"6/2.5"}}>
+								<div className="course-subtitle "
+									style={{
+										color: "#878787",
+										fontFamily: "Open Sans",
+										fontSize: "clamp(0.5rem , 1vw , 0.8rem)",
+										fontStyle: "normal",
+										fontWeight: "700",
+										lineHeight:"125%",
+										whiteSpace:"nowrap",
+										marginBottom:"0.2rem"
+									}}
+								>
+									{course.attributes.category}
+								</div>
 								<div
-									className="card-body">
-									<div>
-									<span className="course-subtitle"
-										style={{
-											textAlign: "start",
-											color: "#878787",
-											fontFamily: "Open Sans",
-											fontSize: "clamp(0.3rem , 1.5vw , 1rem)",
-											fontStyle: "normal",
-											fontWeight: "700",
-											lineHeight:"1",
-											whiteSpace:"nowrap"
-										}}
-									>
-										{course.attributes.category}
-									</span>
-									<h5
-										className="card-title"
-										style={{
-											color: "#B46BD1",
-											fontFamily: "Open Sans",
-											fontSize: "clamp(0.4rem , 1.5vw , 1.2rem)",
-											fontStyle: "normal",
-											fontWeight: "700",
-											lineHeight: "140.5%",
-											height:"3.8vw",
-											marginBottom:"1rem",
-											overflow:"hidden",
-										}}
-									>
-										{course.attributes.name}
-									</h5>
+									className="card-title"
+									style={{
+										color: "#B46BD1",
+										// fontFamily: "Open Sans",
+										fontSize: "clamp(1rem , 1.5vw , 1.3rem)",
+										fontStyle: "normal",
+										fontWeight: "700",
+										lineHeight: "121.5%",
+										height:"clamp(3.2rem , 1.3vw , 4rem)",
+										overflow:"hidden",
+										width:"95%",
+										marginBottom:"3rem"
+									}}
+								>
+									{course.attributes.name}
+								</div>
+								</div>
+								<div
+									className="content-course "
+									style={{
+										width:"100%",
+										display:"flex",
+										fontSize: "clamp(0.5rem , 1.2vw , 0.9rem)",
+										lineHeight: "130%",
+										justifyContent:"space-between",
+										marginBottom:"2vw"
+									}}
+								>
+									<div className="content " style={{textAlign:"start"}}>
+										<div
+											style={{
+												color: "rgba(117, 117, 117, 0.90)",
+												fontFamily: "Open Sans",
+												fontStyle: "normal",
+												fontWeight: "700",
+												marginBottom:"0.88vw",
+												whiteSpace:"nowrap",
+												fontSize:"clamp(0.5rem , 1.2vw , 0.8rem)"
+											}}
+										>
+											Starting Date
+										</div>
+										<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.8rem)" , color: "#B46BD1" , fontWeight:"500" , whiteSpace:"nowrap"}}>{course.attributes.batches[0].startDate}</span>
 									</div>
-									<div
-										className="content-course"
-										style={{
-											display: "grid",
-											gridTemplateColumns:"repeat(3,33%)",
-											fontSize: "clamp(0.3rem , 1vw , 1rem)",
-											lineHeight: "1",
-											gap:"0.3rem",
-											whiteSpace:"nowrap",
-											marginBottom:"1rem"
-										}}
-									>
-										<div className="content" style={{textAlign:"start"}}>
-											<div
-												style={{
-													color: "rgba(117, 117, 117, 0.90)",
-													fontFamily: "Open Sans",
-													fontStyle: "normal",
-													fontWeight: "700",
-													marginBottom:"0.88vw",
-												}}
-											>
-												Starting Date
-											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.4rem , 1vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].startDate}</span>
+									<div className="v-line" style={{minWidth:"0.0525rem" , backgroundColor:"#CDCDCD" , height:"100%" , margin:"0" , alignSelf:"center"}}></div>
+									<div className="content" style={{textAlign:"center" , whiteSpace:"nowrap"}}>
+										<div
+											style={{
+												color: "rgba(117, 117, 117, 0.90)",
+												fontFamily: "Open Sans",
+												fontStyle: "normal",
+												fontWeight: "700",
+												marginBottom:"0.88vw",
+												fontSize:"clamp(0.5rem , 1.2vw , 0.8rem)"
+											}}
+										>
+											Cohort size
 										</div>
-										<div className="content" style={{textAlign:"center"}}>
-											<div
-												style={{
-													color: "rgba(117, 117, 117, 0.90)",
-													fontFamily: "Open Sans",
-													fontStyle: "normal",
-													fontWeight: "700",
-													marginBottom:"0.88vw"
-												}}
-											>
-												End Date
-											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.4rem , 1vw , 1rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
-										</div>
-										<div className="content" style={{textAlign:"center"}}>
-											<div
-												style={{
-													color: "rgba(117, 117, 117, 0.90)",
-													fontFamily: "Open Sans",
-													fontStyle: "normal",
-													fontWeight: "700",
-													marginBottom:"0.88vw"
-												}}
-											>
-												Duration
-											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.4rem , 1vw , 1rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
-										</div>
+										<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.8rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
 									</div>
-									<NavLink
-										to={`/courses/${course.id}`}
-										className="purple-btn course-btn"
-										style={{
-											textDecoration: "none",
-											fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
-											margin:"0"
-										}}
-									>
-										Learn more
-									</NavLink>
+									<div className="v-line" style={{minWidth:"0.0525rem" , backgroundColor:"#CDCDCD" , height:"100%" , margin:"0", alignSelf:"center"}}></div>
+									<div className="content" style={{textAlign:"center" , whiteSpace:"nowrap"}}>
+										<div
+											style={{
+												color: "rgba(117, 117, 117, 0.90)",
+												fontFamily: "Open Sans",
+												fontStyle: "normal",
+												fontWeight: "700",
+												marginBottom:"0.88vw",
+												fontSize:"clamp(0.5rem , 1.2vw , 0.8rem)"
+											}}
+										>
+											Duration
+										</div>
+										<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.8rem)" , color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].duration}</span>
+									</div>
+								</div>
+								<div className='containe'>
+								<NavLink
+									to={`/courses/${course.id}`}
+									className="purple-btn course-btn"
+									style={{
+										textDecoration: "none",
+										fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
+									}}
+								>
+									Learn more
+								</NavLink>
 								</div>
 							</div>
-					);
+						</div>
+				);
 				})}
 				
 			</div>
@@ -157,33 +164,36 @@ export default function CoursesModal() {
 				style={{
 					display: "flex",
 					backgroundColor: "transparent",
-					width: "100%",
+					width: "60%",
 					aspectRatio: "1/1.3",
 					alignItems: "start",
 					fontWeight: "bold",
 					fontSize: "1.332vw",
+					height:"100%",
+					justifyContent:"center"
 				}}
 			>
 				<div 
 				className="inner-card"
 				style={{
-					margin: "0 0 0 2rem",
+					// margin: "0 0 0 2rem",
 					borderLeft:"1.7px solid #C4C4C4",
-					height:"110%",
-					width:"100%",
+					width:"80%",
 					color:"#9844C5",
+					display:"flex", 
+					alignItems:"center",
+					flexDirection:"column",
+					height:"100%",
+					padding:"1rem 0 0 2rem"
 				}}
 			>
-				<div style={{ fontWeight: "700", marginBottom: "0.555vw" , paddingLeft:"2rem", fontSize:"clamp(16px , 2vw , 20px)" , lineHeight:"1.3"}}>Lorem ipsum dolor sit amet consectetur.</div>
-				<div style={{ fontWeight: "600" , paddingLeft:"2rem" , fontSize:"clamp(10px , 1.5vw , 17px)" , lineHeight:"1.1"}}>Lorem ipsum dolor sit amet consectetur.</div>
-				<div style={{height:"80%", width:"100%" , display:"flex" , flexDirection:"column" , justifyContent:"flex-end" , fontWeight: "600" , fontSize:"clamp(10px , 1.5vw , 18px)" , margin:"1rem 0"}}>
-					<ul style={{display:"flex" , flexDirection:"column"  , gap:"1vw" , alignItems:"center" , justifyContent:"center"}}>
-						<li className="course-modal-items">Lorem ipsum dolor sit amet consectetur.</li>
-						<li className="course-modal-items">Lorem ipsum dolor sit amet consectetur.</li>
-						<li className="course-modal-items">Lorem ipsum dolor sit amet consectetur.</li>
-						<li className="course-modal-items">Lorem ipsum dolor sit amet consectetur.</li>
+				<div style={{ fontWeight: "600", marginBottom: "0.555vw" ,  fontSize:"clamp(1rem , 1.4vw , 1.5rem)" , lineHeight:"150%" , margin:"0 1rem" }}>Sharpen your skills with Dxolve, where expertise converges with innovation, sparking brilliance in every skill-building journey.</div>
+					<ul style={{height:"55%",fontSize:"clamp(1rem , 1.4vw , 1.5rem)" , fontWeight:"400" , width:"90%" , display:"flex" , flexDirection:"column" , margin:"1rem 0" , justifyContent:"space-around" }}>
+						<li>Empower Your Learning Journey</li>
+						<li>Interactive Learning Environment</li>
+						<li>Unlock Learning Potential</li>
+						<li>Personalised Learning Paths</li>
 					</ul>
-				</div>
 				
 			</div>
 			</div>

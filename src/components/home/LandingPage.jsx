@@ -8,8 +8,7 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 				<h2>{title}</h2>
 				<p>{subTitle}</p> 
 				<div style={{display:"flex" , width:"70%" , justifyContent:"flex-start" , gap:"1rem"}}>
-				{/* <a href={Link} style={{textDecoration:"none"}}> */}
-				<button type="button" className="button btn" style={{
+				<a href={Link} type="button" className="button btn" style={{
 					borderRadius: "12.32px",
 					border: "0.104vw solid #FFF",
 					fontSize:"clamp(0.44rem , 2vw , 1.25rem)",
@@ -20,12 +19,11 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 					margin:"2.22vw 0",
 					whiteSpace:"nowrap",
 				}}>
-				<span>
+				<span style={{width:"100%" , height:"100%" , display:"flex" , alignItems:"center" , justifyContent:"center"}}>
               {buttonText}
         </span>
-				</button>
-				{/* </a> */}
-				<button type="button" className="purple-button" id="button" style={{
+				</a>
+				<a href="tel:+91-9873287387" type="button" className="purple-button" id="button" style={{
 					borderRadius: "12.32px",
 					border: "0.104vw solid #FFF",
 					fontSize:"clamp(0.44rem , 2vw , 1.25rem)",
@@ -39,10 +37,10 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 				<span>
 				Reach out to us
         </span>
-				</button>
+				</a>
 				</div>
 			</div>
-				<div className="landing-img" style={{width:"75%" }}>
+				<div className="landing-img" style={{width:"75%"}}>
 					<img src={imageurl} style={{
 						aspectRatio:"1/1",
 						objectFit:"contain",

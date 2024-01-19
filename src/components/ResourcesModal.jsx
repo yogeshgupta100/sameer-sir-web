@@ -6,60 +6,55 @@ export default function ResourcesModal() {
 			style={{
 				display: "flex",
 				alignItems: "center",
-				gap: "1.665vw",
-				padding: "0.277vw",
-				borderRadius: "0.971vw",
+				gap: "1vw",
+				padding: "0.2vw 0.5vw 0 1vw",
 				background: "white",
 				boxShadow: "0.138vw 0.138vw 1.04vw 0 rgba(0, 0, 0, 0.15)",
-				margin:"4.44vw 7.77vw",
+				margin:"3.44vw 7.77vw",
 			}}
 		>
-			<div
+			<a href="/blogs"
 				className="inner-card"
 				style={{
 					display: "flex",
 					borderRadius: "0.99vw",
-					backgroundColor: "#B46BD1",
-					boxShadow: "0.138vw 0.138vw  1.04vw 0.138vw rgba(0, 0, 0, 0.05)",
-					width: "30%",
-					aspectRatio: "7/6",
-					alignItems: "flex-end",
-					padding: "1.887vw 1.776vw",
-					fontWeight: "bold",
-					fontSize: "1.332vw",
-					color: "white",
+					width: "32%",
+					aspectRatio: "1/1",
+					backgroundPosition:"center",
+					backgroundRepeat:"no-repeat",
+					backgroundSize:"cover",
 				}}
 			>
-				Resources
-			</div>
-			<div
+				<img src="/assets/resource-modal-blog.png" style={{
+					width:"100%"
+				}}/>
+			</a>
+			<a href="/tutorials"
 				className="inner-card"
 				style={{
 					display: "flex",
 					borderRadius: "0.99vw",
-					backgroundColor: "#B46BD1",
-					boxShadow: "0.198vw 0.198vw 0.99vw 0.198vw rgba(0, 0, 0, 0.05)",
-					width: "30%",
-					aspectRatio: "7/6",
-					alignItems: "flex-end",
-					padding: "1.887vw 1.776vw",
-					fontWeight: "bold",
-					fontSize: "1.332vw",
-					color: "white",
+					width: "32%",
+					aspectRatio: "1/1",
+					backgroundPosition:"center",
+					backgroundRepeat:"no-repeat",
+					backgroundSize:"cover",
 				}}
 			>
-				Tutorials
-			</div>
+				<img src="/assets/resource-modal-tutorial.png" style={{
+					width:"100%"
+				}}/>
+			</a>
 			<div
 				className="inner-card"
 				style={{
 					margin: "auto",
-					maxWidth: "14.43vw",
+					maxWidth: "100%",
 				}}
 			>
-				<div style={{ color: "#B46BD1", fontWeight: "700", marginBottom: "0.555vw" }}>Hire from Us</div>
-				<div style={{ whiteSpace: "pre-wrap", fontWeight: "600" }}>Lorem ipsum dolor sit amet consectetur.</div>
-				<div style={{ fontSize: "0.8325vw", marginBottom: "1.332vw" }}>Lorem ipsum dolor sit amet consectetur.</div>
+				<div style={{ color: "#B46BD1", fontWeight: "700", marginBottom: "1vw" , fontSize:"clamp(1.3rem , 1.6vw , 1.9rem)"}}>FUEL YOUR CURIOSITY</div>
+				<div style={{ whiteSpace: "nowrap", fontWeight: "400" , color:"#303030" , fontSize:"clamp(1rem , 1.3vw , 1.2rem) " , lineHeight:"1.5vw"}}>Find a Plethora of Resources Tailored for</div>
+				<div style={{ whiteSpace: "nowrap", fontWeight: "400" , color:"#303030" , fontSize:"clamp(1rem , 1.3vw , 1.2rem)" , marginBottom:"1.5vw"}}>Your Learning Journey.</div>
 				<NavLink to={'/resource'}>
 				<button
 					style={{

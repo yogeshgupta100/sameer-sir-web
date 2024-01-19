@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="content" style={{
             display:"block",
             width:"70%",
-            marginLeft:"4rem",
+            marginLeft:"-0.5rem",
             whiteSpace:"nowrap",
             marginTop:"10vw"
         }}>

@@ -205,6 +205,7 @@ const TutorialCard = ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        width:"100%"
       }}
     >
       <div
@@ -215,12 +216,13 @@ const TutorialCard = ({
           borderRadius: "1rem",
           backgroundColor: "#fff",
           boxShadow: "0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1)",
-          width: "90%",
-          maxWidth: "1200px",
-          margin: "2rem auto",
+          width: "100%",
+          // maxWidth: "1200px",
+          // margin: "2rem auto",
           padding: "2rem",
           fontSize: "1rem",
 		//   display: "flex",
+    aspectRatio:"10/3"
         }}
       >
         <div
@@ -231,6 +233,7 @@ const TutorialCard = ({
             // marginBottom: "1.5rem",
             borderRadius: "0.5rem",
             overflow: "hidden",
+            width:"40%"
           }}
         >
           <iframe
@@ -247,12 +250,9 @@ const TutorialCard = ({
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "1.566vw",
+            gap: "1.2vw",
 			marginLeft: "4vw",
-			width: "60%",
-			// display: "flex",
-			// flexDirection: "column",
-			justifyContent: "space-evenly",
+			width: "50%",
 			height: "90%",
           }}
         >
@@ -260,9 +260,10 @@ const TutorialCard = ({
             className="title"
             style={{
               color: "#B46BD1",
-              fontWeight: "700",
-              fontSize: "clamp(1.1rem , 1.5vw , 1.4rem)",
+              fontWeight: "600",
+              fontSize: "clamp(2rem , 1.6vw , 3rem)",
             //   marginBottom: "0.5rem",
+            lineHeight:"2.55vw"
             }}
           >
             {title}
@@ -272,12 +273,14 @@ const TutorialCard = ({
             style={{
               whiteSpace: "pre-wrap",
               color: "#000",
-			  fontSize:"clamp(0.7rem , 1.5vw , 1rem)"
+			  fontSize:"clamp(1rem , 1.3vw , 1.5rem)",
+        lineHeight:"2vw",
+        opacity:"0.7"
             }}
           >
             {description}
           </div>
-          <div
+          {/* <div
             className="social-links"
             style={{
               display: "flex",
@@ -325,13 +328,13 @@ const TutorialCard = ({
                 </span>
               </a>
             </div>
-          </div>
+          </div> */}
           <div
             className="author-details"
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "1rem",
+              gap: "1.5rem",
               marginTop: "1.566vw",
             }}
           >
@@ -342,7 +345,7 @@ const TutorialCard = ({
                 height: "60px",
                 borderRadius: "50%",
                 backgroundSize: "cover",
-                backgroundImage: `url('/assets/emp1.jpg')`,
+                backgroundImage: `url(${'/assets/emp1.jpg'})`,
               }}
             ></div>
             <div
@@ -356,7 +359,7 @@ const TutorialCard = ({
               <span
                 className="author-name"
                 style={{
-                  fontSize: "1.1rem",
+                  fontSize: "clamp(1rem , 3vw , 1.7rem)",
                   fontWeight: "600",
                   color: "#B46BD1",
                 }}
@@ -366,7 +369,7 @@ const TutorialCard = ({
               <span
                 className="published-date"
                 style={{
-                  fontSize: "0.9rem",
+                  fontSize: "clamp(1rem , 1.5vw , 1.7rem)",
                   fontWeight: "400",
                   color: "#B46BD1",
                 }}

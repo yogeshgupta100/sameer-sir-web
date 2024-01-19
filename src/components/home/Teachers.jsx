@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import Heading from "../aboutus/Heading";
 import EmpCard from "../aboutus/card";
 
-const Teachers = ({empData}) => {
+const Teachers = ({empData , content , subContent , btnVisible}) => {
 
 	return (
 		<div className="content" style={{margin:"14vw 2.22vw 11.25vw" , width:"95vw"}}>
 				<div className="view-all-heading">
-				<Heading content={"Mentors empowering your journey"} subContent={"Get groomed by elite professionals and academic gurus of the industry to accelerate your professional journey."} left={"20.5%"} btnVisible={true}></Heading>
+				<Heading content={content} subContent={subContent} left={"20.5%"} btnVisible={btnVisible}></Heading>
 				</div>
 			{/* <div className="teacher-btn"
 				style={{

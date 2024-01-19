@@ -29,7 +29,28 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+/* Add this CSS to your global styles or a specific component style file */
 
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .modal-content {
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	width: 60%; /* Adjust the width as needed */
+  }
+  
 .content-container {
 	width: 100%;
 	margin-top: 5.55vw;
@@ -123,7 +144,6 @@ code {
 }
 .card img {
 	max-width: 100%;
-	/* min-height: 23vw; */
 	aspect-ratio: 8/6.5;
 	background: #f0f0f1;
 }
@@ -174,7 +194,7 @@ code {
 }
 .about-content {
 	max-width: 90%;
-	min-height: 80%;
+	min-height: 75%;
 	margin: 3.33vw auto;
 	display: flex;
 	flex-direction: row;
@@ -324,7 +344,8 @@ code {
 
 .first-para {
 	color: #ad60c8;
-	text-align: center;
+	text-align: end;
+	display: block;
 }
 
 .first-para h4 {
@@ -345,25 +366,12 @@ code {
 	letter-spacing: 0.03vw;
 }
 
-.first-img1 {
+.first-img {
 	border-radius: 0.25rem;
-	background: url("/assets/man1.jpg"), lightgray 50% / cover no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	width: 60%;
-	aspect-ratio: 1/1.2;
-}
-
-.first-img2 {
-	min-width: 60%;
-	aspect-ratio: 1/1.2;
-	background: url("/assets/women1.jpg"), lightgray 50% / cover no-repeat;
-	border-radius: 0.276vw;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-radius: 0.25rem;
 }
 .bar {
 	list-style: none;
@@ -400,7 +408,7 @@ code {
 	grid-template-columns: repeat(4, minmax(333vw, 555vw));
 	grid-gap: 2.76vw 0;
 	justify-content: space-evenly;
-	margin: 6.66vw auto;
+	margin: 0 auto;
 }
 .card-emp {
 	position: relative;
@@ -536,7 +544,7 @@ code {
 }
 .resource-content1 {
 	width: 100%;
-	margin-top: 8vw;
+	margin-top: 3vw;
 	display: flex;
 }
 .resource-content2 {
@@ -597,10 +605,10 @@ code {
 	white-space: nowrap;
 }
 .vid-content span {
-	max-width: 100%;
+	max-width: 90%;
 	color: #3d3d3d;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif', 'Helvetica Neue', sans-serif;
-	font-size: clamp(.8rem,1.1vw,1.6rem);
+	font-size: clamp(1.2rem,1.3vw,2rem);
 	font-style: normal;
 	font-weight: 400;
 	line-height: 180%;
@@ -629,7 +637,7 @@ button {
   margin: 12px;
   display: none;
   grid-template-rows: repeat(3, 1fr);
-  justify-items: flex-end;
+  justify-items: flex-start ;
   z-index: 120;
 	height: 30px;
 	margin: 12px;
@@ -644,11 +652,12 @@ button {
 .hamburger1 div {
 	background-color: rgb(61, 61, 61);
 	position: relative;
-	width: 30px;
-	height: 3px;
-	margin-top: 1px;
+	width: 60px;
+	height: 5px;
+	margin-top: 10px;
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	background-color: #B46BD1;
 }
 
 #toggle1 {

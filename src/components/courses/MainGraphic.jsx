@@ -51,7 +51,7 @@ const Course = () => {
         <Whycourse data={courseData} />
         <Howyoulearn data={courseData} />
         <Curriculum data={courseData} />
-        <Teachers empData={courseData?.attributes?.mentors} />
+        <Teachers empData={courseData?.attributes?.mentors} content={"Your mentors"} subContent={"Meet Our Visionaries: Learn from seasoned industry professionals who are passionate about nurturing the next generation of graphic designers"} />
         <EnrollingProcess/>
         <Testimonies data={courseData} />
         <AllCollapseExample menuData={menuData} data={courseData} />

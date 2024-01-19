@@ -7,7 +7,7 @@ const DesignCard = ({ currEle }) => {
         className="designCard container"
         style={{
           justifyContent:"center",
-          marginTop:"4.44vw",
+          // marginTop:"4.44vw",
           minWidth:"100%"
         }}
       >
@@ -19,7 +19,9 @@ const DesignCard = ({ currEle }) => {
             padding: "1.11vw",
             flexDirection:"row",
             alignItems:"center",
-            backgroundColor:"#F6F6F1",
+            borderRadius: "0.9375rem",
+            border: "1px solid #B86CD2",
+            background: "#F6F6F1",
           }}
         >
           <div className="content" style={{width:"100%" , fontSize:"clamp(1rem , 1vw , 1.5rem)"}}>
@@ -32,7 +34,7 @@ const DesignCard = ({ currEle }) => {
               background: "#B46BD1",
               color:"#fff",
               padding:"0.888vw 2.22vw",
-              marginTop:"0.8rem"
+              marginTop:"2rem"
             }}>
               View now
               </button>

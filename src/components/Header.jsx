@@ -19,8 +19,9 @@ const Header = () => {
 		<>
 			<div
 				className="navbar navbar-expand-lg"
-				style={{ padding: "0", maxWidth: "100vw", boxShadow: "0 0.069vw 0.555vw 0 rgba(0, 0, 0, 0.25)" }}
+				style={{ padding: "0", width: "100vw", boxShadow: "0 0.069vw 0.555vw 0 rgba(0, 0, 0, 0.25)" , position:"fixed"}}
 			>
+				<div style={{width:"100%" , height:"100%" , backgroundColor:"#fff"}}>
 				<div
 					className="header"
 					style={{ backgroundColor: "#fff", margin: "auto", minHeight: "6.66vw", display: "flex" , width:"93%"}}
@@ -237,6 +238,7 @@ const Header = () => {
 							<SignupBtn />)}
 						</div>
 					</div>
+				</div>
 				</div>
 
 				{/* Courses dropdown */}

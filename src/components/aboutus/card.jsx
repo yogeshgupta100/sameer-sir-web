@@ -42,7 +42,8 @@ const EmpCard = ({ currEle }) => {
 					fontWeight: "700",
 					lineHeight: "1.75rem",
 					letterSpacing: "0.02rem",
-					width:"80%"}}>{currEle?.role}</span>
+					width:"80%",
+					whiteSpace:"nowrap"}}>{currEle?.role}</span>
 			</div>
 			<div className="hidden-content">
 				<div className="hidden-container" style={{ padding: "0 0 4vw" }}>
