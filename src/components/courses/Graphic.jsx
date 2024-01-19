@@ -98,7 +98,7 @@ const Graphic = ({ data }) => {
               Download Syllabus
         </span>
 				</button>
-        {showModal && <DownloadSyllabusFormModal onClose={closeSyllabusModal} />}
+        {showModal && <DownloadSyllabusFormModal closeModal={closeSyllabusModal} onClose={closeSyllabusModal} />}
         {/* </a> */}
 				{/* </a> */}
 				</div>

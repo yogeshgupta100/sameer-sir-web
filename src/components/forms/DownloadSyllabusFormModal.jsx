@@ -3,10 +3,10 @@
 import React from "react";
 import DownloadSyllabus from "./DownloadSyllabus"; // Your existing component
 
-const DownloadSyllabusFormModal = ({ onClose }) => {
+const DownloadSyllabusFormModal = ({ closeModal }) => {
   return (
     <div className="modal">
-        <DownloadSyllabus />
+        <DownloadSyllabus closeModal={closeModal}/>
     </div>
   );
 };
