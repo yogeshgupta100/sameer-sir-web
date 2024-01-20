@@ -75,6 +75,15 @@ input[type="number"] {
     font-weight: 600;
     color: #B86CD2;
 }
+textarea{
+    padding: 0.5vw;
+    border: 1px solid #B86CD2;
+    border-radius: 5px;
+    outline: none;
+    font-size: clamp(0.6rem , 1vw , 1rem);
+    font-weight: 600;
+    color: #B86CD2;
+}
 
 
 label{

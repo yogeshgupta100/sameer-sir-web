@@ -10,6 +10,11 @@ const Graphic = ({ data }) => {
 	const [token, setToken] = useToken();
 	const [user, setUser] = useUser();
 	const [showModal, setShowModal] = useState(false);
+  const options = {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  };
 
 	const applyNow = () => {
 		if (!token) {
@@ -187,10 +192,7 @@ const Graphic = ({ data }) => {
                     color: "#3D3D3D",
                   }}
                 >
-                  Welcome to the enchanting world of "Graphic Design Alchemy,"
-                  where creativity knows no bounds, and the ordinary transforms
-                  into extraordinary. it's a journey of self-discovery, artistic
-                  expression
+                  {data?.attributes?.description}
                 </span>
               </div>
               <div
@@ -226,13 +228,30 @@ const Graphic = ({ data }) => {
                     fontSize: "clamp(1rem , 1.2vw , 1.5rem)",
                     lineHeight: "1.88vw",
                     color: "#3D3D3D",
-                  }}>Weekend</div>
+                  }}>{data?.attributes?.batches[0]?.type}</div>
                   <div style={{
                     fontSize: "clamp(0.8rem , 1vw , 1rem)",
                     lineHeight: "1.55vw",
                     color: "#3D3D3D",
-                  }}>Sat & Sun</div>
-                  {/* {data?.attributes?.batches[0].duration} */}
+                  }}>{data?.attributes?.batches[0]?.classDays}</div>
+                  <div style={{height:"100%" , display:"flex" , alignItems:"center" , fontWeight:"600"}}>
+                    <span style={{margin:"0 1vw 0.4vw 0"}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+<path d="M18.7544 1.87104L13.7488 1.87106V0.625146C13.7488 0.279753 13.4691 0 13.1237 0C12.7783 0 12.4986 0.279753 12.4986 0.625146V1.87075H7.49738V0.625146C7.49738 0.279753 7.21763 0 6.87224 0C6.52684 0 6.24709 0.279753 6.24709 0.625146V1.87075H1.25029C0.559819 1.87075 0 2.43057 0 3.12104V18.7497C0 19.4402 0.559819 20 1.25029 20H18.7544C19.4449 20 20.0047 19.4402 20.0047 18.7497V3.12104C20.0047 2.43086 19.4449 1.87104 18.7544 1.87104ZM18.7544 18.7497H1.25029V3.12104H6.24709V3.75088C6.24709 4.09625 6.52684 4.37603 6.87224 4.37603C7.21763 4.37603 7.49738 4.09625 7.49738 3.75088V3.12136H12.4986V3.75119C12.4986 4.09658 12.7783 4.37634 13.1237 4.37634C13.4691 4.37634 13.7488 4.09658 13.7488 3.75119V3.12136H18.7544V18.7497ZM14.3784 9.99795H15.6287C15.9737 9.99795 16.2538 9.71788 16.2538 9.3728V8.12251C16.2538 7.77743 15.9737 7.49736 15.6287 7.49736H14.3784C14.0333 7.49736 13.7532 7.77743 13.7532 8.12251V9.3728C13.7532 9.71788 14.0333 9.99795 14.3784 9.99795ZM14.3784 14.9988H15.6287C15.9737 14.9988 16.2538 14.7191 16.2538 14.3737V13.1234C16.2538 12.7783 15.9737 12.4982 15.6287 12.4982H14.3784C14.0333 12.4982 13.7532 12.7783 13.7532 13.1234V14.3737C13.7532 14.7194 14.0333 14.9988 14.3784 14.9988ZM10.6275 12.4982H9.3772C9.03212 12.4982 8.75205 12.7783 8.75205 13.1234V14.3737C8.75205 14.7191 9.03212 14.9988 9.3772 14.9988H10.6275C10.9726 14.9988 11.2526 14.7191 11.2526 14.3737V13.1234C11.2526 12.7786 10.9726 12.4982 10.6275 12.4982ZM10.6275 7.49736H9.3772C9.03212 7.49736 8.75205 7.77743 8.75205 8.12251V9.3728C8.75205 9.71788 9.03212 9.99795 9.3772 9.99795H10.6275C10.9726 9.99795 11.2526 9.71788 11.2526 9.3728V8.12251C11.2526 7.77712 10.9726 7.49736 10.6275 7.49736ZM5.62632 7.49736H4.37603C4.03094 7.49736 3.75088 7.77743 3.75088 8.12251V9.3728C3.75088 9.71788 4.03094 9.99795 4.37603 9.99795H5.62632C5.9714 9.99795 6.25146 9.71788 6.25146 9.3728V8.12251C6.25146 7.77712 5.9714 7.49736 5.62632 7.49736ZM5.62632 12.4982H4.37603C4.03094 12.4982 3.75088 12.7783 3.75088 13.1234V14.3737C3.75088 14.7191 4.03094 14.9988 4.37603 14.9988H5.62632C5.9714 14.9988 6.25146 14.7191 6.25146 14.3737V13.1234C6.25146 12.7786 5.9714 12.4982 5.62632 12.4982Z" fill="#B46BD1" opacity={"1"}/>
+</svg>
+                    </span>
+                    <span style={{
+                    fontSize: "clamp(0.8rem , 1.1vw , 1.2rem)",
+                    lineHeight: "1.55vw",
+                    color: "#B46BD1",
+                  }}>{(new Date(data?.attributes?.batches[0].startDate)).toLocaleDateString("en-US",options).replace(/,/g, '')}</span>
+                    <span style={{minWidth: "0.07vw", minHeight: "30%" , margin:"0.5rem" , backgroundColor:"#B46BD1" , opacity:"0.5"}}></span>
+                    <span style={{
+                    fontSize: "clamp(0.8rem , 1.1vw , 1.2rem)",
+                    lineHeight: "1.55vw",
+                    color: "#B46BD1",
+                  }}>{data?.attributes?.batches[0].startTime} - {data?.attributes?.batches[0].endTime}</span>
+                  </div>
                 </span>
               </div>
               <div
@@ -275,7 +294,7 @@ const Graphic = ({ data }) => {
                     fontSize: "clamp(0.8rem , 1vw , 1rem)",
                     lineHeight: "1.55vw",
                     color: "#3D3D3D",
-                  }}>2 hours a day</div>
+                  }}>{data?.attributes?.batches[0].classDuration}</div>
                 </span>
               </div>
             </div>

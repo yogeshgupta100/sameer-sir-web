@@ -41,7 +41,8 @@ function App() {
 						<Route path="/signin" element={<Signin />} />
 						<Route path="/blogs" element={<MainBlog />} />
 						<Route path="/panel" element={<MainPanel />} />
-						<Route path="/hire" element={<Hire />} />
+						<Route path="/hire" element={<Hire type={"hire"}/>} />
+						<Route path="/work" element={<Hire type={"work"}/>} />
 						<Route path="/tutorials" element={<MainTutorial />} />
 						<Route path="/success" element={<SuccessPayment />} />
 						<Route path="/cancel" element={<CancelPayment />} />

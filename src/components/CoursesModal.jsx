@@ -5,6 +5,12 @@ import { useState, useEffect } from "react";
 export default function CoursesModal() {
 	const [courses, setCourses] = useState([]);
 
+	const options = {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+	  };
+
 	useEffect(() => {
 		(async () => {
 			const res = await fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/courses?populate=*`);
@@ -106,7 +112,7 @@ export default function CoursesModal() {
 										>
 											Starting Date
 										</div>
-										<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.8rem)" , color: "#B46BD1" , fontWeight:"500" , whiteSpace:"nowrap"}}>{course.attributes.batches[0].startDate}</span>
+										<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.8rem)" , color: "#B46BD1" , fontWeight:"500" , whiteSpace:"nowrap"}}>{(new Date(course.attributes.batches[0].startDate)).toLocaleDateString("en-US",options).replace(/,/g, '')}</span>
 									</div>
 									<div className="v-line" style={{minWidth:"0.0525rem" , backgroundColor:"#CDCDCD" , height:"100%" , margin:"0" , alignSelf:"center"}}></div>
 									<div className="content" style={{textAlign:"center" , whiteSpace:"nowrap"}}>

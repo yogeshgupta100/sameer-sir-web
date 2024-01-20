@@ -4,6 +4,11 @@ import { useState, useEffect } from "react";
 
 const Courses_container = () => {
     const [courses, setCourses] = useState([]);
+	const options = {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+	  };
 
 	useEffect(() => {
 		(async () => {
@@ -80,7 +85,7 @@ const Courses_container = () => {
 											>
 												Starting Date
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.9rem)" , color: "#B46BD1" , fontWeight:"500" , whiteSpace:"nowrap"}}>{course.attributes.batches[0].startDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.9rem)" , color: "#B46BD1" , fontWeight:"500" , whiteSpace:"nowrap"}}>{(new Date(course.attributes.batches[0].startDate)).toLocaleDateString("en-US",options).replace(/,/g, '')}</span>
 										</div>
 										<div className="v-line" style={{minWidth:"0.0525rem" , backgroundColor:"#CDCDCD" , height:"100%" , margin:"0" , alignSelf:"center"}}></div>
 										<div className="content" style={{textAlign:"center" , whiteSpace:"nowrap"}}>
@@ -95,7 +100,7 @@ const Courses_container = () => {
 											>
 												Cohort size
 											</div>
-											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.9rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].endDate}</span>
+											<span className="course-data" style={{fontSize: "clamp(0.5rem , 1.2vw , 0.9rem)", color: "#B46BD1" , fontWeight:"500"}}>{course.attributes.batches[0].cohortSize}</span>
 										</div>
 										<div className="v-line" style={{minWidth:"0.0525rem" , backgroundColor:"#CDCDCD" , height:"100%" , margin:"0", alignSelf:"center"}}></div>
 										<div className="content" style={{textAlign:"center" , whiteSpace:"nowrap"}}>

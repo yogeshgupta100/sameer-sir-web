@@ -9,9 +9,9 @@ const DownloadSyllabusFormModal = ({ closeModal , form}) => {
     {form === "downloadSyllabus" ? (
       <DownloadSyllabus closeModal={closeModal} />
     ) : form === "hire" ? (
-      <HireModal closeModal={closeModal} />
+      <HireModal closeModal={closeModal} type={"hire"}/>
     ) : form === "work" ? (
-      <Work closeModal={closeModal} />
+      <HireModal closeModal={closeModal} type={"work"}/>
     ) : null}
   </div>
   );

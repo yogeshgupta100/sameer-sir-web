@@ -46,8 +46,6 @@ const Signup = () => {
 
 		const data = await response.json();
 
-		console.log(data);
-
 		if (data.hasOwnProperty("error")) {
 			alert(data.error.message || "Something went wrong!");
 			return;

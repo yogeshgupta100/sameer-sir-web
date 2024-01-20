@@ -1,7 +1,8 @@
 import React , {useState} from 'react'
 import Header from '../Header'
+import DownloadSyllabusFormModal from './DownloadSyllabusFormModal';
 
-const Hire = () => {
+const Hire = ({type}) => {
     const [showModal, setShowModal] = useState(false);
     const openSyllabusModal = () => {
 		setShowModal(true);
@@ -25,10 +26,10 @@ const Hire = () => {
 			<div className="centered-text" style={{width:"100%"}}>
 				<h2 style={{
                     fontSize:"clamp(2rem , 5vw , 3.2rem)"
-                }}>Want to Hire from us</h2>
+                }}>{type === "hire"?("Want to Hire from us"):("Want to Work with us")}</h2>
 				<p style={{
                     fontSize:"clamp(1rem , 2vw , 1.5rem)",
-                }}>Hire talented designers from our community</p> 
+                }}>{type === "hire"?("Hire talented designers from our community"):("Hire talented designers from our community")}</p> 
 				<div style={{display:"flex" , width:"70%" , justifyContent:"flex-start" , gap:"1rem"}}>
 				<button type="button" onClick={openSyllabusModal} className="purple-button" id="button" style={{
 					borderRadius: "12.32px",
@@ -46,7 +47,7 @@ const Hire = () => {
 				Explore now
         </span>
 				</button>
-                {showModal && <DownloadSyllabusFormModal closeModal={closeSyllabusModal} onClose={closeSyllabusModal} form={"hire"}/>}
+                {showModal && <DownloadSyllabusFormModal closeModal={closeSyllabusModal} onClose={closeSyllabusModal} form={type}/>}
       </div>
       </div>
       </div>
