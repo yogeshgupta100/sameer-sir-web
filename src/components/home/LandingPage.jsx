@@ -32,9 +32,10 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 					aspectRatio: "11/2.7",
 					padding:"1vw 1vw",
 					margin:"2.22vw 0",
-					whiteSpace:"nowrap"
+					whiteSpace:"nowrap",
+					textDecoration:"none"
 				}}>
-				<span>
+				<span style={{textDecoration:"none"}}>
 				Reach out to us
         </span>
 				</a>
