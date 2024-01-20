@@ -38,10 +38,12 @@ const Hire = ({type}) => {
 					fontWeight:"500",
 					minWidth: "40%",
 					aspectRatio: "11/2.7",
-					padding:"1vw 1.5vw",
+					padding:"auto 1.5vw",
 					margin:"2.22vw 0",
 					whiteSpace:"nowrap",
-                    outline:"none"
+          outline:"none",
+          display:"flex",
+          alignItems:"center"
 				}}>
 				<span>
 				Explore now
