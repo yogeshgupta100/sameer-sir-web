@@ -41,13 +41,14 @@ const Graphic = ({ data }) => {
 				console.error(e.error);
 			});
 	};
-  const openSyllabusModal = () => {
-    setShowModal(true);
-  };
+	
+	const openSyllabusModal = () => {
+		setShowModal(true);
+	};
 
-  const closeSyllabusModal = () => {
-    setShowModal(false);
-  };
+	const closeSyllabusModal = () => {
+		setShowModal(false);
+	};
 
   return (
     <>
