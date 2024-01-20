@@ -46,7 +46,7 @@ const BlogCard = ({currEle}) => {
                   }}>
                     {currEle?.attributes?.title}
                   </h5>
-                  <p style={{
+                  {/* <p style={{
                     color: "rgba(0, 0, 0, 0.75)",
                     fontFamily: "Open Sans",
                     fontSize: "0.888vw",
@@ -58,10 +58,10 @@ const BlogCard = ({currEle}) => {
                     marginBottom:"1.11vw"
                   }}>
                     {currEle?.attributes?.description}
-                  </p> 
-                  <p style={{color:"rgba(91, 91, 91, 0.80)" , fontSize:"clamp(0.5rem , 1.3vw , 1rem)"}}>
+                  </p>  */}
+                  {/* <p style={{color:"rgba(91, 91, 91, 0.80)" , fontSize:"clamp(0.5rem , 1.3vw , 1rem)"}}>
                     By {currEle?.attributes?.author}
-                  </p>
+                  </p> */}
                   <a
 										href={`/article/${currEle?.id}`}
 										className="purple-btn course-btn"
