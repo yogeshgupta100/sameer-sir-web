@@ -21,7 +21,7 @@ import TokenProvider from "./contexts/TokenProvider";
 import UserProvider from "./contexts/UserProvider";
 import MainTutorial from "./components/tutorials/MainTutorial";
 import MainPanel from "./components/studentPanel/MainPanel";
-import Hire from "./components/forms/HIre";
+import Hire from "./components/forms/Hire";
 
 function App() {
 	return (
