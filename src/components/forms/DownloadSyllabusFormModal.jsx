@@ -1,13 +1,19 @@
-// components/DownloadSyllabusForm.jsx
 
 import React from "react";
-import DownloadSyllabus from "./DownloadSyllabus"; // Your existing component
+import DownloadSyllabus from "./DownloadSyllabus"; 
+import HireModal from "./HireModal";
 
-const DownloadSyllabusFormModal = ({ closeModal }) => {
+const DownloadSyllabusFormModal = ({ closeModal , form}) => {
   return (
     <div className="modal">
-        <DownloadSyllabus closeModal={closeModal}/>
-    </div>
+    {form === "downloadSyllabus" ? (
+      <DownloadSyllabus closeModal={closeModal} />
+    ) : form === "hire" ? (
+      <HireModal closeModal={closeModal} />
+    ) : form === "work" ? (
+      <Work closeModal={closeModal} />
+    ) : null}
+  </div>
   );
 };
 

@@ -44,10 +44,12 @@ const Graphic = ({ data }) => {
 	
 	const openSyllabusModal = () => {
 		setShowModal(true);
+    document.querySelector(".navbar").style.display = "none";
 	};
 
 	const closeSyllabusModal = () => {
 		setShowModal(false);
+    document.querySelector(".navbar").style.display = "block";
 	};
 
   return (
@@ -99,7 +101,7 @@ const Graphic = ({ data }) => {
               Download Syllabus
         </span>
 				</button>
-        {showModal && <DownloadSyllabusFormModal closeModal={closeSyllabusModal} onClose={closeSyllabusModal} />}
+        {showModal && <DownloadSyllabusFormModal closeModal={closeSyllabusModal} onClose={closeSyllabusModal} form={"downloadSyllabus"}/>}
         {/* </a> */}
 				{/* </a> */}
 				</div>

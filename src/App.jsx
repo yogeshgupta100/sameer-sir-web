@@ -21,6 +21,7 @@ import TokenProvider from "./contexts/TokenProvider";
 import UserProvider from "./contexts/UserProvider";
 import MainTutorial from "./components/tutorials/MainTutorial";
 import MainPanel from "./components/studentPanel/MainPanel";
+import Hire from "./components/forms/HIre";
 
 function App() {
 	return (
@@ -40,6 +41,7 @@ function App() {
 						<Route path="/signin" element={<Signin />} />
 						<Route path="/blogs" element={<MainBlog />} />
 						<Route path="/panel" element={<MainPanel />} />
+						<Route path="/hire" element={<Hire />} />
 						<Route path="/tutorials" element={<MainTutorial />} />
 						<Route path="/success" element={<SuccessPayment />} />
 						<Route path="/cancel" element={<CancelPayment />} />

@@ -74,7 +74,7 @@ export default function CareerModal() {
 					// color: "white",
 				}}
 			>
-				<img src="/assets/career-1.png" style={{width:"45%"}}/>
+				<img src="/assets/career-2.png" style={{width:"45%"}}/>
 				<div
 				className="inner-card"
 				style={{
