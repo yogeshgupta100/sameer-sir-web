@@ -50,8 +50,7 @@ export default function CoursesModal() {
 								className="card-body"
 								style={{
 									width:"100%",
-									// aspectRatio:"3/1",
-									// height:"60%"
+									height:"100%"
 								}}
 							>
 								<div style={{aspectRatio:"6/2.5"}}>
