@@ -444,7 +444,6 @@ code {
 }
 .subscribe-content {
 	min-height: 100%;
-	margin-bottom: 2rem;
 }
 
 .subscribe-content p{
@@ -491,7 +490,7 @@ code {
 
 .input-email {
 	font-size: 1vw !important;
-	padding: 0 1.5rem;
+	padding: 0 2vw;
 	width: 100%;
 }
 
@@ -600,12 +599,12 @@ code {
 .vid-content p {
 	color: rgba(61, 61, 61, 0.95);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif', 'Helvetica Neue', sans-serif;
-	font-size: clamp(1.8rem, 2vw, 2.375rem);
+	font-size: clamp(1.5rem, 2vw, 2.375rem);
 	font-style: normal;
 	font-weight: 600;
-	/* line-height: 118.421%; */
+	line-height: 118.421%;
 	max-width: 100%;
-	white-space: nowrap;
+	/* white-space: nowrap; */
 }
 .vid-content span {
 	max-width: 90%;
@@ -614,7 +613,7 @@ code {
 	font-size: clamp(1.2rem,1.3vw,2rem);
 	font-style: normal;
 	font-weight: 400;
-	line-height: 180%;
+	line-height: 140%;
 }
 
 /* Accordion Section */
@@ -637,13 +636,12 @@ button {
 
 .hamburger1 {
   height: 30px;
-  margin: 12px;
+  margin: 4vw;
   display: none;
   grid-template-rows: repeat(3, 1fr);
   justify-items: flex-start ;
   z-index: 120;
 	height: 30px;
-	margin: 12px;
 	/* display: -ms-grid; */
 	display: none;
 	grid-template-rows: repeat(3, 1fr);
@@ -1297,6 +1295,13 @@ button {
 		font-style: normal;
 		font-weight: 600;
 	}
+	.header-hamburger{
+		padding-top: 2rem !important;
+	}
+	.landing-page{
+		min-height: 20rem !important;
+		padding-top: 3rem;
+	}
 	.heading > h2 {
 		font-weight: 500 !important;
 	}
@@ -1310,9 +1315,13 @@ button {
 		display: none;
 	}
 	.landing-page-content {
-		justify-content: flex-end !important;
+		justify-content: center !important;
 		padding-left: 0 !important;
-		margin-left: 0 !important;
+		/* margin-left: 0 !important; */
+		margin: auto 0 !important;	
+	}
+	.inner-card{
+		display: none !important;
 	}
 	.centered-text{
 		max-width: 80vw !important;
@@ -1563,18 +1572,20 @@ button {
   }
   .Subscribe-main{
     display: flex !important;
-    justify-content: flex-end !important;
-    align-items: center !important;
-    padding: 0 !important;
+    padding: auto !important;
+	height: 25vw;
+  }
+  .subscribe-content{
+	width: 70% !important;
+	margin: 0 auto;
   }
   .subscribe-content p{
     font-size: 3.33vw !important;
     padding: 0 0 0.777vw 0;
   }
+  .input-email,
   .input-email::placeholder{
     font-size: 2vw !important;
-    text-align: center;
-    align-self: center;
   }
   .subscribe button{
     font-size: 2.33vw !important ;
@@ -1582,10 +1593,10 @@ button {
     max-width: 20% !important;
   }
   .subscribe{
-    min-width: 80vw !important;
+    /* min-width: 80vw !important; */
     border-radius: 0.333vw 0 0 0.333vw !important;
     overflow: hidden;
-    min-height: 4.88vw !important;
+    min-height: 5.88vw !important;
   }
   .footer-img img{
     display: none;
@@ -1681,6 +1692,13 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
+	/* .header-hamburger{
+		display: block;
+	} */
+	.navbar-nav{
+		display: flex;
+		flex-direction: row !important;
+	}
   footer {
     padding: 6vw !important;
   }

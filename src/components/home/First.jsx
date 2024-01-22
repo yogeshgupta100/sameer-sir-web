@@ -22,8 +22,8 @@ const First = () => {
       </div>
       <div className="container" style={{
         background: "linear-gradient(254deg, #6C0082 0.31%, #44006F 46.97%, #7A0089 114.38%)",
-        width: "84vw",
-        height: "44vw",
+        width: "85vw",
+        height: "45vw",
         flexShrink: "0",
         backgroundPosition:"center",
         backgroundRepeat:"no-repeat",
@@ -37,17 +37,18 @@ const First = () => {
         zIndex:"10"
       }}>
         <div className="first-content" style={{
-          maxWidth:"44vw",
-          minHeight:"33vw",
-          margin:"5.66vw 4.44vw ",
+          width:"100vw",
+          // minHeight:"33vw",
+          margin:"4.66vw 4.44vw ",
           color:"#fff",
           fontStyle:"normal",
           // fontFamily:"Open Sans" 
+          height:"100%",
         }}>
           <p style={{ fontSize:"clamp(0.6rem , 1.12vw , 1.25rem)" , marginBottom:"0" , fontWeight:"400" , lineHeight:"200%"}}>Join the Creative Revolution</p>
-          <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , lineHeight:"100%" , width:"100%" , fontWeight:"600" , color:"#fff"}}>Your lifetime Access to our Design</h4>
-          <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , width:"100%" , fontWeight:"600" , color:"#fff"}}>Community Membership Starts</h4>
-          <h4 style={{fontSize:"clamp(2rem , 2vw , 2.5rem)" , lineHeight:"130%" , width:"100%" , fontWeight:"600" , color:"#fff"}}> Here!</h4>
+          <div style={{fontSize:"clamp(1.4rem , 2.5vw , 2.5rem)" , lineHeight:"100%" , width:"100%" , fontWeight:"600" , color:"#fff"}}>Your lifetime Access to our Design</div>
+          <div style={{fontSize:"clamp(1.4rem , 2.5vw , 2.5rem)" , width:"100%" , fontWeight:"600" , color:"#fff" , lineHeight:"150%"}}>Community Membership Starts</div>
+          <div style={{fontSize:"clamp(1.4rem , 2.5vw , 2.5rem)" , lineHeight:"150%" , width:"100%" , fontWeight:"600" , color:"#fff"}}> Here!</div>
           <a href='#courses' style={{textDecoration:"none"}}>
           <button type="button" className="btn" style={{borderRadius: "0.72vw",
             fontSize:"1.11vw",
@@ -55,7 +56,7 @@ const First = () => {
             width:"fit-content",
             minHeight:"4vw",
             padding:"0 1.44vw",
-            margin:"3vw 0 6.7vw 0"
+            margin:"3vw 0 5vw 0"
             }}>
               <span>Explore Courses</span>
         </button>
@@ -69,38 +70,38 @@ const First = () => {
         }}>
           <div className="content" style={{minHeight:"100%"}}>
               <h3 style={{
-              fontSize:"clamp(3rem , 2vw , 3.7rem)",
+              fontSize:"clamp(2rem , 2.8vw , 3.7rem)",
               fontWeight:"700",
               color:"#fff",
               // margin:"0.1rem 0rem 0 0",
             }}>500+ </h3>
               <p style={{
                 width:"10vw",
-                fontSize:"clamp(0.7rem , 1.1vw , 1rem)",
+                fontSize:"clamp(0.6rem , 1.4vw , 2rem)",
                 fontWeight:"400",
               }}>Experts working across the globe!</p>
           </div>
           <div className="content" style={{minHeight:"100%", marginLeft:"-0.85rem"}}>
             <h3 style={{
-              fontSize:"clamp(3rem , 2vw , 3.7rem)",
+              fontSize:"clamp(2rem , 2.8vw , 3.7rem)",
               fontWeight:"700",
               color:"#fff"
             }}>2000+</h3>
               <p style={{
                 width:"12vw",
-                fontSize:"clamp(0.7rem , 1.1vw , 1rem)",
+                fontSize:"clamp(0.6rem , 1.4vw , 2rem)",
                 fontWeight:"400"
               }}>Community members, growing as you read!</p>
           </div>
           <div className="content" style={{minHeight:"100%"}}>
             <h3 style={{
-              fontSize:"clamp(3rem , 2vw , 3.7rem)",
+              fontSize:"clamp(2rem , 2.8vw , 3.7rem)",
               fontWeight:"700",
               color:"#fff"
             }}>2000+</h3>
               <p style={{
                 width:"12vw", 
-                fontSize:"clamp(0.7rem , 1.1vw , 1rem)",
+                fontSize:"clamp(0.6rem , 1.4vw , 2rem)",
                 fontWeight:"400"
               }}>Community members, growing as you read!</p>
           </div>
@@ -110,7 +111,7 @@ const First = () => {
             backgroundPosition:"center",
             backgroundRepeat:"no-repeat",
             backgroundSize:"contain",
-            minWidth: "35vw",
+            maxWidth: "30vw",  
             maxHeight: "100%",
             flexShrink: "0",
             display:"flex",

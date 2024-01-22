@@ -1,33 +1,24 @@
-/* Header.css */
-
-/* Style for the navigation links */
 
 .navbar-nav .nav-item .nav-link {
 	font-weight: 700;
 	font-family: sans-serif;
 }
 
-
-
-/* Style for the active link */
 .navbar-nav .nav-item .nav-link.active {
-	color: #007bff; /* Change to your preferred active link color */
+	color: #007bff; 
 }
 
-/* Style for the dropdown menu */
 .dropdown-menu {
-	background-color: #fff; /* Background color for the dropdown menu */
-}
-
-/* Style for the dropdown items */
-.dropdown-menu .dropdown-item {
-	color: #333; /* Dropdown item text color */
 	background-color: #fff;
 }
 
-/* Style for the dropdown items on hover */
+.dropdown-menu .dropdown-item {
+	color: #333; 
+	background-color: #fff;
+}
+
 .dropdown-menu:hover .dropdown-item:hover {
-	background-color: rgba(215, 214, 214, 0.4); /* Background color on hover */
+	background-color: rgba(215, 214, 214, 0.4); 
 }
 
 .nav-modal {

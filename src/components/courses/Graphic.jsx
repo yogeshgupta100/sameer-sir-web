@@ -145,7 +145,7 @@ const Graphic = ({ data }) => {
               </div>
               <span className="landing-img" style={{ width: "38vw" }}>
                 <img
-                  src={data?.attributes?.thumbnail?.data?.attributes?.url}
+                  src={data?.attributes?.bannerImage?.data?.attributes?.url}
                   style={{
                     aspectRatio: "1/0.95",
                     marginLeft: "0.5rem",

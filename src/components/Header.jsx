@@ -27,8 +27,8 @@ const Header = () => {
 					style={{ backgroundColor: "#fff", margin: "auto", minHeight: "6.66vw", display: "flex" , width:"93%"}}
 				>
     <input id="toggle1" type="checkbox" style={{position:"relative" , zIndex:"120" }}/>
-    <label style={{border:"none"}}
-						className="hamburger1"
+    <label style={{border:"none" , paddingTop:"1rem"}}
+						className="hamburger1 header-hamburger"
             for="toggle1"
 						type="button"
 						data-bs-toggle="collapse"
