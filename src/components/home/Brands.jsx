@@ -20,7 +20,7 @@ const Brands = ({ color, textCol }) => {
         background: color,
         color:textCol,
         maxWidth:"100vw",
-        height:"30vw",
+        height:"33vw",
     }}>
         <div className="container1" style={{
             textAlign:"center"

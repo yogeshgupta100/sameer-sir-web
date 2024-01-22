@@ -42,7 +42,7 @@ const EmpCard = ({ currEle }) => {
 					fontWeight: "700",
 					lineHeight: "1.75rem",
 					letterSpacing: "0.02rem",
-					width:"80%",
+					width:"auto",
 					whiteSpace:"nowrap"}}>{currEle?.role}</span>
 			</div>
 			<div className="hidden-content">
@@ -51,12 +51,12 @@ const EmpCard = ({ currEle }) => {
 						<strong>{currEle?.name}</strong>
 					</div>
 					<div style={{ width: "100%", display: "flex", justifyContent: "space-between" }}>
-						<div style={{ fontSize: "clamp(0.6rem , 1.5vw , 1rem)", lineHeight: "1" }}>
+						<div style={{ fontSize: "clamp(0.5rem , 1.5vw , 1rem)", lineHeight: "1" }}>
 							{currEle?.role} at {currEle?.company}
 						</div>
 					</div>
 					<hr style={{ margin: "0.8vw 0" }} />
-					<div style={{ fontSize: "clamp(0.8rem , 1.5vw , 1rem)", letterSpacing: "1", lineHeight: "1.5" }}>
+					<div style={{ fontSize: "clamp(0.5rem , 1.5vw , 1rem)", letterSpacing: "1", lineHeight: "1.5" }}>
 						{currEle?.description}
 					</div>
 					<hr style={{ margin: "0.8vw 0" }} />
