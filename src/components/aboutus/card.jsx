@@ -28,7 +28,7 @@ const EmpCard = ({ currEle }) => {
 					
 				}}
 			>
-				<span className="card-emp-content" style={{ marginBottom: "5px", color: "#fff" , fontSize: "clamp(0.6rem , 3vw , 1.2rem)",
+				<span className="card-emp-content" style={{ marginBottom: "5px", color: "#fff" , fontSize: "clamp(0.6rem , 3.1vw , 1.3rem)",
 					fontFamily: "Open Sans",
 					fontStyle: "normal",
 					fontWeight: "700",
