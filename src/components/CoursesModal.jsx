@@ -41,16 +41,16 @@ export default function CoursesModal() {
 				}}>
 				{courses.map((course) => {
 					return (
-						<div className="card">
-							<img src={course?.attributes?.thumbnail?.data?.attributes?.url} className="card-img-top" alt="course1" style={{
+						<div className="card" style={{width:"100%" , height:"90%"}}>
+							<div style={{aspectRatio: "1/1" , width:"100%"}}><img src={course?.attributes?.thumbnail?.data?.attributes?.url} className="card-img-top" alt="course1" style={{
 								width: "100%",
-								aspectRatio: "1/1"
-							}} />
+								height:"100%"
+							}} /></div>
 							<div
 								className="card-body"
 								style={{
 									width:"100%",
-									height:"100%"
+									height:"90%"
 								}}
 							>
 								<div style={{aspectRatio:"6/2.5"}}>

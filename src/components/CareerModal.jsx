@@ -1,5 +1,5 @@
 
-
+import { NavLink } from "react-router-dom";
 export default function CareerModal() {
 	return (
 		<div
@@ -40,7 +40,7 @@ export default function CareerModal() {
 			>
 				<div style={{ color: "#B46BD1", fontWeight: "700", marginBottom: "1vw" , fontSize:"clamp(1rem , 1.3vw , 1.5rem)"}}>HIRE FROM US</div>
 				<div style={{fontWeight: "400" , color:"#303030" , fontSize:"clamp(1rem , 1.1vw , 1.25rem)" , lineHeight:"1.5vw" , marginBottom:"1.5vw"}}>Empower your team with the best minds. Choose us for unparalleled talent and unmatched results.</div>
-				<a href={'/hire'}>
+				<NavLink to={'/hire'}>
 				<button
 					style={{
 						color: "white",
@@ -53,9 +53,9 @@ export default function CareerModal() {
 						width: "fit-content",
 					}}
 				>
-					<p>Explore more</p>
+					Explore more
 				</button>
-				</a>
+				</NavLink>
 			</div>
 			</div>
 			<div
@@ -84,7 +84,7 @@ export default function CareerModal() {
 			>
 				<div style={{ color: "#B46BD1", fontWeight: "700", marginBottom: "1vw" , fontSize:"clamp(1rem , 1.3vw , 1.5rem)"}}>WORK WITH US</div>
 				<div style={{fontWeight: "400" , color:"#303030" , fontSize:"clamp(1rem , 1.1vw , 1.25rem)" , lineHeight:"1.5vw" , marginBottom:"1.5vw"}}>Be part of a dynamic team that values creativity, collaboration, and continuous learning.</div>
-				<a href={'/work'}>
+				<NavLink to={'/work'}>
 				<button
 					style={{
 						color: "white",
@@ -97,9 +97,9 @@ export default function CareerModal() {
 						width: "fit-content",
 					}}
 				>
-					<p>Explore more</p>
+					Explore more
 				</button>
-				</a>
+				</NavLink>
 			</div>
 			</div>
 		</div>
