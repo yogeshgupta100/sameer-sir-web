@@ -31,7 +31,8 @@ code {
 }
 .pricing-main{
 	width: 100vw;
-	height: 23vw;
+	height: 40vw;
+	position: relative;
 }
 
 .modal {

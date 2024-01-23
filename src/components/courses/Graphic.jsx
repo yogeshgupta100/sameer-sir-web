@@ -4,11 +4,12 @@ import { useParams } from "react-router-dom";
 import { useToken } from "../../contexts/TokenProvider";
 import { useUser } from "../../contexts/UserProvider";
 import DownloadSyllabusFormModal from "../forms/DownloadSyllabusFormModal";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Graphic = ({ data }) => {
-	const { courseId } = useParams();
-	const [token, setToken] = useToken();
-	const [user, setUser] = useUser();
+	// const { courseId } = useParams();
+	// const [token, setToken] = useToken();
+	// const [user, setUser] = useUser();
 	const [showModal, setShowModal] = useState(false);
   const options = {
     year: 'numeric',
@@ -16,36 +17,36 @@ const Graphic = ({ data }) => {
     day: 'numeric',
   };
 
-	const applyNow = () => {
-		if (!token) {
-			alert("Please login to continue");
-			return;
-		}
+	// const applyNow = () => {
+	// 	if (!token) {
+	// 		alert("Please login to continue");
+	// 		return;
+	// 	}
 
-		const headers = new Headers();
-		headers.append("Content-Type", "application/json");
-		headers.append("Authorization", `Bearer ${token}`);
+	// 	const headers = new Headers();
+	// 	headers.append("Content-Type", "application/json");
+	// 	headers.append("Authorization", `Bearer ${token}`);
 
-		fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/sessions`, {
-			method: "POST",
-			headers,
-			body: JSON.stringify({
-				email: user.email,
-				token,
-				courseId,
-			}),
-		})
-			.then((res) => {
-				if (res.ok) return res.json();
-				return res.json().then((json) => Promise.reject(json));
-			})
-			.then(({ url }) => {
-				window.location = url;
-			})
-			.catch((e) => {
-				console.error(e.error);
-			});
-	};
+	// 	fetch(`${import.meta.env.VITE_STRAPI_SERVER_URL}/api/sessions`, {
+	// 		method: "POST",
+	// 		headers,
+	// 		body: JSON.stringify({
+	// 			email: user.email,
+	// 			token,
+	// 			courseId,
+	// 		}),
+	// 	})
+	// 		.then((res) => {
+	// 			if (res.ok) return res.json();
+	// 			return res.json().then((json) => Promise.reject(json));
+	// 		})
+	// 		.then(({ url }) => {
+	// 			window.location = url;
+	// 		})
+	// 		.catch((e) => {
+	// 			console.error(e.error);
+	// 		});
+	// };
 	
 	const openSyllabusModal = () => {
 		setShowModal(true);
@@ -74,8 +75,8 @@ const Graphic = ({ data }) => {
                 <h2>{data?.attributes?.name}</h2>
                 <p>{data?.attributes?.description}</p>
                 <div style={{display:"flex" , width:"70%" , justifyContent:"flex-start" , gap:"1rem"}}>
+        <AnchorLink href="#pricing">
         <button type="button" className="purple-button" id="button" 
-        onClick={applyNow}
         style={{
           borderRadius: "12.32px",
           border: "0.104vw solid #FFF",
@@ -91,6 +92,7 @@ const Graphic = ({ data }) => {
         Apply now
         </span>
         </button>
+        </AnchorLink>
         <button type="button" className="button btn" onClick={openSyllabusModal} style={{
 					borderRadius: "12.32px",
 					border: "0.104vw solid #FFF",
