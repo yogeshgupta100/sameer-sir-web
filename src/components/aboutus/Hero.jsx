@@ -15,7 +15,7 @@ const Hero = () => {
         }}
       >
             <div className="image-hero">
-            <LandingPage imageurl={""} title={"Transforming Visions into Digital Realities: Begin your success journey with us"} subTitle={"As pioneers in the realm of Design and technology, we embark on a journey of innovation, seamlessly blending creativity with functionality."} buttonText={"Apply now"} Link={"courses"}/>
+            <LandingPage imageurl={""} title={"Transforming Visions into Digital Realities: Begin your success journey with us"} subTitle={"As pioneers in the realm of Design and technology, we embark on a journey of innovation, seamlessly blending creativity with functionality."} buttonText={"Apply now"} link={"/#courses"}/>
             </div>
             <div className="about" style={{maxWidth:"100vw" , display:"flex" , justifyContent:"center"}}>
             <div className=" about-first2">

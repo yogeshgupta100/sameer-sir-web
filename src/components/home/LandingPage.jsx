@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
+const LandingPage = ({ imageurl , title , subTitle , buttonText , link}) => {
 	return (
 		<div className="landing-page" id="home-main">
 			<div className="landing-page-content">
@@ -8,7 +9,8 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 				<h2>{title}</h2>
 				<p>{subTitle}</p> 
 				<div style={{display:"flex" , width:"70%" , justifyContent:"flex-start" , gap:"1rem"}}>
-				<a href={Link} type="button" className="button btn" style={{
+				{/* <Link>  */}
+				<Link to={link} className="button btn" style={{
 					borderRadius: "12.32px",
 					border: "0.104vw solid #FFF",
 					fontSize:"clamp(0.44rem , 2vw , 1.25rem)",
@@ -22,7 +24,8 @@ const LandingPage = ({ imageurl , title , subTitle , buttonText , Link}) => {
 				<span style={{width:"100%" , height:"100%" , display:"flex" , alignItems:"center" , justifyContent:"center"}}>
               {buttonText}
         </span>
-				</a>
+				</Link>
+				{/* </Link> */}
 				<a href="tel:+91-9873287387" type="button" className="purple-button" id="button" style={{
 					borderRadius: "12.32px",
 					border: "0.104vw solid #FFF",

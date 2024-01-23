@@ -109,7 +109,7 @@ const Subscribe = () => {
 								marginTop: "40px",
 							}}
 						>
-							<NavLink to={"https://www.instagram.com/dxolve_official?igsh=OGQ5ZDc2ODk2ZA=="}>
+							<a href={"https://www.instagram.com/dxolve_official?igsh=OGQ5ZDc2ODk2ZA=="} target="_blank">
 							<span style={{
 								display: "flex",
 								alignItems: "center",
@@ -125,8 +125,8 @@ const Subscribe = () => {
 							}}>
 								<AiFillInstagram />
 							</span>
-							</NavLink>
-							<NavLink to={"https://youtube.com/@dxolve_official?si=C4s_wlnZZJdeNqHe"}>
+							</a>
+							<a href={"https://youtube.com/@dxolve_official?si=C4s_wlnZZJdeNqHe"} target="_blank">
 							<span style={{
 								display: "flex",
 								alignItems: "center",
@@ -142,8 +142,8 @@ const Subscribe = () => {
 							}}>
 								<FaYoutube />
 							</span>
-							</NavLink>
-							<NavLink to={""}>
+							</a>
+							<a href={"https://www.linkedin.com/company/dxolve-official"} target="_blank">
 							<span style={{
 								display: "flex",
 								alignItems: "center",
@@ -159,8 +159,8 @@ const Subscribe = () => {
 							}}>
 								<FaLinkedinIn />
 							</span>
-							</NavLink>
-							<NavLink  to={"https://medium.com/@dxolve_official"}>
+							</a>
+							<a  href={"https://medium.com/@dxolve_official"} target="_blank">
 							<span style={{
 								display: "flex",
 								alignItems: "center",
@@ -176,7 +176,7 @@ const Subscribe = () => {
 							}}>
 								<FaMediumM />
 							</span>
-							</NavLink>
+							</a>
 						</div>
 					</div>
 
