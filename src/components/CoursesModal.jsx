@@ -149,8 +149,8 @@ export default function CoursesModal() {
 									</div>
 								</div>
 								<div className='containe'>
-								<Link
-									to={`/courses/${course.id}`}
+								<a
+									href={`/courses/${course.id}`}
 									onClick={componentDidMount}
 									className="purple-btn course-btn"
 									style={{
@@ -159,7 +159,7 @@ export default function CoursesModal() {
 									}}
 								>
 									Learn more
-								</Link>
+								</a>
 								</div>
 							</div>
 						</div>

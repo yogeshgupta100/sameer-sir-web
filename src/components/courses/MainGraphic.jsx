@@ -20,7 +20,6 @@ const Course = () => {
     const navigate = useNavigate();
 
     const [courseData , setCourseData] = useState(null);
-
     useEffect(() => {
         (async () => {
             try {
