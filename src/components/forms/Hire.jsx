@@ -1,21 +1,24 @@
 import React , {useState} from 'react'
 import Header from '../Header'
 import DownloadSyllabusFormModal from './DownloadSyllabusFormModal';
+import { useNavigate } from 'react-router-dom';
 
 const Hire = ({type}) => {
-    const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
+    const [showModal, setShowModal] = useState(true);
+    // document.querySelector(".navbar").style.display = "none";
     const openSyllabusModal = () => {
 		setShowModal(true);
-    document.querySelector(".navbar").style.display = "none";
 	};
 
 	const closeSyllabusModal = () => {
 		setShowModal(false);
-    document.querySelector(".navbar").style.display = "block";
+    navigate("/");
+    // document.querySelector(".navbar").style.display = "block";
 	};
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
       <div className="landing-page" style={{
         backgroundImage:`url(${"assets/career-bg.jpeg"})`,
         backgroundPosition:"center",
@@ -31,7 +34,7 @@ const Hire = ({type}) => {
                     fontSize:"clamp(1rem , 2vw , 1.5rem)",
                 }}>{type === "hire"?("Hire talented designers from our community"):("Hire talented designers from our community")}</p> 
 				<div style={{display:"flex" , width:"70%" , justifyContent:"flex-start" , gap:"1rem"}}>
-        <button onClick={openSyllabusModal} type='btn' className='btn' id='button'
+        <button  type='btn' className='btn' id='button'
 					style={{
 						outline: "none",
 						padding: "1vw 1.33vw",
