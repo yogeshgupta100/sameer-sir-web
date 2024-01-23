@@ -23,7 +23,7 @@ const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
               }}
             >
               <div className="first-img">
-                <img src={imageUrl1} style={{width:"100%" , aspectRatio: "2/2.5"}} />
+                <img src={imageUrl1} style={{width:"100%" , aspectRatio: "2/2.7"}} />
               </div>
               <div className="first-para">
                 <span  style={{
