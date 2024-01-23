@@ -31,10 +31,10 @@ const EnrollingProcess = () => {
           className="container enrolling"
           style={{
             display: "grid",
-            gridTemplateColumns: "2fr 4fr",
-            width: "100%",
-            minHeight: "50vw",
-            margin:"6vw 0 0",
+            gridTemplateColumns: "2fr 6fr",
+            minWidth: "100%",
+            minHeight: "30vw",
+            margin:"6vw 3rem 0 0",
             gap:"3rem"
           }}
         >

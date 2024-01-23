@@ -19,15 +19,18 @@ const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
               style={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "space-around",
+                position:"relative",
+                right:"-4.2vw",
+                top:"2vw"
               }}
             >
               <div className="first-img">
-                <img src={imageUrl1} style={{width:"100%" , aspectRatio: "2/2.4" , objectFit:"contain" }} />
+                <img src={imageUrl1} style={{width:"100%" , aspectRatio: "2/2.8" , objectFit:"contain" }} />
               </div>
               <div className="first-para">
                 <span  style={{
-                display: (director?"block":"none")
+                display: (director?"block":"none"),
+                marginLeft:"2.22vw"
               }}>
                 <h4>Ruchika Raina</h4>
                 <p>Director</p>
@@ -39,14 +42,16 @@ const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
               style={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "space-around",
+                // justifyContent: "space-around",  
                 position: "relative",
-                right:"-4rem"
+                right:"-7rem",
+                bottom:"5rem"
               }}
             >
               <div className="first-para">
                 <span  style={{
                 display: (director?"block":"none"),
+                marginRight:"2.22vw"
               }}>
                 <h4>Omkar Nath Yadav</h4>
                 <p>Director</p>
@@ -55,7 +60,7 @@ const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
               <div className="first-img" style={{
                 marginLeft: (director?"0.5rem":"15vw")
               }}>
-              <img src={imageUrl2} style={{width:"100%" , aspectRatio: "2/2.4" , objectFit:"contain"}} />
+              <img src={imageUrl2} style={{width:"100%" , aspectRatio: "2/2.8" , objectFit:"contain"}} />
               </div>
             </div>
           </div>

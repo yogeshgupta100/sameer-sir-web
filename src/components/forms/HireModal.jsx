@@ -38,7 +38,7 @@ const HireModal = ({closeModal , type}) => {
   return (
     <div className="form-section-syllabus">
                 <div className="container">
-                    <div className="top" style={{ display: "flex", width: "100%" , padding:"1.5vw 0 0"}}>
+                    <div className="top" style={{ display: "flex", width: "100%"}}>
                         <div className="form-head">
                             <h3>
                             Start your journey now  

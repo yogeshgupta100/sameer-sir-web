@@ -94,7 +94,7 @@ const Pricing = () => {
               </svg>
             </button>
       </div>
-        <img src='/assets/pricing.png' style={{width:"100%" , height:"100%"}} />
+        <img src='/assets/pricing2.png' style={{width:"100%" , height:"100%"}} />
       </div>
     </div>
   )
