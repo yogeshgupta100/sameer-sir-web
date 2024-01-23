@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export default function CoursesModal() {
@@ -147,7 +147,7 @@ export default function CoursesModal() {
 									</div>
 								</div>
 								<div className='containe'>
-								<NavLink
+								<Link
 									to={`/courses/${course.id}`}
 									className="purple-btn course-btn"
 									style={{
@@ -156,7 +156,7 @@ export default function CoursesModal() {
 									}}
 								>
 									Learn more
-								</NavLink>
+								</Link>
 								</div>
 							</div>
 						</div>

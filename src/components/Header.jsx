@@ -7,6 +7,7 @@ import Contact from "./Buttons/Contact";
 import NavModal from "./NavModal";
 import useMultiRefs from "../utility/useMultiRefs";
 import {useUser} from "../contexts/UserProvider";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Header = () => {
 	const [user , setUser] = useUser();
@@ -52,11 +53,8 @@ const Header = () => {
 						className="collapse navbar-collapse"
 						id="navbarSupportedContent"
 						style={{
-							// position: "absolute",
 							display: "flex",
 							justifyContent: "space-between",
-							// width: "93%",
-							// margin:"0 2rem",
 						}}
 					>
 						<ul
@@ -67,8 +65,8 @@ const Header = () => {
 							}}
 						>
 							<li className="nav-item me-3 dropdown">
-								<NavLink
-									to="/about"
+								<AnchorLink
+									href="/about"
 									aria-current="page"
 									style={{
 										textDecoration: "none",
@@ -97,7 +95,7 @@ const Header = () => {
 										}}
 									></span>
 									</span>
-								</NavLink>
+								</AnchorLink>
 							</li>
 							<li
 								ref={addNavLink}
