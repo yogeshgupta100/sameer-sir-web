@@ -10,11 +10,6 @@ const Pricing = () => {
 	const [token, setToken] = useToken();
 	const [user, setUser] = useUser();
     const applyNow = () => {
-		if (!token) {
-			alert("Please login to continue");
-			return;
-		}
-
 		const headers = new Headers();
 		headers.append("Content-Type", "application/json");
 		headers.append("Authorization", `Bearer ${token}`);
