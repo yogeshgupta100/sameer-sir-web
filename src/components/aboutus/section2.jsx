@@ -48,7 +48,7 @@ const Section2 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
                 // justifyContent: "space-around",  
                 position: "relative",
                 right:"-7rem",
-                bottom:"6rem"
+                bottom:"4rem"
               }}
             >
               <div className="first-para">
