@@ -13,6 +13,7 @@ import { useParams } from 'react-router-dom'
 import EnrollingProcess from './EnrollingProcess'
 import Header from '../Header'
 import EmpCard from '../aboutus/card'
+import Pricing from './Pricing'
 
 const Course = () => {
     const { courseId } = useParams();
@@ -53,6 +54,7 @@ const Course = () => {
         <Curriculum data={courseData} />
         <Teachers empData={courseData?.attributes?.mentors} content={"Your mentors"} subContent={"Meet Our Visionaries: Learn from seasoned industry professionals who are passionate about nurturing the next generation of graphic designers"} />
         <EnrollingProcess/>
+        <Pricing/>
         <Testimonies data={courseData} />
         <AllCollapseExample menuData={menuData} data={courseData} />
         <Subscribe data={courseData} />

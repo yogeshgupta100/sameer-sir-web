@@ -154,10 +154,11 @@ const EnrollingProcess = () => {
               <p
                 style={{
                   alignItems: "flex-end",
-                  marginRight: "0.2rem",
+                  // marginRight: "0.2rem",
                   whiteSpace: "nowrap",
                   fontSize: "clamp(0.5rem , 1.5vw , 0.8rem)",
                   width: "auto",
+                  margin:"0"
                 }}
               >
                 Join Today

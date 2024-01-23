@@ -29,7 +29,10 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-/* Add this CSS to your global styles or a specific component style file */
+.pricing-main{
+	width: 100vw;
+	height: 23vw;
+}
 
 .modal {
 	position: fixed;
@@ -37,7 +40,7 @@ code {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.1); /* Semi-transparent black background */
+	background: rgba(0, 0, 0, 0.1);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -312,14 +315,14 @@ code {
 }
 
 .section1-main {
-	width: 100vw;
+	min-width: 100%;
 	margin-top: 9.435vw;
-	padding: 1rem;
+	/* padding: 1rem; */
 }
 .section1-main2 {
 	width: 100vw;
 	height: auto;
-	margin: 4rem 0 0 0;
+	margin: 4rem 0 0 2rem;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -327,7 +330,7 @@ code {
 
 .section1-main2 .first {
 	width: 70%;
-	height: 100%;
+	/* height: 100%; */
 }
 
 .section1-main2 .second {
@@ -342,7 +345,7 @@ code {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	row-gap: 2rem;
+	row-gap: 1rem;
 }
 
 .first-para {
@@ -372,7 +375,7 @@ code {
 .first-img {
 	border-radius: 0.25rem;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	width: 60%;
 }
@@ -1618,7 +1621,7 @@ button {
   }
   .section1-main{
 	background: linear-gradient(to bottom right, rgb(40, 11, 50), rgb(161, 81, 187)) !important;
-	width: 100vw !important;
+	min-width: 100% !important;
 }
 .section1-main .second{
 	background: transparent !important;

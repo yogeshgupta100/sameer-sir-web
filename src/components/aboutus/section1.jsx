@@ -23,7 +23,7 @@ const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
               }}
             >
               <div className="first-img">
-                <img src={imageUrl1} style={{width:"100%" , aspectRatio: "2/2.7"}} />
+                <img src={imageUrl1} style={{width:"100%" , aspectRatio: "2/2.4" , objectFit:"contain" }} />
               </div>
               <div className="first-para">
                 <span  style={{
@@ -41,6 +41,7 @@ const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
                 alignItems: "center",
                 justifyContent: "space-around",
                 position: "relative",
+                right:"-4rem"
               }}
             >
               <div className="first-para">
@@ -54,7 +55,7 @@ const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
               <div className="first-img" style={{
                 marginLeft: (director?"0.5rem":"15vw")
               }}>
-              <img src={imageUrl2} style={{width:"100%" , aspectRatio: "2/2.5"}} />
+              <img src={imageUrl2} style={{width:"100%" , aspectRatio: "2/2.4" , objectFit:"contain"}} />
               </div>
             </div>
           </div>
