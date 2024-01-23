@@ -96,7 +96,7 @@ const HireModal = ({closeModal , type}) => {
 											fontWeight: "700",
 										}}
 									>
-										Download Syllabus
+										Submit
 									</button>
 								</div>
                         </form>
