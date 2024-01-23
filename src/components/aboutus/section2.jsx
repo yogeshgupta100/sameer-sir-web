@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "./Heading";
 
-const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false}) => {
+const Section2 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false}) => {
   return (
     <>
       <div className="section1-main container">
@@ -32,9 +32,10 @@ const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
                 <span  style={{
                 display: (director?"block":"none"),
                 // marginLeft:"0.8vw",
-                marginTop:"4vw"
+                marginTop:"4vw",
+                color:"white"
               }}>
-                <h4>Ruchika Raina</h4>
+                <h4 style={{color:"white"}}>Ruchika Raina</h4>
                 <p>Director</p>
                 </span>
               </div>
@@ -55,9 +56,10 @@ const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
                 display: (director?"block":"none"),
                 // marginRight:"1vw",
                 marginBottom:"4vw",
-                marginLeft:"2vw"
+                marginLeft:"2vw",
+                color:"white"
               }}>
-                <h4>Omkar Nath Yadav</h4>
+                <h4 style={{color:"white"}}>Omkar Nath Yadav</h4>
                 <p>Director</p>
                 </span>
               </div>
@@ -105,4 +107,4 @@ const Section1 = ({ text , subContent , imageUrl1 , imageUrl2 , director = false
   );
 };
 
-export default Section1;
+export default Section2;

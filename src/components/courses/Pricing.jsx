@@ -49,15 +49,15 @@ const Pricing = () => {
                 // border: "0.076vw solid #fff",
                 fontSize: "0.99vw",
                 backgroundColor: " #8833B6",
-                width: "clamp(6rem , 70% , 13vw)",
+                width: "clamp(6rem , 55% , 12vw)",
                 color: "#fff",
                 display: "flex",
                 alignItems: "center",
                 fontFamily: "Raleway",
                 fontStyle: "normal",
                 fontWeight: "600",
-                aspectRatio: "3/1",
-                marginLeft: "9vw",
+                aspectRatio: "3/0.9",
+                marginLeft: "9.3vw",
                 justifyContent:"center",
               }}
             >
@@ -65,7 +65,7 @@ const Pricing = () => {
                 style={{
                   alignItems: "flex-end",
                   whiteSpace: "nowrap",
-                  fontSize: "clamp(0.5rem , 1.5vw , 0.8rem)",
+                  fontSize: "clamp(0.5rem , 1.3vw , 0.9rem)",
                   margin:"0",
                   paddingRight:"0.5vw"
                 }}

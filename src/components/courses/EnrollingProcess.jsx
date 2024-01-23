@@ -53,13 +53,13 @@ const EnrollingProcess = () => {
             <div
               className="card"
               style={{
-                aspectRatio:"3/3",
+                // aspectRatio:"3/3",
                 borderRadius: "0.625rem",
                 padding: "2vw 2vw",
               }}
             >
-              <p className="card-heading" style={{fontSize:"clamp(1rem , 1.2vw , 1.5rem)" , marginBottom:"1.22vw"}}>Explore Course Details </p>
-              <p className="card-para" style={{fontSize: "clamp(0.7rem , 1.5vw , 1rem)"}}>
+              <p className="card-heading" style={{fontSize:"clamp(1rem , 1.4vw , 1.8rem)" , marginBottom:"1.22vw"}}>Explore Course Details </p>
+              <p className="card-para" style={{fontSize: "clamp(0.7rem , 1.2vw , 1.3rem)"}}>
                 Before enrolling, take some time to explore our course details.
                 Visit our website and browse through the course description,
                 curriculum, and FAQs to ensure it aligns with your goals and
@@ -74,8 +74,8 @@ const EnrollingProcess = () => {
                 padding: "2vw 2vw",
               }}
             >
-              <p className="card-heading" style={{fontSize:"clamp(1rem , 1.2vw , 1.5rem)" , marginBottom:"1.22vw"}}>Explore Course Details </p>
-              <p className="card-para" style={{fontSize: "clamp(0.7rem , 1.5vw , 1rem)"}}>
+              <p className="card-heading" style={{fontSize:"clamp(1rem , 1.4vw , 1.8rem)" , marginBottom:"1.22vw"}}>Explore Course Details </p>
+              <p className="card-para" style={{fontSize: "clamp(0.7rem , 1.2vw , 1.3rem)"}}>
                 Before enrolling, take some time to explore our course details.
                 Visit our website and browse through the course description,
                 curriculum, and FAQs to ensure it aligns with your goals and
@@ -90,8 +90,8 @@ const EnrollingProcess = () => {
                 padding: "2vw 2vw",
               }}
             >
-              <p className="card-heading" style={{fontSize:"clamp(1rem , 1.2vw , 1.5rem)" , marginBottom:"1.22vw"}}>Explore Course Details </p>
-              <p className="card-para" style={{fontSize: "clamp(0.7rem , 1.5vw , 1rem)"}}>
+              <p className="card-heading" style={{fontSize:"clamp(1rem , 1.4vw , 1.8rem)" , marginBottom:"1.22vw"}}>Explore Course Details </p>
+              <p className="card-para" style={{fontSize: "clamp(0.7rem , 1.2vw , 1.3rem)"}}>
                 Before enrolling, take some time to explore our course details.
                 Visit our website and browse through the course description,
                 curriculum, and FAQs to ensure it aligns with your goals and
@@ -106,8 +106,8 @@ const EnrollingProcess = () => {
                 padding: "2vw 2vw",
               }}
             >
-              <p className="card-heading" style={{fontSize:"clamp(1rem , 1.2vw , 1.5rem)" , marginBottom:"1.22vw"}}>Explore Course Details </p>
-              <p className="card-para" style={{fontSize: "clamp(0.7rem , 1.5vw , 1rem)"}}>
+              <p className="card-heading" style={{fontSize:"clamp(1rem , 1.4vw , 1.8rem)" , marginBottom:"1.22vw"}}>Explore Course Details </p>
+              <p className="card-para" style={{fontSize: "clamp(0.7rem , 1.2vw , 1.3rem)"}}>
                 Before enrolling, take some time to explore our course details.
                 Visit our website and browse through the course description,
                 curriculum, and FAQs to ensure it aligns with your goals and
@@ -122,8 +122,8 @@ const EnrollingProcess = () => {
                 padding: "2vw 2vw",
               }}
             >
-              <p className="card-heading" style={{fontSize:"clamp(1rem , 1.2vw , 1.5rem)" , marginBottom:"1.22vw"}}>Explore Course Details </p>
-              <p className="card-para" style={{fontSize: "clamp(0.7rem , 1.5vw , 1rem)"}}>
+              <p className="card-heading" style={{fontSize:"clamp(1rem , 1.4vw , 1.8rem)" , marginBottom:"1.22vw"}}>Explore Course Details </p>
+              <p className="card-para" style={{fontSize: "clamp(0.7rem , 1.2vw , 1.3rem)"}}>
                 Before enrolling, take some time to explore our course details.
                 Visit our website and browse through the course description,
                 curriculum, and FAQs to ensure it aligns with your goals and
@@ -138,7 +138,7 @@ const EnrollingProcess = () => {
                 // border: "0.076vw solid #fff",
                 fontSize: "0.99vw",
                 backgroundColor: " #8833B6",
-                width: "clamp(4rem , 50% , 8rem)",
+                width: "clamp(4rem , 55% , 9rem)",
                 color: "#fff",
                 display: "flex",
                 alignItems: "center",
@@ -156,7 +156,7 @@ const EnrollingProcess = () => {
                   alignItems: "flex-end",
                   // marginRight: "0.2rem",
                   whiteSpace: "nowrap",
-                  fontSize: "clamp(0.5rem , 1.5vw , 0.8rem)",
+                  fontSize: "clamp(0.5rem , 1.5vw , 1rem)",
                   width: "auto",
                   margin:"0"
                 }}

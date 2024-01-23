@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
 
 export default function ResourcesModal() {
+	const componentDidMount = () =>{
+		window.scrollTo(0, 0);
+	}
 	return (
 		<div
 			style={{
@@ -14,6 +17,7 @@ export default function ResourcesModal() {
 			}}
 		>
 			<a href="/blogs"
+			onClick={componentDidMount}
 				className="inner-card"
 				style={{
 					display: "flex",
@@ -30,6 +34,7 @@ export default function ResourcesModal() {
 				}}/>
 			</a>
 			<a href="/tutorials"
+			onClick={componentDidMount}
 				className="inner-card"
 				style={{
 					display: "flex",
@@ -57,6 +62,7 @@ export default function ResourcesModal() {
 				<div style={{ whiteSpace: "nowrap", fontWeight: "400" , color:"#303030" , fontSize:"clamp(1rem , 1.3vw , 1.2rem)" , marginBottom:"1.5vw"}}>Your Learning Journey.</div>
 				<NavLink to={'/resource'}>
 				<button
+				onClick={componentDidMount}
 					style={{
 						color: "white",
 						backgroundColor: "#B46BD1",

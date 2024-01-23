@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const BlogCard = ({currEle}) => {
   return (
@@ -46,7 +47,7 @@ const BlogCard = ({currEle}) => {
                   }}>
                     {currEle?.attributes?.title}
                   </h5>
-                  <a
+                  {/* <a
 										href={`/article/${currEle?.id}`}
 										className="purple-btn course-btn"
 										style={{
@@ -57,7 +58,24 @@ const BlogCard = ({currEle}) => {
 										}}
 									>
                     <p style={{display: "inline-block", fontSize:"clamp(0.7rem , 1.5vw , 1rem)"}}>Learn more</p>
-									</a>
+									</a> */}
+                  <NavLink to={`/article/${currEle?.id}`}>
+				<button
+					style={{
+						color: "white",
+						backgroundColor: "#B46BD1",
+						outline: "none",
+						border: "none",
+						fontSize: "0.971vw",
+						padding: "0.555vw 1.11vw",
+						borderRadius: "0.555vw",
+						width: "fit-content",
+            margin:"1rem 0"
+					}}
+				>
+					Explore more
+				</button>
+				</NavLink>
 								</div> 
 							</div>
   )

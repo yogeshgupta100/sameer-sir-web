@@ -323,11 +323,10 @@ code {
 .section1-main2 {
 	max-height: 700px;
 	width: 100vw;
-	/* margin: 4rem 0 0 2rem; */
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	height: 45vw;
+	height: 50vw;
 }
 
 .section1-main2 .first {
@@ -358,6 +357,7 @@ code {
 	color: #ad60c8;
 	text-align: end;
 	display: block;
+	margin-top: 0vw;
 }
 
 .first-para h4 {
@@ -397,7 +397,7 @@ code {
 	border-left: 0.069vw solid white;
 	position: relative;
 	padding: 0 3.45vw;
-	padding-bottom: 0.276vw;
+	padding-bottom: 2.76vw;
 	font-size: clamp(0.8rem, 1.5vw, 1.3rem);
 }
 
@@ -1163,7 +1163,7 @@ button {
 .banner-section {
 	background: linear-gradient(95deg, #9844C5 -2.26%, #6B288F 38.81%, #9740C6 162.14%);
 	max-width: 100%;
-	min-height: 33.3vw;
+	min-height: 28vw;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

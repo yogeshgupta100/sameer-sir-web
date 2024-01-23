@@ -7,7 +7,6 @@ import Contact from "./Buttons/Contact";
 import NavModal from "./NavModal";
 import useMultiRefs from "../utility/useMultiRefs";
 import {useUser} from "../contexts/UserProvider";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Header = () => {
 	const [user , setUser] = useUser();
@@ -15,6 +14,9 @@ const Header = () => {
 	const [modalState, setModalState] = useState("courses");
 
 	const [getNavLinks, addNavLink] = useMultiRefs(null);
+	const componentDidMount = () =>{
+		window.scrollTo(0, 0);
+	}
 
 	return (
 		<>
@@ -65,8 +67,9 @@ const Header = () => {
 							}}
 						>
 							<li className="nav-item me-3 dropdown">
-								<AnchorLink
-									href="/about"
+								<NavLink
+									to="/about"
+									onClick={componentDidMount}
 									aria-current="page"
 									style={{
 										textDecoration: "none",
@@ -95,7 +98,7 @@ const Header = () => {
 										}}
 									></span>
 									</span>
-								</AnchorLink>
+								</NavLink>
 							</li>
 							<li
 								ref={addNavLink}

@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 
 export default function CoursesModal() {
 	const [courses, setCourses] = useState([]);
+	const componentDidMount = () =>{
+		window.scrollTo(0, 0);
+	}
 
 	const options = {
 		year: 'numeric',
@@ -72,7 +75,6 @@ export default function CoursesModal() {
 									className="card-title"
 									style={{
 										color: "#B46BD1",
-										// fontFamily: "Open Sans",
 										fontSize: "clamp(1rem , 1.5vw , 1.3rem)",
 										fontStyle: "normal",
 										fontWeight: "700",
@@ -149,6 +151,7 @@ export default function CoursesModal() {
 								<div className='containe'>
 								<Link
 									to={`/courses/${course.id}`}
+									onClick={componentDidMount}
 									className="purple-btn course-btn"
 									style={{
 										textDecoration: "none",
